@@ -1,36 +1,26 @@
 <div align="center">
 
-<br>
-
 # BLUEPRINT FOR AN AI-FIRST COMPANY
 
 **Frameworks, code, and the complete AI writing system behind the book**
 
 by [Saurav Bhatia](https://www.linkedin.com/in/sauravbhats)
 
-<br>
-
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-1a1a2e?style=flat-square)](LICENSE)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-455a64?style=flat-square)](LICENSE)
 &nbsp;&nbsp;
-![81K Words](https://img.shields.io/badge/Words-81%2C000+-1a1a2e?style=flat-square)
+![81K Words](https://img.shields.io/badge/Words-81%2C000+-2e7d32?style=flat-square)
 &nbsp;&nbsp;
-![775 Citations](https://img.shields.io/badge/Citations-775-1a1a2e?style=flat-square)
+![775 Citations](https://img.shields.io/badge/Citations-775-1565c0?style=flat-square)
 &nbsp;&nbsp;
-![12 Chapters](https://img.shields.io/badge/Chapters-12-1a1a2e?style=flat-square)
-
-<br>
+![12 Chapters](https://img.shields.io/badge/Chapters-12-e65100?style=flat-square)
 
 [Frameworks](#frameworks) &#8226; [Code Examples](#code-examples) &#8226; [Checklists & Guides](#checklists-guides--workflows) &#8226; [AI Writing System](#the-ai-writing-system) &#8226; [Book Chapters](#about-the-book)
-
-<br>
 
 </div>
 
 ---
 
 This isn't a collection of slides repackaged as markdown. Every framework comes from building real products -- digital banks that acquired 450,000 clients in four months, an AI startup where two people shipped 15 products in three months, and a $5 billion retail operation spanning 32 countries. The book was written using the same AI-first methods it teaches, and the entire production system is documented here.
-
-<br>
 
 ## What's in This Repository
 
@@ -72,8 +62,6 @@ This isn't a collection of slides repackaged as markdown. Every framework comes 
 </tr>
 </table>
 
-<br>
-
 ## The AI Writing System
 
 > **81,000 words. 775 citations. 14 AI agents. The entire system is documented.**
@@ -94,8 +82,6 @@ This book was produced using a multi-agent AI writing system built on Claude Cod
 What's documented: author voice encoding (6 files that teach an LLM to write like a specific human), 27 modular prompts across 5 categories, multi-agent orchestration, a research pipeline that generates citation-ready content, Obsidian vault architecture, a Flask + PostgreSQL analysis app with 70+ modules, and a 4-phase editorial review process.
 
 **[Explore the AI Writing System &rarr;](ai-writing-process/)**
-
-<br>
 
 ## About the Book
 
@@ -149,8 +135,6 @@ What's documented: author voice encoding (6 files that teach an LLM to write lik
 
 </details>
 
-<br>
-
 ## Frameworks
 
 20 decision frameworks extracted from the book, each with context on when and how to use it.
@@ -194,8 +178,6 @@ What's documented: author voice encoding (6 files that teach an LLM to write lik
 
 </details>
 
-<br>
-
 ## Code Examples
 
 14 working examples in Python covering agent patterns, infrastructure components, prompt templates, and CI/CD configuration.
@@ -228,8 +210,6 @@ What's documented: author voice encoding (6 files that teach an LLM to write lik
 | [CI AI Review](examples/configs/ci-ai-review/) | CI/CD pipeline with AI code review | Config |
 
 </details>
-
-<br>
 
 ## Checklists, Guides & Workflows
 
@@ -273,8 +253,6 @@ What's documented: author voice encoding (6 files that teach an LLM to write lik
 </tr>
 </table>
 
-<br>
-
 ## Resources
 
 | | |
@@ -285,8 +263,6 @@ What's documented: author voice encoding (6 files that teach an LLM to write lik
 | [Courses and Learning](resources/courses-and-learning.md) | Recommended courses and learning paths |
 | [Communities](resources/communities.md) | Communities for AI-first builders |
 | [Open Source Projects](resources/open-source-projects.md) | Relevant open source projects |
-
-<br>
 
 ## About the Author
 
@@ -304,8 +280,6 @@ Saurav holds an MBA from the National University of Singapore and completed the 
 &nbsp;
 [![Blog](https://img.shields.io/badge/Blog-1a1a2e?style=flat-square&logo=hashnode&logoColor=white)](https://blog.sauravbhatia.com)
 
-<br>
-
 ## Get the Book
 
 *Blueprint for an AI-First Company* is available at [the book's website](#). The frameworks and code here are extracted from the book. The book provides the full narrative, case studies, and strategic context that these companion materials are built around.
@@ -315,8 +289,6 @@ Saurav holds an MBA from the National University of Singapore and completed the 
 ## Contributing
 
 Contributions are welcome. Whether you have a resource suggestion, a code example, or a correction, please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-<br>
 
 ---
 
