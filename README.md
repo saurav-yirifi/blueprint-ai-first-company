@@ -1,65 +1,101 @@
-# Blueprint for an AI-First Company
+<div align="center">
 
-![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
-![Frameworks](https://img.shields.io/badge/Frameworks-20-blue)
-![Code Examples](https://img.shields.io/badge/Code%20Examples-14-green)
-![Chapters](https://img.shields.io/badge/Chapters-12-orange)
+<br>
 
-Frameworks, code, and the complete AI writing system behind the book by [Saurav Bhatia](https://www.linkedin.com/in/sauravbhats) -- former founding executive of two digital banks, now building AI-first at [Yirifi.ai](https://yirifi.ai).
+# BLUEPRINT FOR AN AI-FIRST COMPANY
+
+**Frameworks, code, and the complete AI writing system behind the book**
+
+by [Saurav Bhatia](https://www.linkedin.com/in/sauravbhats)
+
+<br>
+
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-1a1a2e?style=flat-square)](LICENSE)
+&nbsp;&nbsp;
+![81K Words](https://img.shields.io/badge/Words-81%2C000+-1a1a2e?style=flat-square)
+&nbsp;&nbsp;
+![775 Citations](https://img.shields.io/badge/Citations-775-1a1a2e?style=flat-square)
+&nbsp;&nbsp;
+![12 Chapters](https://img.shields.io/badge/Chapters-12-1a1a2e?style=flat-square)
+
+<br>
+
+[Frameworks](#frameworks) &#8226; [Code Examples](#code-examples) &#8226; [Checklists & Guides](#checklists-guides--workflows) &#8226; [AI Writing System](#the-ai-writing-system) &#8226; [Book Chapters](#about-the-book)
+
+<br>
+
+</div>
+
+---
 
 This isn't a collection of slides repackaged as markdown. Every framework comes from building real products -- digital banks that acquired 450,000 clients in four months, an AI startup where two people shipped 15 products in three months, and a $5 billion retail operation spanning 32 countries. The book was written using the same AI-first methods it teaches, and the entire production system is documented here.
 
----
-
-## The AI Writing System
-
-> 81,000 words. 775 citations. 14 AI agents. The entire system is documented.
-
-This book was produced using a multi-agent AI writing system built on Claude Code, Perplexity, and Obsidian. The full system -- every prompt, script, skill, and architectural decision -- is open for you to study, adapt, or use.
-
-| Metric | Count |
-|--------|-------|
-| Total words written | 81,000+ across 12 chapters |
-| Inline citations with source URLs | 775 |
-| Claude Code agent skills | 14 (writer, reviewer, researcher, quality auditor) |
-| Research prompts (Perplexity) | 180+ |
-| Python automation scripts | 17 |
-| Adaptable templates | 17 |
-
-What's documented: author voice encoding (6 files that teach an LLM to write like a specific human), 27 modular prompts across 5 categories, multi-agent orchestration, a research pipeline that generates citation-ready content, Obsidian vault architecture, a Flask + PostgreSQL analysis app with 70+ modules, and a 4-phase editorial review process.
-
-**[Explore the AI Writing System >](ai-writing-process/)**
-
----
+<br>
 
 ## What's in This Repository
 
-| Section | Count | What You Get |
-|---------|-------|--------------|
-| [Frameworks](frameworks/) | 20 | Decision models for strategy, architecture, hiring, data, and governance |
-| [Code Examples](examples/) | 14 | Agent patterns, infrastructure, prompts, and CI/CD configs in Python |
-| [Checklists](checklists/) | 7 | Readiness assessments and audit tools you can use today |
-| [Guides](guides/) | 6 | Step-by-step implementation walkthroughs |
-| [Workflows](workflows/) | 4 | Repeatable operational processes |
-| [Resources](resources/) | 6 categories | Curated tools, papers, case studies, courses, and communities |
-| [AI Writing Process](ai-writing-process/) | 57 files | The complete system behind writing the book with AI |
-| [Book Chapters](book/) | 12 | Chapter-by-chapter companion content |
+<table>
+<tr>
+<td width="50%" valign="top">
 
----
+### Build
 
-## About the Author
+&nbsp;&nbsp; **[20 Frameworks](frameworks/)** -- Decision models for strategy, architecture, hiring, data, governance
 
-Saurav Bhatia is the Founder and CEO of [Yirifi.ai](https://yirifi.ai), where his two-person team built 15 AI-powered microsites in three months -- a proof point for what AI-first development makes possible, and the central case study of this book.
+&nbsp;&nbsp; **[14 Code Examples](examples/)** -- Agent patterns, infrastructure, prompts, CI/CD in Python
 
-Before Yirifi, Saurav spent nearly a decade at Standard Chartered Bank in Singapore and Hong Kong. As Interim CEO and Chief Customer & Product Officer of TRUST Bank -- Singapore's first digital bank -- he laid the foundation from scratch: regulatory approval, joint venture with NTUC, 100+ person team, and a product that acquired 450,000 clients within four months, capturing 9% market share. As founding CFO of Mox Bank in Hong Kong, he helped secure the virtual banking license and build what became the most downloaded app in Hong Kong across all categories -- 440,000 clients and $1.2 billion in deposits within two years.
+&nbsp;&nbsp; **[6 Guides](guides/)** -- Step-by-step implementation walkthroughs
 
-He also served as Global Head of Digital Assets for Retail, Private and Wealth at Standard Chartered, and Global Head of Finance for the bank's $5 billion retail operation spanning 9 million clients in 32 countries. Before Standard Chartered, he held progressive leadership roles at Citibank over nine years.
+</td>
+<td width="50%" valign="top">
 
-Saurav holds an MBA from the National University of Singapore and completed the Oxford Blockchain Strategy Programme. He began his career as a founder in 1999.
+### Operate
 
-[LinkedIn](https://www.linkedin.com/in/sauravbhats) | [X](https://x.com/sauravbhats) | [Blog](https://blog.sauravbhatia.com)
+&nbsp;&nbsp; **[7 Checklists](checklists/)** -- Readiness assessments and audit tools
 
----
+&nbsp;&nbsp; **[4 Workflows](workflows/)** -- Repeatable operational processes
+
+&nbsp;&nbsp; **[6 Resource Collections](resources/)** -- Tools, papers, case studies, courses, communities
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+### Learn
+
+&nbsp;&nbsp; **[57 AI Writing Process Files](ai-writing-process/)** -- The complete system behind writing the book with AI
+
+&nbsp;&nbsp; **[12 Book Chapters](book/)** -- Chapter-by-chapter companion content
+
+</td>
+</tr>
+</table>
+
+<br>
+
+## The AI Writing System
+
+> **81,000 words. 775 citations. 14 AI agents. The entire system is documented.**
+
+This book was produced using a multi-agent AI writing system built on Claude Code, Perplexity, and Obsidian. The full system -- every prompt, script, skill, and architectural decision -- is open for you to study, adapt, or use.
+
+<table>
+<tr>
+<td align="center"><strong>81,000+</strong><br><sub>Words across 12 chapters</sub></td>
+<td align="center"><strong>775</strong><br><sub>Inline citations with URLs</sub></td>
+<td align="center"><strong>14</strong><br><sub>Claude Code agent skills</sub></td>
+<td align="center"><strong>180+</strong><br><sub>Perplexity research prompts</sub></td>
+<td align="center"><strong>17</strong><br><sub>Python scripts</sub></td>
+<td align="center"><strong>17</strong><br><sub>Adaptable templates</sub></td>
+</tr>
+</table>
+
+What's documented: author voice encoding (6 files that teach an LLM to write like a specific human), 27 modular prompts across 5 categories, multi-agent orchestration, a research pipeline that generates citation-ready content, Obsidian vault architecture, a Flask + PostgreSQL analysis app with 70+ modules, and a 4-phase editorial review process.
+
+**[Explore the AI Writing System &rarr;](ai-writing-process/)**
+
+<br>
 
 ## About the Book
 
@@ -67,32 +103,53 @@ Saurav holds an MBA from the National University of Singapore and completed the 
 
 **Start where you need to:**
 
-- **Evaluating AI strategy?** Start with Part I (Foundations)
-- **Ready to build?** Jump to Part II (Building)
-- **Scaling your AI team?** See Part III (Operating)
-- **Long-term sustainability?** Read Part IV (Sustaining)
+| If you're... | Start here |
+|:---|:---|
+| Evaluating AI strategy | **Part I** -- [Foundations](book/part-1-foundations/) |
+| Ready to build | **Part II** -- [Building](book/part-2-building/) |
+| Scaling your AI team | **Part III** -- [Operating](book/part-3-operating/) |
+| Thinking long-term | **Part IV** -- [Sustaining](book/part-4-sustaining/) |
 
 <details>
-<summary>Full Table of Contents (12 chapters)</summary>
+<summary><strong>Full Table of Contents (12 chapters)</strong></summary>
 
-| # | Chapter | Part | Description |
-|---|---------|------|-------------|
-| 1 | [The AI-First Imperative](book/part-1-foundations/01-the-ai-first-imperative/) | Foundations | Why being AI-first matters now and the competitive advantages it creates |
-| 2 | [The AI-First Mindset](book/part-1-foundations/02-the-ai-first-mindset/) | Foundations | How AI-first founders think differently about opportunities and building |
-| 3 | [The AI Landscape](book/part-1-foundations/03-the-ai-landscape/) | Foundations | Navigating foundation models, providers, and making strategic choices |
-| 4 | [Infrastructure for AI-First Operations](book/part-2-building/04-infrastructure-for-ai-first-operations/) | Building | The infrastructure stack -- databases, gateways, and auth |
-| 5 | [Building with AI](book/part-2-building/05-building-with-ai/) | Building | How to build software with AI as a collaborator |
-| 6 | [Agent Architecture](book/part-2-building/06-agent-architecture/) | Building | Two types of agents, when to use each, and the Agent Hub pattern |
-| 7 | [The Microsite Pattern](book/part-2-building/07-the-microsite-pattern/) | Building | Domain microsites with shared infrastructure and AI agent access |
-| 8 | [Teams for AI-First Companies](book/part-3-operating/08-teams-for-ai-first-companies/) | Operating | Structuring teams and building culture for AI-first success |
-| 9 | [Data Strategy](book/part-3-operating/09-data-strategy/) | Operating | Building data advantages that compound |
-| 10 | [AI-Augmented Operations and GTM](book/part-3-operating/10-ai-augmented-operations-and-gtm/) | Operating | Using AI to scale operations and customer-facing growth |
-| 11 | [Ethics, Governance, and Risk](book/part-4-sustaining/11-ethics-governance-and-risk/) | Sustaining | Responsible AI with proper governance and risk management |
-| 12 | [Staying Ahead](book/part-4-sustaining/12-staying-ahead/) | Sustaining | Building architecture that absorbs change rather than resisting it |
+<br>
+
+**Part I: Foundations**
+
+| # | Chapter | Description |
+|:--|:--------|:------------|
+| 1 | [The AI-First Imperative](book/part-1-foundations/01-the-ai-first-imperative/) | Why being AI-first matters now and the competitive advantages it creates |
+| 2 | [The AI-First Mindset](book/part-1-foundations/02-the-ai-first-mindset/) | How AI-first founders think differently about opportunities and building |
+| 3 | [The AI Landscape](book/part-1-foundations/03-the-ai-landscape/) | Navigating foundation models, providers, and making strategic choices |
+
+**Part II: Building**
+
+| # | Chapter | Description |
+|:--|:--------|:------------|
+| 4 | [Infrastructure for AI-First Operations](book/part-2-building/04-infrastructure-for-ai-first-operations/) | The infrastructure stack -- databases, gateways, and auth |
+| 5 | [Building with AI](book/part-2-building/05-building-with-ai/) | How to build software with AI as a collaborator |
+| 6 | [Agent Architecture](book/part-2-building/06-agent-architecture/) | Two types of agents, when to use each, and the Agent Hub pattern |
+| 7 | [The Microsite Pattern](book/part-2-building/07-the-microsite-pattern/) | Domain microsites with shared infrastructure and AI agent access |
+
+**Part III: Operating**
+
+| # | Chapter | Description |
+|:--|:--------|:------------|
+| 8 | [Teams for AI-First Companies](book/part-3-operating/08-teams-for-ai-first-companies/) | Structuring teams and building culture for AI-first success |
+| 9 | [Data Strategy](book/part-3-operating/09-data-strategy/) | Building data advantages that compound |
+| 10 | [AI-Augmented Operations and GTM](book/part-3-operating/10-ai-augmented-operations-and-gtm/) | Using AI to scale operations and customer-facing growth |
+
+**Part IV: Sustaining**
+
+| # | Chapter | Description |
+|:--|:--------|:------------|
+| 11 | [Ethics, Governance, and Risk](book/part-4-sustaining/11-ethics-governance-and-risk/) | Responsible AI with proper governance and risk management |
+| 12 | [Staying Ahead](book/part-4-sustaining/12-staying-ahead/) | Building architecture that absorbs change rather than resisting it |
 
 </details>
 
----
+<br>
 
 ## Frameworks
 
@@ -100,16 +157,20 @@ Saurav holds an MBA from the National University of Singapore and completed the 
 
 **Highlights:**
 
-- [AI-First vs AI-Enabled](frameworks/ai-first-vs-ai-enabled.md) -- Assess where your company falls on the spectrum (Ch 1)
-- [7 Failure Modes of Agents](frameworks/7-failure-modes-of-agents.md) -- Diagnose why an agent is failing (Ch 6)
-- [8 Patterns for AI Coding](frameworks/8-patterns-for-ai-coding.md) -- Structure AI-assisted development workflows (Ch 5)
-- [90-Day AI Fluency Program](frameworks/90-day-ai-fluency-program.md) -- Upskill your team on AI tools and thinking (Ch 8)
+| Framework | Chapter | Use When |
+|:----------|:--------|:---------|
+| [AI-First vs AI-Enabled](frameworks/ai-first-vs-ai-enabled.md) | Ch 1 | Assessing where your company falls on the spectrum |
+| [7 Failure Modes of Agents](frameworks/7-failure-modes-of-agents.md) | Ch 6 | Diagnosing why an agent is failing |
+| [8 Patterns for AI Coding](frameworks/8-patterns-for-ai-coding.md) | Ch 5 | Structuring AI-assisted development workflows |
+| [90-Day AI Fluency Program](frameworks/90-day-ai-fluency-program.md) | Ch 8 | Upskilling your team on AI tools and thinking |
 
 <details>
-<summary>All 20 frameworks</summary>
+<summary><strong>All 20 frameworks</strong></summary>
+
+<br>
 
 | Framework | Chapter | Use When |
-|-----------|---------|----------|
+|:----------|:--------|:---------|
 | [AI-First vs AI-Enabled](frameworks/ai-first-vs-ai-enabled.md) | Ch 1 | Assessing where your company falls on the spectrum |
 | [7 Mental Models of AI-First](frameworks/7-mental-models-of-ai-first.md) | Ch 2 | Shifting how your team thinks about AI |
 | [Probabilistic AI](frameworks/probabilistic-ai.md) | Ch 2 | Designing for non-deterministic outputs |
@@ -133,7 +194,7 @@ Saurav holds an MBA from the National University of Singapore and completed the 
 
 </details>
 
----
+<br>
 
 ## Code Examples
 
@@ -141,15 +202,19 @@ Saurav holds an MBA from the National University of Singapore and completed the 
 
 **Highlights:**
 
-- [Chat Agent](examples/agent-patterns/chat-agent/) -- Conversational AI agent pattern
-- [Agent Hub](examples/agent-patterns/agent-hub/) -- Multi-agent orchestration
-- [AI Gateway](examples/infrastructure/ai-gateway/) -- Unified API gateway for AI providers
+| Example | Description |
+|:--------|:------------|
+| [Chat Agent](examples/agent-patterns/chat-agent/) | Conversational AI agent pattern |
+| [Agent Hub](examples/agent-patterns/agent-hub/) | Multi-agent orchestration |
+| [AI Gateway](examples/infrastructure/ai-gateway/) | Unified API gateway for AI providers |
 
 <details>
-<summary>All 14 code examples</summary>
+<summary><strong>All 14 code examples</strong></summary>
+
+<br>
 
 | Example | Description | Language |
-|---------|-------------|----------|
+|:--------|:------------|:---------|
 | [Chat Agent](examples/agent-patterns/chat-agent/) | Conversational AI agent pattern | Python |
 | [Background Agent](examples/agent-patterns/background-agent/) | Async task processing agent | Python |
 | [Agent Hub](examples/agent-patterns/agent-hub/) | Multi-agent orchestration | Python |
@@ -164,63 +229,99 @@ Saurav holds an MBA from the National University of Singapore and completed the 
 
 </details>
 
----
+<br>
 
 ## Checklists, Guides & Workflows
 
+<table>
+<tr>
+<td width="33%" valign="top">
+
 ### Checklists
 
-- [AI Readiness Assessment](checklists/ai-readiness-assessment.md) -- Is your company ready for AI-first?
-- [Model Selection Checklist](checklists/model-selection-checklist.md) -- Choosing the right model for your use case
-- [Agent Design Checklist](checklists/agent-design-checklist.md) -- Before building an agent
-- [Infrastructure Audit](checklists/infrastructure-audit.md) -- Audit your AI infrastructure
-- [Data Strategy Checklist](checklists/data-strategy-checklist.md) -- Building your data strategy
-- [Governance Checklist](checklists/governance-checklist.md) -- AI governance readiness
-- [GTM AI Readiness](checklists/gtm-ai-readiness.md) -- AI-augmenting your go-to-market
+- [AI Readiness Assessment](checklists/ai-readiness-assessment.md)
+- [Model Selection](checklists/model-selection-checklist.md)
+- [Agent Design](checklists/agent-design-checklist.md)
+- [Infrastructure Audit](checklists/infrastructure-audit.md)
+- [Data Strategy](checklists/data-strategy-checklist.md)
+- [Governance](checklists/governance-checklist.md)
+- [GTM AI Readiness](checklists/gtm-ai-readiness.md)
+
+</td>
+<td width="33%" valign="top">
 
 ### Guides
 
-- [Building Your First Agent](guides/building-your-first-agent.md) -- End-to-end walkthrough of agent development
-- [Setting Up an AI Tool Gateway](guides/setting-up-ai-tool-gateway.md) -- Unified API gateway for multiple AI providers
-- [Implementing Data Flywheels](guides/implementing-data-flywheels.md) -- Building compounding data feedback loops
-- [Polyglot Persistence Setup](guides/polyglot-persistence-setup.md) -- Configuring multiple data stores for AI workloads
-- [AI Coding Workflow](guides/ai-coding-workflow.md) -- Integrating AI into your development process
-- [Team AI Fluency Rollout](guides/team-ai-fluency-rollout.md) -- Rolling out AI fluency across your organization
+- [Building Your First Agent](guides/building-your-first-agent.md)
+- [AI Tool Gateway Setup](guides/setting-up-ai-tool-gateway.md)
+- [Data Flywheels](guides/implementing-data-flywheels.md)
+- [Polyglot Persistence](guides/polyglot-persistence-setup.md)
+- [AI Coding Workflow](guides/ai-coding-workflow.md)
+- [Team AI Fluency Rollout](guides/team-ai-fluency-rollout.md)
+
+</td>
+<td width="33%" valign="top">
 
 ### Workflows
 
-- [AI Coding Session Workflow](workflows/ai-coding-session-workflow.md) -- Structured flow for an AI-assisted coding session
-- [Agent Failure Recovery](workflows/agent-failure-recovery.md) -- Diagnosing and recovering from agent failures
-- [Model Evaluation Workflow](workflows/model-evaluation-workflow.md) -- Systematic process for evaluating models
-- [90-Day Fluency Implementation](workflows/90-day-fluency-implementation.md) -- Week-by-week plan for team AI fluency
+- [AI Coding Session](workflows/ai-coding-session-workflow.md)
+- [Agent Failure Recovery](workflows/agent-failure-recovery.md)
+- [Model Evaluation](workflows/model-evaluation-workflow.md)
+- [90-Day Fluency Plan](workflows/90-day-fluency-implementation.md)
 
----
+</td>
+</tr>
+</table>
+
+<br>
 
 ## Resources
 
-- [Tools](resources/tools.md) -- AI tools and platforms referenced in the book
-- [Research Papers](resources/research-papers.md) -- Key papers behind the concepts
-- [Case Studies](resources/case-studies.md) -- Real-world AI-first company examples
-- [Courses and Learning](resources/courses-and-learning.md) -- Recommended courses and learning paths
-- [Communities](resources/communities.md) -- Communities for AI-first builders
-- [Open Source Projects](resources/open-source-projects.md) -- Relevant open source projects
+| | |
+|:--|:--|
+| [Tools](resources/tools.md) | AI tools and platforms referenced in the book |
+| [Research Papers](resources/research-papers.md) | Key papers behind the concepts |
+| [Case Studies](resources/case-studies.md) | Real-world AI-first company examples |
+| [Courses and Learning](resources/courses-and-learning.md) | Recommended courses and learning paths |
+| [Communities](resources/communities.md) | Communities for AI-first builders |
+| [Open Source Projects](resources/open-source-projects.md) | Relevant open source projects |
 
----
+<br>
+
+## About the Author
+
+**Saurav Bhatia** is the Founder and CEO of [Yirifi.ai](https://yirifi.ai), where his two-person team built 15 AI-powered microsites in three months -- a proof point for what AI-first development makes possible, and the central case study of this book.
+
+Before Yirifi, Saurav spent nearly a decade at Standard Chartered Bank in Singapore and Hong Kong. As Interim CEO and Chief Customer & Product Officer of **TRUST Bank** -- Singapore's first digital bank -- he laid the foundation from scratch: regulatory approval, joint venture with NTUC, 100+ person team, and a product that acquired 450,000 clients within four months, capturing 9% market share. As founding CFO of **Mox Bank** in Hong Kong, he helped secure the virtual banking license and build what became the most downloaded app in Hong Kong across all categories -- 440,000 clients and $1.2 billion in deposits within two years.
+
+He also served as Global Head of Digital Assets for Retail, Private and Wealth at Standard Chartered, and Global Head of Finance for the bank's $5 billion retail operation spanning 9 million clients in 32 countries. Before Standard Chartered, he held progressive leadership roles at Citibank over nine years.
+
+Saurav holds an MBA from the National University of Singapore and completed the Oxford Blockchain Strategy Programme. He began his career as a founder in 1999.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sauravbhats)
+&nbsp;
+[![X](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/sauravbhats)
+&nbsp;
+[![Blog](https://img.shields.io/badge/Blog-1a1a2e?style=flat-square&logo=hashnode&logoColor=white)](https://blog.sauravbhatia.com)
+
+<br>
 
 ## Get the Book
 
 *Blueprint for an AI-First Company* is available at [the book's website](#). The frameworks and code here are extracted from the book. The book provides the full narrative, case studies, and strategic context that these companion materials are built around.
 
----
+<br>
 
 ## Contributing
 
-Contributions are welcome. Whether you have a resource suggestion, a code example, or a correction, please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to participate.
+Contributions are welcome. Whether you have a resource suggestion, a code example, or a correction, please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+<br>
 
 ---
 
-## License
+<div align="center">
 
-This repository is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](LICENSE).
+<sub>Licensed under <a href="LICENSE">CC BY-NC-SA 4.0</a> &bull; Copyright 2026 Saurav Bhatia</sub>
 
-Copyright 2026 Saurav Bhatia. All rights reserved.
+</div>
