@@ -9,8 +9,8 @@ https://www.linkedin.com/in/sauravbhats | https://x.com/sauravbhats
 
 Venture builder & Blockchain Innovator with 20+ years across banking and fintech. Founder CEO and former founding CXO for two digital banks (SG & HK), combining regulatory-grade risk management with product innovation in digital assets, CBDC, custody, and tokenization. Deep track record shaping strategy, securing regulatory buy-in, and delivering complex programs with C-suite and Board stakeholders. Scaled teams to 100+ FTE and built partnerships that drove >1M client acquisition.
 
-- As interim CEO (18-months) for Singapore's first Digital Bank "TRUST", laid foundation to establish bank. Secured regulatory approval, established JV, developed innovative CVPs, & grew to 100+ FTEs. Bank scaled 450K clients in 4 months.
-- As founding CXO of SCB's pioneer digital bank "Mox" in HK, secured a virtual banking license & disrupted the industry through unique CVPs, ecosystem connectivity and vibrant branding. Bank grew to 440K clients and $1.2Bn deposits.
+- As interim CEO (18-months) for Singapore's first Digital Bank "TRUST", laid foundation to establish bank. Secured regulatory approval, established JV, developed innovative CVPs, & grew to 100+ FTEs. Bank has grown to 1M+ clients, ~20% market share.
+- As founding CXO of SCB's pioneer digital bank "Mox" in HK, secured a virtual banking license & disrupted the industry through unique CVPs, ecosystem connectivity and vibrant branding. Bank grew to 750K clients, 12% market share.
 
 ---
 
@@ -30,7 +30,7 @@ Venture builder & Blockchain Innovator with 20+ years across banking and fintech
 - Creating the world's largest centralized repository of global crypto regulations, case law, and risk scenarios, accelerating compliance mapping and regulatory change management for enterprise clients.
 - Developing the world's largest single source of truth global repository of crypto regulations, case law, and risk scenarios, intended to accelerate compliance mapping, product governance, and RCSA/control frameworks.
 - Led Mox Bank (Standard Chartered subsidiary) crypto launch strategy, covering ETF and spot trading offerings for retail clients through comprehensive partner due diligence, governance frameworks, and risk & control assessments.
-- Scaled to 30+ FTE international team; established OKRs, delivery governance, and cross functional agile execution models.
+- Scaled to 20-person international team; established OKRs, delivery governance, and cross-functional agile execution models.
 - Developed AI-powered regulatory intelligence platform providing compliance teams real-time access to supervisory guidance, policy obligations mapping, and automated audit evidence generation.
 
 ### Standard Chartered Bank, Singapore & Hong Kong — 2014–2023
@@ -45,7 +45,7 @@ Venture builder & Blockchain Innovator with 20+ years across banking and fintech
 
 - As Interim CEO (18 months) & CCPO of the 1st digital bank in Singapore, laid the groundwork to establish the bank.
 - Created a compelling vision linking partner ecosystems with SCB's banking expertise, driving regulatory lobbying and securing a bank license. Managed a $100M budget scaling to 100FTE, evaluating and selecting best-in-class technology providers.
-- Defined compelling CVP leveraging NTUC's ecosystem and disruptive product features for deposits, cards and payments leading to successful acquisition of 450K clients (9% market share) in under 4 months after launch.
+- Defined compelling CVP leveraging NTUC's ecosystem and disruptive product features for deposits, cards and payments leading to successful acquisition growing to 1M+ clients (~20% market share).
 - Designed seamless multi-channel client experience, relevant to all age-groups, by leveraging physical (in-store) and digital ecosystem assets leading to a best-in-class app with 4.7star App rating & 70% client acquisition through referrals.
 - Introduced ESG focused proposition with 1st in market Card using Ocean Plastic, savings ~300k plastic bottles.
 - Articulated "North Star" strategy for AI-enabled data & marketing, including mapping data domains and defining operating models. Resulted in improved cross-channel retargeting & faster decision making for effective monetizing of NTUC data.
@@ -58,7 +58,7 @@ Venture builder & Blockchain Innovator with 20+ years across banking and fintech
 **Chief Financial Officer, Mox Bank, HK** — Feb 2018–Dec 2018
 
 - Founding CXO and CFO, pioneered the launch of SCB's digital bank in Hong Kong "Mox", partnering with the CEO to set strategic vision, secure banking license and develop a robust deployment plan.
-- Developed unique CVP on "smarter banking, saving and spending", with 1st in market product features, streamlined ecosystem access & powerful brand awareness. Bank scaled to 440k clients & $1.2bn deposits in 2 years.
+- Developed unique CVP on "smarter banking, saving and spending", with 1st in market product features, streamlined ecosystem access & powerful brand awareness. Bank scaled to 750K clients, capturing 12% market share.
 - Mox Bank became the most popular app in HK, across all categories (not just finance) with a 4.8 star rating on Apple Appstore. Recognized as the Best banking App in Asia and #19 best Banking App featured on SCMP.
 - Recommended the early adoption of a private blockchain based core banking system, Thought Machine, now standard for new banks. Evaluated alternative cloud native tech for bank deployment, targeting 30% lower cost & 60% faster deployment.
 - Collaborated on crafting the JV structure including commercial negotiations (acquisition targets, marketing, access to channels & data). IP license structure enabled SCB to leverage technology development for future global digital bank rollouts.

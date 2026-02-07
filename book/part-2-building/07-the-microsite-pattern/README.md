@@ -6,7 +6,7 @@ Uber and Amazon Prime Video learned this the hard way—both had to rebuild afte
 
 The problem isn't microservices. The problem is treating architecture as a technology choice rather than an organizational one. The 10% who succeed don't use different tools. They use different structures. They align architecture with teams, teams with domains, and domains with deployment autonomy.
 
-This chapter introduces the microsite pattern: autonomous domain applications with shared infrastructure. The architecture that enables a two-person team to manage fifteen domains. The same architecture that scales to a thousand engineers without coordination overhead.
+This chapter introduces the microsite pattern: autonomous domain applications with shared infrastructure. The architecture that enables just two people to manage fifteen domains. The same architecture that scales to a thousand engineers without coordination overhead.
 
 ---
 

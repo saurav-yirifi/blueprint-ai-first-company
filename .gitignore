@@ -1,0 +1,13 @@
+site/
+
+# Content copied into docs/ at build time — do not commit
+docs/book/
+docs/frameworks/
+docs/guides/
+docs/checklists/
+docs/examples/
+docs/workflows/
+docs/resources/
+docs/author/
+docs/ai-writing-process/
+docs/about.md

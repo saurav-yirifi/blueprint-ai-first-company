@@ -73,7 +73,7 @@ The data supports him. Cursor, an AI coding tool built by a small team, reached 
 
 Small teams with AI can match what large teams did without it. That's not hyperbole. GitHub's study showed a 55% speed improvement on routine tasks. McKinsey found developers were 25-30% more likely to complete complex tasks when using AI tools[^mckinsey-complex].
 
-The Yirifi story I mentioned earlier—15 microsites, 2 people, 3 months—worked because we leaned into this pattern. Each microsite runs its own Flask backend, HTMX frontend, and MCP-exposed APIs for AI agent access. DevOps, QA, Finance, Risk, Data, Marketing—same architecture, replicated across domains. Traditional staffing for this scope? 10-15 people minimum. The difference isn't working harder. It's thinking while AI types.
+The Yirifi story I mentioned earlier—15 backoffice microsites, just 2 people, 3 months—worked because we leaned into this pattern. Each microsite runs its own Flask backend, HTMX frontend, and MCP-exposed APIs for AI agent access. DevOps, QA, Finance, Risk, Data, Marketing—same architecture, replicated across domains. Traditional staffing for this scope? 10-15 people minimum. The difference isn't working harder. It's thinking while AI types.
 
 But these gains aren't universal.
 

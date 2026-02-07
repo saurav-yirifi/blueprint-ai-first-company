@@ -4,8 +4,6 @@
 
 **Frameworks, code, and the complete AI writing system behind the book**
 
-by [Saurav Bhatia](https://www.linkedin.com/in/sauravbhats)
-
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-455a64?style=flat-square)](LICENSE)
 &nbsp;&nbsp;
 ![81K Words](https://img.shields.io/badge/Words-81%2C000+-2e7d32?style=flat-square)
@@ -20,7 +18,17 @@ by [Saurav Bhatia](https://www.linkedin.com/in/sauravbhats)
 
 ---
 
-This isn't a collection of slides repackaged as markdown. Every framework comes from building real products -- digital banks that acquired 450,000 clients in four months, an AI startup where two people shipped 15 products in three months, and a $5 billion retail operation spanning 32 countries. The book was written using the same AI-first methods it teaches, and the entire production system is documented here.
+**By [Saurav Bhatia](https://www.linkedin.com/in/sauravbhats)** -- Founder & CEO of [Yirifi.ai](https://yirifi.ai), a 20-person AI regulatory intelligence startup where just 2 people built 15 backoffice microsites in three months. Former founding executive of two digital banks: Interim CEO of [TRUST Bank](https://www.trust.sg) Singapore (1M+ clients, ~20% market share) and founding CFO of [Mox Bank](https://mox.com) Hong Kong (750K clients, 12% market share). 20+ years building products, teams, and companies across Standard Chartered, Citibank, Singapore, and Hong Kong. MBA from NUS. Oxford Blockchain Strategy Programme.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sauravbhats)
+&nbsp;
+[![X](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/sauravbhats)
+&nbsp;
+[![Blog](https://img.shields.io/badge/Blog-1a1a2e?style=flat-square&logo=hashnode&logoColor=white)](https://blog.sauravbhatia.com)
+
+[Full bio](author/bio-long.md) &#8226; [Short bios](author/bio-short.md) &#8226; [Resume](author/resume.md) &#8226; [Profile & contact](author/profile.md) &#8226; [AI transparency statement](author/ai-transparency-statement.md)
+
+Every framework in this repo comes from that experience. The book was written using the same AI-first methods it teaches, and the entire production system is documented here.
 
 ## What's in This Repository
 
@@ -263,22 +271,6 @@ What's documented: author voice encoding (6 files that teach an LLM to write lik
 | [Courses and Learning](resources/courses-and-learning.md) | Recommended courses and learning paths |
 | [Communities](resources/communities.md) | Communities for AI-first builders |
 | [Open Source Projects](resources/open-source-projects.md) | Relevant open source projects |
-
-## About the Author
-
-**Saurav Bhatia** is the Founder and CEO of [Yirifi.ai](https://yirifi.ai), where his two-person team built 15 AI-powered microsites in three months -- a proof point for what AI-first development makes possible, and the central case study of this book.
-
-Before Yirifi, Saurav spent nearly a decade at Standard Chartered Bank in Singapore and Hong Kong. As Interim CEO and Chief Customer & Product Officer of **TRUST Bank** -- Singapore's first digital bank -- he laid the foundation from scratch: regulatory approval, joint venture with NTUC, 100+ person team, and a product that acquired 450,000 clients within four months, capturing 9% market share. As founding CFO of **Mox Bank** in Hong Kong, he helped secure the virtual banking license and build what became the most downloaded app in Hong Kong across all categories -- 440,000 clients and $1.2 billion in deposits within two years.
-
-He also served as Global Head of Digital Assets for Retail, Private and Wealth at Standard Chartered, and Global Head of Finance for the bank's $5 billion retail operation spanning 9 million clients in 32 countries. Before Standard Chartered, he held progressive leadership roles at Citibank over nine years.
-
-Saurav holds an MBA from the National University of Singapore and completed the Oxford Blockchain Strategy Programme. He began his career as a founder in 1999.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sauravbhats)
-&nbsp;
-[![X](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/sauravbhats)
-&nbsp;
-[![Blog](https://img.shields.io/badge/Blog-1a1a2e?style=flat-square&logo=hashnode&logoColor=white)](https://blog.sauravbhatia.com)
 
 ## Get the Book
 

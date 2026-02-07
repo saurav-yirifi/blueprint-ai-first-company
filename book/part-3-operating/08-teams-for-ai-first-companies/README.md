@@ -2,7 +2,7 @@
 
 Scale AI didn't grow from a $1 billion valuation to $14 billion by hiring a new workforce[^scale-growth]. They transformed the one they had—data labelers becoming RLHF specialists, basic annotation evolving into sophisticated model evaluation.
 
-At Yirifi, we built 15 microsites with a 2-person team. But those two people aren't doing two jobs each—they're architecting while AI builds. What made that possible wasn't heroic effort or coding speed. It was a specific capability that changes everything about how teams operate.
+At Yirifi, just 2 people built 15 backoffice microsites. But those two people aren't doing two jobs each—they're architecting while AI builds. What made that possible wasn't heroic effort or coding speed. It was a specific capability that changes everything about how teams operate.
 
 The temptation is to ask "how do we add AI people?" The better question: "how do we make everyone AI people?" The answer isn't a reorg. It's a transformation that touches hiring, training, culture, and the fundamental definition of what each role does.
 
@@ -10,7 +10,7 @@ The temptation is to ask "how do we add AI people?" The better question: "how do
 
 ## Yirifi Anchor
 
-> "2-person team, 15 microsites. But those 2 people aren't doing 2 jobs each—they're architecting while AI builds. The skill that matters: knowing what to ask AI to do, and recognizing when AI got it wrong."
+> "Just 2 people, 15 backoffice microsites. But those 2 people aren't doing 2 jobs each—they're architecting while AI builds. The skill that matters: knowing what to ask AI to do, and recognizing when AI got it wrong."
 
 **Universal insight:** AI doesn't replace people. It transforms what people do. The skill that matters isn't coding speed—it's knowing what to ask AI to do, and recognizing when AI got it wrong.
 

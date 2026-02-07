@@ -80,7 +80,7 @@
 
 ### Yirifi Microsite Domains
 
-The 15 microsites built in 3 months with a 2-person team:
+The 15 backoffice microsites built in 3 months by just 2 people:
 - DevOps, QA, Data, Marketing, Sales, Finance, Risk, Registration, and others
 - Each follows: Flask backend + HTMX frontend + MCP-exposed APIs
 - Same three-layer architecture (controller, service, repository) replicated across domains

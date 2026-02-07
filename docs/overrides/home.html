@@ -1,0 +1,1390 @@
+{% extends "main.html" %}
+
+{% block tabs %}{% endblock %}
+
+{% block content %}
+<style>
+  /* ============================================================
+     Home Page Styles
+     Only loaded on the landing page via this template.
+     ============================================================ */
+
+  /* Hide Material's default content wrappers on home */
+  .md-main__inner { margin-top: 0; padding-top: 0; }
+  .md-content__inner { margin: 0; padding: 0; max-width: none; }
+  .md-sidebar { display: none; }
+
+  /* Hide Material header bar on home - we have our own nav.
+     The header must remain in the DOM because Material's search
+     checkbox toggle (~.md-header) depends on it.
+
+     Strategy: completely hide the header normally, but when search
+     is toggled open, show it as a fullscreen overlay. */
+  .md-header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0 !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .md-header__inner {
+    height: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    pointer-events: none;
+  }
+
+  /* Hide tabs on home page */
+  .md-tabs { display: none !important; }
+
+  /* ---- When search is open: show header as search-only overlay ---- */
+  /* Bring header above everything when search is active */
+  [data-md-toggle="search"]:checked ~ .md-header {
+    z-index: 200 !important;
+    height: auto !important;
+    background: var(--bp-canvas) !important;
+    pointer-events: auto;
+    border-bottom: 1px solid var(--bp-line) !important;
+  }
+  [data-md-toggle="search"]:checked ~ .md-header .md-header__inner {
+    height: auto !important;
+    pointer-events: auto;
+  }
+
+  /* Hide non-search header items even when search is open */
+  .md-header__button:not(.md-search__icon),
+  .md-header__title,
+  .md-header__option,
+  .md-header .md-header__topic,
+  .md-header [data-md-component="palette"],
+  .md-header [data-md-component="source"] {
+    display: none !important;
+  }
+
+  /* Make search take full header width */
+  [data-md-toggle="search"]:checked ~ .md-header .md-search {
+    width: 100% !important;
+    max-width: none !important;
+    pointer-events: auto;
+  }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__inner {
+    width: 100% !important;
+    max-width: none !important;
+    float: none !important;
+  }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+    background: var(--bp-canvas-raised) !important;
+    border: none !important;
+    border-bottom: 1px solid var(--bp-line) !important;
+    border-radius: 0 !important;
+    height: 3rem !important;
+  }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__input {
+    font-size: 1rem !important;
+    height: 3rem !important;
+  }
+  /* Results dropdown */
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__output {
+    top: 3rem !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    max-height: 80vh !important;
+    background: var(--bp-canvas) !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3) !important;
+    border: 1px solid var(--bp-line) !important;
+    border-top: none !important;
+  }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap {
+    max-height: 80vh !important;
+  }
+
+  /* Overlay behind search */
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    opacity: 1 !important;
+    transform: none !important;
+    background: rgba(0,0,0,0.5) !important;
+    pointer-events: auto;
+  }
+
+  /* ---- DESIGN TOKENS (home page scope) ---- */
+  .bp-home {
+    --canvas: var(--bp-canvas);
+    --canvas-raised: var(--bp-canvas-raised);
+    --canvas-surface: var(--bp-canvas-surface);
+    --grid: var(--bp-grid);
+    --grid-accent: var(--bp-grid-accent);
+    --line: var(--bp-line);
+    --line-strong: var(--bp-line-strong);
+    --cyan: var(--bp-cyan);
+    --cyan-dim: var(--bp-cyan-dim);
+    --cyan-glow: var(--bp-cyan-glow);
+    --white: var(--bp-white);
+    --white-dim: var(--bp-white-dim);
+    --white-muted: var(--bp-white-muted);
+    --accent: var(--bp-accent);
+    --accent-warm: var(--bp-accent-warm);
+    --serif: var(--bp-serif);
+    --sans: var(--bp-sans);
+    --mono: var(--bp-mono);
+    --ease-out: var(--bp-ease-out);
+  }
+
+  .bp-home {
+    color: var(--white);
+    font-family: var(--sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ---- CONTAINER ---- */
+  .bp-home .bp-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ---- NAV ---- */
+  .bp-home .bp-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 1rem 0;
+    background: color-mix(in srgb, var(--canvas) 85%, transparent);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--line);
+    transition: background 0.5s var(--ease-out);
+  }
+
+  [data-md-color-scheme="default"] .bp-home .bp-nav {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 3px rgba(15, 21, 41, 0.06);
+  }
+
+  [data-md-color-scheme="slate"] .bp-home .bp-nav {
+    background: color-mix(in srgb, var(--canvas) 92%, transparent);
+  }
+
+  .bp-home .bp-nav .bp-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bp-home .bp-nav-brand {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--cyan);
+    text-transform: uppercase;
+  }
+
+  .bp-home .bp-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .bp-home .bp-nav-links a {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--white-muted);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    border-bottom: none;
+  }
+
+  .bp-home .bp-nav-links a:hover { color: var(--cyan); }
+
+  [data-md-color-scheme="default"] .bp-home .bp-nav-links a {
+    color: var(--white-dim);
+  }
+
+  .bp-home .bp-theme-toggle {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--white-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    font-size: 1rem;
+  }
+
+  .bp-home .bp-theme-toggle:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+  }
+
+  .bp-home .bp-search-trigger {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--white-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    font-size: 1rem;
+  }
+
+  .bp-home .bp-search-trigger:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+  }
+
+  /* ---- HERO ---- */
+  .bp-home .bp-hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 0 6rem;
+    position: relative;
+  }
+
+  .bp-home .bp-hero-eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .bp-home .bp-hero-eyebrow::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--cyan);
+  }
+
+  .bp-home .bp-hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 1.05;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    color: var(--white);
+  }
+
+  .bp-home .bp-hero h1 em {
+    font-style: italic;
+    color: var(--cyan);
+  }
+
+  .bp-home .bp-hero-description {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--white-dim);
+    max-width: 540px;
+    margin-bottom: 3rem;
+  }
+
+  .bp-home .bp-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .bp-home .bp-hero-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .bp-home .bp-hero-stat-value {
+    font-family: var(--mono);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  .bp-home .bp-hero-stat-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white-muted);
+  }
+
+  .bp-home .bp-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .bp-home .bp-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 2rem;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--cyan);
+    color: var(--canvas);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s var(--ease-out);
+    font-weight: 500;
+  }
+
+  .bp-home .bp-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px var(--cyan-glow);
+    color: var(--canvas);
+    border-bottom: none;
+  }
+
+  .bp-home .bp-btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 2rem;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--line-strong);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s var(--ease-out);
+  }
+
+  .bp-home .bp-btn-outline:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+    transform: translateY(-2px);
+  }
+
+  /* Decorative corner marks */
+  .bp-home .bp-corner-mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: var(--line-strong);
+    border-style: solid;
+  }
+  .bp-home .bp-corner-mark.tl { top: 6rem; left: 0; border-width: 1px 0 0 1px; }
+  .bp-home .bp-corner-mark.tr { top: 6rem; right: 0; border-width: 1px 1px 0 0; }
+  .bp-home .bp-corner-mark.bl { bottom: 4rem; left: 0; border-width: 0 0 1px 1px; }
+  .bp-home .bp-corner-mark.br { bottom: 4rem; right: 0; border-width: 0 1px 1px 0; }
+
+  /* ---- SECTIONS ---- */
+  .bp-home .bp-section {
+    padding: 6rem 0;
+  }
+
+  .bp-home .bp-section-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .bp-home .bp-section-label::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: var(--cyan);
+  }
+
+  .bp-home .bp-section-title {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+  }
+
+  .bp-home .bp-section-description {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--white-dim);
+    max-width: 600px;
+    margin-bottom: 3rem;
+  }
+
+  /* Divider */
+  .bp-home .bp-divider {
+    height: 1px;
+    background: var(--line);
+    position: relative;
+  }
+
+  /* ---- ABOUT ---- */
+  .bp-home .bp-about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .bp-home .bp-about-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--white-dim);
+    margin-bottom: 1.5rem;
+  }
+
+  .bp-home .bp-about-text strong {
+    color: var(--white);
+    font-weight: 600;
+  }
+
+  .bp-home .bp-about-aside {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 2rem;
+    background: var(--canvas-raised);
+  }
+
+  .bp-home .bp-about-aside h3 {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 1.5rem;
+  }
+
+  .bp-home .bp-aside-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.9rem;
+  }
+
+  .bp-home .bp-aside-item:last-child { border-bottom: none; }
+
+  .bp-home .bp-aside-item-label { color: var(--white-dim); }
+  .bp-home .bp-aside-item-value {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: var(--white);
+  }
+
+  /* ---- TOC ---- */
+  .bp-home .bp-toc-parts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .bp-home .bp-toc-part {
+    border-top: 1px solid var(--line);
+    padding: 2rem 0;
+  }
+
+  .bp-home .bp-toc-part-header {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1.5rem;
+    align-items: baseline;
+    margin-bottom: 1.25rem;
+  }
+
+  .bp-home .bp-toc-part-number {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cyan);
+  }
+
+  .bp-home .bp-toc-part-title {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white);
+  }
+
+  .bp-home .bp-toc-chapters {
+    list-style: none;
+    display: grid;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bp-home .bp-toc-chapter {
+    display: grid;
+    grid-template-columns: 80px auto 1fr;
+    gap: 1.5rem;
+    align-items: baseline;
+    padding: 0.6rem 0;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .bp-home .bp-toc-chapter:hover {
+    padding-left: 0.5rem;
+    border-bottom: none;
+  }
+
+  .bp-home .bp-toc-chapter-num {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--white-muted);
+  }
+
+  .bp-home .bp-toc-chapter-title {
+    font-size: 1rem;
+    color: var(--white-dim);
+    transition: color 0.3s;
+  }
+
+  .bp-home .bp-toc-chapter:hover .bp-toc-chapter-title { color: var(--cyan); }
+
+  .bp-home .bp-toc-chapter-dots {
+    border-bottom: 1px dotted var(--line);
+    min-width: 20px;
+    align-self: center;
+    margin-bottom: 2px;
+  }
+
+  /* ---- COMPANION MATERIALS ---- */
+  .bp-home .bp-materials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .bp-home .bp-material-card {
+    background: var(--canvas-raised);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: background 0.3s;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .bp-home .bp-material-card:hover {
+    background: var(--canvas-surface);
+    border-bottom: none;
+  }
+
+  .bp-home .bp-material-count {
+    font-family: var(--mono);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--cyan);
+    line-height: 1;
+  }
+
+  .bp-home .bp-material-name {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+
+  .bp-home .bp-material-desc {
+    font-size: 0.85rem;
+    color: var(--white-muted);
+    line-height: 1.5;
+  }
+
+  /* ---- AI WRITING PROCESS ---- */
+  .bp-home .bp-process-banner {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 3rem;
+    background: var(--canvas-raised);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .bp-home .bp-process-text h3 {
+    font-family: var(--serif);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--white);
+  }
+
+  .bp-home .bp-process-text p {
+    font-size: 0.95rem;
+    color: var(--white-dim);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .bp-home .bp-process-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .bp-home .bp-process-stat {
+    background: var(--canvas-surface);
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .bp-home .bp-process-stat-value {
+    font-family: var(--mono);
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--white);
+    display: block;
+  }
+
+  .bp-home .bp-process-stat-label {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white-muted);
+    margin-top: 0.25rem;
+    display: block;
+  }
+
+  /* ---- AUTHOR ---- */
+  .bp-home .bp-author-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3rem;
+    align-items: start;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 2.5rem;
+    background: var(--canvas-raised);
+  }
+
+  .bp-home .bp-author-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--canvas-surface);
+    border: 2px solid var(--line-strong);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-size: 2.5rem;
+    color: var(--cyan);
+  }
+
+  .bp-home .bp-author-info h3 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+  }
+
+  .bp-home .bp-author-role {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--cyan);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .bp-home .bp-author-info p {
+    font-size: 0.95rem;
+    color: var(--white-dim);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .bp-home .bp-author-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .bp-home .bp-author-links a {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--white-muted);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+
+  .bp-home .bp-author-links a:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+  }
+
+  /* ---- FOOTER ---- */
+  .bp-home .bp-footer {
+    padding: 3rem 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .bp-home .bp-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bp-home .bp-footer-text {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    color: var(--white-muted);
+  }
+
+  .bp-home .bp-footer-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .bp-home .bp-footer-links a {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    color: var(--white-muted);
+    text-decoration: none;
+    transition: color 0.3s;
+    border-bottom: none;
+  }
+
+  .bp-home .bp-footer-links a:hover {
+    color: var(--cyan);
+    border-bottom: none;
+  }
+
+  /* ---- ANIMATIONS ---- */
+  .bp-home .bp-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+  }
+
+  .bp-home .bp-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .bp-home .bp-reveal-delay-1 { transition-delay: 0.1s; }
+  .bp-home .bp-reveal-delay-2 { transition-delay: 0.2s; }
+  .bp-home .bp-reveal-delay-3 { transition-delay: 0.3s; }
+
+  /* Scan line */
+  .bp-home .bp-hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--cyan-dim), transparent);
+    animation: bp-scan 4s var(--ease-out) infinite;
+    opacity: 0.3;
+  }
+
+  @keyframes bp-scan {
+    0% { top: 20%; opacity: 0; }
+    10% { opacity: 0.3; }
+    90% { opacity: 0.3; }
+    100% { top: 80%; opacity: 0; }
+  }
+
+  /* ---- LIGHT MODE: cards & surfaces ---- */
+  [data-md-color-scheme="default"] .bp-home .bp-about-aside,
+  [data-md-color-scheme="default"] .bp-home .bp-author-card,
+  [data-md-color-scheme="default"] .bp-home .bp-process-banner {
+    background: #ffffff;
+    box-shadow: 0 1px 4px rgba(15, 21, 41, 0.06);
+  }
+
+  [data-md-color-scheme="default"] .bp-home .bp-material-card {
+    background: #ffffff;
+  }
+
+  [data-md-color-scheme="default"] .bp-home .bp-material-card:hover {
+    background: var(--canvas);
+  }
+
+  [data-md-color-scheme="default"] .bp-home .bp-process-stat {
+    background: var(--canvas);
+  }
+
+  /* ---- RESPONSIVE ---- */
+  @media (max-width: 768px) {
+    .bp-home .bp-container { padding: 0 1.25rem; }
+    .bp-home .bp-hero { padding: 7rem 0 4rem; }
+
+    .bp-home .bp-about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .bp-home .bp-materials-grid { grid-template-columns: 1fr 1fr; }
+    .bp-home .bp-process-banner { grid-template-columns: 1fr; gap: 2rem; }
+    .bp-home .bp-author-card { grid-template-columns: 1fr; gap: 1.5rem; }
+
+    .bp-home .bp-nav-links a.bp-hide-mobile { display: none; }
+
+    .bp-home .bp-toc-part-header { grid-template-columns: 60px 1fr; }
+    .bp-home .bp-toc-chapter { grid-template-columns: 60px auto 1fr; }
+
+    .bp-home .bp-hero-meta { gap: 1.5rem; }
+  }
+
+  @media (max-width: 480px) {
+    .bp-home .bp-materials-grid { grid-template-columns: 1fr; }
+    .bp-home .bp-process-stats { grid-template-columns: 1fr; }
+    .bp-home .bp-hero-actions { flex-direction: column; }
+    .bp-home .bp-hero-actions a { width: 100%; justify-content: center; }
+    .bp-home .bp-footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
+  }
+
+  /* Hide Material's own footer on home page */
+  .md-footer { display: none; }
+</style>
+
+<div class="bp-home">
+  <!-- NAV -->
+  <nav class="bp-nav">
+    <div class="bp-container">
+      <div class="bp-nav-brand">Blueprint</div>
+      <div class="bp-nav-links">
+        <a href="#about" class="bp-hide-mobile">About</a>
+        <a href="#chapters">Chapters</a>
+        <a href="#materials" class="bp-hide-mobile">Materials</a>
+        <a href="https://github.com/saurav-yirifi/blueprint-ai-first-company" target="_blank" rel="noopener">GitHub</a>
+        <button class="bp-search-trigger" id="bpSearchTrigger" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <button class="bp-theme-toggle" id="bpThemeToggle" aria-label="Toggle theme">
+          <svg id="bpThemeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bp-hero">
+    <div class="bp-container">
+      <div class="bp-corner-mark tl"></div>
+      <div class="bp-corner-mark tr"></div>
+      <div class="bp-corner-mark bl"></div>
+      <div class="bp-corner-mark br"></div>
+
+      <div class="bp-hero-eyebrow bp-reveal">A book by Saurav Bhatia</div>
+      <h1 class="bp-reveal bp-reveal-delay-1">Blueprint for an <em>AI-First</em> Company</h1>
+      <p class="bp-hero-description bp-reveal bp-reveal-delay-2">
+        A practical guide to building companies where AI is the foundation, not an afterthought. Frameworks, architecture patterns, and hard-won lessons from a founder who built 15 AI tools in three months with two people.
+      </p>
+
+      <div class="bp-hero-meta bp-reveal bp-reveal-delay-2">
+        <div class="bp-hero-stat">
+          <span class="bp-hero-stat-value">81,000+</span>
+          <span class="bp-hero-stat-label">Words</span>
+        </div>
+        <div class="bp-hero-stat">
+          <span class="bp-hero-stat-value">775</span>
+          <span class="bp-hero-stat-label">Citations</span>
+        </div>
+        <div class="bp-hero-stat">
+          <span class="bp-hero-stat-value">12</span>
+          <span class="bp-hero-stat-label">Chapters</span>
+        </div>
+        <div class="bp-hero-stat">
+          <span class="bp-hero-stat-value">20</span>
+          <span class="bp-hero-stat-label">Frameworks</span>
+        </div>
+      </div>
+
+      <div class="bp-hero-actions bp-reveal bp-reveal-delay-3">
+        <a href="#chapters" class="bp-btn-primary">
+          Explore the Book
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="https://github.com/saurav-yirifi/blueprint-ai-first-company" class="bp-btn-outline" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="bp-container"><div class="bp-divider"></div></div>
+
+  <!-- ABOUT -->
+  <section id="about" class="bp-section">
+    <div class="bp-container">
+      <div class="bp-section-label bp-reveal">01 &mdash; About the Book</div>
+      <div class="bp-about-grid">
+        <div class="bp-about-text bp-reveal bp-reveal-delay-1">
+          <p>
+            Most companies bolt AI onto existing workflows and call it transformation. This book argues that the real shift requires <strong>rethinking the entire operating model</strong> &mdash; how you build products, structure teams, manage data, and make decisions.
+          </p>
+          <p>
+            Across four parts and twelve chapters, <em>Blueprint for an AI-First Company</em> covers the strategic mindset shifts, infrastructure patterns, agent architectures, team structures, data strategies, and governance frameworks that separate companies using AI from companies built on it.
+          </p>
+          <p>
+            Every framework comes from real experience. At Yirifi.ai, a 20-person AI regulatory intelligence startup, just two people built 15 backoffice microsites in three months &mdash; the book documents what worked, what failed, and what the patterns look like when AI is genuinely the foundation.
+          </p>
+        </div>
+        <div class="bp-about-aside bp-reveal bp-reveal-delay-2">
+          <h3>Book Details</h3>
+          <div class="bp-aside-item">
+            <span class="bp-aside-item-label">Words</span>
+            <span class="bp-aside-item-value">81,000+</span>
+          </div>
+          <div class="bp-aside-item">
+            <span class="bp-aside-item-label">Chapters</span>
+            <span class="bp-aside-item-value">12</span>
+          </div>
+          <div class="bp-aside-item">
+            <span class="bp-aside-item-label">Parts</span>
+            <span class="bp-aside-item-value">4</span>
+          </div>
+          <div class="bp-aside-item">
+            <span class="bp-aside-item-label">Citations</span>
+            <span class="bp-aside-item-value">775</span>
+          </div>
+          <div class="bp-aside-item">
+            <span class="bp-aside-item-label">Frameworks</span>
+            <span class="bp-aside-item-value">20</span>
+          </div>
+          <div class="bp-aside-item">
+            <span class="bp-aside-item-label">Code Examples</span>
+            <span class="bp-aside-item-value">14</span>
+          </div>
+          <div class="bp-aside-item">
+            <span class="bp-aside-item-label">License</span>
+            <span class="bp-aside-item-value">CC BY-NC-SA 4.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bp-container"><div class="bp-divider"></div></div>
+
+  <!-- CHAPTERS -->
+  <section id="chapters" class="bp-section">
+    <div class="bp-container">
+      <div class="bp-section-label bp-reveal">02 &mdash; Table of Contents</div>
+      <h2 class="bp-section-title bp-reveal bp-reveal-delay-1">Four Parts. Twelve Chapters.</h2>
+      <p class="bp-section-description bp-reveal bp-reveal-delay-2">
+        From strategic foundations to production architecture, team design, and long-term governance.
+      </p>
+
+      <div class="bp-toc-parts bp-reveal bp-reveal-delay-2">
+        <!-- Part I -->
+        <div class="bp-toc-part">
+          <div class="bp-toc-part-header">
+            <span class="bp-toc-part-number">Part I</span>
+            <span class="bp-toc-part-title">Foundations</span>
+          </div>
+          <ul class="bp-toc-chapters">
+            <a href="book/part-1-foundations/01-the-ai-first-imperative/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">01</span>
+              <span class="bp-toc-chapter-title">The AI-First Imperative</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+            <a href="book/part-1-foundations/02-the-ai-first-mindset/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">02</span>
+              <span class="bp-toc-chapter-title">The AI-First Mindset</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+            <a href="book/part-1-foundations/03-the-ai-landscape/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">03</span>
+              <span class="bp-toc-chapter-title">The AI Landscape</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+          </ul>
+        </div>
+
+        <!-- Part II -->
+        <div class="bp-toc-part">
+          <div class="bp-toc-part-header">
+            <span class="bp-toc-part-number">Part II</span>
+            <span class="bp-toc-part-title">Building</span>
+          </div>
+          <ul class="bp-toc-chapters">
+            <a href="book/part-2-building/04-infrastructure-for-ai-first-operations/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">04</span>
+              <span class="bp-toc-chapter-title">Infrastructure for AI-First Operations</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+            <a href="book/part-2-building/05-building-with-ai/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">05</span>
+              <span class="bp-toc-chapter-title">Building with AI</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+            <a href="book/part-2-building/06-agent-architecture/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">06</span>
+              <span class="bp-toc-chapter-title">Agent Architecture</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+            <a href="book/part-2-building/07-the-microsite-pattern/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">07</span>
+              <span class="bp-toc-chapter-title">The Microsite Pattern</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+          </ul>
+        </div>
+
+        <!-- Part III -->
+        <div class="bp-toc-part">
+          <div class="bp-toc-part-header">
+            <span class="bp-toc-part-number">Part III</span>
+            <span class="bp-toc-part-title">Operating</span>
+          </div>
+          <ul class="bp-toc-chapters">
+            <a href="book/part-3-operating/08-teams-for-ai-first-companies/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">08</span>
+              <span class="bp-toc-chapter-title">Teams for AI-First Companies</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+            <a href="book/part-3-operating/09-data-strategy/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">09</span>
+              <span class="bp-toc-chapter-title">Data Strategy</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+            <a href="book/part-3-operating/10-ai-augmented-operations-and-gtm/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">10</span>
+              <span class="bp-toc-chapter-title">AI-Augmented Operations and GTM</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+          </ul>
+        </div>
+
+        <!-- Part IV -->
+        <div class="bp-toc-part">
+          <div class="bp-toc-part-header">
+            <span class="bp-toc-part-number">Part IV</span>
+            <span class="bp-toc-part-title">Sustaining</span>
+          </div>
+          <ul class="bp-toc-chapters">
+            <a href="book/part-4-sustaining/11-ethics-governance-and-risk/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">11</span>
+              <span class="bp-toc-chapter-title">Ethics, Governance, and Risk</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+            <a href="book/part-4-sustaining/12-staying-ahead/" class="bp-toc-chapter">
+              <span class="bp-toc-chapter-num">12</span>
+              <span class="bp-toc-chapter-title">Staying Ahead</span>
+              <span class="bp-toc-chapter-dots"></span>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bp-container"><div class="bp-divider"></div></div>
+
+  <!-- COMPANION MATERIALS -->
+  <section id="materials" class="bp-section">
+    <div class="bp-container">
+      <div class="bp-section-label bp-reveal">03 &mdash; Companion Materials</div>
+      <h2 class="bp-section-title bp-reveal bp-reveal-delay-1">More Than a Book</h2>
+      <p class="bp-section-description bp-reveal bp-reveal-delay-2">
+        Every chapter ships with actionable companion materials &mdash; decision frameworks, implementation checklists, step-by-step guides, and working code.
+      </p>
+
+      <div class="bp-materials-grid bp-reveal bp-reveal-delay-2">
+        <a href="frameworks/" class="bp-material-card">
+          <span class="bp-material-count">20</span>
+          <span class="bp-material-name">Frameworks</span>
+          <span class="bp-material-desc">Decision frameworks for AI strategy, model selection, agent design, and governance.</span>
+        </a>
+        <a href="checklists/" class="bp-material-card">
+          <span class="bp-material-count">7</span>
+          <span class="bp-material-name">Checklists</span>
+          <span class="bp-material-desc">Readiness assessments and audit checklists for infrastructure, data, and governance.</span>
+        </a>
+        <a href="guides/" class="bp-material-card">
+          <span class="bp-material-count">6</span>
+          <span class="bp-material-name">Guides</span>
+          <span class="bp-material-desc">Step-by-step implementation guides for agents, gateways, data flywheels, and team rollout.</span>
+        </a>
+        <a href="workflows/" class="bp-material-card">
+          <span class="bp-material-count">4</span>
+          <span class="bp-material-name">Workflows</span>
+          <span class="bp-material-desc">Repeatable operational workflows for coding sessions, agent recovery, and model evaluation.</span>
+        </a>
+        <a href="examples/" class="bp-material-card">
+          <span class="bp-material-count">14</span>
+          <span class="bp-material-name">Code Examples</span>
+          <span class="bp-material-desc">Agent patterns, infrastructure configs, prompt templates, and CI/CD pipelines in Python.</span>
+        </a>
+        <a href="resources/" class="bp-material-card">
+          <span class="bp-material-count">6</span>
+          <span class="bp-material-name">Resources</span>
+          <span class="bp-material-desc">Curated tools, research papers, case studies, courses, communities, and open source projects.</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="bp-container"><div class="bp-divider"></div></div>
+
+  <!-- AI WRITING PROCESS -->
+  <section id="process" class="bp-section">
+    <div class="bp-container">
+      <div class="bp-section-label bp-reveal">04 &mdash; How It Was Written</div>
+      <div class="bp-process-banner bp-reveal bp-reveal-delay-1">
+        <div class="bp-process-text">
+          <h3>The AI Writing Process</h3>
+          <p>
+            This book was itself written AI-first. The entire production system &mdash; voice encoding, multi-agent orchestration, research pipelines, editorial review &mdash; is documented and open-sourced as a case study in AI-assisted authoring.
+          </p>
+          <a href="ai-writing-process/" class="bp-btn-outline">
+            Explore the Process
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+        <div class="bp-process-stats">
+          <div class="bp-process-stat">
+            <span class="bp-process-stat-value">27</span>
+            <span class="bp-process-stat-label">Writing Prompts</span>
+          </div>
+          <div class="bp-process-stat">
+            <span class="bp-process-stat-value">14</span>
+            <span class="bp-process-stat-label">Claude Code Skills</span>
+          </div>
+          <div class="bp-process-stat">
+            <span class="bp-process-stat-value">180+</span>
+            <span class="bp-process-stat-label">Research Prompts</span>
+          </div>
+          <div class="bp-process-stat">
+            <span class="bp-process-stat-value">17</span>
+            <span class="bp-process-stat-label">Python Scripts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bp-container"><div class="bp-divider"></div></div>
+
+  <!-- AUTHOR -->
+  <section id="author" class="bp-section">
+    <div class="bp-container">
+      <div class="bp-section-label bp-reveal">05 &mdash; Author</div>
+      <div class="bp-author-card bp-reveal bp-reveal-delay-1">
+        <div class="bp-author-avatar">S</div>
+        <div class="bp-author-info">
+          <h3>Saurav Bhatia</h3>
+          <div class="bp-author-role">Founder & CEO, Yirifi.ai</div>
+          <p>
+            Former founding executive of two digital banks &mdash; interim CEO of TRUST Bank Singapore (1M+ clients, ~20% market share) and founding CFO of Mox Bank Hong Kong (750K clients, 12% market share). With 20+ years in banking and fintech, he leads a 20-person team at Yirifi.ai where just 2 people built 15 backoffice microsites in three months.
+          </p>
+          <div class="bp-author-links">
+            <a href="https://www.linkedin.com/in/sauravbhats" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://x.com/sauravbhats" target="_blank" rel="noopener">X / Twitter</a>
+            <a href="https://blog.sauravbhatia.com" target="_blank" rel="noopener">Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bp-footer">
+    <div class="bp-container">
+      <div class="bp-footer-inner">
+        <span class="bp-footer-text">&copy; 2026 Saurav Bhatia. CC BY-NC-SA 4.0</span>
+        <div class="bp-footer-links">
+          <a href="https://github.com/saurav-yirifi/blueprint-ai-first-company" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/saurav-yirifi/blueprint-ai-first-company/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute</a>
+          <a href="https://github.com/saurav-yirifi/blueprint-ai-first-company/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    // ---- Theme Toggle ----
+    // Sync with Material's data-md-color-scheme on <body>
+    var toggle = document.getElementById('bpThemeToggle');
+    var icon = document.getElementById('bpThemeIcon');
+    var sunIcon = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
+    var moonIcon = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+
+    function getCurrentScheme() {
+      return document.body.getAttribute('data-md-color-scheme') || 'slate';
+    }
+
+    function updateIcon() {
+      var scheme = getCurrentScheme();
+      if (icon) {
+        icon.innerHTML = scheme === 'default' ? moonIcon : sunIcon;
+      }
+    }
+
+    // Set initial icon state
+    updateIcon();
+
+    if (toggle) {
+      toggle.addEventListener('click', function() {
+        var current = getCurrentScheme();
+        var next = current === 'slate' ? 'default' : 'slate';
+
+        // Update Material's scheme attribute
+        document.body.setAttribute('data-md-color-scheme', next);
+
+        // Persist the preference using Material's storage key
+        try {
+          var palette = JSON.parse(localStorage.getItem('__palette') || '{}');
+          palette.index = next === 'default' ? 1 : 0;
+          palette.color = palette.color || {};
+          palette.color.scheme = next;
+          localStorage.setItem('__palette', JSON.stringify(palette));
+        } catch(e) {
+          // Fallback: just store scheme directly
+          localStorage.setItem('data-md-color-scheme', next);
+        }
+
+        updateIcon();
+
+        // Also click Material's own toggle to keep it in sync
+        var materialToggle = document.querySelector('[data-md-component="palette"] button');
+        if (materialToggle) {
+          // Avoid infinite loop by not clicking if already matching
+        }
+      });
+    }
+
+    // Watch for external scheme changes (e.g., Material's own toggle)
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.attributeName === 'data-md-color-scheme') {
+          updateIcon();
+        }
+      });
+    });
+    observer.observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
+
+    // ---- Search Trigger ----
+    var searchTrigger = document.getElementById('bpSearchTrigger');
+    if (searchTrigger) {
+      searchTrigger.addEventListener('click', function() {
+        // Use Material's label[for="__search"] to trigger search properly.
+        // Clicking the label dispatches the correct events that Material's
+        // JS listens for, unlike programmatically setting .checked.
+        var searchLabel = document.querySelector('label.md-search__icon[for="__search"]');
+        if (searchLabel) {
+          searchLabel.click();
+        } else {
+          // Fallback: directly toggle the checkbox
+          var searchToggle = document.querySelector('#__search');
+          if (searchToggle) {
+            searchToggle.checked = !searchToggle.checked;
+          }
+        }
+        // Focus the search input
+        setTimeout(function() {
+          var searchInput = document.querySelector('.md-search__input');
+          if (searchInput) searchInput.focus();
+        }, 200);
+      });
+    }
+
+    // ---- Scroll Reveal ----
+    var reveals = document.querySelectorAll('.bp-reveal');
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    reveals.forEach(function(el) { revealObserver.observe(el); });
+
+    // ---- Smooth Scroll for Anchor Links ----
+    document.querySelectorAll('.bp-home a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  })();
+</script>
+{% endblock %}

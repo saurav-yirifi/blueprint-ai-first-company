@@ -2,7 +2,7 @@
 
 A randomized controlled trial revealed the uncomfortable truth: developers using AI were 19% slower—but believed they were 20% faster. That's a 43-point perception gap between felt productivity and actual output.
 
-At Yirifi, we've watched this gap close. Those 15 microsites in 3 months? Built with AI coding as the default mode. But "AI built it" doesn't mean "no human thinking." The pattern: AI drafts, human architects, AI refines, human reviews. The 2-person team stayed small because each person operated at 5x—not by working harder, but by thinking while AI typed.
+At Yirifi, we've watched this gap close. Those 15 backoffice microsites in 3 months? Built by just 2 people with AI coding as the default mode. But "AI built it" doesn't mean "no human thinking." The pattern: AI drafts, human architects, AI refines, human reviews. The team stayed at 2 because each person operated at 5x—not by working harder, but by thinking while AI typed.
 
 This chapter is about closing that perception gap—turning AI coding from productivity theater into actual leverage.
 
@@ -10,7 +10,7 @@ This chapter is about closing that perception gap—turning AI coding from produ
 
 ## Yirifi Anchor
 
-> "Those 15 microsites? Built with AI coding as the default mode. But 'AI built it' doesn't mean 'no human thinking.' The pattern: AI drafts, human architects, AI refines, human reviews. The 2-person team stayed small because each person operated at 5x—not by working harder, but by thinking while AI typed."
+> "Those 15 backoffice microsites? Built by just 2 people with AI coding as the default mode. But 'AI built it' doesn't mean 'no human thinking.' The pattern: AI drafts, human architects, AI refines, human reviews. The team stayed at 2 because each person operated at 5x—not by working harder, but by thinking while AI typed."
 
 **Universal insight:** 5x productivity doesn't come from AI doing more—it comes from humans doing different. The skill shift is from "how do I implement this?" to "what should I implement and why?"
 

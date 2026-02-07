@@ -1,0 +1,410 @@
+site_name: Blueprint for an AI-First Company
+site_description: >-
+  A practical guide to building companies where AI is the foundation, not an afterthought.
+  12 chapters, 20 frameworks, and battle-tested patterns from a founder whose team built 15 AI backoffice microsites in 3 months with just 2 people.
+site_author: Saurav Bhatia
+site_url: https://saurav-yirifi.github.io/blueprint-ai-first-company/
+copyright: "&copy; 2026 Saurav Bhatia &mdash; CC BY-NC-SA 4.0"
+
+repo_url: https://github.com/saurav-yirifi/blueprint-ai-first-company
+repo_name: saurav-yirifi/blueprint-ai-first-company
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+  font: false
+  icon:
+    logo: material/cube-outline
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/blueprint.css
+
+markdown_extensions:
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - attr_list
+  - def_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Book:
+    - book/README.md
+    - Foreword: book/foreword.md
+    - "Part I: Foundations":
+      - book/part-1-foundations/README.md
+      - "Ch 1 \u2014 The AI-First Imperative":
+        - book/part-1-foundations/01-the-ai-first-imperative/README.md
+        - "1.1 The AI Inflection Point": book/part-1-foundations/01-the-ai-first-imperative/01-the-ai-inflection-point.md
+        - "1.2 AI-First vs AI-Enabled": book/part-1-foundations/01-the-ai-first-imperative/02-ai-first-vs-ai-enabled.md
+        - "1.3 First-Mover Advantages": book/part-1-foundations/01-the-ai-first-imperative/03-first-mover-advantages.md
+        - "1.4 The Cost of Retrofitting": book/part-1-foundations/01-the-ai-first-imperative/04-the-cost-of-retrofitting.md
+        - "1.5 The Economics of AI-First": book/part-1-foundations/01-the-ai-first-imperative/05-the-economics-of-ai-first.md
+        - Summary: book/part-1-foundations/01-the-ai-first-imperative/summary.md
+        - Resources: book/part-1-foundations/01-the-ai-first-imperative/RESOURCES.md
+      - "Ch 2 \u2014 The AI-First Mindset":
+        - book/part-1-foundations/02-the-ai-first-mindset/README.md
+        - "2.1 Thinking in Capabilities": book/part-1-foundations/02-the-ai-first-mindset/01-thinking-in-capabilities.md
+        - "2.2 The 7 Mental Models": book/part-1-foundations/02-the-ai-first-mindset/02-the-7-mental-models.md
+        - "2.3 The Build vs Buy Calculus": book/part-1-foundations/02-the-ai-first-mindset/03-the-build-vs-buy-calculus.md
+        - "2.4 Data as Product": book/part-1-foundations/02-the-ai-first-mindset/04-data-as-product.md
+        - "2.5 Iteration Speed and Learning Loops": book/part-1-foundations/02-the-ai-first-mindset/05-iteration-speed-and-learning-loops.md
+        - "2.6 Human-AI Collaboration": book/part-1-foundations/02-the-ai-first-mindset/06-human-ai-collaboration.md
+        - Summary: book/part-1-foundations/02-the-ai-first-mindset/summary.md
+        - Resources: book/part-1-foundations/02-the-ai-first-mindset/RESOURCES.md
+      - "Ch 3 \u2014 The AI Landscape":
+        - book/part-1-foundations/03-the-ai-landscape/README.md
+        - "3.1 The 4-Layer AI Stack": book/part-1-foundations/03-the-ai-landscape/01-the-4-layer-ai-stack.md
+        - "3.2 Foundation Models Landscape": book/part-1-foundations/03-the-ai-landscape/02-foundation-models-landscape.md
+        - "3.3 Provider Landscape": book/part-1-foundations/03-the-ai-landscape/03-provider-landscape.md
+        - "3.4 The Aggregator Layer": book/part-1-foundations/03-the-ai-landscape/04-the-aggregator-layer.md
+        - "3.5 The 6 Questions Before Choosing": book/part-1-foundations/03-the-ai-landscape/05-the-6-questions-before-choosing.md
+        - "3.6 When to Fine-Tune": book/part-1-foundations/03-the-ai-landscape/06-when-to-fine-tune.md
+        - "3.7 Future-Proofing Your Stack": book/part-1-foundations/03-the-ai-landscape/07-future-proofing-your-stack.md
+        - Summary: book/part-1-foundations/03-the-ai-landscape/summary.md
+        - Resources: book/part-1-foundations/03-the-ai-landscape/RESOURCES.md
+    - "Part II: Building":
+      - book/part-2-building/README.md
+      - "Ch 4 \u2014 Infrastructure for AI-First Operations":
+        - book/part-2-building/04-infrastructure-for-ai-first-operations/README.md
+        - "4.1 The Infrastructure Stack": book/part-2-building/04-infrastructure-for-ai-first-operations/01-the-infrastructure-stack.md
+        - "4.2 Polyglot Persistence": book/part-2-building/04-infrastructure-for-ai-first-operations/02-polyglot-persistence.md
+        - "4.3 The AI Tool Gateway Pattern": book/part-2-building/04-infrastructure-for-ai-first-operations/03-the-ai-tool-gateway-pattern.md
+        - "4.4 Unified Auth for Humans and Agents": book/part-2-building/04-infrastructure-for-ai-first-operations/04-unified-auth-for-humans-and-agents.md
+        - "4.5 The 5 Infrastructure Mistakes": book/part-2-building/04-infrastructure-for-ai-first-operations/05-the-5-infrastructure-mistakes.md
+        - "4.6 Build vs Buy for Infrastructure": book/part-2-building/04-infrastructure-for-ai-first-operations/06-build-vs-buy-for-infrastructure.md
+        - Summary: book/part-2-building/04-infrastructure-for-ai-first-operations/summary.md
+        - Resources: book/part-2-building/04-infrastructure-for-ai-first-operations/RESOURCES.md
+      - "Ch 5 \u2014 Building with AI":
+        - book/part-2-building/05-building-with-ai/README.md
+        - "5.1 The 5 Levels of AI-Assisted Development": book/part-2-building/05-building-with-ai/01-the-5-levels-of-ai-assisted-development.md
+        - "5.2 Tool Decision Framework": book/part-2-building/05-building-with-ai/02-tool-decision-framework.md
+        - "5.3 Skills, Commands, and Agents SDK": book/part-2-building/05-building-with-ai/03-skills-commands-agents-sdk.md
+        - "5.4 The 8 Patterns for Effective AI Coding": book/part-2-building/05-building-with-ai/04-the-8-patterns-for-effective-ai-coding.md
+        - "5.5 The Human-AI Development Loop": book/part-2-building/05-building-with-ai/05-the-human-ai-development-loop.md
+        - "5.6 When AI Coding Fails": book/part-2-building/05-building-with-ai/06-when-ai-coding-fails.md
+        - "5.7 Technical Debt in AI-Generated Code": book/part-2-building/05-building-with-ai/07-technical-debt-in-ai-generated-code.md
+        - Summary: book/part-2-building/05-building-with-ai/summary.md
+        - Resources: book/part-2-building/05-building-with-ai/RESOURCES.md
+      - "Ch 6 \u2014 Agent Architecture":
+        - book/part-2-building/06-agent-architecture/README.md
+        - "6.1 The 2 Agent Types You Need": book/part-2-building/06-agent-architecture/01-the-2-agent-types-you-need.md
+        - "6.2 The Agent Hub Pattern": book/part-2-building/06-agent-architecture/02-the-agent-hub-pattern.md
+        - "6.3 Designing Agent Interfaces": book/part-2-building/06-agent-architecture/03-designing-agent-interfaces.md
+        - "6.4 The 7 Failure Modes of Agents": book/part-2-building/06-agent-architecture/04-the-7-failure-modes-of-agents.md
+        - "6.5 When Not to Use Agents": book/part-2-building/06-agent-architecture/05-when-not-to-use-agents.md
+        - "6.6 Agent Design Patterns": book/part-2-building/06-agent-architecture/06-agent-design-patterns.md
+        - Summary: book/part-2-building/06-agent-architecture/summary.md
+        - Resources: book/part-2-building/06-agent-architecture/RESOURCES.md
+      - "Ch 7 \u2014 The Microsite Pattern":
+        - book/part-2-building/07-the-microsite-pattern/README.md
+        - "7.1 Domain Microsites": book/part-2-building/07-the-microsite-pattern/01-domain-microsites.md
+        - "7.2 Anatomy of a Domain Microsite": book/part-2-building/07-the-microsite-pattern/02-anatomy-of-a-domain-microsite.md
+        - "7.3 Centralize vs Distribute": book/part-2-building/07-the-microsite-pattern/03-centralize-vs-distribute.md
+        - "7.5 AI Agent Access": book/part-2-building/07-the-microsite-pattern/05-ai-agent-access.md
+        - "7.6 Microsite Orchestration": book/part-2-building/07-the-microsite-pattern/06-microsite-orchestration.md
+        - "7.7 Inter-Microsite Communication": book/part-2-building/07-the-microsite-pattern/07-inter-microsite-communication.md
+        - "7.8 Governance Patterns": book/part-2-building/07-the-microsite-pattern/08-governance-patterns.md
+        - Summary: book/part-2-building/07-the-microsite-pattern/summary.md
+        - Resources: book/part-2-building/07-the-microsite-pattern/RESOURCES.md
+    - "Part III: Operating":
+      - book/part-3-operating/README.md
+      - "Ch 8 \u2014 Teams for AI-First Companies":
+        - book/part-3-operating/08-teams-for-ai-first-companies/README.md
+        - "8.1 The 4 Team Models": book/part-3-operating/08-teams-for-ai-first-companies/01-the-4-team-models.md
+        - "8.2 Own Your Domain, Share Your Foundation": book/part-3-operating/08-teams-for-ai-first-companies/02-own-your-domain-share-your-foundation.md
+        - "8.3 Hiring for AI-First": book/part-3-operating/08-teams-for-ai-first-companies/03-hiring-for-ai-first.md
+        - "8.4 The 90-Day AI Fluency Program": book/part-3-operating/08-teams-for-ai-first-companies/04-the-90-day-ai-fluency-program.md
+        - "8.5 How Roles Are Changing": book/part-3-operating/08-teams-for-ai-first-companies/05-how-roles-are-changing.md
+        - "8.6 Building AI Culture": book/part-3-operating/08-teams-for-ai-first-companies/06-building-ai-culture.md
+        - Summary: book/part-3-operating/08-teams-for-ai-first-companies/summary.md
+        - Resources: book/part-3-operating/08-teams-for-ai-first-companies/RESOURCES.md
+      - "Ch 9 \u2014 Data Strategy":
+        - book/part-3-operating/09-data-strategy/README.md
+        - "9.1 Data Strategy Fundamentals": book/part-3-operating/09-data-strategy/01-data-strategy-fundamentals.md
+        - "9.2 Building Data Flywheels": book/part-3-operating/09-data-strategy/02-building-data-flywheels.md
+        - "9.3 Data Moats": book/part-3-operating/09-data-strategy/03-data-moats.md
+        - "9.4 Polyglot Persistence in Practice": book/part-3-operating/09-data-strategy/04-polyglot-persistence-in-practice.md
+        - "9.5 Privacy by Design": book/part-3-operating/09-data-strategy/05-privacy-by-design.md
+        - "9.6 The 6 Data Strategy Mistakes": book/part-3-operating/09-data-strategy/06-the-6-data-strategy-mistakes.md
+        - Summary: book/part-3-operating/09-data-strategy/summary.md
+        - Resources: book/part-3-operating/09-data-strategy/RESOURCES.md
+      - "Ch 10 \u2014 AI-Augmented Operations and GTM":
+        - book/part-3-operating/10-ai-augmented-operations-and-gtm/README.md
+        - "10.1 Operations as APIs": book/part-3-operating/10-ai-augmented-operations-and-gtm/01-operations-as-apis.md
+        - "10.2 The 5 Operations Functions That Transform": book/part-3-operating/10-ai-augmented-operations-and-gtm/02-the-5-operations-functions-that-transform.md
+        - "10.3 Automation vs Augmentation": book/part-3-operating/10-ai-augmented-operations-and-gtm/03-automation-vs-augmentation.md
+        - "10.4 AI-Powered GTM": book/part-3-operating/10-ai-augmented-operations-and-gtm/04-ai-powered-gtm.md
+        - "10.5 Metrics That Matter": book/part-3-operating/10-ai-augmented-operations-and-gtm/05-metrics-that-matter.md
+        - "10.6 The 8 GTM Mistakes with AI": book/part-3-operating/10-ai-augmented-operations-and-gtm/06-the-8-gtm-mistakes-with-ai.md
+        - "10.7 HubSpot and Gong Examples": book/part-3-operating/10-ai-augmented-operations-and-gtm/07-hubspot-and-gong-examples.md
+        - Summary: book/part-3-operating/10-ai-augmented-operations-and-gtm/summary.md
+        - Resources: book/part-3-operating/10-ai-augmented-operations-and-gtm/RESOURCES.md
+    - "Part IV: Sustaining":
+      - book/part-4-sustaining/README.md
+      - "Ch 11 \u2014 Ethics, Governance, and Risk":
+        - book/part-4-sustaining/11-ethics-governance-and-risk/README.md
+        - "11.1 The Permission Model Framework": book/part-4-sustaining/11-ethics-governance-and-risk/01-the-permission-model-framework.md
+        - "11.2 AI Governance That Works": book/part-4-sustaining/11-ethics-governance-and-risk/02-ai-governance-that-works.md
+        - "11.3 The 7 AI Risks and Their Mitigations": book/part-4-sustaining/11-ethics-governance-and-risk/03-the-7-ai-risks-and-their-mitigations.md
+        - "11.4 Operational Controls": book/part-4-sustaining/11-ethics-governance-and-risk/04-operational-controls.md
+        - "11.5 Regulatory Landscape": book/part-4-sustaining/11-ethics-governance-and-risk/05-regulatory-landscape.md
+        - Summary: book/part-4-sustaining/11-ethics-governance-and-risk/summary.md
+        - Resources: book/part-4-sustaining/11-ethics-governance-and-risk/RESOURCES.md
+      - "Ch 12 \u2014 Staying Ahead":
+        - book/part-4-sustaining/12-staying-ahead/README.md
+        - "12.1 Why Modularity Matters": book/part-4-sustaining/12-staying-ahead/01-why-modularity-matters.md
+        - "12.2 Building for Evolution": book/part-4-sustaining/12-staying-ahead/02-building-for-evolution.md
+        - "12.3 Monitoring Emerging Tech": book/part-4-sustaining/12-staying-ahead/03-monitoring-emerging-tech.md
+        - "12.4 The Ten Principles": book/part-4-sustaining/12-staying-ahead/04-the-ten-principles.md
+        - "12.5 Amazon and Tesla Examples": book/part-4-sustaining/12-staying-ahead/05-amazon-and-tesla-examples.md
+        - "12.6 What's Next": book/part-4-sustaining/12-staying-ahead/06-whats-next.md
+        - Summary: book/part-4-sustaining/12-staying-ahead/summary.md
+        - Resources: book/part-4-sustaining/12-staying-ahead/RESOURCES.md
+    - Appendix:
+      - book/appendix/README.md
+      - Extended Examples:
+        - book/appendix/01-extended-examples/README.md
+        - "Amazon & Tesla Evolution": book/appendix/01-extended-examples/01-amazon-tesla-evolution.md
+        - "HubSpot & Gong GTM": book/appendix/01-extended-examples/02-hubspot-gong-gtm.md
+        - "Microsoft & OpenAI Ethics": book/appendix/01-extended-examples/03-microsoft-openai-ethics.md
+      - Frameworks:
+        - book/appendix/02-frameworks/README.md
+        - "90-Day AI Fluency Program": book/appendix/02-frameworks/01-90-day-ai-fluency-program.md
+        - "Polyglot Persistence Stages": book/appendix/02-frameworks/02-polyglot-persistence-stages.md
+  - Frameworks:
+    - frameworks/README.md
+    - "10 Principles of AI-First": frameworks/10-principles-of-ai-first.md
+    - "AI-First vs AI-Enabled": frameworks/ai-first-vs-ai-enabled.md
+    - "7 Mental Models of AI-First": frameworks/7-mental-models-of-ai-first.md
+    - "Build vs Buy Calculus": frameworks/build-vs-buy-calculus.md
+    - "Foundation Models": frameworks/foundation-models.md
+    - "6 Questions Before Choosing a Model": frameworks/6-questions-before-choosing-a-model.md
+    - "Probabilistic AI": frameworks/probabilistic-ai.md
+    - "5 Infrastructure Mistakes": frameworks/5-infrastructure-mistakes.md
+    - "8 Patterns for AI Coding": frameworks/8-patterns-for-ai-coding.md
+    - "Human-AI Collaboration": frameworks/human-ai-collaboration.md
+    - "7 Failure Modes of Agents": frameworks/7-failure-modes-of-agents.md
+    - "Data Flywheel": frameworks/data-flywheel.md
+    - "Data Moats": frameworks/data-moats.md
+    - "6 Data Strategy Mistakes": frameworks/6-data-strategy-mistakes.md
+    - "Automation vs Augmentation": frameworks/automation-vs-augmentation.md
+    - "8 GTM Mistakes with AI": frameworks/8-gtm-mistakes-with-ai.md
+    - "90-Day AI Fluency Program": frameworks/90-day-ai-fluency-program.md
+    - "Permission Model Framework": frameworks/permission-model-framework.md
+    - "AI Governance Framework": frameworks/ai-governance-framework.md
+    - "7 AI Risks and Mitigations": frameworks/7-ai-risks-and-mitigations.md
+  - Guides:
+    - guides/README.md
+    - "AI Coding Workflow": guides/ai-coding-workflow.md
+    - "Building Your First Agent": guides/building-your-first-agent.md
+    - "Implementing Data Flywheels": guides/implementing-data-flywheels.md
+    - "Polyglot Persistence Setup": guides/polyglot-persistence-setup.md
+    - "Setting Up AI Tool Gateway": guides/setting-up-ai-tool-gateway.md
+    - "Team AI Fluency Rollout": guides/team-ai-fluency-rollout.md
+  - Checklists:
+    - checklists/README.md
+    - "AI Readiness Assessment": checklists/ai-readiness-assessment.md
+    - "Agent Design Checklist": checklists/agent-design-checklist.md
+    - "Data Strategy Checklist": checklists/data-strategy-checklist.md
+    - "Governance Checklist": checklists/governance-checklist.md
+    - "GTM AI Readiness": checklists/gtm-ai-readiness.md
+    - "Infrastructure Audit": checklists/infrastructure-audit.md
+    - "Model Selection Checklist": checklists/model-selection-checklist.md
+  - Examples:
+    - examples/README.md
+    - Agent Patterns:
+      - "Agent Hub": examples/agent-patterns/agent-hub/README.md
+      - "Background Agent": examples/agent-patterns/background-agent/README.md
+      - "Chat Agent": examples/agent-patterns/chat-agent/README.md
+      - "Streaming Chat": examples/agent-patterns/streaming-chat/README.md
+    - Infrastructure:
+      - "AI Gateway": examples/infrastructure/ai-gateway/README.md
+      - "Observability": examples/infrastructure/observability/README.md
+      - "Provider Abstraction": examples/infrastructure/provider-abstraction/README.md
+      - "Unified Auth": examples/infrastructure/unified-auth/README.md
+    - Configs:
+      - CI AI Review:
+        - examples/configs/ci-ai-review/README.md
+        - "Review Prompt": examples/configs/ci-ai-review/prompts/review-prompt.md
+      - Claude Code Setup:
+        - examples/configs/claude-code-setup/README.md
+        - "CLAUDE.md Example": examples/configs/claude-code-setup/CLAUDE.md
+        - "Hooks Examples": examples/configs/claude-code-setup/hooks-examples.md
+        - "Code Review Skill": examples/configs/claude-code-setup/example-skills/code-review.md
+        - "Test Runner Skill": examples/configs/claude-code-setup/example-skills/test-runner.md
+    - Prompts:
+      - Agent System Prompts:
+        - examples/prompts/agent-system-prompts/README.md
+        - "Code Review Agent": examples/prompts/agent-system-prompts/code-review-agent.md
+        - "Customer Support Agent": examples/prompts/agent-system-prompts/customer-support-agent.md
+        - "Data Analyst Agent": examples/prompts/agent-system-prompts/data-analyst-agent.md
+        - "Research Agent": examples/prompts/agent-system-prompts/research-agent.md
+      - Coding Prompts:
+        - examples/prompts/coding-prompts/README.md
+        - "Architecture Prompts": examples/prompts/coding-prompts/architecture-prompts.md
+        - "Context Loading": examples/prompts/coding-prompts/context-loading.md
+        - "Error Escalation": examples/prompts/coding-prompts/error-escalation-prompts.md
+        - "Review Prompts": examples/prompts/coding-prompts/review-prompts.md
+        - "Test-Driven Prompts": examples/prompts/coding-prompts/test-driven-prompts.md
+      - Evaluation Prompts:
+        - examples/prompts/evaluation-prompts/README.md
+        - "Model Comparison": examples/prompts/evaluation-prompts/model-comparison-prompts.md
+        - "Quality Evaluation": examples/prompts/evaluation-prompts/quality-eval-prompts.md
+        - "Safety Evaluation": examples/prompts/evaluation-prompts/safety-eval-prompts.md
+  - Workflows:
+    - workflows/README.md
+    - "90-Day Fluency Implementation": workflows/90-day-fluency-implementation.md
+    - "Agent Failure Recovery": workflows/agent-failure-recovery.md
+    - "AI Coding Session Workflow": workflows/ai-coding-session-workflow.md
+    - "Model Evaluation Workflow": workflows/model-evaluation-workflow.md
+  - Resources:
+    - resources/README.md
+    - "Tools": resources/tools.md
+    - "Research Papers": resources/research-papers.md
+    - "Case Studies": resources/case-studies.md
+    - "Courses & Learning": resources/courses-and-learning.md
+    - "Communities": resources/communities.md
+    - "Open Source Projects": resources/open-source-projects.md
+  - AI Writing Process:
+    - ai-writing-process/README.md
+    - "1. Overview":
+      - ai-writing-process/01-overview/README.md
+      - "Architecture Decisions": ai-writing-process/01-overview/architecture-decisions.md
+      - "End-to-End Flow": ai-writing-process/01-overview/end-to-end-flow.md
+      - "Results and Metrics": ai-writing-process/01-overview/results-and-metrics.md
+    - "2. Author Voice":
+      - ai-writing-process/02-author-voice/README.md
+      - "Building a Voice System": ai-writing-process/02-author-voice/building-a-voice-system.md
+      - "Gold Standard Method": ai-writing-process/02-author-voice/gold-standard-method.md
+      - "Voice Drift Prevention": ai-writing-process/02-author-voice/voice-drift-prevention.md
+    - "3. Prompt Engineering":
+      - ai-writing-process/03-prompt-engineering/README.md
+      - "Master System Prompt": ai-writing-process/03-prompt-engineering/master-system-prompt.md
+      - "Prompt Architecture": ai-writing-process/03-prompt-engineering/prompt-architecture.md
+      - "Writing Prompts": ai-writing-process/03-prompt-engineering/writing-prompts.md
+      - "Editing and Review Prompts": ai-writing-process/03-prompt-engineering/editing-and-review-prompts.md
+      - "Prompt Evolution": ai-writing-process/03-prompt-engineering/prompt-evolution.md
+    - "4. Agent System":
+      - ai-writing-process/04-agent-system/README.md
+      - "Agent Architecture": ai-writing-process/04-agent-system/agent-architecture.md
+      - "Building Custom Skills": ai-writing-process/04-agent-system/building-custom-skills.md
+      - "Chapter Writer Skill": ai-writing-process/04-agent-system/chapter-writer-skill.md
+      - "Quality Skills": ai-writing-process/04-agent-system/quality-skills.md
+      - "Research Reader Skill": ai-writing-process/04-agent-system/research-reader-skill.md
+    - "5. Research Pipeline":
+      - ai-writing-process/05-research-pipeline/README.md
+      - "Research Architecture": ai-writing-process/05-research-pipeline/research-architecture.md
+      - "Perplexity Automation": ai-writing-process/05-research-pipeline/perplexity-automation.md
+      - "Citation Management": ai-writing-process/05-research-pipeline/citation-management.md
+      - "Synthesis and Extraction": ai-writing-process/05-research-pipeline/synthesis-and-extraction.md
+    - "6. Obsidian Vault":
+      - ai-writing-process/06-obsidian-vault/README.md
+      - "Vault Architecture": ai-writing-process/06-obsidian-vault/vault-architecture.md
+      - "Templates and Frontmatter": ai-writing-process/06-obsidian-vault/templates-and-frontmatter.md
+      - "Linking and Navigation": ai-writing-process/06-obsidian-vault/linking-and-navigation.md
+      - "Dataview and Dashboards": ai-writing-process/06-obsidian-vault/dataview-and-dashboards.md
+    - "7. Automation":
+      - ai-writing-process/07-automation/README.md
+      - "Script Ecosystem": ai-writing-process/07-automation/script-ecosystem.md
+      - "PDF Generation": ai-writing-process/07-automation/pdf-generation.md
+      - "Writing Analytics": ai-writing-process/07-automation/writing-analytics.md
+      - "Vault Health": ai-writing-process/07-automation/vault-health.md
+    - "8. Book Intelligence App":
+      - ai-writing-process/08-book-intelligence-app/README.md
+      - "Why Build an App": ai-writing-process/08-book-intelligence-app/why-build-an-app.md
+      - "App Architecture": ai-writing-process/08-book-intelligence-app/app-architecture.md
+      - "Analysis Pipeline": ai-writing-process/08-book-intelligence-app/analysis-pipeline.md
+      - "Skill API Integration": ai-writing-process/08-book-intelligence-app/skill-api-integration.md
+    - "9. Review Process":
+      - ai-writing-process/09-review-process/README.md
+      - "Review Philosophy": ai-writing-process/09-review-process/review-philosophy.md
+      - "Editorial Workflow": ai-writing-process/09-review-process/editorial-workflow.md
+      - "Big Themes Review": ai-writing-process/09-review-process/big-themes-review.md
+      - "Contradiction Detection": ai-writing-process/09-review-process/contradiction-detection.md
+    - "10. Lessons Learned":
+      - ai-writing-process/10-lessons-learned/README.md
+      - "What Worked": ai-writing-process/10-lessons-learned/what-worked.md
+      - "What Failed": ai-writing-process/10-lessons-learned/what-failed.md
+      - "If Starting Over": ai-writing-process/10-lessons-learned/if-starting-over.md
+    - Templates:
+      - ai-writing-process/templates/README.md
+      - Obsidian:
+        - "Book Vault Structure": ai-writing-process/templates/obsidian/book-vault-structure.md
+        - "Chapter Template": ai-writing-process/templates/obsidian/chapter-template.md
+        - "Frontmatter Reference": ai-writing-process/templates/obsidian/frontmatter-reference.md
+        - "Section Template": ai-writing-process/templates/obsidian/section-template.md
+      - Prompts:
+        - "Section Writing": ai-writing-process/templates/prompts/section-writing-template.md
+        - "Master System Prompt": ai-writing-process/templates/prompts/master-system-prompt-template.md
+        - "Editing Prompt": ai-writing-process/templates/prompts/editing-prompt-template.md
+        - "Review Prompt": ai-writing-process/templates/prompts/review-prompt-template.md
+      - Scripts:
+        - "Citation Auditor": ai-writing-process/templates/scripts/citation-auditor.md
+        - "Word Count Tracker": ai-writing-process/templates/scripts/word-count-tracker.md
+      - Skills:
+        - "Chapter Writer": ai-writing-process/templates/skills/chapter-writer-template.md
+        - "Review Skill": ai-writing-process/templates/skills/review-skill-template.md
+      - Voice System:
+        - "Voice Guide": ai-writing-process/templates/voice-system/voice-guide-template.md
+        - "Gold Standard": ai-writing-process/templates/voice-system/gold-standard-template.md
+        - "Authenticity Markers": ai-writing-process/templates/voice-system/authenticity-markers-template.md
+        - "Audience Empathy": ai-writing-process/templates/voice-system/audience-empathy-template.md
+  - Author:
+    - author/README.md
+    - "Bio": author/bio-long.md
+    - "Short Bio": author/bio-short.md
+    - "Profile": author/profile.md
+    - "Resume": author/resume.md
+    - "AI Transparency Statement": author/ai-transparency-statement.md

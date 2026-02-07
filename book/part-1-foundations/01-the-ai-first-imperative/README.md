@@ -2,7 +2,7 @@
 
 In March 2025, a solo developer built a browser-based flight simulator and crossed $1 million ARR in 17 days. AI wrote most of the code.
 
-Three months earlier, at my company Yirifi, we built 15 microsites in 3 months with a 2-person team. Not because we're superhuman. Because AI changed the math.
+Three months earlier, at my company Yirifi, just 2 people built 15 backoffice microsites in 3 months. Not because we're superhuman. Because AI changed the math.
 
 These stories aren't about productivity hacks. They're about something bigger—a 107x cost collapse in AI processing over two years. When intelligence becomes cheap, everything built on the assumption that intelligence is expensive breaks.
 
@@ -12,9 +12,9 @@ This chapter is about what that shift means for how you build a company.
 
 ## Yirifi Anchor
 
-> "15 microsites in 3 months with a 2-person team. Not because we're superhuman—because AI coding changed the math."
+> "15 backoffice microsites in 3 months, just 2 people. Not because we're superhuman—because AI coding changed the math."
 
-**Universal insight:** The economics of software development have inverted. What used to cost 10 engineers and 12 months now costs 2 people and 3 months—if you design for AI from the start.
+**Universal insight:** The economics of software development have inverted. What used to require 10 engineers and 12 months now takes just 2 people and 3 months—if you design for AI from the start.
 
 **Memorable close:** "When development costs approach zero, the only constraint is imagination."
 

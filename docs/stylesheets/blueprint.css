@@ -1,0 +1,838 @@
+/* ============================================================
+   Blueprint for an AI-First Company - MkDocs Material Theme
+   ============================================================
+   Custom CSS mapping the blueprint design tokens to Material's
+   CSS custom properties. Covers both dark (slate) and light
+   (default) color schemes.
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   Design Tokens
+   ------------------------------------------------------------ */
+:root {
+  /* Blueprint palette (dark defaults) */
+  --bp-canvas: #0a0f1e;
+  --bp-canvas-raised: #0f1529;
+  --bp-canvas-surface: #141b33;
+  --bp-grid: rgba(56, 189, 248, 0.04);
+  --bp-grid-accent: rgba(56, 189, 248, 0.08);
+  --bp-line: rgba(56, 189, 248, 0.12);
+  --bp-line-strong: rgba(56, 189, 248, 0.25);
+  --bp-cyan: #38bdf8;
+  --bp-cyan-dim: rgba(56, 189, 248, 0.6);
+  --bp-cyan-glow: rgba(56, 189, 248, 0.15);
+  --bp-white: #f0f4ff;
+  --bp-white-dim: rgba(240, 244, 255, 0.7);
+  --bp-white-muted: rgba(240, 244, 255, 0.45);
+  --bp-accent: #818cf8;
+  --bp-accent-warm: #f59e0b;
+
+  /* Typography stacks */
+  --bp-serif: 'Instrument Serif', Georgia, serif;
+  --bp-sans: 'Manrope', system-ui, sans-serif;
+  --bp-mono: 'DM Mono', 'SF Mono', monospace;
+
+  /* Animation */
+  --bp-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+/* ------------------------------------------------------------
+   Dark Mode (slate scheme)
+   ------------------------------------------------------------ */
+[data-md-color-scheme="slate"] {
+  /* Material core overrides */
+  --md-default-bg-color: #0a0f1e;
+  --md-default-fg-color: #f0f4ff;
+  --md-default-fg-color--light: rgba(240, 244, 255, 0.7);
+  --md-default-fg-color--lighter: rgba(240, 244, 255, 0.45);
+  --md-default-fg-color--lightest: rgba(240, 244, 255, 0.2);
+
+  --md-primary-fg-color: #38bdf8;
+  --md-primary-fg-color--light: rgba(56, 189, 248, 0.6);
+  --md-primary-fg-color--dark: #2196c4;
+  --md-primary-bg-color: #0a0f1e;
+  --md-primary-bg-color--light: #0f1529;
+
+  --md-accent-fg-color: #818cf8;
+  --md-accent-fg-color--transparent: rgba(129, 140, 248, 0.1);
+  --md-accent-bg-color: #0a0f1e;
+
+  /* Typography colors */
+  --md-typeset-color: #f0f4ff;
+  --md-typeset-a-color: #38bdf8;
+
+  /* Code */
+  --md-code-bg-color: #0f1529;
+  --md-code-fg-color: #f0f4ff;
+  --md-code-hl-color: rgba(56, 189, 248, 0.15);
+
+  /* Footer */
+  --md-footer-bg-color: #0a0f1e;
+  --md-footer-bg-color--dark: #070b15;
+  --md-footer-fg-color: rgba(240, 244, 255, 0.7);
+  --md-footer-fg-color--light: rgba(240, 244, 255, 0.45);
+  --md-footer-fg-color--lighter: rgba(240, 244, 255, 0.3);
+
+  /* Blueprint tokens mapped */
+  --bp-canvas: #0a0f1e;
+  --bp-canvas-raised: #0f1529;
+  --bp-canvas-surface: #141b33;
+  --bp-grid: rgba(56, 189, 248, 0.04);
+  --bp-grid-accent: rgba(56, 189, 248, 0.08);
+  --bp-line: rgba(56, 189, 248, 0.12);
+  --bp-line-strong: rgba(56, 189, 248, 0.25);
+  --bp-cyan: #38bdf8;
+  --bp-cyan-dim: rgba(56, 189, 248, 0.6);
+  --bp-cyan-glow: rgba(56, 189, 248, 0.15);
+  --bp-white: #f0f4ff;
+  --bp-white-dim: rgba(240, 244, 255, 0.7);
+  --bp-white-muted: rgba(240, 244, 255, 0.45);
+  --bp-accent: #818cf8;
+  --bp-accent-warm: #f59e0b;
+}
+
+
+/* ------------------------------------------------------------
+   Light Mode (default scheme)
+   ------------------------------------------------------------ */
+[data-md-color-scheme="default"] {
+  /* Material core overrides */
+  --md-default-bg-color: #f5f3ef;
+  --md-default-fg-color: #0f1529;
+  --md-default-fg-color--light: rgba(15, 21, 41, 0.7);
+  --md-default-fg-color--lighter: rgba(15, 21, 41, 0.45);
+  --md-default-fg-color--lightest: rgba(15, 21, 41, 0.2);
+
+  --md-primary-fg-color: #1d6fa5;
+  --md-primary-fg-color--light: rgba(29, 111, 165, 0.6);
+  --md-primary-fg-color--dark: #175a86;
+  --md-primary-bg-color: #f5f3ef;
+  --md-primary-bg-color--light: #edeae4;
+
+  --md-accent-fg-color: #5b5fc7;
+  --md-accent-fg-color--transparent: rgba(91, 95, 199, 0.1);
+  --md-accent-bg-color: #f5f3ef;
+
+  /* Typography colors */
+  --md-typeset-color: #0f1529;
+  --md-typeset-a-color: #1d6fa5;
+
+  /* Code */
+  --md-code-bg-color: #edeae4;
+  --md-code-fg-color: #0f1529;
+  --md-code-hl-color: rgba(29, 111, 165, 0.1);
+
+  /* Footer */
+  --md-footer-bg-color: #edeae4;
+  --md-footer-bg-color--dark: #e5e2dc;
+  --md-footer-fg-color: rgba(15, 21, 41, 0.7);
+  --md-footer-fg-color--light: rgba(15, 21, 41, 0.45);
+  --md-footer-fg-color--lighter: rgba(15, 21, 41, 0.3);
+
+  /* Blueprint tokens mapped */
+  --bp-canvas: #f5f3ef;
+  --bp-canvas-raised: #edeae4;
+  --bp-canvas-surface: #e5e2dc;
+  --bp-grid: rgba(15, 21, 41, 0.06);
+  --bp-grid-accent: rgba(15, 21, 41, 0.10);
+  --bp-line: rgba(15, 21, 41, 0.1);
+  --bp-line-strong: rgba(15, 21, 41, 0.2);
+  --bp-cyan: #1d6fa5;
+  --bp-cyan-dim: rgba(29, 111, 165, 0.6);
+  --bp-cyan-glow: rgba(29, 111, 165, 0.08);
+  --bp-white: #0f1529;
+  --bp-white-dim: rgba(15, 21, 41, 0.7);
+  --bp-white-muted: rgba(15, 21, 41, 0.45);
+  --bp-accent: #5b5fc7;
+  --bp-accent-warm: #c77d0a;
+}
+
+
+/* ------------------------------------------------------------
+   Typography
+   ------------------------------------------------------------ */
+
+/* Body text - Manrope */
+:root {
+  --md-text-font: "Manrope";
+  --md-code-font: "DM Mono";
+}
+
+body,
+.md-typeset {
+  font-family: var(--bp-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings - Instrument Serif */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: var(--bp-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h1 {
+  font-size: 2.4rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h2 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+/* Code - DM Mono */
+.md-typeset code,
+.md-typeset pre,
+.md-typeset kbd {
+  font-family: var(--bp-mono);
+}
+
+
+/* ------------------------------------------------------------
+   Blueprint Grid Background
+   ------------------------------------------------------------ */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(var(--bp-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bp-grid) 1px, transparent 1px),
+    linear-gradient(var(--bp-grid-accent) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bp-grid-accent) 1px, transparent 1px);
+  background-size:
+    20px 20px,
+    20px 20px,
+    100px 100px,
+    100px 100px;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Light mode: reduce grid intensity for cleaner background */
+[data-md-color-scheme="default"] body::before {
+  opacity: 0.35;
+}
+
+/* Ensure all content layers above the grid */
+.md-header,
+.md-container,
+.md-footer,
+.md-dialog,
+.md-top,
+.md-search {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ------------------------------------------------------------
+   Header
+   ------------------------------------------------------------ */
+.md-header {
+  background: color-mix(in srgb, var(--bp-canvas) 85%, transparent);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--bp-line);
+  box-shadow: none;
+}
+
+.md-header[data-md-state="shadow"] {
+  box-shadow: none;
+  border-bottom: 1px solid var(--bp-line-strong);
+}
+
+/* Dark mode: bump opacity + fix text/icon visibility.
+   Material uses --md-primary-bg-color as text color inside
+   header/tabs. We override it in scope so all children
+   (icons, tabs, buttons, source link) inherit correctly. */
+[data-md-color-scheme="slate"] .md-header {
+  background: color-mix(in srgb, var(--bp-canvas) 92%, transparent);
+  --md-primary-bg-color: var(--bp-white);
+  color: var(--bp-white);
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background: color-mix(in srgb, var(--bp-canvas) 92%, transparent);
+  --md-primary-bg-color: var(--bp-white);
+  color: var(--bp-white);
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link {
+  color: var(--bp-white-dim) !important;
+  opacity: 0.7;
+}
+
+/* Header title */
+.md-header__title {
+  font-family: var(--bp-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Header topic (project name) */
+.md-header__topic:first-child {
+  font-family: var(--bp-mono);
+  letter-spacing: 0.08em;
+  color: var(--bp-cyan);
+}
+
+/* Tabs */
+.md-tabs {
+  background: color-mix(in srgb, var(--bp-canvas) 90%, transparent);
+  border-bottom: 1px solid var(--bp-line);
+}
+
+.md-tabs__link {
+  font-family: var(--bp-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  transition: opacity 0.3s, color 0.3s;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  opacity: 1;
+  color: var(--bp-cyan);
+}
+
+/* Light mode: white backgrounds with shadow elevation */
+[data-md-color-scheme="default"] .md-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--bp-line-strong);
+  box-shadow: 0 1px 3px rgba(15, 21, 41, 0.06);
+  --md-primary-bg-color: var(--bp-white);
+  color: var(--bp-white);
+}
+
+[data-md-color-scheme="default"] .md-header[data-md-state="shadow"] {
+  box-shadow: 0 2px 8px rgba(15, 21, 41, 0.08);
+}
+
+[data-md-color-scheme="default"] .md-tabs {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid var(--bp-line-strong);
+  --md-primary-bg-color: var(--bp-white);
+  color: var(--bp-white);
+}
+
+[data-md-color-scheme="default"] .md-tabs__link {
+  opacity: 1;
+  color: var(--bp-white-dim);
+}
+
+[data-md-color-scheme="default"] .md-tabs__link:hover,
+[data-md-color-scheme="default"] .md-tabs__link--active {
+  color: var(--bp-cyan);
+}
+
+[data-md-color-scheme="default"] .md-search__form {
+  background-color: var(--bp-canvas) !important;
+  border: 1px solid var(--bp-line-strong) !important;
+  border-radius: 4px !important;
+}
+
+
+/* ------------------------------------------------------------
+   Sidebar Navigation
+   ------------------------------------------------------------ */
+.md-sidebar {
+  background: transparent;
+}
+
+.md-nav__title {
+  font-family: var(--bp-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bp-cyan);
+}
+
+.md-nav__link {
+  font-family: var(--bp-sans);
+  font-size: 0.82rem;
+  color: var(--bp-white-dim);
+  transition: color 0.2s;
+}
+
+.md-nav__link:hover {
+  color: var(--bp-cyan);
+}
+
+.md-nav__link--active {
+  color: var(--bp-cyan);
+  font-weight: 600;
+}
+
+/* Sidebar item border accent */
+.md-nav__item--active > .md-nav__link {
+  border-left: 2px solid var(--bp-cyan);
+  padding-left: 0.6rem;
+}
+
+/* Nested nav sections */
+.md-nav--secondary .md-nav__title {
+  font-size: 0.65rem;
+  color: var(--bp-white-muted);
+}
+
+
+/* ------------------------------------------------------------
+   Content Area
+   ------------------------------------------------------------ */
+.md-content {
+  background: transparent;
+}
+
+/* Links */
+.md-typeset a {
+  color: var(--bp-cyan);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.md-typeset a:hover {
+  border-bottom-color: var(--bp-cyan);
+}
+
+/* Horizontal rules */
+.md-typeset hr {
+  border-color: var(--bp-line);
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--bp-line);
+  font-size: 0.85rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--bp-canvas-raised);
+  font-family: var(--bp-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bp-cyan);
+  border-bottom: 1px solid var(--bp-line-strong);
+}
+
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid var(--bp-line);
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background: var(--bp-canvas-raised);
+}
+
+
+/* ------------------------------------------------------------
+   Code Blocks
+   ------------------------------------------------------------ */
+.md-typeset pre {
+  border: 1px solid var(--bp-line);
+  border-radius: 6px;
+  background: var(--bp-canvas-raised);
+}
+
+.md-typeset pre > code {
+  font-family: var(--bp-mono);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+/* Inline code */
+.md-typeset code:not(pre code) {
+  font-family: var(--bp-mono);
+  font-size: 0.85em;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  background: var(--bp-canvas-raised);
+  border: 1px solid var(--bp-line);
+  color: var(--bp-cyan);
+}
+
+/* Code copy button */
+.md-clipboard {
+  color: var(--bp-white-muted);
+}
+
+.md-clipboard:hover {
+  color: var(--bp-cyan);
+}
+
+/* Code annotations */
+.md-typeset .md-annotation__index {
+  background: var(--bp-cyan);
+  color: var(--bp-canvas);
+}
+
+
+/* ------------------------------------------------------------
+   Admonitions
+   ------------------------------------------------------------ */
+.md-typeset .admonition,
+.md-typeset details {
+  border: 1px solid var(--bp-line);
+  border-left: 4px solid var(--bp-cyan);
+  border-radius: 6px;
+  background: var(--bp-canvas-raised);
+  box-shadow: none;
+}
+
+.md-typeset .admonition-title,
+.md-typeset details > summary {
+  background: var(--bp-canvas-surface);
+  border-bottom: 1px solid var(--bp-line);
+  font-family: var(--bp-sans);
+  font-weight: 600;
+}
+
+/* Info / Note admonitions */
+.md-typeset .admonition.note,
+.md-typeset .admonition.info {
+  border-left-color: var(--bp-cyan);
+}
+
+/* Warning admonitions */
+.md-typeset .admonition.warning,
+.md-typeset .admonition.caution {
+  border-left-color: var(--bp-accent-warm);
+}
+
+/* Tip admonitions */
+.md-typeset .admonition.tip,
+.md-typeset .admonition.hint {
+  border-left-color: var(--bp-accent);
+}
+
+/* Example admonitions */
+.md-typeset .admonition.example {
+  border-left-color: var(--bp-accent);
+}
+
+
+/* ------------------------------------------------------------
+   Search
+   ------------------------------------------------------------ */
+
+/* Ensure search sits above everything */
+.md-search {
+  z-index: 10;
+}
+
+/* Full-page backdrop overlay when search is open */
+.md-search__overlay {
+  background: rgba(0, 0, 0, 0.54);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__overlay {
+  opacity: 1;
+}
+
+/* Search form container */
+.md-search__form {
+  background-color: var(--bp-canvas-raised) !important;
+  transition: none !important;
+}
+
+.md-search__input {
+  font-family: var(--bp-sans);
+  color: var(--bp-white);
+  transition: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.md-search__input::placeholder {
+  color: var(--bp-white-muted);
+}
+
+/* Hide autocomplete suggestion hint */
+.md-search__suggest {
+  display: none !important;
+}
+
+/* Search inner - no shadow in default state; shadow only when results show */
+.md-search__inner {
+  box-shadow: none;
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__inner {
+  background: var(--bp-canvas);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Search output / results container */
+.md-search__output {
+  background: var(--bp-canvas);
+  border-top: 1px solid var(--bp-line);
+}
+
+.md-search__scrollwrap {
+  background: var(--bp-canvas);
+}
+
+/* Search results */
+.md-search-result {
+  background: var(--bp-canvas);
+}
+
+.md-search-result__meta {
+  background: var(--bp-canvas-raised);
+  font-family: var(--bp-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--bp-white-muted);
+}
+
+.md-search-result__item {
+  border-bottom: 1px solid var(--bp-line);
+}
+
+.md-search-result__link {
+  background: var(--bp-canvas);
+}
+
+.md-search-result__link:hover {
+  background: var(--bp-canvas-raised);
+}
+
+.md-search-result__article h1 {
+  font-family: var(--bp-serif);
+  color: var(--bp-white);
+}
+
+.md-search-result__teaser {
+  color: var(--bp-white-dim);
+}
+
+.md-search-result mark {
+  background: var(--bp-cyan-glow);
+  color: var(--bp-cyan);
+}
+
+/* Search result list */
+.md-search-result__list {
+  background: var(--bp-canvas);
+}
+
+/* Light mode: white search backgrounds */
+[data-md-color-scheme="default"] [data-md-toggle="search"]:checked ~ .md-header .md-search__inner {
+  background: #ffffff;
+}
+
+[data-md-color-scheme="default"] .md-search__output {
+  background: #ffffff;
+}
+
+[data-md-color-scheme="default"] .md-search__scrollwrap {
+  background: #ffffff;
+}
+
+[data-md-color-scheme="default"] .md-search-result {
+  background: #ffffff;
+}
+
+[data-md-color-scheme="default"] .md-search-result__link {
+  background: #ffffff;
+}
+
+[data-md-color-scheme="default"] .md-search-result__link:hover {
+  background: var(--bp-canvas);
+}
+
+[data-md-color-scheme="default"] .md-search-result__meta {
+  background: var(--bp-canvas);
+}
+
+
+/* ------------------------------------------------------------
+   Footer
+   ------------------------------------------------------------ */
+.md-footer {
+  background: var(--bp-canvas);
+  border-top: 1px solid var(--bp-line);
+}
+
+.md-footer-meta {
+  background: var(--bp-canvas);
+}
+
+/* Light mode: footer contrast */
+[data-md-color-scheme="default"] .md-footer {
+  background: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid var(--bp-line-strong);
+}
+
+[data-md-color-scheme="default"] .md-footer-meta {
+  background: transparent;
+}
+
+.md-footer-nav__link {
+  font-family: var(--bp-mono);
+  font-size: 0.8rem;
+  transition: color 0.3s;
+}
+
+.md-footer-nav__link:hover {
+  color: var(--bp-cyan);
+}
+
+.md-footer-nav__direction {
+  font-family: var(--bp-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bp-white-muted);
+}
+
+.md-footer__link {
+  transition: opacity 0.3s;
+}
+
+.md-footer__link:hover {
+  opacity: 1;
+}
+
+/* Copyright */
+.md-copyright {
+  font-family: var(--bp-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--bp-white-muted);
+}
+
+
+/* ------------------------------------------------------------
+   Table of Contents (right sidebar)
+   ------------------------------------------------------------ */
+.md-sidebar--secondary .md-nav__link {
+  font-size: 0.78rem;
+  color: var(--bp-white-muted);
+}
+
+.md-sidebar--secondary .md-nav__link:hover {
+  color: var(--bp-cyan);
+}
+
+.md-sidebar--secondary .md-nav__link--active {
+  color: var(--bp-cyan);
+}
+
+
+/* ------------------------------------------------------------
+   Scroll-to-top Button
+   ------------------------------------------------------------ */
+.md-top {
+  background: var(--bp-canvas-raised);
+  border: 1px solid var(--bp-line);
+  color: var(--bp-cyan);
+  font-family: var(--bp-mono);
+  font-size: 0.7rem;
+}
+
+.md-top:hover {
+  background: var(--bp-canvas-surface);
+  border-color: var(--bp-cyan);
+}
+
+
+/* ------------------------------------------------------------
+   Palette Toggle
+   ------------------------------------------------------------ */
+[data-md-component="palette"] button {
+  transition: color 0.3s;
+}
+
+
+/* ------------------------------------------------------------
+   Tabbed Content (pymdownx.tabbed)
+   ------------------------------------------------------------ */
+.md-typeset .tabbed-labels > label {
+  font-family: var(--bp-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--bp-white-muted);
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  color: var(--bp-cyan);
+}
+
+.md-typeset .tabbed-labels > .tabbed-labels__active,
+.md-typeset .tabbed-labels > label.tabbed-labels__active {
+  color: var(--bp-cyan);
+}
+
+.md-typeset .tabbed-set .tabbed-content {
+  border: 1px solid var(--bp-line);
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+
+
+/* ------------------------------------------------------------
+   Task Lists (pymdownx.tasklist)
+   ------------------------------------------------------------ */
+.md-typeset .task-list-indicator::before {
+  border-color: var(--bp-line-strong);
+}
+
+.md-typeset [type="checkbox"]:checked + .task-list-indicator::before {
+  background: var(--bp-cyan);
+  border-color: var(--bp-cyan);
+}
+
+
+/* ------------------------------------------------------------
+   Footnotes
+   ------------------------------------------------------------ */
+.md-typeset .footnote-ref {
+  color: var(--bp-cyan);
+  font-family: var(--bp-mono);
+  font-size: 0.75em;
+}
+
+.md-typeset .footnote {
+  font-size: 0.85rem;
+  color: var(--bp-white-dim);
+}
+
+.md-typeset .footnote ol {
+  border-top: 1px solid var(--bp-line);
+  padding-top: 1rem;
+}
+
+
+/* ------------------------------------------------------------
+   Smooth Transitions
+   ------------------------------------------------------------ */
+body,
+.md-header,
+.md-tabs,
+.md-sidebar,
+.md-content,
+.md-footer {
+  transition:
+    background 0.4s var(--bp-ease-out),
+    color 0.4s var(--bp-ease-out),
+    border-color 0.4s var(--bp-ease-out);
+}
