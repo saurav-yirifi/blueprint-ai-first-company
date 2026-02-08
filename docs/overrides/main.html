@@ -5,3 +5,113 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 {% endblock %}
+
+{% block extrahead %}
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title }} | {{ config.site_name }}" />
+  <meta property="og:description" content="{{ config.site_description }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ page.canonical_url }}" />
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@sauravbhats" />
+  <meta name="twitter:creator" content="@sauravbhats" />
+  <meta name="twitter:title" content="{{ page.title }} | {{ config.site_name }}" />
+  <meta name="twitter:description" content="{{ config.site_description }}" />
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+
+  {% if page and page.meta.get("comments", true) != false %}
+  <!-- Share Buttons -->
+  <div class="bp-share" id="bp-share">
+    <span class="bp-share-label">Share this page</span>
+    <div class="bp-share-links">
+      <a href="https://twitter.com/intent/tweet?text={{ page.title | urlencode }}%20%E2%80%94%20Blueprint%20for%20an%20AI-First%20Company&url={{ page.canonical_url | urlencode }}&via=sauravbhats"
+         target="_blank" rel="noopener" class="bp-share-btn" title="Share on X">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        Share on X
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.canonical_url | urlencode }}"
+         target="_blank" rel="noopener" class="bp-share-btn" title="Share on LinkedIn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://news.ycombinator.com/submitlink?u={{ page.canonical_url | urlencode }}&t={{ page.title | urlencode }}%20%E2%80%94%20Blueprint%20for%20an%20AI-First%20Company"
+         target="_blank" rel="noopener" class="bp-share-btn" title="Submit to Hacker News">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0v24h24V0H0zm12.3 13.54l-3.78-7.2h1.76l2.79 5.56 2.84-5.56h1.7l-3.8 7.2v4.76h-1.51v-4.76z"/></svg>
+        Hacker News
+      </a>
+    </div>
+  </div>
+
+  <!-- CTA Banner -->
+  <div class="bp-cta-banner">
+    <span class="bp-cta-label">Found this useful?</span>
+    <div class="bp-cta-actions">
+      <a href="https://github.com/saurav-yirifi/blueprint-ai-first-company"
+         target="_blank" rel="noopener" class="bp-cta-action">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Star on GitHub
+      </a>
+      <a href="#bp-share" class="bp-cta-action">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        Share it
+      </a>
+      <a href="#__comments" class="bp-cta-action">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Join the discussion
+      </a>
+    </div>
+  </div>
+
+  <!-- Giscus Comments -->
+  <h2 id="__comments">Discussion</h2>
+
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="saurav-yirifi/blueprint-ai-first-company"
+    data-repo-id="REPLACE_WITH_REPO_ID"
+    data-category="Comments"
+    data-category-id="REPLACE_WITH_CATEGORY_ID"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="transparent_dark"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+  </script>
+
+  <script>
+    // Sync Giscus theme with Material's dark/light palette
+    (function() {
+      function getGiscusTheme() {
+        var scheme = document.body.getAttribute('data-md-color-scheme');
+        return scheme === 'default' ? 'light' : 'transparent_dark';
+      }
+
+      // Watch for palette changes
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(m) {
+          if (m.attributeName === 'data-md-color-scheme') {
+            var frame = document.querySelector('.giscus-frame');
+            if (frame) {
+              frame.contentWindow.postMessage(
+                { giscus: { setConfig: { theme: getGiscusTheme() } } },
+                'https://giscus.app'
+              );
+            }
+          }
+        });
+      });
+      observer.observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
+    })();
+  </script>
+  {% endif %}
+{% endblock %}

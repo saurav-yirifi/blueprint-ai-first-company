@@ -16,6 +16,46 @@ Both things can be true: data moats are weaker than they were, and data still ma
 
 ### The Moat Test
 
+```mermaid
+flowchart TD
+    Q1{1. Can a competitor\nbuy this data?}
+    Q2{2. Can they\nscrape it?}
+    Q3{3. Can they\npartner for it?}
+    Q4{4. Does usage\ngenerate more?}
+    Q5{5. Is it embedded\nin workflows?}
+
+    W[Weak Moat\nDays to weeks to replicate]
+    F[Fragile Moat\nWeeks to months]
+    M[Medium Moat\nMonths to replicate]
+    S[Strong Moat\nYears to replicate]
+    SY[Systems Moat\nMay be impossible to replicate]
+
+    Q1 -- Yes --> W
+    Q1 -- No --> Q2
+    Q2 -- Yes --> F
+    Q2 -- No --> Q3
+    Q3 -- Yes --> M
+    Q3 -- No --> Q4
+    Q4 -- No --> M
+    Q4 -- Yes --> Q5
+    Q5 -- No --> S
+    Q5 -- Yes --> SY
+
+    classDef question fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef weak fill:#c03030,stroke:#9a2020,color:#fff
+    classDef fragile fill:#c77d0a,stroke:#a06508,color:#fff
+    classDef medium fill:#c77d0a,stroke:#a06508,color:#fff
+    classDef strong fill:#1a8a52,stroke:#14693e,color:#fff
+    classDef systems fill:#1a8a52,stroke:#14693e,color:#fff
+
+    class Q1,Q2,Q3,Q4,Q5 question
+    class W weak
+    class F fragile
+    class M medium
+    class S strong
+    class SY systems
+```
+
 Every data asset you think creates competitive advantage should pass this test:
 
 1. **Can a competitor buy this data?** If yes: **Weak Moat** (days to weeks to replicate).

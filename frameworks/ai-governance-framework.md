@@ -16,6 +16,33 @@ The organizations getting this right -- IBM with their AI Ethics Board, JPMorgan
 
 ### The Three Lines of Defense
 
+```mermaid
+flowchart TB
+    subgraph Governance["AI Governance Pyramid"]
+        direction TB
+        Board["Board Level\nFrontier AI and Regulatory Strategy"]
+        Committee["AI Ethics Committee\nHigh-Risk Systems"]
+        WorkGroup["Working Group\nMedium-Risk Deployments"]
+        Team["Team Level\nDay-to-Day Decisions"]
+
+        Team -->|"Financial impact over $50K\nor protected class data"| WorkGroup
+        WorkGroup -->|"Financial impact over $500K\nor irreversible actions"| Committee
+        Committee -->|"Strategic decisions\nor major incidents"| Board
+    end
+
+    classDef teamStyle fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef wgStyle fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef committeeStyle fill:#7345b0,stroke:#5b3590,color:#fff
+    classDef boardStyle fill:#7345b0,stroke:#5b3590,color:#fff
+    classDef subgraphStyle fill:#1c1c2e,color:#fff
+
+    class Team teamStyle
+    class WorkGroup wgStyle
+    class Committee committeeStyle
+    class Board boardStyle
+    style Governance fill:#1c1c2e,color:#fff
+```
+
 #### First Line: Team-Level Decisions
 Research leads and product managers approve low-risk experiments, internal tools, and routine updates -- no committee needed. This is where most day-to-day AI decisions happen, and pushing them to committee review creates bottlenecks that kill innovation.
 

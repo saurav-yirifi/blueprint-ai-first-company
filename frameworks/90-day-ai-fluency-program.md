@@ -14,6 +14,50 @@ The warning sign that makes this framework urgent: training investment decreased
 
 ## The Framework
 
+```mermaid
+flowchart LR
+    subgraph Phase1 ["Phase 1: Days 1-30"]
+        direction TB
+        A1["Set Up Tools"]
+        A2["Low-Stakes Projects"]
+        A3["Weekly Office Hours"]
+        A4["Learn Limitations"]
+        A1 --> A2 --> A3 --> A4
+        M1(["Milestone: Confidence Built"])
+    end
+
+    subgraph Phase2 ["Phase 2: Days 31-60"]
+        direction TB
+        B1["Domain-Specific Use Cases"]
+        B2["Build Prompt Libraries"]
+        B3["Peer Learning"]
+        B4["Show and Tell Sessions"]
+        B1 --> B2 --> B3 --> B4
+        M2(["Milestone: Workflows Integrated"])
+    end
+
+    subgraph Phase3 ["Phase 3: Days 61-90"]
+        direction TB
+        C1["Complex Multi-Step Tasks"]
+        C2["Agent Building"]
+        C3["Teaching Others"]
+        C4["Become Ground Troops"]
+        C1 --> C2 --> C3 --> C4
+        M3(["Milestone: AI Fluency Achieved"])
+    end
+
+    Phase1 -->|"Day 30"| Phase2
+    Phase2 -->|"Day 60"| Phase3
+
+    classDef blue fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef orange fill:#c77d0a,stroke:#a06508,color:#fff
+    classDef green fill:#1a8a52,stroke:#14693e,color:#fff
+
+    class A1,A2,A3,A4,M1 blue
+    class B1,B2,B3,B4,M2 orange
+    class C1,C2,C3,C4,M3 green
+```
+
 ### Phase 1: Days 1-30 -- Foundation
 
 The first month is about reducing friction to zero and building confidence.

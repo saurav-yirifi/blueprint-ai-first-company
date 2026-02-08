@@ -4,6 +4,10 @@
 
 **Frameworks, code, and the complete AI writing system behind the book**
 
+[![Read Online](https://img.shields.io/badge/Read_Online-Live_Site-38bdf8?style=for-the-badge)](https://aiblueprint.sauravbhatia.com/)
+&nbsp;&nbsp;
+[![GitHub stars](https://img.shields.io/github/stars/saurav-yirifi/blueprint-ai-first-company?style=social)](https://github.com/saurav-yirifi/blueprint-ai-first-company/stargazers)
+
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-455a64?style=flat-square)](LICENSE)
 &nbsp;&nbsp;
 ![81K Words](https://img.shields.io/badge/Words-81%2C000+-2e7d32?style=flat-square)
@@ -281,6 +285,10 @@ What's documented: author voice encoding (6 files that teach an LLM to write lik
 ## Contributing
 
 Contributions are welcome. Whether you have a resource suggestion, a code example, or a correction, please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=saurav-yirifi/blueprint-ai-first-company&type=Date)](https://star-history.com/#saurav-yirifi/blueprint-ai-first-company&Date)
 
 ---
 

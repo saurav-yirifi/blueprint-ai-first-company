@@ -24,6 +24,35 @@ Once spinning, a true flywheel is nearly impossible for competitors to replicate
 | **Application** | Translates insights into product improvements | Insights die in slide decks. Netflix handles 4,000+ daily deployments with automated canary rollouts. |
 | **Feedback** | Connects application back to collection | You ship improvements but don't know if they worked. Does better output generate more data? |
 
+```mermaid
+flowchart LR
+    Collect["Collect\nCapture signals from\nproduction systems"]
+    Store["Store\nOrganize for\nrapid retrieval"]
+    Analyze["Analyze\nTransform raw data\ninto insights"]
+    Apply["Apply\nShip product\nimprovements"]
+    Feedback["Feedback\nMeasure impact and\ngenerate new signals"]
+
+    Collect --> Store
+    Store --> Analyze
+    Analyze --> Apply
+    Apply --> Feedback
+    Feedback --> Collect
+
+    Break1["Common break:\nData silos between teams"]
+    Break2["Common break:\nInsights die in slide decks"]
+
+    Store -.-x Break1
+    Break1 -.-x Analyze
+    Analyze -.-x Break2
+    Break2 -.-x Apply
+
+    classDef cycleNode fill:#1a8a52,stroke:#14693e,color:#fff
+    classDef breakNode fill:#c03030,stroke:#9a2020,color:#fff
+
+    class Collect,Store,Analyze,Apply,Feedback cycleNode
+    class Break1,Break2 breakNode
+```
+
 **The velocity gap is stark.** Netflix deploys in under 15 minutes. Traditional enterprises take 8 to 90 days. Some Fortune 100 banks average nine months from proof-of-concept to production. Duolingo rewrote their Session Generator to reduce processing from 750 milliseconds to 14 milliseconds---the difference between real-time personalization and waiting for the next session.
 
 The bottleneck is rarely collection. Most organizations have mature data collection. The break usually happens between storage and analysis (data in silos) or between analysis and application (insights die in slide decks).

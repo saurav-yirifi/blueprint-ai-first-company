@@ -1106,3 +1106,229 @@ body,
   margin-top: -0.5rem;
   padding-top: 1rem;
 }
+
+/* ============================================================
+   Engagement Components: Share, CTA, Comments, Social Proof
+   ============================================================ */
+
+/* ---- Share Buttons ---- */
+.bp-share {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--bp-line);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bp-share-label {
+  font-family: var(--bp-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bp-white-muted);
+}
+
+.bp-share-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.bp-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  font-family: var(--bp-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--bp-white-muted);
+  border: 1px solid var(--bp-line);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s var(--bp-ease);
+}
+
+.bp-share-btn:hover {
+  border-color: var(--bp-cyan);
+  color: var(--bp-cyan);
+  transform: translateY(-1px);
+}
+
+.bp-share-btn svg {
+  flex-shrink: 0;
+}
+
+/* ---- CTA Banner ---- */
+.bp-cta-banner {
+  margin: 2.5rem 0 2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--bp-line);
+  border-radius: 6px;
+  background: var(--bp-canvas-raised);
+  text-align: center;
+}
+
+.bp-cta-label {
+  font-family: var(--bp-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bp-cyan);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.bp-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bp-cta-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  font-family: var(--bp-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--bp-white-dim);
+  border: 1px solid var(--bp-line);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s var(--bp-ease);
+}
+
+.bp-cta-action:hover {
+  border-color: var(--bp-cyan);
+  color: var(--bp-cyan);
+  transform: translateY(-1px);
+}
+
+.bp-cta-action svg {
+  flex-shrink: 0;
+}
+
+/* ---- Giscus Comments ---- */
+.giscus {
+  margin-top: 1rem;
+}
+
+.giscus-frame {
+  border: 1px solid var(--bp-line) !important;
+  border-radius: 6px;
+}
+
+/* ---- Home Page: Social Proof Strip ---- */
+.bp-social-proof {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bp-proof-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--bp-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--bp-white-muted);
+  text-decoration: none;
+  transition: color 0.3s var(--bp-ease);
+}
+
+a.bp-proof-item:hover {
+  color: var(--bp-cyan);
+}
+
+.bp-proof-item svg {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+a.bp-proof-item:hover svg {
+  opacity: 1;
+}
+
+/* ---- Light Mode Overrides for Engagement Components ---- */
+[data-md-color-scheme="default"] .bp-share-btn {
+  color: #5a6270;
+  border-color: rgba(15, 21, 41, 0.12);
+}
+
+[data-md-color-scheme="default"] .bp-share-btn:hover {
+  color: var(--bp-cyan);
+  border-color: var(--bp-cyan);
+}
+
+[data-md-color-scheme="default"] .bp-share-label {
+  color: #5a6270;
+}
+
+[data-md-color-scheme="default"] .bp-cta-banner {
+  background: rgba(15, 21, 41, 0.03);
+  border-color: rgba(15, 21, 41, 0.12);
+}
+
+[data-md-color-scheme="default"] .bp-cta-action {
+  color: #3a4250;
+  border-color: rgba(15, 21, 41, 0.15);
+}
+
+[data-md-color-scheme="default"] .bp-cta-action:hover {
+  color: var(--bp-cyan);
+  border-color: var(--bp-cyan);
+}
+
+[data-md-color-scheme="default"] .bp-proof-item {
+  color: #5a6270;
+}
+
+[data-md-color-scheme="default"] a.bp-proof-item:hover {
+  color: var(--bp-cyan);
+}
+
+[data-md-color-scheme="default"] .giscus-frame {
+  border-color: rgba(15, 21, 41, 0.12) !important;
+}
+
+/* ---- Responsive: Engagement Components ---- */
+@media (max-width: 768px) {
+  .bp-share {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bp-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bp-cta-action {
+    justify-content: center;
+  }
+
+  .bp-social-proof {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .bp-share-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bp-share-btn {
+    justify-content: center;
+  }
+}

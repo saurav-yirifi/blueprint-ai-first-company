@@ -12,6 +12,30 @@ AI-first founders operate with a different set of mental models -- frameworks fo
 
 ## The Framework
 
+```mermaid
+flowchart TB
+    M1["1. Agent-First Design"]
+    M2["2. Probabilistic Thinking"]
+    M3["3. Data as Product"]
+    M4["4. Permission Spectrum"]
+    M5["5. Compound Iteration"]
+    M6["6. Build vs Buy Inversion"]
+    M7["7. Human-AI Collaboration"]
+
+    M1 -->|"requires"| M2
+    M2 -->|"informs"| M4
+    M3 -->|"feeds"| M5
+    M5 -->|"accelerates"| M6
+    M4 -->|"enables"| M7
+    M1 -->|"generates data for"| M3
+    M7 -->|"informs"| M2
+    M6 -->|"feeds"| M1
+    M5 -->|"enables"| M7
+
+    classDef blue fill:#1e6fa5,stroke:#155a85,color:#fff
+    class M1,M2,M3,M4,M5,M6,M7 blue
+```
+
 ### 1. Agent-First Design
 
 **Build for AI consumers first. Humans benefit automatically.**

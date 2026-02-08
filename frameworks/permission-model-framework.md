@@ -63,6 +63,38 @@ The cost is latency. But for financial transactions, medical diagnoses, and publ
 
 ### The Mode Progression Model
 
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    AskEveryTime: Ask Every Time
+    ApprovedTools: Approved Tools
+    Auto: Auto
+
+    [*] --> AskEveryTime: New system deployed
+
+    AskEveryTime --> ApprovedTools: 30+ days reliable evidence
+    ApprovedTools --> Auto: Consistent track record
+
+    Auto --> ApprovedTools: Incident or failure detected
+    ApprovedTools --> AskEveryTime: Breach or repeated failures
+
+    note right of AskEveryTime
+        High-stakes and irreversible operations.
+        Human approval on every action.
+    end note
+
+    note right of ApprovedTools
+        Freedom within defined boundaries.
+        Specific tools pre-approved.
+    end note
+
+    note right of Auto
+        Low-stakes and easily reversible.
+        AI acts independently.
+    end note
+```
+
 Every new AI system follows this trust progression:
 
 1. **Ask-Every-Time** (30+ days) -- Build evidence of reliability

@@ -14,6 +14,53 @@ Understanding these distinctions isn't academic. It is the difference between a 
 
 ## The Framework
 
+```mermaid
+flowchart TD
+    UC{What is your\nprimary use case?}
+
+    CODE[Code and Reasoning]
+    CREATIVE[Creative and Multimodal]
+    LONGDOC[Long Documents and Video]
+    BUDGET[Budget Workloads]
+
+    CLAUDE[Claude\n97.8% security compliance\nAnalytical reasoning]
+    GPT[GPT\n85.4% MMMU\nCreative synthesis]
+    GEMINI[Gemini\n2M token context\nVideo analysis]
+    DEEPSEEK[DeepSeek\n$0.07/M tokens cached\nRequires security controls]
+
+    COST{Cost above\n$50K/year?}
+    API[Use Closed APIs\nFastest to production]
+    HYBRID[Consider Hybrid\nOpen and Closed mix]
+
+    UC --> CODE --> CLAUDE
+    UC --> CREATIVE --> GPT
+    UC --> LONGDOC --> GEMINI
+    UC --> BUDGET --> DEEPSEEK
+
+    CLAUDE --> COST
+    GPT --> COST
+    GEMINI --> COST
+    DEEPSEEK --> COST
+    COST -- Under $50K --> API
+    COST -- Over $50K --> HYBRID
+
+    classDef decision fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef usecase fill:#1c1c2e,stroke:#444,color:#fff
+    classDef claude fill:#7345b0,stroke:#5b3590,color:#fff
+    classDef gpt fill:#1a8a52,stroke:#14693e,color:#fff
+    classDef gemini fill:#c77d0a,stroke:#a06508,color:#fff
+    classDef deepseek fill:#c03030,stroke:#9a2020,color:#fff
+    classDef outcome fill:#1e6fa5,stroke:#155a85,color:#fff
+
+    class UC,COST decision
+    class CODE,CREATIVE,LONGDOC,BUDGET usecase
+    class CLAUDE claude
+    class GPT gpt
+    class GEMINI gemini
+    class DEEPSEEK deepseek
+    class API,HYBRID outcome
+```
+
 ### Model Strengths and Weaknesses
 
 | Model | Primary Strength | Key Weakness | Best For |

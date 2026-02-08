@@ -2,6 +2,69 @@
 
 > Actionable frameworks extracted from each chapter of *Blueprint for an AI-First Company*. Each framework is a standalone reference you can use immediately.
 
+```mermaid
+flowchart TB
+    subgraph Strategy["Strategy and Positioning"]
+        S1["AI-First vs AI-Enabled"]
+        S2["Build vs Buy Calculus"]
+        S3["10 Principles of AI-First"]
+        S4["7 Mental Models"]
+    end
+
+    subgraph Building["Building and Technical"]
+        B1["Foundation Models"]
+        B2["6 Questions for Model Selection"]
+        B3["8 Patterns for AI Coding"]
+        B4["7 Failure Modes of Agents"]
+        B5["5 Infrastructure Mistakes"]
+    end
+
+    subgraph Data["Data and Competitive Advantage"]
+        D1["Data Flywheel"]
+        D2["Data Moats"]
+        D3["6 Data Strategy Mistakes"]
+    end
+
+    subgraph Operations["Operations and Teams"]
+        O1["Automation vs Augmentation"]
+        O2["Human-AI Collaboration"]
+        O3["8 GTM Mistakes with AI"]
+        O4["90-Day AI Fluency Program"]
+    end
+
+    subgraph Governance["Governance and Risk"]
+        G1["Permission Model"]
+        G2["AI Governance"]
+        G3["7 AI Risks and Mitigations"]
+        G4["Probabilistic AI"]
+    end
+
+    Strategy --> Building
+    Strategy --> Data
+    Building --> Operations
+    Data --> Operations
+    Operations --> Governance
+    Building --> Governance
+
+    classDef strategyNode fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef buildingNode fill:#7345b0,stroke:#5b3590,color:#fff
+    classDef dataNode fill:#1a8a52,stroke:#14693e,color:#fff
+    classDef opsNode fill:#c77d0a,stroke:#a06508,color:#fff
+    classDef govNode fill:#c03030,stroke:#9a2020,color:#fff
+
+    class S1,S2,S3,S4 strategyNode
+    class B1,B2,B3,B4,B5 buildingNode
+    class D1,D2,D3 dataNode
+    class O1,O2,O3,O4 opsNode
+    class G1,G2,G3,G4 govNode
+
+    style Strategy fill:#1c1c2e,stroke:#155a85,color:#fff
+    style Building fill:#1c1c2e,stroke:#5b3590,color:#fff
+    style Data fill:#1c1c2e,stroke:#14693e,color:#fff
+    style Operations fill:#1c1c2e,stroke:#a06508,color:#fff
+    style Governance fill:#1c1c2e,stroke:#9a2020,color:#fff
+```
+
 ## All Frameworks
 
 | Framework | Source Chapter | Use When... |

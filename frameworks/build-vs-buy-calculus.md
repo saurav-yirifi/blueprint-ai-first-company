@@ -22,6 +22,35 @@ The market is already shifting. 76% of AI use cases are now purchased versus 47%
 
 **Boost** -- Taking rented intelligence and customizing it. Enhancing vendor models with your proprietary data through fine-tuning, RAG pipelines, and custom integrations. Speed from the base model plus differentiation from your data.
 
+```mermaid
+flowchart TD
+    Q1{Critical to\nyour moat?}
+    Q2{Data needs\nisolation?}
+    Q3{Resources\nto build?}
+
+    BUY1[BUY\ne.g. Klarna with OpenAI]
+    BUILD1[BUILD\ne.g. Bloomberg with BloombergGPT]
+    BUILD2[BUILD\ne.g. Tesla with fleet data]
+    BOOST1[BOOST\ne.g. Morgan Stanley with GPT-4]
+
+    Q1 -- No --> BUY1
+    Q1 -- Yes --> Q2
+    Q2 -- Yes --> BUILD1
+    Q2 -- No --> Q3
+    Q3 -- Yes --> BUILD2
+    Q3 -- No --> BOOST1
+
+    classDef question fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef buy fill:#1a8a52,stroke:#14693e,color:#fff
+    classDef boost fill:#c77d0a,stroke:#a06508,color:#fff
+    classDef build fill:#7345b0,stroke:#5b3590,color:#fff
+
+    class Q1,Q2,Q3 question
+    class BUY1 buy
+    class BOOST1 boost
+    class BUILD1,BUILD2 build
+```
+
 ### The Decision Questions
 
 1. **Is this capability critical to your competitive moat?** No -> Buy. Yes -> Continue.

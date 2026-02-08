@@ -25,6 +25,49 @@ The productivity loss from ignoring these patterns exceeds the time spent learni
 | 7 | Checkpoint Commits | Protect working state |
 | 8 | Review Ruthlessly | Trust but verify |
 
+```mermaid
+flowchart LR
+    subgraph Prepare["Prepare"]
+        P1["1. Context First"]
+        P2["2. Concrete Examples"]
+    end
+
+    subgraph Execute["Execute"]
+        P3["3. Iterative Refinement"]
+        P4["4. Architecture Ownership"]
+        P5["5. Test-Driven Prompting"]
+    end
+
+    subgraph Recover["Recover"]
+        P6["6. Error Escalation"]
+        P7["7. Checkpoint Commits"]
+    end
+
+    subgraph Verify["Verify"]
+        P8["8. Review Ruthlessly"]
+    end
+
+    Prepare --> Execute
+    Execute --> Recover
+    Recover --> Verify
+    Verify -->|"Next iteration"| Prepare
+
+    classDef prepareNode fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef executeNode fill:#1a8a52,stroke:#14693e,color:#fff
+    classDef recoverNode fill:#c77d0a,stroke:#a06508,color:#fff
+    classDef verifyNode fill:#7345b0,stroke:#5b3590,color:#fff
+
+    class P1,P2 prepareNode
+    class P3,P4,P5 executeNode
+    class P6,P7 recoverNode
+    class P8 verifyNode
+
+    style Prepare fill:#1c1c2e,stroke:#155a85,color:#fff
+    style Execute fill:#1c1c2e,stroke:#14693e,color:#fff
+    style Recover fill:#1c1c2e,stroke:#a06508,color:#fff
+    style Verify fill:#1c1c2e,stroke:#5b3590,color:#fff
+```
+
 ### Pattern 1: Context First
 
 **AI performs dramatically better with background information.** The time spent explaining context pays back tenfold in output quality.

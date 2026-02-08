@@ -2,7 +2,7 @@
 
 > A step-by-step guide to building the infrastructure layer between your AI agents and the tools they call -- routing, authentication, cost tracking, and security enforcement in one place.
 
-*Based on [Chapter 4: Infrastructure for AI-First Operations](../book/part-2-building/04-infrastructure/README.md)*
+*Based on [Chapter 4: Infrastructure for AI-First Operations](../book/part-2-building/04-infrastructure-for-ai-first-operations/README.md)*
 
 ---
 

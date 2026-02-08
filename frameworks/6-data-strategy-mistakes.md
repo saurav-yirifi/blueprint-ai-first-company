@@ -12,6 +12,35 @@ The culprit isn't lack of innovation. It is fundamental errors in building data 
 
 ## The Framework
 
+```mermaid
+flowchart TD
+    M1["1. No Product-Market Fit"]
+    M2["2. Quantity Over Quality"]
+    M3["3. Over-Complex Infrastructure"]
+    M4["4. No Observability"]
+    M5["5. Economic Unfeasibility"]
+    M6["6. Single-Point Dependencies"]
+    FAIL["Flywheel Stalls\n92% failure rate"]
+    FIX["Recovery Path\nDiagnose → Simplify → Validate"]
+
+    M1 -->|"wasted infra\non unwanted product"| M3
+    M1 -->|"no signal\nto optimize"| M2
+    M2 -->|"garbage\ncompounds"| M4
+    M3 -->|"complexity\nhides problems"| M4
+    M4 -->|"silent drift\ngoes undetected"| M5
+    M5 -->|"margins collapse,\nlock-in deepens"| M6
+    M6 --> FAIL
+    FIX -.->|"Stitch Fix: 12-18 months"| M1
+
+    classDef mistake fill:#c03030,stroke:#9a2020,color:#fff
+    classDef fail fill:#1c1c2e,stroke:#c03030,color:#fff
+    classDef fix fill:#1a8a52,stroke:#14693e,color:#fff
+
+    class M1,M2,M3,M4,M5,M6 mistake
+    class FAIL fail
+    class FIX fix
+```
+
 ### Mistake 1: Building the Flywheel Before Product-Market Fit
 
 This is the most expensive mistake because it wastes months of infrastructure investment on a product nobody wants.

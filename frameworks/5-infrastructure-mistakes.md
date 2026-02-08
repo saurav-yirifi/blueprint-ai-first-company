@@ -14,6 +14,44 @@ Only 15% of AI project failures are technical. The rest are infrastructure and g
 
 ## The Framework
 
+```mermaid
+flowchart TD
+    M1["Mistake 1: Over-Engineering Early"]
+    M2["Mistake 2: Single Points of Failure"]
+    M3["Mistake 3: No Observability"]
+    M4["Mistake 4: Ignoring Cost Signals"]
+    M5["Mistake 5: Security as Afterthought"]
+    FAIL["AI Initiative Fails"]
+    FIX["Detection Tests"]
+
+    M1 -->|"Hides costs"| M4
+    M1 -->|"Complexity obscures"| M3
+    M2 -->|"No fallback visibility"| M3
+    M3 -->|"Cant detect spend"| M4
+    M4 -->|"Shortcuts under pressure"| M5
+    M3 -->|"Blind to breaches"| M5
+
+    M1 --> FAIL
+    M2 --> FAIL
+    M3 --> FAIL
+    M4 --> FAIL
+    M5 --> FAIL
+
+    FIX -->|"Break the cycle"| M1
+    FIX -->|"Break the cycle"| M2
+    FIX -->|"Break the cycle"| M3
+    FIX -->|"Break the cycle"| M4
+    FIX -->|"Break the cycle"| M5
+
+    classDef red fill:#c03030,stroke:#9a2020,color:#fff
+    classDef green fill:#1a8a52,stroke:#14693e,color:#fff
+    classDef dark fill:#1c1c2e,stroke:#333,color:#fff
+
+    class M1,M2,M3,M4,M5 red
+    class FIX green
+    class FAIL dark
+```
+
 ### Mistake 1: Over-Engineering Early
 
 A team gets excited about AI, spends three months building a "scalable" infrastructure, and never ships a product. F1-score optimization while integration sits in the backlog. Kubernetes clusters for three developers.

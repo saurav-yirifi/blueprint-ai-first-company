@@ -1,0 +1,154 @@
+# Lychee link checker ignore list
+# These URLs are valid in browsers but fail automated checks due to
+# bot blocking (403/404 to crawlers), timeouts, or transient errors.
+#
+# Reviewed: 2026-02-08
+
+# --- Sites that block automated crawlers (return 403/404 to bots) ---
+
+# McKinsey -- aggressive bot blocking, all pages timeout or 403
+https://www.mckinsey.com/.*
+
+# Forbes -- 403 to crawlers
+https://www.forbes.com/.*
+
+# Bloomberg -- 403 to crawlers
+https://www.bloomberg.com/.*
+
+# Medium -- 403 to crawlers
+https://medium.com/.*
+
+# Reddit -- 403 to crawlers
+https://www.reddit.com/.*
+https://reddit.com/.*
+
+# OpenAI / ChatGPT -- 403 to crawlers
+https://openai.com/.*
+https://platform.openai.com/.*
+https://chat.openai.com/.*
+https://chatgpt.com/.*
+
+# BCG -- 403 to crawlers
+https://www.bcg.com/.*
+https://media-publications.bcg.com/.*
+
+# Gartner -- 403 to crawlers
+https://www.gartner.com/.*
+
+# S&P Global -- 403 to crawlers
+https://www.spglobal.com/.*
+
+# Canva -- 403 to crawlers
+https://www.canva.com/.*
+
+# HRDive -- 403 to crawlers
+https://www.hrdive.com/.*
+
+# Substack -- 403 to crawlers
+https://theagentarchitect.substack.com/.*
+
+# RedHat -- 403 to crawlers
+https://developers.redhat.com/.*
+
+# Perplexity search results -- ephemeral URLs, 403 to crawlers
+https://www.perplexity.ai/.*
+
+# eWeek -- 403 to crawlers
+https://www.eweek.com/.*
+
+# --- Sites that return 404 to bots but work in browsers ---
+
+# Vercel blog -- bot-blocked
+https://vercel.com/blog/.*
+
+# Figma blog -- bot-blocked
+https://www.figma.com/blog/.*
+
+# Notion blog -- bot-blocked
+https://www.notion.so/blog/.*
+
+# Stripe blog -- bot-blocked
+https://stripe.com/blog/.*
+
+# Accenture -- bot-blocked
+https://www.accenture.com/.*
+
+# Splunk -- bot-blocked
+https://www.splunk.com/.*
+
+# CNBC -- bot-blocked
+https://www.cnbc.com/.*
+
+# BBC -- bot-blocked
+https://www.bbc.com/.*
+
+# Morgan Stanley -- bot-blocked
+https://www.morganstanley.com/.*
+
+# Builder.io -- bot-blocked
+https://www.builder.io/.*
+
+# Cognition AI -- bot-blocked
+https://www.cognition.ai/.*
+
+# Intercom -- bot-blocked
+https://www.intercom.com/.*
+
+# Adobe -- timeouts
+https://www.adobe.com/.*
+
+# MIT Sloan Review -- bot-blocked
+https://sloanreview.mit.edu/.*
+
+# --- Specific dead/moved pages (verified manually) ---
+
+# Wikipedia article with parentheses in URL (lychee URL encoding issue)
+https://en.wikipedia.org/wiki/Jasper_%28software%29
+https://en.wikipedia.org/wiki/Jasper_(software)
+
+# The Verge -- old article URLs restructured
+https://www.theverge.com/.*
+
+# Grammarly engineering blog -- restructured
+https://www.grammarly.com/blog/engineering/.*
+
+# Facebook/Meta engineering blog -- moved to engineering.meta.com
+https://engineering.fb.com/.*
+
+# CMU research -- restructured
+https://www.cmu.edu/research/
+
+# Netflix tech blog -- SSL issues in CI
+https://netflixtechblog.com/.*
+
+# LMSYS Chatbot Arena -- intermittent availability
+https://chat.lmsys.org/
+
+# --- Specific URLs that are dead or moved ---
+https://www.industryintel.com/.*
+https://blog.laozhang.ai/.*
+https://inkeep.com/blog/.*
+https://www.braintrustdata.com/blog/.*
+https://www.snowflake.com/en/data-cloud/data-cloud-summit/
+https://socket.dev/blog/.*
+https://addyosmani.com/blog/ai-coding/
+https://redis.io/docs/latest/embeds/.*
+https://www.ox.security/.*
+https://aws.amazon.com/executive-insights/.*
+https://research.contrary.com/.*
+https://blog.arcade.dev/.*
+https://www.softwareseni.com/.*
+https://finrep.ai/.*
+https://www.gurustartups.com/.*
+https://www.zapscale.com/.*
+https://www.mintmcp.com/.*
+https://www.efficiencyai.co.uk/.*
+https://aiworldcongress.com/
+https://www.businesswire.com/.*
+https://www.anao.gov.au/.*
+https://github.com/anthropics/claude-code/blob/main/AGENTS.md
+https://github.com/microsoft/phi-3
+https://milvus.io/.*
+https://pathvira.com/.*
+https://www.trust.sg/.*
+https://www.uber.com/blog/.*

@@ -38,6 +38,40 @@ GitHub Copilot illustrates both: it labels outputs as "suggestions," not answers
 
 ### The Creative Director Model
 
+```mermaid
+flowchart LR
+    subgraph Human["Human: Creative Director"]
+        direction TB
+        H1[Set Intent\nand Vision]
+        H2[Define Constraints\nand Boundaries]
+        H3[Review and Select\nfrom Options]
+        H4[Make Final\nDecisions]
+        H1 --> H2 --> H3 --> H4
+    end
+
+    subgraph AI["AI: Execution Team"]
+        direction TB
+        A1[Generate\nOptions Rapidly]
+        A2[Execute\nat Scale]
+        A3[Refine Based\non Feedback]
+        A1 --> A2 --> A3
+    end
+
+    H2 -- "Brief and\nConstraints" --> A1
+    A1 -- "Options for\nReview" --> H3
+    H4 -- "Feedback and\nDirection" --> A3
+    A3 -- "Refined\nOutput" --> H3
+
+    classDef human fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef ai fill:#1a8a52,stroke:#14693e,color:#fff
+
+    class H1,H2,H3,H4 human
+    class A1,A2,A3 ai
+
+    style Human fill:#1c1c2e,stroke:#155a85,color:#fff
+    style AI fill:#1c1c2e,stroke:#14693e,color:#fff
+```
+
 Think of a film director working with a visual effects team. The director doesn't render each frame -- they set creative intent, review options, and make decisions. The VFX team executes at scale.
 
 **Human role (Creative Director):**

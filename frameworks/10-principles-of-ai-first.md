@@ -14,6 +14,50 @@ The tools will change. These principles won't. Build accordingly.
 
 ## The Framework
 
+```mermaid
+flowchart TB
+    subgraph Meta["Meta-Principle"]
+        P10["P10: Build to Add, Not to Replace"]
+    end
+
+    subgraph Org["Organization"]
+        P7["P7: Every Developer is an AI Developer"]
+        P9["P9: Consistency Compounds"]
+    end
+
+    subgraph Arch["Architecture"]
+        P1["P1: Build for Agents First"]
+        P2["P2: Routing is Strategy"]
+        P5["P5: Chat Agents and Background Agents"]
+        P6["P6: Own Your Domain, Share Foundation"]
+    end
+
+    subgraph DataOps["Data and Operations"]
+        P3["P3: Superpowers with Guardrails"]
+        P4["P4: AI Types While You Think"]
+        P8["P8: Right Tool for Right Data"]
+    end
+
+    DataOps --> Arch
+    Arch --> Org
+    Org --> Meta
+
+    classDef metaNode fill:#7345b0,stroke:#5b3590,color:#fff
+    classDef orgNode fill:#c77d0a,stroke:#a06508,color:#fff
+    classDef archNode fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef dataNode fill:#1a8a52,stroke:#14693e,color:#fff
+
+    class P10 metaNode
+    class P7,P9 orgNode
+    class P1,P2,P5,P6 archNode
+    class P3,P4,P8 dataNode
+
+    style Meta fill:#1c1c2e,stroke:#5b3590,color:#fff
+    style Org fill:#1c1c2e,stroke:#a06508,color:#fff
+    style Arch fill:#1c1c2e,stroke:#155a85,color:#fff
+    style DataOps fill:#1c1c2e,stroke:#14693e,color:#fff
+```
+
 ### Principle 1: Build for Agents, Humans Will Thank You
 
 Every interface you design should work for AI agents first. If an agent can use your API, humans definitely can. But the reverse isn't true.

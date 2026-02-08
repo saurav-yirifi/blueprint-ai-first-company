@@ -8,6 +8,7 @@ copyright: "&copy; 2026 Saurav Bhatia &mdash; CC BY-NC-SA 4.0"
 
 repo_url: https://github.com/saurav-yirifi/blueprint-ai-first-company
 repo_name: saurav-yirifi/blueprint-ai-first-company
+edit_uri: edit/main/
 
 theme:
   name: material
@@ -23,6 +24,7 @@ theme:
     - search.highlight
     - content.code.copy
     - content.code.annotate
+    - content.action.edit
     - toc.follow
   palette:
     - scheme: slate
@@ -76,6 +78,19 @@ markdown_extensions:
 
 plugins:
   - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/saurav-yirifi/blueprint-ai-first-company
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/sauravbhats
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/sauravbhats
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  generator: false
 
 nav:
   - Home: index.md

@@ -44,6 +44,35 @@ Design around uncertainty, and you build trust. Pretend certainty you don't have
 - **Monitor for degradation** -- track accuracy, confidence distributions, and user override rates over time
 - **Design for graceful failure** -- when the AI doesn't know, it should say so rather than fabricate an answer
 
+```mermaid
+flowchart TD
+    A["AI Output Generated"] --> B{"Confidence Level?"}
+    B -->|"High > 95%"| C{"Stakes?"}
+    B -->|"Medium 70-95%"| D{"Stakes?"}
+    B -->|"Low < 70%"| E{"Stakes?"}
+
+    C -->|Low| F["Auto-execute"]
+    C -->|High| G["Show options with recommendation"]
+
+    D -->|Low| H["Show ranked options"]
+    D -->|High| I["Escalate to human"]
+
+    E -->|Low| J["Show options, no recommendation"]
+    E -->|High| K["Graceful degradation"]
+
+    classDef green fill:#1a8a52,stroke:#14693e,color:#fff
+    classDef orange fill:#c77d0a,stroke:#a06508,color:#fff
+    classDef red fill:#c03030,stroke:#9a2020,color:#fff
+    classDef blue fill:#1e6fa5,stroke:#155a85,color:#fff
+
+    class F green
+    class G,H orange
+    class I,K red
+    class J orange
+    class A,B blue
+    class C,D,E blue
+```
+
 ### The Permission Spectrum
 
 Not all AI decisions carry the same stakes. The best AI products calibrate autonomy to context:

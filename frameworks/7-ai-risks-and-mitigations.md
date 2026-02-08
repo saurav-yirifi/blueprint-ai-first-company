@@ -12,6 +12,48 @@ These risks are interconnected: data risks enable output risks, operational risk
 
 The incidents cited below aren't hypothetical. They are documented cases that resulted in financial penalties, reputational damage, workforce reductions, and regulatory action.
 
+```mermaid
+flowchart TD
+    subgraph DataLayer["Data-Layer Risks"]
+        Bias["Risk 2: Bias and\nDiscrimination"]
+        Privacy["Risk 3: Privacy\nLeakage"]
+        Drift["Risk 5: Model Drift\nand Degradation"]
+    end
+
+    subgraph OutputLayer["Output-Layer Risks"]
+        Hallucination["Risk 1:\nHallucination"]
+        Injection["Risk 4: Prompt Injection\nand Jailbreaking"]
+    end
+
+    subgraph OpsLayer["Operational Risks"]
+        Security["Risk 6: Security\nVulnerabilities"]
+    end
+
+    Compliance["Risk 7: Regulatory\nNon-Compliance"]
+
+    Bias -->|"Biased training data\nproduces biased outputs"| Hallucination
+    Privacy -->|"Data exposure enables"| Injection
+    Drift -->|"Degraded accuracy increases"| Hallucination
+    Security -->|"Compromised models amplify"| Injection
+    Security -->|"Poisoned data worsens"| Drift
+    Hallucination -->|"False outputs trigger"| Compliance
+    Injection -->|"Exploits trigger"| Compliance
+    Bias -->|"Discrimination triggers"| Compliance
+    Privacy -->|"Breaches trigger"| Compliance
+
+    classDef highRisk fill:#c03030,stroke:#9a2020,color:#fff
+    classDef medRisk fill:#c77d0a,stroke:#a06508,color:#fff
+    classDef complianceNode fill:#c03030,stroke:#9a2020,color:#fff
+
+    class Bias,Privacy,Hallucination,Injection highRisk
+    class Drift,Security medRisk
+    class Compliance complianceNode
+
+    style DataLayer fill:#1c1c2e,color:#fff
+    style OutputLayer fill:#1c1c2e,color:#fff
+    style OpsLayer fill:#1c1c2e,color:#fff
+```
+
 ## The Framework
 
 ### Risk 1: Hallucination

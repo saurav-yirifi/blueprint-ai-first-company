@@ -14,6 +14,25 @@ These questions should be answered in sequence and written down before evaluatin
 
 ## The Framework
 
+```mermaid
+flowchart TD
+    A["All Available Models"] --> Q1
+    Q1["Q1: Primary Use Case"] --> Q2
+    Q2["Q2: Latency Tolerance"] --> Q3
+    Q3["Q3: Compliance Landscape"] --> Q4
+    Q4["Q4: Cost Structure"] --> Q5
+    Q5["Q5: Explainability Needs"] --> Q6
+    Q6["Q6: Switching Tolerance"] --> R["2-3 Candidates to Test"]
+
+    classDef startNode fill:#1c1c2e,stroke:#555,color:#fff
+    classDef questionNode fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef resultNode fill:#1a8a52,stroke:#14693e,color:#fff
+
+    class A startNode
+    class Q1,Q2,Q3,Q4,Q5,Q6 questionNode
+    class R resultNode
+```
+
 ### 1. What's Your Primary Use Case?
 
 Not "what could AI do for us?"---that question has infinite answers. The real question: what specific job are you hiring AI to do?

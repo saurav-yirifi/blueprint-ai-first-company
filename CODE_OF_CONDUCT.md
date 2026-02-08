@@ -38,7 +38,7 @@ This Code of Conduct applies within all community spaces, and also applies when 
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement via [GitHub Issues](https://github.com/sbbuildaifirst/blueprint-ai-first-company/issues) in this repository or by email at saurav@yirifi.ai. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement via [GitHub Issues](https://github.com/saurav-yirifi/blueprint-ai-first-company/issues) in this repository or by email at saurav@yirifi.ai. All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the reporter of any incident.
 

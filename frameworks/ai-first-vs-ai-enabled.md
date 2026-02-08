@@ -21,6 +21,27 @@ The simplest way to know which camp you're in: **what happens if you remove the 
 - **Harvey:** Remove the AI, and Harvey doesn't exist. There's no legacy product underneath. PwC partners report their junior lawyers would "riot" if Harvey were taken away.
 - **Notion:** Turn off Notion AI tomorrow, and you'd still have a functioning workspace for notes, docs, and wikis. The product existed since 2016. AI makes it better. AI doesn't make it *exist*.
 
+```mermaid
+flowchart TD
+    A["Your Product"] --> B{"Remove the AI"}
+    B -->|"Product ceases to exist"| C["AI-First"]
+    B -->|"Core product survives"| D["AI-Enabled"]
+    C --> E["Harvey, Perplexity, Glean"]
+    D --> F["Notion, Salesforce, Figma"]
+
+    classDef startNode fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef decisionNode fill:#7345b0,stroke:#5b3590,color:#fff
+    classDef firstNode fill:#c03030,stroke:#9a2020,color:#fff
+    classDef enabledNode fill:#1a8a52,stroke:#14693e,color:#fff
+    classDef exampleNode fill:#1c1c2e,stroke:#555,color:#fff
+
+    class A startNode
+    class B decisionNode
+    class C firstNode
+    class D enabledNode
+    class E,F exampleNode
+```
+
 ### 5 Signs You're Looking at AI-First
 
 **1. The Company Didn't Exist Before Modern AI**

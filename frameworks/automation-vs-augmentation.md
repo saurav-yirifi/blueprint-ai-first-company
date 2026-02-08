@@ -73,6 +73,41 @@ Healthcare provides a compelling example: revenue cycle management teams using h
 
 For the messy middle, use this five-stage progression:
 
+```mermaid
+flowchart LR
+    S1[Stage 1\nObserve]
+    S2[Stage 2\nSuggest]
+    S3[Stage 3\nExecute with\nApproval]
+    S4[Stage 4\nExecute with\nAudit]
+    S5[Stage 5\nFull\nAutomation]
+
+    S1 --> S2 --> S3 --> S4 --> S5
+
+    classDef stage1 fill:#1e6fa5,stroke:#155a85,color:#fff
+    classDef stage2 fill:#1a7a8a,stroke:#14606e,color:#fff
+    classDef stage3 fill:#1a8a52,stroke:#14693e,color:#fff
+    classDef stage4 fill:#2a9a42,stroke:#1e7a32,color:#fff
+    classDef stage5 fill:#34aa34,stroke:#288a28,color:#fff
+
+    class S1 stage1
+    class S2 stage2
+    class S3 stage3
+    class S4 stage4
+    class S5 stage5
+
+    subgraph Complexity["Complexity Dimensions"]
+        direction TB
+        C1["Component: pushes toward augmentation\nwhen many data points required"]
+        C2["Coordinative: pushes toward augmentation\nwhen many sequential steps"]
+        C3["Dynamic: pushes toward augmentation\nwhen context changes rapidly"]
+    end
+
+    style Complexity fill:#1c1c2e,stroke:#333,color:#fff
+    style C1 fill:#c77d0a,stroke:#a06508,color:#fff
+    style C2 fill:#c77d0a,stroke:#a06508,color:#fff
+    style C3 fill:#c77d0a,stroke:#a06508,color:#fff
+```
+
 1. **Observe** -- AI watches and learns patterns
 2. **Suggest** -- AI recommends, human decides
 3. **Execute with Approval** -- AI acts, human confirms
