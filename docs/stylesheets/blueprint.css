@@ -219,9 +219,9 @@ body::before {
   opacity: 0.6;
 }
 
-/* Light mode: near-invisible grid for clean reading */
-[data-md-color-scheme="default"] body::before {
-  opacity: 0.08;
+/* Light mode: subtle grid for clean reading */
+body[data-md-color-scheme="default"]::before {
+  opacity: 0.15;
 }
 
 /* Ensure all content layers above the grid */
