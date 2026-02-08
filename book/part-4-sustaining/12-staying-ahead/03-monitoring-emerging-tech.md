@@ -50,10 +50,10 @@ flowchart TB
     ASSESS --> SPIKE["Spike & Prototype"]
     HOLD --> WAIT["Wait for Evidence"]
 
-    style ADOPT fill:#ccffcc,stroke:#00cc00
-    style TRIAL fill:#e1f5fe,stroke:#0288d1
-    style ASSESS fill:#fff3e0,stroke:#ff9800
-    style HOLD fill:#ffcccc,stroke:#cc0000
+    style ADOPT fill:#1a8a52,stroke:#14693e
+    style TRIAL fill:#1e6fa5,stroke:#155a85
+    style ASSESS fill:#c77d0a,stroke:#a06508
+    style HOLD fill:#c03030,stroke:#9a2020
 ```
 
 ## What to Actually Watch
@@ -121,10 +121,10 @@ flowchart LR
     Q3 -->|"Yes"| PROD["Production"]
     Q3 -->|"No"| KILL3["Kill"]
 
-    style PROD fill:#ccffcc,stroke:#00cc00
-    style KILL1 fill:#ffcccc,stroke:#cc0000
-    style KILL2 fill:#ffcccc,stroke:#cc0000
-    style KILL3 fill:#ffcccc,stroke:#cc0000
+    style PROD fill:#1a8a52,stroke:#14693e
+    style KILL1 fill:#c03030,stroke:#9a2020
+    style KILL2 fill:#c03030,stroke:#9a2020
+    style KILL3 fill:#c03030,stroke:#9a2020
 ```
 
 ## Knowing When to Kill

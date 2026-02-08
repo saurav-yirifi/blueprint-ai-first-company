@@ -1,0 +1,96 @@
+# Chapter 4: Infrastructure for AI-First Operations
+# Maps to: blueprint-ai-first-company/book/part-2-building/04-infrastructure-for-ai-first-operations/
+
+chapter:
+  number: 4
+  title: Infrastructure for AI-First Operations
+  status: completed
+  aliases:
+  - ch04
+  - Chapter 4
+  target_words: 6500
+  summary: The infrastructure stack for AI-first companies—databases, gateways, and auth
+  yirifi_anchor: 'Three tiers of AI access: reading system status is free, production deploys require approval, and deleting
+    user data is always human-only. The tiers aren''t about limiting AI—they''re about matching autonomy to reversibility.'
+  external_examples:
+  - Linear's infrastructure decisions (minimal, opinionated stack)
+  - Raycast's AI architecture (local-first with cloud fallback)
+  key_concepts:
+  - Build vs Buy Calculus
+  related_chapters:
+  - 3
+  - 5
+  - 6
+  tags:
+  - chapter
+  - building
+  - infrastructure
+  - tiered-access
+  - polyglot-persistence
+  - ai-gateway
+sections:
+- file: 01-the-infrastructure-stack.md
+  title: The Infrastructure Stack
+  status: completed
+  target_words: 1000
+  key_concepts:
+  - Foundation Models
+  tags:
+  - section
+  - building
+  - infrastructure
+  created: '2026-01-12'
+- file: 02-polyglot-persistence.md
+  title: Polyglot Persistence
+  status: completed
+  target_words: 1100
+  tags:
+  - section
+  - building
+  - polyglot-persistence
+  created: '2026-01-12'
+- file: 03-the-ai-tool-gateway-pattern.md
+  title: The AI Tool Gateway Pattern
+  status: completed
+  target_words: 1000
+  key_concepts:
+  - Automation vs Augmentation
+  tags:
+  - section
+  - building
+  - ai-gateway
+  - tiered-access
+  created: '2026-01-12'
+- file: 04-unified-auth-for-humans-and-agents.md
+  title: Unified Auth for Humans AND Agents
+  status: completed
+  target_words: 1000
+  key_concepts:
+  - AI Governance Framework
+  tags:
+  - section
+  - building
+  - infrastructure
+  created: '2026-01-12'
+- file: 05-the-5-infrastructure-mistakes.md
+  title: The 5 Infrastructure Mistakes That Kill AI Initiatives
+  status: completed
+  target_words: 1000
+  key_concepts:
+  - Foundation Models
+  tags:
+  - section
+  - building
+  - framework
+  created: '2026-01-12'
+- file: 06-build-vs-buy-for-infrastructure.md
+  title: Build vs Buy for Infrastructure
+  status: completed
+  target_words: 950
+  key_concepts:
+  - Build vs Buy Calculus
+  tags:
+  - section
+  - building
+  - build-vs-buy
+  created: '2026-01-12'

@@ -52,10 +52,10 @@ flowchart LR
     GQL -->|"Data Retrieval"| AI
     EVENT -->|"Collaboration"| AI
 
-    style REST fill:#e1f5fe,stroke:#0288d1
-    style GQL fill:#fff3e0,stroke:#f57c00
-    style EVENT fill:#f3e5f5,stroke:#7b1fa2
-    style AI fill:#c8e6c9,stroke:#388e3c
+    style REST fill:#1e6fa5,stroke:#155a85
+    style GQL fill:#c77d0a,stroke:#a06508
+    style EVENT fill:#7345b0,stroke:#5b3590
+    style AI fill:#1a8a52,stroke:#14693e
 ```
 
 ## The 80/20 Design Principle
@@ -90,9 +90,9 @@ flowchart TB
     CONFIRM --> DONE[Request Complete]
     MERGE --> CHK
 
-    style DET fill:#c8e6c9,stroke:#388e3c
-    style LLM fill:#fff3e0,stroke:#f57c00
-    style HUMAN fill:#ffcdd2,stroke:#c62828
+    style DET fill:#1a8a52,stroke:#14693e
+    style LLM fill:#c77d0a,stroke:#a06508
+    style HUMAN fill:#c03030,stroke:#9a2020
 ```
 
 Deterministic logic handles the routine. LLMs provide judgment where it matters. You get speed and reliability for the predictable, flexibility for the edge cases.

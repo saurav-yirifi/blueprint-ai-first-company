@@ -42,10 +42,10 @@ flowchart TB
     PLATFORM -.->|"Risk: Bottlenecks"| HYBRID
     HYBRID -.->|"Risk: Coordination tax"| EVERYONE
 
-    style EMBEDDED fill:#e3f2fd,stroke:#1976d2
-    style PLATFORM fill:#fff3e0,stroke:#f57c00
-    style HYBRID fill:#f3e5f5,stroke:#7b1fa2
-    style EVERYONE fill:#e8f5e9,stroke:#388e3c
+    style EMBEDDED fill:#1e6fa5,stroke:#155a85
+    style PLATFORM fill:#c77d0a,stroke:#a06508
+    style HYBRID fill:#7345b0,stroke:#5b3590
+    style EVERYONE fill:#1a8a52,stroke:#14693e
 ```
 
 ### 1. Embedded AI: Speed Through Context
@@ -114,12 +114,11 @@ flowchart TD
     MAT -->|Strategic| HYB2[<b>Hybrid</b><br/>Distribute with governance]
     MAT -->|Mature + AI-native| EVERY[<b>Everyone-AI</b><br/>If culture supports it]
 
-    style START fill:#f5f5f5,stroke:#9e9e9e
-    style CENTRAL fill:#fff3e0,stroke:#f57c00
-    style EMB fill:#e3f2fd,stroke:#1976d2
-    style HYB fill:#f3e5f5,stroke:#7b1fa2
-    style HYB2 fill:#f3e5f5,stroke:#7b1fa2
-    style EVERY fill:#e8f5e9,stroke:#388e3c
+    style CENTRAL fill:#c77d0a,stroke:#a06508
+    style EMB fill:#1e6fa5,stroke:#155a85
+    style HYB fill:#7345b0,stroke:#5b3590
+    style HYB2 fill:#7345b0,stroke:#5b3590
+    style EVERY fill:#1a8a52,stroke:#14693e
 ```
 
 **Company size matters, but not how you'd expect.** Organizations with fewer than 10 AI practitioners usually start centralized—consolidate scarce expertise, establish standards. Beyond 15-20 people working on multiple projects, resource balancing becomes challenging. That's the signal to consider hybrid or embedded[^transition].

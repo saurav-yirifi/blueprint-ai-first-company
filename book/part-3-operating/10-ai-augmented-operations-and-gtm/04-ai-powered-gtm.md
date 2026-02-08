@@ -64,9 +64,9 @@ flowchart TB
     L1 -->|"Don't skip"| L2
     L2 -->|"Don't skip"| L3
 
-    style L1 fill:#ffcdd2,stroke:#c62828
-    style L2 fill:#fff3e0,stroke:#f57c00
-    style L3 fill:#c8e6c9,stroke:#388e3c
+    style L1 fill:#c03030,stroke:#9a2020
+    style L2 fill:#c77d0a,stroke:#a06508
+    style L3 fill:#1a8a52,stroke:#14693e
 ```
 
 **Level 1: Individual Experimentation.** Power users try AI for personal productivity. Proves value but creates fragmentation.

@@ -10,7 +10,7 @@ This chapter is about what that shift means for how you build a company.
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "15 backoffice microsites in 3 months, just 2 people. Not because we're superhuman—because AI coding changed the math."
 
@@ -18,7 +18,7 @@ This chapter is about what that shift means for how you build a company.
 
 **Memorable close:** "When development costs approach zero, the only constraint is imagination."
 
----
+</div>
 
 ## What You'll Learn
 

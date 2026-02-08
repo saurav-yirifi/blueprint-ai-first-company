@@ -42,11 +42,11 @@ flowchart TB
 
     L1 --> L2 --> L3 --> L4 --> L5
 
-    style L1 fill:#e1f5fe,stroke:#333
-    style L2 fill:#ccffcc,stroke:#333
-    style L3 fill:#fff3e0,stroke:#333
-    style L4 fill:#e1f5fe,stroke:#333
-    style L5 fill:#ffcccc,stroke:#333
+    style L1 fill:#1e6fa5,stroke:#454d58
+    style L2 fill:#1a8a52,stroke:#454d58
+    style L3 fill:#c77d0a,stroke:#454d58
+    style L4 fill:#1e6fa5,stroke:#454d58
+    style L5 fill:#c03030,stroke:#454d58
 ```
 
 You're logging decisions made by a system that can't explain itself deterministically—that's what makes AI logging different from traditional software logging. The standard approach from observability platforms like Langfuse, Dynatrace, and Latitude clusters logging into five distinct layers[^langfuse]:
@@ -97,9 +97,9 @@ flowchart TB
 
     TRADITIONAL -.->|"Insufficient for AI"| AI_BASED
 
-    style CRITICAL fill:#ffcccc,stroke:#c00,stroke-width:2px
-    style HIGH fill:#fff3e0,stroke:#333
-    style MEDIUM fill:#ccffcc,stroke:#333
+    style CRITICAL fill:#c03030,stroke:#9a2020,stroke-width:2px
+    style HIGH fill:#c77d0a,stroke:#454d58
+    style MEDIUM fill:#1a8a52,stroke:#454d58
 ```
 
 Forget P0/P1/P2 severity levels. Leading AI companies have moved to impact-based and capability-based classification systems.
@@ -142,13 +142,13 @@ flowchart LR
 
     PHASE1 --> PHASE2 --> PHASE3 --> PHASE4 --> PHASE5 --> PHASE6 --> PHASE7
 
-    style PHASE1 fill:#ffcccc,stroke:#333
-    style PHASE2 fill:#fff3e0,stroke:#333
-    style PHASE3 fill:#ffcccc,stroke:#333
-    style PHASE4 fill:#e1f5fe,stroke:#333
-    style PHASE5 fill:#ccffcc,stroke:#333
-    style PHASE6 fill:#ccffcc,stroke:#333
-    style PHASE7 fill:#e1f5fe,stroke:#333
+    style PHASE1 fill:#c03030,stroke:#454d58
+    style PHASE2 fill:#c77d0a,stroke:#454d58
+    style PHASE3 fill:#c03030,stroke:#454d58
+    style PHASE4 fill:#1e6fa5,stroke:#454d58
+    style PHASE5 fill:#1a8a52,stroke:#454d58
+    style PHASE6 fill:#1a8a52,stroke:#454d58
+    style PHASE7 fill:#1e6fa5,stroke:#454d58
 ```
 
 **1. Detect**: Continuous production monitoring—automated anomaly alerts, user feedback systems, evaluation score drops.

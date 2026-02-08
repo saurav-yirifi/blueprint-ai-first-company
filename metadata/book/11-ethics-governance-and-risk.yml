@@ -1,0 +1,99 @@
+# Chapter 11: Ethics, Governance, and Risk
+# Maps to: blueprint-ai-first-company/book/part-4-sustaining/11-ethics-governance-and-risk/
+
+chapter:
+  number: 11
+  title: Ethics, Governance, and Risk
+  status: completed
+  aliases:
+  - ch11
+  - Chapter 11
+  target_words: 6500
+  summary: Building responsible AI with proper governance, risk management, and ethics frameworks
+  yirifi_anchor: 'Three permission modes: AI does everything automatically, AI only uses approved tools, AI asks for every
+    action. Different contexts need different trust levels. The question isn''t ''can AI do this?'' but ''should AI do this
+    unsupervised?'' Document your answer. You''ll be asked.'
+  external_examples:
+  - Microsoft's responsible AI framework (principles into practice, not just principles)
+  - OpenAI's safety practices (constitutional AI, RLHF, red teaming—operational, not theoretical)
+  key_concepts:
+  - Data Flywheel
+  - Probabilistic AI
+  related_chapters:
+  - 4
+  - 9
+  - 12
+  tags:
+  - chapter
+  - sustaining
+  - ethics
+  - governance
+  - risk
+  - compliance
+  - ai-safety
+sections:
+- file: 01-the-permission-model-framework.md
+  title: The Permission Model Framework
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Probabilistic AI
+  tags:
+  - section
+  - sustaining
+  - ethics
+  - framework
+  created: '2026-01-12'
+- file: 02-ai-governance-that-works.md
+  title: AI Governance That Works
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - AI Governance Framework
+  tags:
+  - section
+  - sustaining
+  - governance
+  created: '2026-01-12'
+- file: 03-the-7-ai-risks-and-their-mitigations.md
+  title: The 7 AI Risks and Their Mitigations
+  status: completed
+  target_words: 1000
+  key_concepts:
+  - AI Governance Framework
+  - Probabilistic AI
+  - Human-AI Collaboration
+  - Algorithmic Fairness
+  tags:
+  - section
+  - sustaining
+  - risk
+  - framework
+  - ethics
+  created: '2026-01-12'
+- file: 04-operational-controls.md
+  title: Operational Controls
+  status: completed
+  target_words: 1300
+  key_concepts:
+  - AI Governance Framework
+  - Probabilistic AI
+  - Human-AI Collaboration
+  - Automation vs Augmentation
+  tags:
+  - section
+  - sustaining
+  - governance
+  - risk
+  created: '2026-01-25'
+- file: 05-regulatory-landscape.md
+  title: Regulatory Landscape
+  status: completed
+  target_words: 850
+  key_concepts:
+  - AI Governance Framework
+  tags:
+  - section
+  - sustaining
+  - compliance
+  created: '2026-01-12'

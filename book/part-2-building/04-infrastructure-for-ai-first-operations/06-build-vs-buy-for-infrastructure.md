@@ -4,15 +4,13 @@ When managed services win, when they don't.
 
 ---
 
-## Draft
-
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Build what differentiates you. Buy everything else. The hard part is knowing which is which."
 
 **The structural insight:** At Yirifi, we buy infrastructure by default. The bar for building is high: we must demonstrate that the custom solution provides competitive advantage that justifies ongoing maintenance cost. Databases? Buy. Auth? Buy. AI orchestration that's core to our product? Build. This isn't laziness—it's strategic focus.
 
----
+</div>
 
 Everyone thinks they're special when it comes to build vs buy. Every startup believes their use case is unique enough to justify custom infrastructure. Every enterprise worries that vendors will hold them hostage. And almost everyone gets it wrong.
 

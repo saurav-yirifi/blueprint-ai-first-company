@@ -2,14 +2,15 @@
 
 Centralized orchestration, distributed execution.
 
+---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Every agent at Yirifi goes through the hub. Not because we love centralization, but because we need one place to manage permissions, one place to see what's running, one place to shut things down when they go wrong."
 
 **The structural insight:** Yirifi's Agent Hub emerged from operational necessity. When we had 5 agents, we managed them individually. When we had 15, chaos ensued—conflicting permissions, duplicate logging systems, no central visibility. The Agent Hub pattern provides centralized control (permissions, observability, kill switches) with distributed execution (agents run independently). It's the architectural equivalent of air traffic control: planes fly themselves, but someone coordinates the airspace.
 
----
+</div>
 
 At five agents, each had its own configuration, its own logs, its own permissions. We knew them by name. At fifteen, the cracks showed. Conflicting permissions meant one agent could access data another couldn't, with no clear reason why. Debugging required hunting through multiple logging systems with unsynchronized timestamps. When an agent started consuming excessive API tokens at 2 AM, we had no central kill switch—just frantic SSH sessions trying to locate the runaway process.
 
@@ -44,8 +45,8 @@ flowchart TB
     ControlPlane -->|Config + Permissions| DataPlane
     DataPlane -->|Telemetry + Status| ControlPlane
 
-    style ControlPlane fill:#e3f2fd
-    style DataPlane fill:#fff3e0
+    style ControlPlane fill:#1e6fa5
+    style DataPlane fill:#c77d0a
 ```
 
 ### Three Implementation Patterns

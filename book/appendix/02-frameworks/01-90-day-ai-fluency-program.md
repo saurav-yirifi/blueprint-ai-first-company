@@ -37,9 +37,9 @@ flowchart LR
     PHASE1 -->|"Build confidence"| PHASE2
     PHASE2 -->|"Build capability"| PHASE3
 
-    style PHASE1 fill:#fff3e0,stroke:#f57c00
-    style PHASE2 fill:#e3f2fd,stroke:#1976d2
-    style PHASE3 fill:#e8f5e9,stroke:#388e3c
+    style PHASE1 fill:#c77d0a,stroke:#a06508
+    style PHASE2 fill:#1e6fa5,stroke:#155a85
+    style PHASE3 fill:#1a8a52,stroke:#14693e
 ```
 
 ## Days 1-30: Foundation
@@ -142,10 +142,10 @@ flowchart TB
         end
     end
 
-    style ADOPTION fill:#e3f2fd,stroke:#1976d2
-    style PRODUCTIVITY fill:#e8f5e9,stroke:#388e3c
-    style QUALITY fill:#fff3e0,stroke:#f57c00
-    style RETENTION fill:#f3e5f5,stroke:#7b1fa2
+    style ADOPTION fill:#1e6fa5,stroke:#155a85
+    style PRODUCTIVITY fill:#1a8a52,stroke:#14693e
+    style QUALITY fill:#c77d0a,stroke:#a06508
+    style RETENTION fill:#7345b0,stroke:#5b3590
 ```
 
 ### Adoption Metrics

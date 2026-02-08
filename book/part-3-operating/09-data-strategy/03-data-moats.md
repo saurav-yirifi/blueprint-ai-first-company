@@ -24,11 +24,11 @@ flowchart TD
     Q5 -->|No| STRONG["Strong Moat<br/>(Years)"]
     Q5 -->|Yes| SYSTEMS["Systems Moat<br/>(May be impossible)"]
 
-    style WEAK fill:#ffcccc,stroke:#cc0000
-    style FRAGILE fill:#ffcccc,stroke:#cc0000
-    style MEDIUM fill:#fff3e0,stroke:#ff9800
-    style STRONG fill:#ccffcc,stroke:#00cc00
-    style SYSTEMS fill:#ccffcc,stroke:#006600,stroke-width:3px
+    style WEAK fill:#c03030,stroke:#9a2020
+    style FRAGILE fill:#c03030,stroke:#9a2020
+    style MEDIUM fill:#c77d0a,stroke:#a06508
+    style STRONG fill:#1a8a52,stroke:#14693e
+    style SYSTEMS fill:#1a8a52,stroke:#14693e,stroke-width:3px
 ```
 
 The shift is clear: from dataset moats to systems moats. Static datasets, no matter how large or unique, are increasingly fragile. The defensible position comes from data generated through product usage that competitors can't replicate because they don't have the product distribution.

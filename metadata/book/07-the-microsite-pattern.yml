@@ -1,0 +1,120 @@
+# Chapter 7: The Microsite Pattern
+# Maps to: blueprint-ai-first-company/book/part-2-building/07-the-microsite-pattern/
+
+chapter:
+  number: 7
+  title: The Microsite Pattern
+  status: completed
+  aliases:
+  - ch07
+  - Chapter 7
+  target_words: 9600
+  summary: Domain microsites with shared infrastructure and AI agent access—the pattern that enables rapid scaling
+  yirifi_anchor: Each domain—DevOps, QA, Data, Marketing, Sales, Finance—owns their own microsite end-to-end. Same architecture,
+    different domain logic. When AI capabilities evolve, we add a new module. No rewiring required.
+  external_examples:
+  - Shopify's modular architecture (teams own surfaces, platform owns infrastructure)
+  - GitLab's service decomposition (monolith to modular over years, strangler fig pattern)
+  key_concepts:
+  - Build vs Buy Calculus
+  - MCP
+  - Agent Hub
+  related_chapters:
+  - 4
+  - 6
+  - 8
+  tags:
+  - chapter
+  - building
+  - microservices
+  - architecture
+  - domain-autonomy
+  - mcp
+  - agents
+sections:
+- file: 01-domain-microsites.md
+  title: The Microsite Advantage
+  status: completed
+  target_words: 1200
+  tags:
+  - section
+  - building
+  - microservices
+  created: '2026-01-12'
+- file: 02-anatomy-of-a-domain-microsite.md
+  title: Anatomy of a Microsite
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Automation vs Augmentation
+  tags:
+  - section
+  - building
+  - microservices
+  - architecture
+  created: '2026-01-12'
+- file: 03-centralize-vs-distribute.md
+  title: Centralize vs Distribute
+  status: completed
+  target_words: 1000
+  key_concepts:
+  - Automation vs Augmentation
+  tags:
+  - section
+  - building
+  - microservices
+  - framework
+  created: '2026-01-12'
+- file: 05-ai-agent-access.md
+  title: AI Agent Access
+  status: completed
+  target_words: 900
+  key_concepts:
+  - MCP
+  - Agent Hub
+  tags:
+  - section
+  - building
+  - microservices
+  - agents
+  - mcp
+  created: '2026-01-13'
+- file: 06-microsite-orchestration.md
+  title: Microsite Orchestration
+  status: completed
+  target_words: 800
+  key_concepts:
+  - Internal Developer Platform
+  - Strangler Fig Pattern
+  tags:
+  - section
+  - building
+  - microservices
+  - platform
+  created: '2026-01-12'
+- file: 07-inter-microsite-communication.md
+  title: Inter-Microsite Communication
+  status: completed
+  target_words: 800
+  key_concepts:
+  - Event-Driven Architecture
+  - API Gateway Pattern
+  tags:
+  - section
+  - building
+  - microservices
+  - communication
+  created: '2026-01-12'
+- file: 08-governance-patterns.md
+  title: Governance Patterns
+  status: completed
+  target_words: 800
+  key_concepts:
+  - API Governance
+  - Contract-First Development
+  tags:
+  - section
+  - building
+  - microservices
+  - governance
+  created: '2026-01-12'

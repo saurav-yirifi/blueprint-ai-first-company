@@ -22,8 +22,8 @@ flowchart LR
         N2 --> N3["Iteration from day one"]
     end
 
-    style retrofit fill:#e74c3c,color:#fff
-    style native fill:#27ae60,color:#fff
+    style retrofit fill:#c03030,color:#fff
+    style native fill:#1a8a52,color:#fff
 ```
 
 ## The Salesforce Warning
@@ -101,10 +101,9 @@ flowchart TB
     A --> A2["Fastest capability"]
     A --> A3["Highest capital cost"]
 
-    style Start fill:#34495e,color:#fff
-    style R fill:#e67e22,color:#fff
-    style B fill:#27ae60,color:#fff
-    style A fill:#3498db,color:#fff
+    style R fill:#c77d0a,color:#fff
+    style B fill:#1a8a52,color:#fff
+    style A fill:#1e6fa5,color:#fff
 ```
 
 None of these paths is cheap. But pretending retrofitting is simple is more expensive still.

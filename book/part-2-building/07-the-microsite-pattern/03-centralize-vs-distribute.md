@@ -54,8 +54,8 @@ flowchart TB
     SALES --> INFRA
     FIN --> INFRA
 
-    style PLATFORM fill:#fff3e0,stroke:#ff9800
-    style MICROSITES fill:#e3f2fd,stroke:#2196f3
+    style PLATFORM fill:#c77d0a,stroke:#a06508
+    style MICROSITES fill:#1e6fa5,stroke:#155a85
 ```
 
 **Authentication.** Netflix moved authentication to the edge with their Passport pattern. Their Zuul gateway terminates external tokens and passes internal tokens downstream. Services behind the edge don't handle external tokens directly. When a vulnerability is discovered, you patch one service instead of coordinating across every microsite[^netflix-identity].
@@ -116,9 +116,9 @@ flowchart TB
     CENTRALIZED ~~~ BOUNDARY
     BOUNDARY ~~~ DISTRIBUTED
 
-    style CENTRALIZED fill:#fff3e0,stroke:#ff9800
-    style BOUNDARY fill:#ffcdd2,stroke:#d32f2f,stroke-width:3px
-    style DISTRIBUTED fill:#e3f2fd,stroke:#2196f3
+    style CENTRALIZED fill:#c77d0a,stroke:#a06508
+    style BOUNDARY fill:#c03030,stroke:#9a2020,stroke-width:3px
+    style DISTRIBUTED fill:#1e6fa5,stroke:#155a85
 ```
 
 ## When You've Gone Wrong

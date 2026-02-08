@@ -4,13 +4,13 @@ From autocomplete to orchestration—understanding the spectrum.
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "We didn't jump straight to agents. We spent six months at Level 2-3, building trust. Now most work happens at Level 4, but the team earned that by learning when to trust AI and when to override it."
 
 **The structural insight:** At Yirifi, the progression through levels wasn't about tool adoption—it was about trust calibration. Each level requires different mental models: autocomplete requires pattern recognition, generation requires prompt clarity, iteration requires feedback skills, agents require architectural thinking.
 
----
+</div>
 
 Most developers think they're using AI coding tools effectively. Most are stuck at Levels 2-3, missing massive productivity gains available higher up[^transition-research]. The gap isn't about tool access—it's about understanding what each level demands.
 
@@ -32,11 +32,11 @@ graph TB
     L3 -.->|"**The Big Jump**"| L4
     L4 --> L5
 
-    style L1 fill:#e8f5e9,stroke:#4caf50
-    style L2 fill:#e3f2fd,stroke:#2196f3
-    style L3 fill:#fff3e0,stroke:#ff9800
-    style L4 fill:#fce4ec,stroke:#e91e63
-    style L5 fill:#f3e5f5,stroke:#9c27b0
+    style L1 fill:#1a8a52,stroke:#14693e
+    style L2 fill:#1e6fa5,stroke:#155a85
+    style L3 fill:#c77d0a,stroke:#a06508
+    style L4 fill:#c03030,stroke:#9a2020
+    style L5 fill:#7345b0,stroke:#5b3590
 ```
 
 *Figure: Each level requires progressively higher trust in AI decision-making.*

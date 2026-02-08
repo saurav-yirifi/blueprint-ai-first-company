@@ -49,12 +49,12 @@ flowchart TB
 
     RET --> FLYWHEEL["Privacy-Compliant<br/>Flywheel"]
 
-    style MIN fill:#e1f5fe,stroke:#0288d1
-    style PURPOSE fill:#e1f5fe,stroke:#0288d1
-    style TRANS fill:#e1f5fe,stroke:#0288d1
-    style SEC fill:#fff3e0,stroke:#ff9800
-    style RET fill:#fff3e0,stroke:#ff9800
-    style FLYWHEEL fill:#ccffcc,stroke:#00cc00
+    style MIN fill:#1e6fa5,stroke:#155a85
+    style PURPOSE fill:#1e6fa5,stroke:#155a85
+    style TRANS fill:#1e6fa5,stroke:#155a85
+    style SEC fill:#c77d0a,stroke:#a06508
+    style RET fill:#c77d0a,stroke:#a06508
+    style FLYWHEEL fill:#1a8a52,stroke:#14693e
 ```
 
 **Data minimization** sounds simple: collect only what you need. The hard part is determining "minimum necessary" when AI systems can potentially benefit from more data.

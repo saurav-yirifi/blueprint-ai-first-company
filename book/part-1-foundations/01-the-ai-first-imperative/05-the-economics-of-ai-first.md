@@ -56,8 +56,8 @@ flowchart TB
     Y --> Y3["Lack technical expertise"]
     Y --> Y4["Time-to-value matters"]
 
-    style B fill:#27ae60,color:#fff
-    style Y fill:#3498db,color:#fff
+    style B fill:#1a8a52,color:#fff
+    style Y fill:#1e6fa5,color:#fff
 ```
 
 **Build when** the capability differentiates you, development time with AI tools is days not months, integration would add complexity to an already bloated stack, or requirements are too specific for existing solutions.

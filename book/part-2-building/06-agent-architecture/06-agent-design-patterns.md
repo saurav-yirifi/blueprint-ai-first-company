@@ -4,13 +4,13 @@ Two agent types, two design philosophies.
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Chat agents fail when they act before clarifying. Background agents fail when they can't explain what they did at 3 AM. Both need trust patterns—chat agents earn trust through confirmation, background agents through observability. We learned this the hard way with a DevOps agent that guessed which database to roll back."
 
 **The structural insight:** At Yirifi, agent design evolved through failure. Chat agents follow "clarify, confirm, act"—slower, but users trust them. Background agents follow "assume failure"—explicit success reporting, mandatory timeouts, automatic escalation when outputs don't appear. Every Yirifi background agent has a dead man's switch: if it doesn't report healthy within expected time, we assume it's failed.
 
----
+</div>
 
 ## Chat Agent Patterns
 

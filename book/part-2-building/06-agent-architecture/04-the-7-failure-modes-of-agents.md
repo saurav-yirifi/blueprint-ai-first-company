@@ -20,8 +20,8 @@ flowchart LR
     ChatRisks -.->|"Ambiguous<br/>human requests"| User([User<br/>Interaction])
     BackgroundRisks -.->|"Autonomous<br/>operation"| Auto([No<br/>Supervision])
 
-    style ChatRisks fill:#e1f5fe
-    style BackgroundRisks fill:#fff3e0
+    style ChatRisks fill:#1e6fa5
+    style BackgroundRisks fill:#c77d0a
 ```
 
 ### Mode 1: Hallucinated Actions
@@ -101,10 +101,10 @@ flowchart LR
     D --> P --> R --> L
     L -.->|Improve| D
 
-    style D fill:#e3f2fd
-    style P fill:#e8f5e9
-    style R fill:#fff3e0
-    style L fill:#fce4ec
+    style D fill:#1e6fa5
+    style P fill:#1a8a52
+    style R fill:#c77d0a
+    style L fill:#c03030
 ```
 
 For governance frameworks that formalize these practices, see [Chapter 11: Ethics & Governance](../../part-4-sustaining/11-ethics-governance-and-risk/README.md).

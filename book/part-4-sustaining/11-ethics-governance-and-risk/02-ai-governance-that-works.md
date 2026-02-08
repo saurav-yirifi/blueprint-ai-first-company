@@ -38,10 +38,10 @@ flowchart TB
     SECOND -->|"High Risk"| THIRD
     THIRD -->|"Strategic"| BOARD
 
-    style FIRST fill:#ccffcc,stroke:#333
-    style SECOND fill:#fff3e0,stroke:#333
-    style THIRD fill:#ffcccc,stroke:#333
-    style BOARD fill:#e1f5fe,stroke:#333
+    style FIRST fill:#1a8a52,stroke:#454d58
+    style SECOND fill:#c77d0a,stroke:#454d58
+    style THIRD fill:#c03030,stroke:#454d58
+    style BOARD fill:#1e6fa5,stroke:#454d58
 ```
 
 The model that works adapts "Three Lines of Defense" to AI:
@@ -106,10 +106,10 @@ flowchart LR
     WG -->|"Threshold exceeded"| COMMITTEE
     COMMITTEE -->|"Strategic impact"| BOARD2
 
-    style TEAM fill:#ccffcc,stroke:#333
-    style WG fill:#fff3e0,stroke:#333
-    style COMMITTEE fill:#ffcccc,stroke:#333
-    style BOARD2 fill:#e1f5fe,stroke:#333
+    style TEAM fill:#1a8a52,stroke:#454d58
+    style WG fill:#c77d0a,stroke:#454d58
+    style COMMITTEE fill:#c03030,stroke:#454d58
+    style BOARD2 fill:#1e6fa5,stroke:#454d58
 ```
 
 Clear thresholds prevent both over-governance and under-governance. In UK financial services, 62% of AI use cases qualify as low materiality (team approval), while 16% are high materiality requiring committee review[^bank-england]. EU AI Act high-risk classifications—credit decisions, healthcare diagnostics, employment screening, law enforcement—require committee-level decisions regardless of financial impact.

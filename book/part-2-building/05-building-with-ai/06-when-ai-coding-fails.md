@@ -4,13 +4,13 @@ Recognition, recovery, and course correction.
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "AI coding fails predictably. Once you recognize the failure patterns, you can either prevent them or recover fast. The goal isn't perfect AI—it's knowing when to take the wheel back."
 
 **The structural insight:** At Yirifi, we track AI coding failures systematically. Every failure teaches us something: either how to prompt better, when to take over manually, or where our codebase needs better documentation. Failures aren't setbacks—they're calibration data.
 
----
+</div>
 
 AI coding failures aren't random. After watching enough developers work with AI tools, patterns emerge. The same failure modes show up across teams, tools, and codebases. One in five developers estimates that one in five AI suggestions contains errors[^stack-survey]. That's probability at work in a domain that demands precision.
 
@@ -36,12 +36,12 @@ graph TB
         end
     end
 
-    style F1 fill:#ffebee,stroke:#f44336
-    style F2 fill:#fff3e0,stroke:#ff9800
-    style F3 fill:#fff8e1,stroke:#ffc107
-    style F4 fill:#e3f2fd,stroke:#2196f3
-    style F5 fill:#fce4ec,stroke:#e91e63
-    style F6 fill:#f3e5f5,stroke:#9c27b0
+    style F1 fill:#c03030,stroke:#9a2020
+    style F2 fill:#c77d0a,stroke:#a06508
+    style F3 fill:#c77d0a,stroke:#a06508
+    style F4 fill:#1e6fa5,stroke:#155a85
+    style F5 fill:#c03030,stroke:#9a2020
+    style F6 fill:#7345b0,stroke:#5b3590
 ```
 
 *Figure: The six failure patterns. Learn to recognize these—they appear consistently across tools and codebases.*
@@ -93,10 +93,10 @@ flowchart TD
 
     MANUAL --> DOCUMENT["Document what didn't work<br/>for future reference"]
 
-    style START fill:#ffebee,stroke:#f44336
-    style CONTINUE fill:#e8f5e9,stroke:#4caf50
-    style S3 fill:#fff3e0,stroke:#ff9800
-    style MANUAL fill:#e3f2fd,stroke:#2196f3
+    style START fill:#c03030,stroke:#9a2020
+    style CONTINUE fill:#1a8a52,stroke:#14693e
+    style S3 fill:#c77d0a,stroke:#a06508
+    style MANUAL fill:#1e6fa5,stroke:#155a85
 ```
 
 *Figure: The three-strike rule. Know when to provide more context, when to change approach, and when to take over manually.*

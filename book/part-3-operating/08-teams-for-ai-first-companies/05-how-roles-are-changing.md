@@ -41,8 +41,7 @@ flowchart LR
     DES1 -->|"Expand"| DES2
     QA1 -->|"Redefine"| QA2
 
-    style BEFORE fill:#f5f5f5,stroke:#9e9e9e
-    style AFTER fill:#e8f5e9,stroke:#388e3c
+    style AFTER fill:#1a8a52,stroke:#14693e
 ```
 
 **Software engineers** now spend 70% of time on architecture, system design, and validating AI outputs—only 30% on direct coding[^engineer-shift]. Code review focuses on different failure modes than human code: hallucination detection, architectural coherence, security vulnerabilities where AI still makes mistakes. According to Qodo's 2025 research, 81% of teams using AI for code review reported quality improvements—but only 3.8% report high confidence shipping AI code without human review[^qodo-stats]. That last statistic matters. AI amplifies engineering judgment, not replaces it.
@@ -82,9 +81,9 @@ flowchart TB
     S2 --> ALL
     S3 --> ALL
 
-    style TODAY fill:#fff3e0,stroke:#f57c00
-    style TOMORROW fill:#e8f5e9,stroke:#388e3c
-    style ALL fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style TODAY fill:#c77d0a,stroke:#a06508
+    style TOMORROW fill:#1a8a52,stroke:#14693e
+    style ALL fill:#1e6fa5,stroke:#155a85,stroke-width:2px
 ```
 
 Job postings requiring prompt engineering skills increased 434% from 2023 to 2024[^job-growth]. But that same data shows the skills spreading beyond specialists. Non-technical professionals across finance, marketing, legal, and operations now develop "AI fluency" as a core competency[^ai-fluency]. No-code AI tools achieved 72% adoption among startups in 2024, reducing coding time by 45%[^nocode-adoption].

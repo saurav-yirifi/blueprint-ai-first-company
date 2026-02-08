@@ -94,9 +94,9 @@ flowchart TB
     GAP --> NEXT["Next Capability..."]
     NEXT --> CAP
 
-    style FIRST fill:#ccffcc,stroke:#00cc00
-    style ENABLED fill:#fff3e0,stroke:#ff9800
-    style GAP fill:#ffcccc,stroke:#cc0000
+    style FIRST fill:#1a8a52,stroke:#14693e
+    style ENABLED fill:#c77d0a,stroke:#a06508
+    style GAP fill:#c03030,stroke:#9a2020
 ```
 
 ## The Yirifi Test
@@ -123,10 +123,10 @@ flowchart TB
     RIGHT --> SHIP["Ship in weeks"]
     FUTURE --> SHIP
 
-    style WRONG fill:#ffcccc,stroke:#cc0000
-    style RIGHT fill:#ccffcc,stroke:#00cc00
-    style FUTURE fill:#ccffcc,stroke:#00cc00
-    style SHIP fill:#e1f5fe,stroke:#0288d1
+    style WRONG fill:#c03030,stroke:#9a2020
+    style RIGHT fill:#1a8a52,stroke:#14693e
+    style FUTURE fill:#1a8a52,stroke:#14693e
+    style SHIP fill:#1e6fa5,stroke:#155a85
 ```
 
 The tools will change. The architecture that absorbs them doesn't have to.

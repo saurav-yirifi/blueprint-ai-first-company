@@ -41,11 +41,11 @@ flowchart TB
     START{Where to Start?} -->|Startup| F1
     START -->|Enterprise| F2
 
-    style F1 fill:#ffcdd2,stroke:#c62828
-    style F2 fill:#c8e6c9,stroke:#388e3c
-    style F3 fill:#fff3e0,stroke:#f57c00
-    style F4 fill:#e1f5fe,stroke:#0288d1
-    style F5 fill:#f3e5f5,stroke:#7b1fa2
+    style F1 fill:#c03030,stroke:#9a2020
+    style F2 fill:#1a8a52,stroke:#14693e
+    style F3 fill:#c77d0a,stroke:#a06508
+    style F4 fill:#1e6fa5,stroke:#155a85
+    style F5 fill:#7345b0,stroke:#5b3590
 ```
 
 ## 1. Customer Support: The Proving Ground
@@ -80,8 +80,8 @@ flowchart TB
 
     L1 -.->|"Full Context<br/>Transferred"| L2
 
-    style AI_TIER fill:#e1f5fe,stroke:#0288d1
-    style HUMAN_TIER fill:#fff3e0,stroke:#f57c00
+    style AI_TIER fill:#1e6fa5,stroke:#155a85
+    style HUMAN_TIER fill:#c77d0a,stroke:#a06508
 ```
 
 The key metric: deflection rate. But deflection without maintained satisfaction is a vanity metric that will catch up with you.

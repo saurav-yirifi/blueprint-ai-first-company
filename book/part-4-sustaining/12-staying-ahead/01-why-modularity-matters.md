@@ -35,8 +35,8 @@ flowchart TB
         A3 --> A4["Timeline: Hours to Days"]
     end
 
-    style M7 fill:#ffcccc,stroke:#cc0000
-    style A4 fill:#ccffcc,stroke:#00cc00
+    style M7 fill:#c03030,stroke:#9a2020
+    style A4 fill:#1a8a52,stroke:#14693e
 ```
 
 **Swappable models.** Your model serving layer should abstract the underlying provider. When you need to switch from one foundation model to another—whether for performance, cost, or capability reasons—that change should be a configuration update, not a codebase rewrite. Jasper's model-agnostic AI engine routes different content types to optimal models without touching application logic[^jasper]. The business layer doesn't know or care which model answered.
@@ -74,8 +74,8 @@ flowchart LR
     D -->|"Any signal present"| MOD[Start Modularization]
     D -->|"No signals"| MONO[Stay Monolith]
 
-    style MOD fill:#ccffcc,stroke:#00cc00
-    style MONO fill:#e1f5fe,stroke:#0288d1
+    style MOD fill:#1a8a52,stroke:#14693e
+    style MONO fill:#1e6fa5,stroke:#155a85
 ```
 
 Interestingly, 2025 data shows enterprises actually consolidating microservices back into modular monoliths in some cases—not because modularity failed, but because they over-architected too early[^consolidation]. The lesson isn't "monoliths good, microservices bad." It's "architecture should match organizational complexity and scaling needs." That's a bet most AI systems lose when they commit to either extreme too early.

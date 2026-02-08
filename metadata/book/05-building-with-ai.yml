@@ -1,0 +1,115 @@
+# Chapter 5: Building with AI
+# Maps to: blueprint-ai-first-company/book/part-2-building/05-building-with-ai/
+
+chapter:
+  number: 5
+  title: Building with AI — Coding Tools, Agents, and Patterns
+  status: completed
+  aliases:
+  - ch05
+  - Chapter 5
+  target_words: 6500
+  summary: How to build software with AI as a collaborator—tools, patterns, and workflows
+  yirifi_anchor: 'Those 15 backoffice microsites? Built by just 2 people with AI coding as the default mode. But ''AI built
+    it'' doesn''t mean ''no human thinking.'' The pattern: AI drafts, human architects, AI refines, human reviews. The team
+    stayed at 2 because each person operated at 5x—not by working harder, but by thinking while AI typed.'
+  external_examples:
+  - Supabase's AI-assisted development workflow (Claude for docs, Cursor for code)
+  - Basecamp's selective AI adoption (explicit decisions about where AI helps vs. hinders)
+  key_concepts:
+  - Human-AI Collaboration
+  related_chapters:
+  - 4
+  - 6
+  - 8
+  tags:
+  - chapter
+  - building
+  - ai-coding
+  - claude-code
+  - cursor
+  - copilot
+  - agentic-development
+sections:
+- file: 01-the-5-levels-of-ai-assisted-development.md
+  title: The 5 Levels of AI-Assisted Development
+  status: completed
+  target_words: 900
+  key_concepts:
+  - Foundation Models
+  - Human-AI Collaboration
+  tags:
+  - section
+  - building
+  - ai-coding
+  - framework
+  created: '2026-01-12'
+- file: 02-tool-decision-framework.md
+  title: Tool Decision Framework
+  status: completed
+  target_words: 1000
+  key_concepts:
+  - Foundation Models
+  - Human-AI Collaboration
+  tags:
+  - section
+  - building
+  - ai-coding
+  - tools
+  created: '2026-01-12'
+- file: 03-skills-commands-agents-sdk.md
+  title: Skills, Commands, Agents, SDK — The Vocabulary
+  status: completed
+  target_words: 850
+  key_concepts:
+  - Foundation Models
+  - Human-AI Collaboration
+  tags:
+  - section
+  - building
+  - ai-coding
+  - agentic-development
+  created: '2026-01-12'
+- file: 04-the-8-patterns-for-effective-ai-coding.md
+  title: The 8 Patterns for Effective AI Coding Sessions
+  status: completed
+  target_words: 1000
+  key_concepts:
+  - Human-AI Collaboration
+  tags:
+  - section
+  - building
+  - ai-coding
+  - framework
+  created: '2026-01-12'
+- file: 05-the-human-ai-development-loop.md
+  title: The Human-AI Development Loop
+  status: completed
+  target_words: 900
+  key_concepts:
+  - Human-AI Collaboration
+  tags:
+  - section
+  - building
+  - human-ai-collab
+  created: '2026-01-12'
+- file: 06-when-ai-coding-fails.md
+  title: When AI Coding Fails
+  status: completed
+  target_words: 900
+  key_concepts:
+  - Probabilistic AI
+  tags:
+  - section
+  - building
+  - ai-coding
+  created: '2026-01-12'
+- file: 07-technical-debt-in-ai-generated-code.md
+  title: Technical Debt in AI-Generated Code
+  status: completed
+  target_words: 800
+  tags:
+  - section
+  - building
+  - ai-coding
+  created: '2026-01-12'

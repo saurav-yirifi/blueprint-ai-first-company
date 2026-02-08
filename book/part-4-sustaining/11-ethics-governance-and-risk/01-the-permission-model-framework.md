@@ -29,9 +29,9 @@ flowchart LR
     AUTO -.->|"Higher Stakes"| APPROVED
     APPROVED -.->|"Irreversible Actions"| ASK
 
-    style AUTO fill:#ccffcc,stroke:#333
-    style APPROVED fill:#fff3e0,stroke:#333
-    style ASK fill:#ffcccc,stroke:#333
+    style AUTO fill:#1a8a52,stroke:#454d58
+    style APPROVED fill:#c77d0a,stroke:#454d58
+    style ASK fill:#c03030,stroke:#454d58
 ```
 
 ### Mode 1: Auto (AI Acts Autonomously)
@@ -100,10 +100,10 @@ flowchart TB
 
     AUTO -.->|"Incident occurs"| INCIDENT
 
-    style ASK fill:#ffcccc,stroke:#333
-    style TOOLS fill:#fff3e0,stroke:#333
-    style AUTO fill:#ccffcc,stroke:#333
-    style INCIDENT fill:#ffcccc,stroke:#c00
+    style ASK fill:#c03030,stroke:#454d58
+    style TOOLS fill:#c77d0a,stroke:#454d58
+    style AUTO fill:#1a8a52,stroke:#454d58
+    style INCIDENT fill:#c03030,stroke:#9a2020
 ```
 
 Start every new AI system in Ask-Every-Time. After 30+ days without significant errors, graduate to Approved-Tools. After consistent performance, specific operations move to Auto. Skipping levels means you haven't calibrated boundaries or discovered edge cases.

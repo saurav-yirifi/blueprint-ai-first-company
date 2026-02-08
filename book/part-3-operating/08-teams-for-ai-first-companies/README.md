@@ -8,7 +8,7 @@ The temptation is to ask "how do we add AI people?" The better question: "how do
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Just 2 people, 15 backoffice microsites. But those 2 people aren't doing 2 jobs each—they're architecting while AI builds. The skill that matters: knowing what to ask AI to do, and recognizing when AI got it wrong."
 
@@ -16,7 +16,7 @@ The temptation is to ask "how do we add AI people?" The better question: "how do
 
 **Memorable close:** "That's not a new role. It's every role, upgraded."
 
----
+</div>
 
 ## What You'll Learn
 

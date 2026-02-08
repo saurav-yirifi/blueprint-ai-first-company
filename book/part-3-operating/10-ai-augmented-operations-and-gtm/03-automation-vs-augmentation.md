@@ -31,11 +31,11 @@ flowchart TB
     AUG2 --> HYBRID
     AUG3 --> HYBRID
 
-    style AUTO fill:#c8e6c9,stroke:#388e3c
-    style HYBRID fill:#fff3e0,stroke:#f57c00
-    style C1 fill:#e1f5fe,stroke:#0288d1
-    style C2A fill:#e1f5fe,stroke:#0288d1
-    style C3A fill:#e1f5fe,stroke:#0288d1
+    style AUTO fill:#1a8a52,stroke:#14693e
+    style HYBRID fill:#c77d0a,stroke:#a06508
+    style C1 fill:#1e6fa5,stroke:#155a85
+    style C2A fill:#1e6fa5,stroke:#155a85
+    style C3A fill:#1e6fa5,stroke:#155a85
 ```
 
 High component, coordinative, or dynamic complexity pushes tasks toward augmentation. Low complexity across all three dimensions makes full automation viable.
@@ -80,9 +80,9 @@ flowchart LR
     FULL_AI --> VERDICT2["Medium cost<br/>Medium outcomes"]
     HYBRID --> VERDICT3["Higher initial cost<br/>34% better ROI"]
 
-    style SCRIPTED fill:#ffcdd2,stroke:#c62828
-    style FULL_AI fill:#fff3e0,stroke:#f57c00
-    style HYBRID fill:#c8e6c9,stroke:#388e3c
+    style SCRIPTED fill:#c03030,stroke:#9a2020
+    style FULL_AI fill:#c77d0a,stroke:#a06508
+    style HYBRID fill:#1a8a52,stroke:#14693e
 ```
 
 Healthcare provides a compelling example. Revenue cycle management teams using hybrid AI achieved 60% improvement in quality code capture and 40% reduction in charge entry lag[^healthcare-hybrid]. The AI handles pattern recognition. Humans handle judgment calls. Neither alone achieves those numbers.
@@ -144,11 +144,11 @@ flowchart LR
 
     CONFIDENCE["Confidence<br/>Builds"] -.-> PROGRESSION
 
-    style P1 fill:#e1f5fe,stroke:#0288d1
-    style P2 fill:#e1f5fe,stroke:#0288d1
-    style P3 fill:#fff3e0,stroke:#f57c00
-    style P4 fill:#fff3e0,stroke:#f57c00
-    style P5 fill:#c8e6c9,stroke:#388e3c
+    style P1 fill:#1e6fa5,stroke:#155a85
+    style P2 fill:#1e6fa5,stroke:#155a85
+    style P3 fill:#c77d0a,stroke:#a06508
+    style P4 fill:#c77d0a,stroke:#a06508
+    style P5 fill:#1a8a52,stroke:#14693e
 ```
 
 ## Warning Signs of Over-Automation

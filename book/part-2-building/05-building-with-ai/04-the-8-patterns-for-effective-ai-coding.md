@@ -4,13 +4,13 @@ Best practices distilled from thousands of hours of AI-assisted development.
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "These patterns aren't theoretical—they're what we teach new developers on day one. The difference between a productive AI coding session and a frustrating one is almost always whether you followed these patterns."
 
 **The structural insight:** At Yirifi, these 8 patterns emerged from observing what worked.
 
----
+</div>
 
 Here's the uncomfortable truth: most developers think they're faster with AI coding tools than they actually are. A recent randomized controlled trial found developers were 19% slower with AI assistance, but believed they were 20% faster—a 43-point perception gap[^metr]. The difference between those who actually get faster and those who just think they do? Patterns.
 

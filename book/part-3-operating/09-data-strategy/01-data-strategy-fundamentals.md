@@ -44,11 +44,11 @@ flowchart TD
     Q2 -->|No| FAIL
     Q3 -->|No| FAIL
 
-    style WIN fill:#ccffcc,stroke:#00cc00
-    style FAIL fill:#ffcccc,stroke:#cc0000
-    style M1 fill:#e1f5fe,stroke:#0288d1
-    style M2 fill:#e1f5fe,stroke:#0288d1
-    style M3 fill:#e1f5fe,stroke:#0288d1
+    style WIN fill:#1a8a52,stroke:#14693e
+    style FAIL fill:#c03030,stroke:#9a2020
+    style M1 fill:#1e6fa5,stroke:#155a85
+    style M2 fill:#1e6fa5,stroke:#155a85
+    style M3 fill:#1e6fa5,stroke:#155a85
 ```
 
 ## The Four Types of Data Advantage

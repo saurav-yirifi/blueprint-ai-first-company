@@ -61,9 +61,9 @@ flowchart TB
     D --> AUDIT[Audit Log]
     DENY --> AUDIT
 
-    style D fill:#ccffcc,stroke:#00cc00
-    style E fill:#ffcccc,stroke:#cc0000
-    style G fill:#fff3e0,stroke:#ff9800
+    style D fill:#1a8a52,stroke:#14693e
+    style E fill:#c03030,stroke:#9a2020
+    style G fill:#c77d0a,stroke:#a06508
 ```
 
 ## Identity Passthrough
@@ -116,7 +116,6 @@ flowchart LR
     CRED --> M1 & M2 & M3
     AUTH & POLICY & CRED --> AUDIT
 
-    style GW fill:#e1f5fe,stroke:#0288d1
 ```
 
 ---

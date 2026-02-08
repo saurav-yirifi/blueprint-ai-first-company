@@ -4,16 +4,13 @@ Chat agents vs background agents—when to use each.
 
 ---
 
-
-## Draft
-
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "We tried to build one agent framework for everything. It failed. Chat agents need to be fast and helpful. Background agents need to be thorough and reliable. Different requirements, different architectures."
 
 **The structural insight:** At Yirifi, the distinction emerged from failure. Our first "universal agent" was too slow for chat (users abandoned) and too unsupervised for background work (errors accumulated). When we split into two types—chat agents optimized for interaction and background agents optimized for autonomy—both improved dramatically. The DevOps, QA, and Finance microsites each have both types: chat agents for questions, background agents for automation.
 
----
+</div>
 
 At Yirifi, our first "universal agent" was supposed to handle it all—answering employee questions, processing documents overnight, generating reports on demand. One codebase, one deployment, one team. The logic made sense on a whiteboard. The reality: when employees asked simple questions, the agent was too slow. It was built for thoroughness, not speed, and users abandoned conversations before getting answers. When that same agent ran overnight batch jobs, it made mistakes that accumulated for hours unnoticed—built for interaction, not autonomous operation.
 
@@ -71,12 +68,12 @@ flowchart TD
     Q5 -->|Yes| Hybrid([Hybrid: Background +<br/>Robust Alerting])
     Q5 -->|No| Background([Background Agent])
 
-    style Chat1 fill:#e1f5fe
-    style Chat2 fill:#e1f5fe
-    style Chat3 fill:#e1f5fe
-    style Background fill:#fff3e0
-    style Hybrid fill:#f3e5f5
-    style Either fill:#e8f5e9
+    style Chat1 fill:#1e6fa5
+    style Chat2 fill:#1e6fa5
+    style Chat3 fill:#1e6fa5
+    style Background fill:#c77d0a
+    style Hybrid fill:#7345b0
+    style Either fill:#1a8a52
 ```
 
 ### Hybrid Patterns: Both Working Together
@@ -102,8 +99,8 @@ flowchart LR
 
     Create -->|Incident + Data| Context
 
-    style Background fill:#fff3e0
-    style Chat fill:#e1f5fe
+    style Background fill:#c77d0a
+    style Chat fill:#1e6fa5
 ```
 
 ### Where to Start

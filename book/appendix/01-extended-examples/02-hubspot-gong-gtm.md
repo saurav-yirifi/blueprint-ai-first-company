@@ -31,10 +31,10 @@ flowchart TB
     HUBSPOT --> RESULTS_HS["63% adoption<br/>20% revenue increase<br/>92% data quality improvement"]
     GONG --> RESULTS_G["481% 3-year ROI<br/>16% higher win rates<br/>68% lower churn"]
 
-    style HUBSPOT fill:#e1f5fe,stroke:#0288d1
-    style GONG fill:#fff3e0,stroke:#f57c00
-    style RESULTS_HS fill:#c8e6c9,stroke:#388e3c
-    style RESULTS_G fill:#c8e6c9,stroke:#388e3c
+    style HUBSPOT fill:#1e6fa5,stroke:#155a85
+    style GONG fill:#c77d0a,stroke:#a06508
+    style RESULTS_HS fill:#1a8a52,stroke:#14693e
+    style RESULTS_G fill:#1a8a52,stroke:#14693e
 ```
 
 ## HubSpot: The Integrated Platform Approach
@@ -77,13 +77,13 @@ flowchart TB
 
     MOAT["3B+ interactions<br/>= Defensible data moat"]
 
-    style S1 fill:#e1f5fe,stroke:#0288d1
-    style S2 fill:#e1f5fe,stroke:#0288d1
-    style S3 fill:#fff3e0,stroke:#f57c00
-    style S4 fill:#fff3e0,stroke:#f57c00
-    style S5 fill:#c8e6c9,stroke:#388e3c
-    style S6 fill:#c8e6c9,stroke:#388e3c
-    style MOAT fill:#f3e5f5,stroke:#7b1fa2
+    style S1 fill:#1e6fa5,stroke:#155a85
+    style S2 fill:#1e6fa5,stroke:#155a85
+    style S3 fill:#c77d0a,stroke:#a06508
+    style S4 fill:#c77d0a,stroke:#a06508
+    style S5 fill:#1a8a52,stroke:#14693e
+    style S6 fill:#1a8a52,stroke:#14693e
+    style MOAT fill:#7345b0,stroke:#5b3590
 ```
 
 The flywheel mechanics:
@@ -164,9 +164,9 @@ flowchart TB
     P5 --- H5
     P5 --- G5
 
-    style PRINCIPLES fill:#c8e6c9,stroke:#388e3c
-    style HUBSPOT_EX fill:#e1f5fe,stroke:#0288d1
-    style GONG_EX fill:#fff3e0,stroke:#f57c00
+    style PRINCIPLES fill:#1a8a52,stroke:#14693e
+    style HUBSPOT_EX fill:#1e6fa5,stroke:#155a85
+    style GONG_EX fill:#c77d0a,stroke:#a06508
 ```
 
 **Unified data enables AI effectiveness.** HubSpot's single customer record. Gong's conversation corpus. Both build AI on unified data, not fragmented silos.

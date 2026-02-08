@@ -4,13 +4,13 @@ Understanding the capabilities of modern AI coding tools.
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Once you understand skills vs commands vs agents, you stop fighting the tool and start designing workflows. The vocabulary isn't just semantics—it's the difference between productive collaboration and frustrating misuse."
 
 **The structural insight:** At Yirifi, we require every developer to understand these distinctions before using agentic tools. Misunderstanding them leads to either underutilizing capabilities (asking agents to do skill-level work) or overestimating them (expecting agents to do things they can't).
 
----
+</div>
 
 Most developers treat AI coding tools as "talk to the AI and hope for the best." That approach underutilizes capabilities and misses distinctions that matter. The vocabulary matters because each concept maps to a different interaction mode. Mix them up, and you'll either ask for too little or too much.
 

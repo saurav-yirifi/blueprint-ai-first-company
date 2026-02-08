@@ -8,7 +8,7 @@ This chapter is about closing that perception gap—turning AI coding from produ
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Those 15 backoffice microsites? Built by just 2 people with AI coding as the default mode. But 'AI built it' doesn't mean 'no human thinking.' The pattern: AI drafts, human architects, AI refines, human reviews. The team stayed at 2 because each person operated at 5x—not by working harder, but by thinking while AI typed."
 
@@ -16,7 +16,7 @@ This chapter is about closing that perception gap—turning AI coding from produ
 
 **Memorable close:** "Think while AI types."
 
----
+</div>
 
 ## What You'll Learn
 

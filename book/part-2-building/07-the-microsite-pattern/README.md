@@ -10,13 +10,13 @@ This chapter introduces the microsite pattern: autonomous domain applications wi
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Each domain—DevOps, QA, Data, Marketing, Sales, Finance—owns their own microsite end-to-end. Same architecture, different domain logic. When AI capabilities evolve, we add a new module. No rewiring required."
 
 Microsite architecture isn't about containers or service meshes. It's about answering a structural question: who owns what, and how do they move independently? Own your domain. Share your foundation.
 
----
+</div>
 
 ## What You'll Learn
 

@@ -36,10 +36,10 @@ flowchart TB
     SERVICE --> REPOSITORY
     REPOSITORY --> DATA
 
-    style CONTROLLER fill:#e1f5fe,stroke:#0288d1
-    style SERVICE fill:#fff3e0,stroke:#ff9800
-    style REPOSITORY fill:#f3e5f5,stroke:#9c27b0
-    style DATA fill:#e8f5e9,stroke:#4caf50
+    style CONTROLLER fill:#1e6fa5,stroke:#155a85
+    style SERVICE fill:#c77d0a,stroke:#a06508
+    style REPOSITORY fill:#7345b0,stroke:#5b3590
+    style DATA fill:#1a8a52,stroke:#14693e
 ```
 
 Each layer has distinct responsibilities that prevent confusion and coupling[^baeldung].

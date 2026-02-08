@@ -12,7 +12,7 @@ This chapter is about what that requirement actually looks like in practice.
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Each service is its own module. When AI capabilities evolve—and they will, faster than any of us expect—we add a new module. No rewiring required."
 
@@ -20,7 +20,7 @@ This chapter is about what that requirement actually looks like in practice.
 
 **Memorable close:** "Build to add. Let the future be addition."
 
----
+</div>
 
 ## What You'll Learn
 

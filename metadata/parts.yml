@@ -1,0 +1,44 @@
+# Book parts
+
+parts:
+- number: 1
+  title: Foundations
+  slug: part-1-foundations
+  status: completed
+  summary: Understanding the fundamentals of what makes a company truly AI-first.
+  tags:
+  - part
+  - foundations
+- number: 2
+  title: Building
+  slug: part-2-building
+  status: completed
+  summary: Infrastructure, tools, agents, and architecture patterns for AI-first companies.
+  tags:
+  - part
+  - building
+- number: 3
+  title: Operating
+  slug: part-3-operating
+  status: completed
+  summary: Running the AI-first company—teams, data, operations, and growth.
+  tags:
+  - part
+  - operating
+- number: 4
+  title: Sustaining
+  slug: part-4-sustaining
+  status: completed
+  summary: Building for the long term—governance, ethics, and adaptability.
+  tags:
+  - part
+  - sustaining
+- number: 5
+  title: Appendix
+  slug: appendix
+  status: completed
+  summary: Extended case studies, frameworks, and implementation resources to support your AI-first transformation.
+  tags:
+  - part
+  - appendix
+  - resources

@@ -27,10 +27,10 @@ flowchart TB
 
     PROHIBITED --> HIGHRISK --> LIMITED --> MINIMAL
 
-    style PROHIBITED fill:#ffcccc,stroke:#c00,stroke-width:2px
-    style HIGHRISK fill:#fff3e0,stroke:#333
-    style LIMITED fill:#e1f5fe,stroke:#333
-    style MINIMAL fill:#ccffcc,stroke:#333
+    style PROHIBITED fill:#c03030,stroke:#9a2020,stroke-width:2px
+    style HIGHRISK fill:#c77d0a,stroke:#454d58
+    style LIMITED fill:#1e6fa5,stroke:#454d58
+    style MINIMAL fill:#1a8a52,stroke:#454d58
 ```
 
 **Prohibited practices**: Social scoring, real-time biometric identification in public spaces, subliminal manipulation. If your system falls here, you can't deploy it in the EU.
@@ -66,10 +66,9 @@ flowchart TB
         FED["Federal: Uncertain<br/>No comprehensive law"]
     end
 
-    style CO fill:#e1f5fe,stroke:#333
-    style IL fill:#fff3e0,stroke:#333
-    style NYC fill:#ffcccc,stroke:#333
-    style FED fill:#f5f5f5,stroke:#333
+    style CO fill:#1e6fa5,stroke:#454d58
+    style IL fill:#c77d0a,stroke:#454d58
+    style NYC fill:#c03030,stroke:#454d58
 ```
 
 ### State AI Laws at a Glance

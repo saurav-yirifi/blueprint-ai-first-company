@@ -10,7 +10,7 @@ At Yirifi, we made the same mistake earlier. Our first "universal agent" was too
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Two agent types by design: chat agents that talk to people, background agents that run while everyone sleeps. The DevOps dashboard doesn't just serve humans—agents query it for system health, deployment status, incident context. Same API, both consumers."
 
@@ -18,7 +18,7 @@ At Yirifi, we made the same mistake earlier. Our first "universal agent" was too
 
 **Memorable close:** "Same API, both consumers. Different agents."
 
----
+</div>
 
 ## What You'll Learn
 

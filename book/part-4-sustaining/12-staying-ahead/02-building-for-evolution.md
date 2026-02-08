@@ -43,10 +43,10 @@ flowchart LR
     P1 --> P2 --> P3 --> P4
     P4 -.->|"Continuous"| P1
 
-    style P1 fill:#e1f5fe,stroke:#0288d1
-    style P2 fill:#fff3e0,stroke:#ff9800
-    style P3 fill:#ccffcc,stroke:#00cc00
-    style P4 fill:#f3e5f5,stroke:#9c27b0
+    style P1 fill:#1e6fa5,stroke:#155a85
+    style P2 fill:#c77d0a,stroke:#a06508
+    style P3 fill:#1a8a52,stroke:#14693e
+    style P4 fill:#7345b0,stroke:#5b3590
 ```
 
 Salesforce used this approach to integrate Bedrock Custom Model Import while maintaining existing SageMaker endpoints[^salesforce]—30% faster deployments, 40% cost savings, full backward compatibility. Big-bang rewrites carry catastrophic risk. That's a bet most AI systems lose.
@@ -86,8 +86,8 @@ flowchart TB
 
     CONFIG["Config Change"] -.->|"Switch Provider"| AB
 
-    style ABSTRACTION fill:#ccffcc,stroke:#00cc00
-    style CONFIG fill:#fff3e0,stroke:#ff9800
+    style ABSTRACTION fill:#1a8a52,stroke:#14693e
+    style CONFIG fill:#c77d0a,stroke:#a06508
 ```
 
 ## The 4 Patterns That Enable Evolution
@@ -123,11 +123,11 @@ flowchart LR
     T1 -.->|"Metrics fail"| ABORT["Abandon"]
     T2 -.->|"Metrics fail"| ABORT
 
-    style S fill:#e1f5fe,stroke:#0288d1
-    style T1 fill:#fff3e0,stroke:#ff9800
-    style T2 fill:#fff3e0,stroke:#ff9800
-    style T3 fill:#ccffcc,stroke:#00cc00
-    style ABORT fill:#ffcccc,stroke:#cc0000
+    style S fill:#1e6fa5,stroke:#155a85
+    style T1 fill:#c77d0a,stroke:#a06508
+    style T2 fill:#c77d0a,stroke:#a06508
+    style T3 fill:#1a8a52,stroke:#14693e
+    style ABORT fill:#c03030,stroke:#9a2020
 ```
 
 Skip this and you launch blind. First feedback comes from angry customers, not dashboards.

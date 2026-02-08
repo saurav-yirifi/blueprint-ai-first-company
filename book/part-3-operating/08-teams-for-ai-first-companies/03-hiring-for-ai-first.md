@@ -24,10 +24,8 @@ flowchart LR
 
     BEFORE -->|"Inversion"| AFTER
 
-    style B1 fill:#e3f2fd,stroke:#1976d2
-    style B2 fill:#f5f5f5,stroke:#9e9e9e
-    style A1 fill:#e8f5e9,stroke:#388e3c
-    style A2 fill:#f5f5f5,stroke:#9e9e9e
+    style B1 fill:#1e6fa5,stroke:#155a85
+    style A1 fill:#1a8a52,stroke:#14693e
 ```
 
 ### Systems Thinking

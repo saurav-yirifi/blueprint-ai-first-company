@@ -1,0 +1,92 @@
+# Chapter 1: The AI-First Imperative
+# Maps to: blueprint-ai-first-company/book/part-1-foundations/01-the-ai-first-imperative/
+
+chapter:
+  number: 1
+  title: The AI-First Imperative
+  status: completed
+  aliases:
+  - ch01
+  - Chapter 1
+  target_words: 6500
+  summary: Why being AI-first matters now and the competitive advantages it creates
+  yirifi_anchor: 15 backoffice microsites in 3 months, just 2 people. Not because we're superhuman—because AI coding changed
+    the math.
+  external_examples:
+  - Figma's AI-native design tools (from day one, not bolted on)
+  - Notion's AI journey (successful integration, but retrofitting cost them speed)
+  key_concepts:
+  - AI-First vs AI-Enabled
+  related_chapters:
+  - 2
+  - 4
+  tags:
+  - chapter
+  - foundations
+  - strategy
+  - ai-first-distinction
+sections:
+- file: 01-the-ai-inflection-point.md
+  title: The AI Inflection Point
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Data Flywheel
+  - Foundation Models
+  tags:
+  - section
+  - foundations
+  - strategy
+  created: '2026-01-11'
+- file: 02-ai-first-vs-ai-enabled.md
+  title: AI-First vs AI-Enabled
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - AI-First vs AI-Enabled
+  - Foundation Models
+  - Automation vs Augmentation
+  tags:
+  - section
+  - foundations
+  - strategy
+  - ai-first-distinction
+  created: '2026-01-12'
+- file: 03-first-mover-advantages.md
+  title: First-Mover Advantages
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Data Moats
+  - AI-First vs AI-Enabled
+  - Data Flywheel
+  tags:
+  - section
+  - foundations
+  - strategy
+  created: '2026-01-11'
+- file: 04-the-cost-of-retrofitting.md
+  title: The Cost of Retrofitting
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - AI-First vs AI-Enabled
+  - Build vs Buy Calculus
+  tags:
+  - section
+  - foundations
+  - strategy
+  created: '2026-01-11'
+- file: 05-the-economics-of-ai-first.md
+  title: The Economics of AI-First
+  status: completed
+  target_words: 900
+  key_concepts:
+  - AI-First vs AI-Enabled
+  - Build vs Buy Calculus
+  tags:
+  - section
+  - foundations
+  - strategy
+  - build-vs-buy
+  created: '2026-01-11'

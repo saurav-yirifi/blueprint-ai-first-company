@@ -2,13 +2,15 @@
 
 What agents need that humans don't.
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "If an API works for agents, it works for humans. The reverse isn't true."
 
 At Yirifi, we built APIs for human consumption—interactive forms, session-based auth, error messages for modal dialogs. Then we added agents. They broke immediately. Every shortcut surfaced as a broken agent. Implicit session state? Agents lost track. HTML error pages? Agents couldn't parse. Undocumented rate limits? Agents hammered endpoints until blocked.
 
 When we redesigned with agents as the primary consumer, both agents and humans benefited. The structured errors agents needed made debugging easier for developers. The idempotency that prevented duplicate agent actions saved users from accidental double-clicks. Agent-friendly design includes everything human-friendly design needs, plus more—agents expose every UX problem your APIs have.
+
+</div>
 
 ### The Four Requirements Humans Forgive But Agents Don't
 

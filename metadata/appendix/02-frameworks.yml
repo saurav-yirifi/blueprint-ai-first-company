@@ -1,0 +1,37 @@
+# Appendix: Frameworks
+# Maps to: blueprint-ai-first-company/book/appendix/02-frameworks/
+
+chapter:
+  number: 2
+  title: Frameworks
+  status: completed
+  aliases:
+  - appendix-b
+  - Appendix B
+  summary: Actionable frameworks and implementation guides for AI-first transformation, including team training programs and
+    technical architecture patterns.
+  tags:
+  - chapter
+  - appendix
+  - frameworks
+  - templates
+  - implementation
+sections:
+- file: 01-90-day-ai-fluency-program.md
+  title: 'The 90-Day AI Fluency Program: Complete Framework'
+  status: completed
+  tags:
+  - appendix
+  - framework
+  - ai-fluency
+  - training
+  created: '2026-01-25'
+- file: 02-polyglot-persistence-stages.md
+  title: 'Polyglot Persistence: Database Evolution Stages'
+  status: completed
+  tags:
+  - appendix
+  - framework
+  - polyglot-persistence
+  - data-architecture
+  created: '2026-01-25'

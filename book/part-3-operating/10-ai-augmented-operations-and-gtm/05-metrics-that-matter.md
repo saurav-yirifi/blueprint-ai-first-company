@@ -42,11 +42,11 @@ flowchart TB
 
     TRAP["Danger: Measuring<br/>only Level 1"] -->|"Leads to"| MISS["Missing quality<br/>degradation"]
 
-    style L1 fill:#e1f5fe,stroke:#0288d1
-    style L2 fill:#fff3e0,stroke:#f57c00
-    style L3 fill:#f3e5f5,stroke:#7b1fa2
-    style L4 fill:#c8e6c9,stroke:#388e3c
-    style TRAP fill:#ffcdd2,stroke:#c62828
+    style L1 fill:#1e6fa5,stroke:#155a85
+    style L2 fill:#c77d0a,stroke:#a06508
+    style L3 fill:#7345b0,stroke:#5b3590
+    style L4 fill:#1a8a52,stroke:#14693e
+    style TRAP fill:#c03030,stroke:#9a2020
 ```
 
 **Efficiency metrics** capture speed, cost, and throughput. Time to resolution. Tasks per person. Cost per transaction. Obvious starting points, but dangerous in isolation.
@@ -144,9 +144,9 @@ flowchart TB
     T2 -.->|"CONFIRM"| NOW["Is AI working as expected?"]
     T3 -.->|"PROVE"| VALUE["Did investment deliver value?"]
 
-    style T1 fill:#e1f5fe,stroke:#0288d1
-    style T2 fill:#fff3e0,stroke:#f57c00
-    style T3 fill:#c8e6c9,stroke:#388e3c
+    style T1 fill:#1e6fa5,stroke:#155a85
+    style T2 fill:#c77d0a,stroke:#a06508
+    style T3 fill:#1a8a52,stroke:#14693e
 ```
 
 **Tier 1 tracks leading indicators.** Training completion. Feature adoption. Behavioral shifts. These predict outcomes.

@@ -22,12 +22,11 @@ flowchart TD
     C --> E[Harvey, Glean, Perplexity]
     D --> F[Notion AI, GrammarlyGO, Einstein GPT]
 
-    style A fill:#334155,color:#f8fafc,stroke:#475569
-    style B fill:#fbbf24,color:#1c1917,stroke:#f59e0b
-    style C fill:#059669,color:#fff,stroke:#047857
-    style D fill:#7c3aed,color:#fff,stroke:#6d28d9
-    style E fill:#a7f3d0,color:#064e3b,stroke:#059669
-    style F fill:#ddd6fe,color:#4c1d95,stroke:#7c3aed
+    style B fill:#c77d0a,color:#fff,stroke:#a06508
+    style C fill:#1a8a52,color:#fff,stroke:#14693e
+    style D fill:#7345b0,color:#fff,stroke:#5b3590
+    style E fill:#1a8a52,color:#fff,stroke:#14693e
+    style F fill:#7345b0,color:#fff,stroke:#5b3590
 ```
 
 ## 5 Signs You're Looking at AI-First

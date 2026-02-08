@@ -1,0 +1,101 @@
+# Chapter 6: Agent Architecture
+# Maps to: blueprint-ai-first-company/book/part-2-building/06-agent-architecture/
+
+chapter:
+  number: 6
+  title: Agent Architecture — Chat, Background, and Orchestration
+  status: completed
+  aliases:
+  - ch06
+  - Chapter 6
+  target_words: 6500
+  summary: Two types of agents, when to use each, and the Agent Hub pattern
+  yirifi_anchor: 'Two agent types by design: chat agents that talk to people, background agents that run while everyone sleeps.
+    The DevOps dashboard doesn''t just serve humans—agents query it for system health, deployment status, incident context.
+    Same API, both consumers.'
+  external_examples:
+  - Intercom's Fin architecture (chat agent with human handoff)
+  - Klarna's AI assistant (handled 2.3M conversations in first month—background agents feeding chat agents)
+  key_concepts:
+  - Probabilistic AI
+  - Human-AI Collaboration
+  related_chapters:
+  - 4
+  - 5
+  - 7
+  - 10
+  tags:
+  - chapter
+  - building
+  - agents
+  - chat-agents
+  - background-agents
+  - agent-hub
+  - orchestration
+sections:
+- file: 01-the-2-agent-types-you-need.md
+  title: The 2 Agent Types You Need
+  status: completed
+  target_words: 1000
+  key_concepts:
+  - Human-AI Collaboration
+  tags:
+  - section
+  - building
+  - agents
+  - framework
+  created: '2026-01-12'
+- file: 02-the-agent-hub-pattern.md
+  title: The Agent Hub Pattern
+  status: completed
+  target_words: 1000
+  tags:
+  - section
+  - building
+  - agent-hub
+  created: '2026-01-12'
+- file: 03-designing-agent-interfaces.md
+  title: Designing Agent Interfaces
+  status: completed
+  target_words: 900
+  tags:
+  - section
+  - building
+  - agents
+  created: '2026-01-12'
+- file: 04-the-7-failure-modes-of-agents.md
+  title: The 7 Failure Modes of Agents
+  status: completed
+  target_words: 700
+  key_concepts:
+  - Probabilistic AI
+  tags:
+  - section
+  - building
+  - agents
+  - framework
+  created: '2026-01-12'
+- file: 05-when-not-to-use-agents.md
+  title: When NOT to Use Agents
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - AI Governance Framework
+  - Automation vs Augmentation
+  tags:
+  - section
+  - building
+  - agents
+  created: '2026-01-12'
+- file: 06-agent-design-patterns.md
+  title: Agent Design Patterns
+  status: completed
+  target_words: 1000
+  key_concepts:
+  - Human-AI Collaboration
+  - AI Governance Framework
+  tags:
+  - section
+  - building
+  - agents
+  created: '2026-01-12'

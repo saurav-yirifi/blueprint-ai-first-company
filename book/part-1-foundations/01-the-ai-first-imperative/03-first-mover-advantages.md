@@ -46,11 +46,11 @@ flowchart TB
     M3 --> M4["18-24 mo: Positions lock<br/><i>2-3x resources to catch up</i>"]
     M4 --> M5["24-36 mo: Near-impossible<br/><i>Niche or pivot only</i>"]
 
-    style M1 fill:#27ae60,color:#fff
-    style M2 fill:#f1c40f,color:#000
-    style M3 fill:#e67e22,color:#fff
-    style M4 fill:#e74c3c,color:#fff
-    style M5 fill:#8e44ad,color:#fff
+    style M1 fill:#1a8a52,color:#fff
+    style M2 fill:#c77d0a,color:#fff
+    style M3 fill:#c77d0a,color:#fff
+    style M4 fill:#c03030,color:#fff
+    style M5 fill:#7345b0,color:#fff
 ```
 
 ## Scale AI: The 9-Year Advantage

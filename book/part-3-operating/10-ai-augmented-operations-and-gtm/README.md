@@ -12,7 +12,7 @@ This chapter is about getting the implementation right. Not the technology—the
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Social, Marketing, Sales, CRM—each gets their own AI-augmented dashboard, same architecture as internal tools. The pattern that runs DevOps also runs growth. Consistency compounds."
 
@@ -20,7 +20,7 @@ This chapter is about getting the implementation right. Not the technology—the
 
 **Memorable close:** "The pattern that runs DevOps also runs growth."
 
----
+</div>
 
 ## What You'll Learn
 

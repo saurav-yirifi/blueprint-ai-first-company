@@ -1,0 +1,112 @@
+# Chapter 3: The AI Landscape
+# Maps to: blueprint-ai-first-company/book/part-1-foundations/03-the-ai-landscape/
+
+chapter:
+  number: 3
+  title: The AI Landscape — Models, Providers, and Aggregators
+  status: completed
+  aliases:
+  - ch03
+  - Chapter 3
+  target_words: 6500
+  summary: Navigating foundation models, providers, aggregators, and making strategic choices
+  yirifi_anchor: We don't commit to one provider. Our AI Tool Gateway routes requests based on task type, cost constraints,
+    and availability. Model routing isn't a nice-to-have—it's how you avoid vendor lock-in while getting the right model for
+    each job.
+  external_examples:
+  - Perplexity's multi-model orchestration (different models for search vs synthesis)
+  - Replit's model selection framework (Claude for code, GPT for natural language, specialized models for specific tasks)
+  key_concepts:
+  - Build vs Buy Calculus
+  related_chapters:
+  - 2
+  - 4
+  - 5
+  tags:
+  - chapter
+  - foundations
+  - technology
+  - ai-models
+  - llm-providers
+  - aggregators
+  - model-routing
+sections:
+- file: 01-the-4-layer-ai-stack.md
+  title: The 4-Layer AI Stack
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Foundation Models
+  tags:
+  - section
+  - foundations
+  - technology
+  - framework
+  created: '2026-01-12'
+- file: 02-foundation-models-landscape.md
+  title: Foundation Models Landscape
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Foundation Models
+  tags:
+  - section
+  - foundations
+  - ai-models
+  created: '2026-01-12'
+- file: 03-provider-landscape.md
+  title: Provider Landscape
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Foundation Models
+  tags:
+  - section
+  - foundations
+  - llm-providers
+  created: '2026-01-12'
+- file: 04-the-aggregator-layer.md
+  title: The Aggregator Layer
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Foundation Models
+  tags:
+  - section
+  - foundations
+  - aggregators
+  - model-routing
+  created: '2026-01-12'
+- file: 05-the-6-questions-before-choosing.md
+  title: The 6 Questions Before Choosing Any Model
+  status: completed
+  target_words: 900
+  tags:
+  - section
+  - foundations
+  - framework
+  created: '2026-01-12'
+- file: 06-when-to-fine-tune.md
+  title: When to Fine-Tune
+  status: completed
+  target_words: 900
+  key_concepts:
+  - Foundation Models
+  - Data Moats
+  tags:
+  - section
+  - foundations
+  - ai-models
+  created: '2026-01-12'
+- file: 07-future-proofing-your-stack.md
+  title: Future-Proofing Your Stack
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Foundation Models
+  - Build vs Buy Calculus
+  tags:
+  - section
+  - foundations
+  - architecture
+  created: '2026-01-12'

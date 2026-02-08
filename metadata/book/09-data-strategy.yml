@@ -1,0 +1,93 @@
+# Chapter 9: Data Strategy
+# Maps to: blueprint-ai-first-company/book/part-3-operating/09-data-strategy/
+
+chapter:
+  number: 9
+  title: Data Strategy — Flywheels, Moats, and Ethics
+  status: completed
+  aliases:
+  - ch09
+  - Chapter 9
+  target_words: 6500
+  summary: Building data advantages that compound while maintaining ethical standards
+  yirifi_anchor: 'Three database types, each matched to its data: transactions in relational, content in documents, speed-critical
+    in cache. But the real flywheel is usage analytics—every agent interaction becomes training data for better agent interactions.'
+  external_examples:
+  - Spotify's data flywheel
+  - Duolingo's learning loop
+  - Harvey's cold start strategy
+  key_concepts:
+  - Data Flywheel
+  related_chapters:
+  - 2
+  - 10
+  - 11
+  tags:
+  - chapter
+  - operating
+  - data
+  - data-flywheel
+  - data-moats
+  - privacy
+  - ethics
+sections:
+- file: 01-data-strategy-fundamentals.md
+  title: Data Strategy Fundamentals
+  status: completed
+  target_words: 1200
+  tags:
+  - section
+  - operating
+  - data
+  created: '2026-01-12'
+- file: 02-building-data-flywheels.md
+  title: Building Data Flywheels
+  status: completed
+  target_words: 1400
+  tags:
+  - section
+  - operating
+  - data-flywheel
+  - framework
+  created: '2026-01-12'
+- file: 03-data-moats.md
+  title: 'Data Moats: What''s Defensible vs Replicable'
+  status: completed
+  target_words: 1200
+  tags:
+  - section
+  - operating
+  - data-moats
+  created: '2026-01-12'
+- file: 04-polyglot-persistence-in-practice.md
+  title: Polyglot Persistence in Practice
+  status: completed
+  target_words: 400
+  tags:
+  - section
+  - operating
+  - polyglot-persistence
+  - data-architecture
+  created: '2026-01-12'
+- file: 05-privacy-by-design.md
+  title: Privacy by Design
+  status: completed
+  target_words: 1200
+  tags:
+  - section
+  - operating
+  - privacy
+  - ethics
+  - compliance
+  created: '2026-01-12'
+- file: 06-the-6-data-strategy-mistakes.md
+  title: The 6 Data Strategy Mistakes That Stall Flywheels
+  status: completed
+  target_words: 850
+  tags:
+  - section
+  - operating
+  - data
+  - framework
+  - mistakes
+  created: '2026-01-12'

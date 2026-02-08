@@ -4,15 +4,13 @@ Right storage for right data—relational, document, cache, vector.
 
 ---
 
-## Draft
-
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "One database until you can't. Two databases when you must. Three databases means you better know exactly why."
 
 **The structural insight:** At Yirifi, we resisted adding specialized storage until the pain was undeniable. Our relational database handled everything—until RAG requirements made vector search essential, and high-frequency reads demanded caching. Each addition solved a specific, measurable problem. The rule: justify each database with a use case that can't be served by what you have.
 
----
+</div>
 
 That mantra isn't philosophical—it's operational. Every AI infrastructure blog will tell you about the wonders of polyglot persistence—PostgreSQL for transactions, MongoDB for documents, Redis for caching, Pinecone for vectors. What they won't tell you is that each additional system multiplies your operational surface area. Different monitoring. Different failure modes. Different expertise requirements. Different consistency guarantees that don't play nicely together.
 
@@ -61,13 +59,13 @@ flowchart TD
     Q5 -->|No| A5["🔄 Migrate to managed<br/>Pinecone, Weaviate, etc."]
     Q5 -->|Yes| A6["🔧 Self-host consideration<br/>Qdrant, Milvus, etc."]
 
-    style START fill:#e3f2fd,stroke:#1976d2
-    style A1 fill:#c8e6c9,stroke:#388e3c
-    style A2 fill:#c8e6c9,stroke:#388e3c
-    style A3 fill:#fff9c4,stroke:#f9a825
-    style A4 fill:#fff9c4,stroke:#f9a825
-    style A5 fill:#ffecb3,stroke:#ff8f00
-    style A6 fill:#ffccbc,stroke:#e64a19
+    style START fill:#1e6fa5,stroke:#155a85
+    style A1 fill:#1a8a52,stroke:#14693e
+    style A2 fill:#1a8a52,stroke:#14693e
+    style A3 fill:#c77d0a,stroke:#a06508
+    style A4 fill:#c77d0a,stroke:#a06508
+    style A5 fill:#c77d0a,stroke:#a06508
+    style A6 fill:#c77d0a,stroke:#a06508
 ```
 
 *Figure: Vector database decision tree. Stay with pgvector as long as possible—complexity costs more than most teams expect.*

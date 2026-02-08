@@ -4,13 +4,11 @@ Tiered access as architecture—safe, supervised, forbidden.
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 This section implements the chapter's core principle—matching autonomy to reversibility. At Yirifi, our AI Tool Gateway emerged from a practical question: AI writes to production constantly, deploying code, updating content, modifying records. What matters isn't "can AI touch production?" but "what happens if this goes wrong?"
 
----
-
-## Draft
+</div>
 
 In September 2025, an unofficial Postmark MCP server with 1,500 weekly downloads got compromised. The attackers added a single line—a hidden BCC field to the `send_email` function. Every user silently forwarded their emails to attackers without knowing it[^lasso-security]. This wasn't a sophisticated zero-day exploit. It was a supply chain attack made trivial by AI agents calling tools with no central oversight.
 

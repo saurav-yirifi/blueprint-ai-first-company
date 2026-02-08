@@ -14,7 +14,7 @@ This chapter is about building that kind of advantage—and the ethical architec
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Three database types, each matched to its data: transactions in relational, content in documents, speed-critical in cache. But the real flywheel is usage analytics—every agent interaction becomes training data for better agent interactions."
 
@@ -22,7 +22,7 @@ This chapter is about building that kind of advantage—and the ethical architec
 
 **Memorable close:** "Data that improves as you use it."
 
----
+</div>
 
 ## What You'll Learn
 

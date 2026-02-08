@@ -39,9 +39,9 @@ flowchart LR
     INTUIT["Intuit:<br/>Uses Both"] -.-> SM & BR
     SALES["Salesforce:<br/>Uses Both"] -.-> SM & BR
 
-    style SM fill:#e1f5fe,stroke:#0288d1
-    style BR fill:#f3e5f5,stroke:#9c27b0
-    style Q fill:#ccffcc,stroke:#00cc00
+    style SM fill:#1e6fa5,stroke:#155a85
+    style BR fill:#7345b0,stroke:#5b3590
+    style Q fill:#1a8a52,stroke:#14693e
 ```
 
 ## The Integration That Didn't Break
@@ -94,8 +94,8 @@ flowchart TB
     T1 --> T2 --> T3
     T3 -->|"Improved Model"| FLEET
 
-    style FLEET fill:#e1f5fe,stroke:#0288d1
-    style TRAINING fill:#ccffcc,stroke:#00cc00
+    style FLEET fill:#1e6fa5,stroke:#155a85
+    style TRAINING fill:#1a8a52,stroke:#14693e
 ```
 
 FSD v11 to v12 shows what this enables. V11: neural networks for perception, 300,000 lines of C++ for decision-making. V12: end-to-end neural networks, those 300,000 lines reduced to 2,000-3,000[^fsd12].

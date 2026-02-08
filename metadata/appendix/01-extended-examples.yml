@@ -1,0 +1,51 @@
+# Appendix: Extended Examples
+# Maps to: blueprint-ai-first-company/book/appendix/01-extended-examples/
+
+chapter:
+  number: 1
+  title: Extended Examples
+  status: completed
+  aliases:
+  - appendix-a
+  - Appendix A
+  summary: Detailed case studies expanding on AI transformation stories from Amazon, Tesla, HubSpot, Gong, Microsoft, and
+    OpenAI.
+  tags:
+  - chapter
+  - appendix
+  - case-studies
+  - examples
+sections:
+- file: 01-amazon-tesla-evolution.md
+  title: 'Amazon and Tesla: Modular Evolution in Action'
+  status: completed
+  tags:
+  - appendix
+  - case-study
+  - amazon
+  - tesla
+  - modular-architecture
+  created: '2026-01-25'
+- file: 02-hubspot-gong-gtm.md
+  title: 'HubSpot and Gong: Platform and Flywheel Examples'
+  status: completed
+  tags:
+  - appendix
+  - case-study
+  - hubspot
+  - gong
+  - gtm
+  created: '2026-01-25'
+- file: 03-microsoft-openai-ethics.md
+  title: 'Microsoft and OpenAI: Ethics in Practice'
+  status: completed
+  key_concepts:
+  - AI Governance Framework
+  - Foundation Models
+  tags:
+  - appendix
+  - examples
+  - ethics
+  - microsoft
+  - openai
+  created: '2026-01-25'

@@ -4,13 +4,13 @@ The collaboration structure behind "think while AI types."
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "We don't 'use AI to code.' We collaborate with AI to build. The loop is the collaboration pattern: human decides, AI drafts, human reviews, AI refines. Each party does what they're best at."
 
 **The structural insight:** At Yirifi, the 5x productivity gain came from recognizing what humans are good at versus what AI is good at—and designing the workflow to maximize both. Humans excel at: understanding requirements, making architectural decisions, spotting subtle bugs, ensuring business logic correctness. AI excels at: typing fast, remembering syntax, applying patterns, generating boilerplate. The loop plays to both strengths.
 
----
+</div>
 
 Most teams get this backward. They think of AI as a faster pair of hands—type your intent, get code back, ship. That's how you end up 19% slower while feeling 20% faster—the perception gap from [Section 4](./04-the-8-patterns-for-effective-ai-coding.md).
 
@@ -48,11 +48,11 @@ graph LR
         A4["Consistent execution"]
     end
 
-    style D fill:#e3f2fd,stroke:#2196f3
-    style DR fill:#fff3e0,stroke:#ff9800
-    style R fill:#e3f2fd,stroke:#2196f3
-    style RF fill:#fff3e0,stroke:#ff9800
-    style F fill:#e8f5e9,stroke:#4caf50
+    style D fill:#1e6fa5,stroke:#155a85
+    style DR fill:#c77d0a,stroke:#a06508
+    style R fill:#1e6fa5,stroke:#155a85
+    style RF fill:#c77d0a,stroke:#a06508
+    style F fill:#1a8a52,stroke:#14693e
 ```
 
 *Figure: The Human-AI Development Loop. Each party does what they're best at—humans make decisions, AI handles execution.*

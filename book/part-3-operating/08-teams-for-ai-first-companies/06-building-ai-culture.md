@@ -52,8 +52,8 @@ flowchart TB
     X4 -.->|"Support"| P4
     X5 -.->|"Balance"| P5
 
-    style ANTI fill:#ffcccc,stroke:#cc0000
-    style POSITIVE fill:#ccffcc,stroke:#00cc00
+    style ANTI fill:#c03030,stroke:#9a2020
+    style POSITIVE fill:#1a8a52,stroke:#14693e
 ```
 
 **The fear is real and measurable.** 62% of managers believe their employees fear AI will cost them their jobs. 48% of managers themselves worry about AI-driven wage declines. 53% of employees who use AI admitted to hiding their usage, fearing it would make them look replaceable[^fear-stats].

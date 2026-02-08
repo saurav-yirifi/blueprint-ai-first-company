@@ -219,9 +219,9 @@ body::before {
   opacity: 0.6;
 }
 
-/* Light mode: reduce grid intensity for cleaner background */
+/* Light mode: near-invisible grid for clean reading */
 [data-md-color-scheme="default"] body::before {
-  opacity: 0.35;
+  opacity: 0.08;
 }
 
 /* Ensure all content layers above the grid */
@@ -823,6 +823,57 @@ body::before {
 
 
 /* ------------------------------------------------------------
+   Yirifi Anchor – "From the Trenches" callout
+   ------------------------------------------------------------ */
+.yirifi-anchor {
+  position: relative;
+  margin: 2rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+  background: var(--bp-canvas-raised);
+  border: 1px solid var(--bp-line);
+  border-left: 4px solid var(--bp-accent-warm);
+  border-radius: 6px;
+}
+
+.yirifi-anchor::before {
+  content: 'Yirifi Anchor — From the Trenches';
+  display: block;
+  font-family: var(--bp-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bp-accent-warm);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--bp-line);
+}
+
+.yirifi-anchor blockquote {
+  border-left-color: var(--bp-accent-warm);
+  background: transparent;
+  font-family: var(--bp-serif);
+  font-style: italic;
+  font-size: 1.05em;
+}
+
+.yirifi-anchor > :last-child {
+  margin-bottom: 0;
+}
+
+/* Light mode */
+[data-md-color-scheme="default"] .yirifi-anchor {
+  background: rgba(245, 158, 11, 0.04);
+  border-color: rgba(15, 21, 41, 0.1);
+  border-left-color: var(--bp-accent-warm);
+}
+
+[data-md-color-scheme="default"] .yirifi-anchor::before {
+  border-bottom-color: rgba(15, 21, 41, 0.1);
+}
+
+
+/* ------------------------------------------------------------
    Smooth Transitions
    ------------------------------------------------------------ */
 body,
@@ -835,4 +886,223 @@ body,
     background 0.4s var(--bp-ease-out),
     color 0.4s var(--bp-ease-out),
     border-color 0.4s var(--bp-ease-out);
+}
+
+
+/* ------------------------------------------------------------
+   Mermaid Diagram Theming
+   ------------------------------------------------------------ */
+
+/* Container: give diagrams a raised card treatment.
+   Mermaid.js replaces <pre class="mermaid"> with <div class="mermaid">
+   at runtime, so we target both. */
+.md-typeset pre.mermaid,
+.md-typeset > div.mermaid,
+.md-typeset > .mermaid {
+  background: var(--bp-canvas-raised);
+  border: 1px solid var(--bp-line);
+  border-radius: 6px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  overflow-x: auto;
+}
+
+/* Default node text */
+.mermaid .nodeLabel,
+.mermaid .label {
+  font-family: var(--bp-sans) !important;
+  font-size: 0.85rem !important;
+}
+
+/* Edge (arrow) paths */
+.mermaid .edgePath .path,
+.mermaid .flowchart-link {
+  stroke: var(--bp-line-strong) !important;
+  stroke-width: 1.5px;
+}
+
+/* Arrowheads */
+.mermaid marker path {
+  fill: var(--bp-line-strong) !important;
+}
+
+/* Edge labels (text on arrows like "107x cheaper") */
+.mermaid .edgeLabel {
+  font-family: var(--bp-mono) !important;
+  font-size: 0.72rem !important;
+  background: var(--bp-canvas-raised) !important;
+  color: var(--bp-white-dim) !important;
+}
+
+.mermaid .edgeLabel .label {
+  color: var(--bp-white-dim) !important;
+}
+
+.mermaid .edgeLabel rect {
+  fill: var(--bp-canvas-raised) !important;
+  stroke: none !important;
+  opacity: 0.9;
+}
+
+/* Subgraph containers */
+.mermaid .cluster rect {
+  fill: var(--bp-canvas-surface) !important;
+  stroke: var(--bp-line) !important;
+  stroke-width: 1px;
+  rx: 6px;
+  ry: 6px;
+}
+
+/* Subgraph titles */
+.mermaid .cluster .nodeLabel,
+.mermaid .cluster-label .nodeLabel {
+  font-family: var(--bp-mono) !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.06em;
+  fill: var(--bp-cyan) !important;
+  color: var(--bp-cyan) !important;
+}
+
+/* Default node fill (nodes without inline style overrides) */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node polygon {
+  stroke: var(--bp-line-strong) !important;
+  stroke-width: 1px;
+}
+
+/* Rounded stadium nodes (the ([...]) syntax) */
+.mermaid .node .label-container {
+  stroke: var(--bp-line-strong) !important;
+}
+
+/* Light mode overrides */
+[data-md-color-scheme="default"] .md-typeset pre.mermaid,
+[data-md-color-scheme="default"] .md-typeset > div.mermaid,
+[data-md-color-scheme="default"] .md-typeset > .mermaid {
+  background: rgba(15, 21, 41, 0.03);
+  border-color: rgba(15, 21, 41, 0.1);
+}
+
+[data-md-color-scheme="default"] .mermaid .edgePath .path,
+[data-md-color-scheme="default"] .mermaid .flowchart-link {
+  stroke: rgba(15, 21, 41, 0.35) !important;
+}
+
+[data-md-color-scheme="default"] .mermaid marker path {
+  fill: rgba(15, 21, 41, 0.35) !important;
+}
+
+[data-md-color-scheme="default"] .mermaid .edgeLabel {
+  background: rgba(15, 21, 41, 0.03) !important;
+  color: rgba(15, 21, 41, 0.6) !important;
+}
+
+[data-md-color-scheme="default"] .mermaid .edgeLabel .label {
+  color: rgba(15, 21, 41, 0.6) !important;
+}
+
+[data-md-color-scheme="default"] .mermaid .edgeLabel rect {
+  fill: rgba(15, 21, 41, 0.03) !important;
+}
+
+[data-md-color-scheme="default"] .mermaid .cluster rect {
+  fill: rgba(15, 21, 41, 0.04) !important;
+  stroke: rgba(15, 21, 41, 0.12) !important;
+}
+
+[data-md-color-scheme="default"] .mermaid .cluster .nodeLabel,
+[data-md-color-scheme="default"] .mermaid .cluster-label .nodeLabel {
+  color: var(--bp-cyan) !important;
+}
+
+
+/* ------------------------------------------------------------
+   Blockquotes (standalone, outside yirifi-anchor)
+   ------------------------------------------------------------ */
+.md-typeset blockquote {
+  border-left: 3px solid var(--bp-cyan-dim);
+  background: transparent;
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--bp-serif);
+  font-style: italic;
+  font-size: 1.02em;
+  line-height: 1.65;
+  color: var(--bp-white-dim);
+}
+
+.md-typeset blockquote p {
+  margin: 0;
+}
+
+.md-typeset blockquote p + p {
+  margin-top: 0.75rem;
+}
+
+/* Light mode */
+[data-md-color-scheme="default"] .md-typeset blockquote {
+  border-left-color: var(--bp-cyan);
+  color: rgba(15, 21, 41, 0.72);
+}
+
+
+/* ------------------------------------------------------------
+   Horizontal Rules — Book-grade section dividers
+   ------------------------------------------------------------ */
+.md-typeset hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--bp-line-strong) 20%,
+    var(--bp-line-strong) 80%,
+    transparent
+  );
+  margin: 2.5rem 0;
+  opacity: 0.7;
+}
+
+
+/* ------------------------------------------------------------
+   Yirifi Anchor — Semantic labels (insight / close)
+   ------------------------------------------------------------ */
+
+/* Style **Label:** bold text inside yirifi anchors as small-caps tags */
+.yirifi-anchor > p > strong:first-child {
+  font-family: var(--bp-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: var(--bp-accent-warm);
+}
+
+
+/* ------------------------------------------------------------
+   Chapter Navigation Footer
+   Bottom breadcrumb: [Part Overview](...) | [Book Contents](...)
+   ------------------------------------------------------------ */
+.md-typeset hr + p:last-child a {
+  font-family: var(--bp-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bp-white-muted);
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.md-typeset hr + p:last-child a:hover {
+  color: var(--bp-cyan);
+  border-bottom-color: var(--bp-cyan);
+}
+
+.md-typeset hr + p:last-child {
+  text-align: center;
+  color: var(--bp-white-muted);
+  font-family: var(--bp-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  margin-top: -0.5rem;
+  padding-top: 1rem;
 }

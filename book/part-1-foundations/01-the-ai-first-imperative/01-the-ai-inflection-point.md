@@ -20,9 +20,9 @@ flowchart TB
     B -->|"10x cheaper"| C
     C["With Caching<br/>$0.028 per M tokens"]
 
-    style A fill:#e74c3c,color:#fff
-    style B fill:#f39c12,color:#fff
-    style C fill:#27ae60,color:#fff
+    style A fill:#c03030,color:#fff
+    style B fill:#c77d0a,color:#fff
+    style C fill:#1a8a52,color:#fff
 ```
 
 The implications compound. When AI processing costs pennies, the barrier isn't compute. It's imagination.
@@ -61,8 +61,6 @@ flowchart TB
         C3["Plain English"]
     end
 
-    style then fill:#34495e,color:#fff
-    style now fill:#2980b9,color:#fff
 ```
 
 ## The Small Team Advantage

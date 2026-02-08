@@ -1,12 +1,12 @@
 # When NOT to Use Agents
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "We killed three agent projects in the first year. Not because they failed—because they succeeded at the wrong problems. One replaced a five-minute manual task with a system that needed a full-time engineer to maintain. The math didn't work."
 
 **The structural insight:** Agent enthusiasm blinds you to simpler solutions. Our "intelligent deployment recommender" was replaced by a decision tree that was faster, cheaper, and more predictable. Another agent failed because the process it automated didn't exist—people made different judgment calls each time, and the agent encoded that chaos. Agents add complexity: prompt engineering, observability, failure handling, model management. That overhead is worth it when you get scale or capabilities simpler approaches can't match. When you don't, you've built an expensive solution to a simple problem.
 
----
+</div>
 
 ### The Industry Reality
 
@@ -50,12 +50,12 @@ flowchart TD
     Q5 -->|No| Exit5([Stabilize<br/>Process First])
     Q5 -->|Yes| Proceed([Proceed with<br/>Agent])
 
-    style Exit1 fill:#ffcdd2
-    style Exit2 fill:#ffcdd2
-    style Exit3 fill:#ffcdd2
-    style Exit4 fill:#ffcdd2
-    style Exit5 fill:#ffcdd2
-    style Proceed fill:#c8e6c9
+    style Exit1 fill:#c03030
+    style Exit2 fill:#c03030
+    style Exit3 fill:#c03030
+    style Exit4 fill:#c03030
+    style Exit5 fill:#c03030
+    style Proceed fill:#1a8a52
 ```
 
 ### When Simpler Wins

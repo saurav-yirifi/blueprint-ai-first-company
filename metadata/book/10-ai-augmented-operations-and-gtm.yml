@@ -1,0 +1,131 @@
+# Chapter 10: AI-Augmented Operations and GTM
+# Maps to: blueprint-ai-first-company/book/part-3-operating/10-ai-augmented-operations-and-gtm/
+
+chapter:
+  number: 10
+  title: AI-Augmented Operations and Go-to-Market
+  status: completed
+  aliases:
+  - ch10
+  - Chapter 10
+  target_words: 6500
+  summary: Using AI to scale both internal operations and customer-facing growth
+  yirifi_anchor: Social, Marketing, Sales, CRM—each gets their own AI-augmented dashboard, same architecture as internal tools.
+    The pattern that runs DevOps also runs growth. Consistency compounds.
+  external_examples:
+  - HubSpot's AI GTM (content generation to lead scoring—same platform)
+  - Gong's conversation intelligence (sales calls become training data become coaching become better calls)
+  key_concepts:
+  - Build vs Buy Calculus
+  - Probabilistic AI
+  - Human-AI Collaboration
+  - Data Flywheel
+  related_chapters:
+  - 6
+  - 7
+  - 8
+  tags:
+  - chapter
+  - operating
+  - operations
+  - gtm
+  - marketing
+  - sales
+  - customer-success
+sections:
+- file: 01-operations-as-apis.md
+  title: Operations as APIs
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - AI Governance Framework
+  tags:
+  - section
+  - operating
+  - operations
+  - apis
+  created: '2026-01-12'
+- file: 02-the-5-operations-functions-that-transform.md
+  title: The 5 Operations Functions That Transform with AI
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Human-AI Collaboration
+  - Automation vs Augmentation
+  tags:
+  - section
+  - operating
+  - operations
+  - framework
+  created: '2026-01-12'
+- file: 03-automation-vs-augmentation.md
+  title: Automation vs Augmentation
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Automation vs Augmentation
+  - Human-AI Collaboration
+  tags:
+  - section
+  - operating
+  - operations
+  - framework
+  created: '2026-01-12'
+- file: 04-ai-powered-gtm.md
+  title: AI-Powered GTM
+  status: completed
+  target_words: 900
+  key_concepts:
+  - Automation vs Augmentation
+  - Data Flywheel
+  - Microservices Architecture
+  tags:
+  - section
+  - operating
+  - gtm
+  - marketing
+  - sales
+  - customer-success
+  - architecture
+  created: '2026-01-12'
+- file: 05-metrics-that-matter.md
+  title: Metrics That Matter
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Probabilistic AI
+  - Automation vs Augmentation
+  tags:
+  - section
+  - operating
+  - metrics
+  - roi
+  created: '2026-01-15'
+- file: 06-the-8-gtm-mistakes-with-ai.md
+  title: The 8 Go-to-Market Mistakes with AI
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Human-AI Collaboration
+  - AI Governance Framework
+  - Data Flywheel
+  tags:
+  - section
+  - operating
+  - gtm
+  - framework
+  - mistakes
+  created: '2026-01-15'
+- file: 07-hubspot-and-gong-examples.md
+  title: 'HubSpot and Gong: Platform and Flywheel Examples'
+  status: completed
+  target_words: 300
+  key_concepts:
+  - Data Flywheel
+  - Automation vs Augmentation
+  tags:
+  - section
+  - operating
+  - gtm
+  - case-study
+  created: '2026-01-15'

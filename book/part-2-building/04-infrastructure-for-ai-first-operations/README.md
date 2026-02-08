@@ -8,7 +8,7 @@ This chapter is about the infrastructure patterns that separate the 5% who ship 
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Three tiers of AI access: reading system status is free, production deploys require approval, and deleting user data is always human-only. The tiers aren't about limiting AI—they're about matching autonomy to reversibility."
 
@@ -16,7 +16,7 @@ This chapter is about the infrastructure patterns that separate the 5% who ship 
 
 **Memorable close:** "Reversibility is the deciding factor."
 
----
+</div>
 
 ## What You'll Learn
 

@@ -1,0 +1,109 @@
+# Chapter 2: The AI-First Mindset
+# Maps to: blueprint-ai-first-company/book/part-1-foundations/02-the-ai-first-mindset/
+
+chapter:
+  number: 2
+  title: The AI-First Mindset
+  status: completed
+  aliases:
+  - ch02
+  - Chapter 2
+  target_words: 6500
+  summary: How AI-first founders think differently about opportunities and building
+  yirifi_anchor: Every API we built assumed the first consumer would be an AI agent, not a person clicking buttons.
+  external_examples:
+  - Stripe's ML-first design philosophy (fraud detection embedded, not added)
+  - Vercel's AI SDK (built for developers AND agents from the start)
+  key_concepts:
+  - Build vs Buy Calculus
+  - Data Flywheel
+  - Probabilistic AI
+  - Human-AI Collaboration
+  - AI-First vs AI-Enabled
+  related_chapters:
+  - 1
+  - 3
+  - 8
+  - 9
+  tags:
+  - chapter
+  - foundations
+  - strategy
+  - build-vs-buy
+  - data-flywheel
+  - probabilistic-ai
+  - human-ai-collab
+sections:
+- file: 01-thinking-in-capabilities.md
+  title: Thinking in Capabilities, Not Features
+  status: completed
+  target_words: 900
+  tags:
+  - section
+  - foundations
+  - strategy
+  created: '2026-01-12'
+- file: 02-the-7-mental-models.md
+  title: The 7 Mental Models of AI-First Thinking
+  status: completed
+  target_words: 900
+  key_concepts:
+  - Human-AI Collaboration
+  - Probabilistic AI
+  - AI-First vs AI-Enabled
+  - Build vs Buy Calculus
+  - Automation vs Augmentation
+  tags:
+  - section
+  - foundations
+  - strategy
+  - framework
+  created: '2026-01-12'
+- file: 03-the-build-vs-buy-calculus.md
+  title: The Build vs Buy Calculus
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - Build vs Buy Calculus
+  - Data Moats
+  tags:
+  - section
+  - foundations
+  - build-vs-buy
+  created: '2026-01-12'
+- file: 04-data-as-product.md
+  title: Data as Product
+  status: completed
+  target_words: 850
+  key_concepts:
+  - Data Flywheel
+  tags:
+  - section
+  - foundations
+  - data-flywheel
+  created: '2026-01-12'
+- file: 05-iteration-speed-and-learning-loops.md
+  title: Iteration Speed and Learning Loops
+  status: completed
+  target_words: 900
+  key_concepts:
+  - Data Flywheel
+  - AI-First vs AI-Enabled
+  tags:
+  - section
+  - foundations
+  - iteration
+  - learning-loops
+  created: '2026-01-12'
+- file: 06-human-ai-collaboration.md
+  title: Human-AI Collaboration
+  status: completed
+  target_words: 850
+  key_concepts:
+  - Human-AI Collaboration
+  - Automation vs Augmentation
+  tags:
+  - section
+  - foundations
+  - human-ai-collab
+  created: '2026-01-12'

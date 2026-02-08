@@ -56,10 +56,10 @@ flowchart TB
         U4["Similarity search,<br/>RAG"] --> VEC
     end
 
-    style PG fill:#e1f5fe,stroke:#0288d1
-    style MONGO fill:#e1f5fe,stroke:#0288d1
-    style REDIS fill:#fff3e0,stroke:#ff9800
-    style VEC fill:#ccffcc,stroke:#00cc00
+    style PG fill:#1e6fa5,stroke:#155a85
+    style MONGO fill:#1e6fa5,stroke:#155a85
+    style REDIS fill:#c77d0a,stroke:#a06508
+    style VEC fill:#1a8a52,stroke:#14693e
 ```
 
 Here's the decision framework in practice:
@@ -92,8 +92,8 @@ flowchart LR
     S3 -->|"AI requires<br/>embeddings"| S4
     S4 -->|"Analytics load<br/>hurts prod"| S5
 
-    style S1 fill:#e1f5fe,stroke:#0288d1
-    style S5 fill:#ccffcc,stroke:#00cc00
+    style S1 fill:#1e6fa5,stroke:#155a85
+    style S5 fill:#1a8a52,stroke:#14693e
 ```
 
 **Stage 1: PostgreSQL everything.** They sharded to 480 logical shards across 96 physical instances to manage 200 billion block entities[^notion-sharding]. That's not a typo. Two hundred billion. They made Postgres work until Postgres couldn't work.

@@ -4,13 +4,13 @@ Same permission model, different contexts.
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "An agent should never have more permissions than the human who triggered it. But it also shouldn't have fewer—or it can't do its job."
 
 **The structural insight:** Yirifi's Auth Client Pattern treats agents as delegates, not independent actors. When a user triggers an agent, that agent inherits the user's permissions—scoped to the task at hand. This creates clear accountability (every agent action traces to a human), prevents permission creep (agents can't accumulate powers beyond their principals), and simplifies security audits (same model for humans and machines).
 
----
+</div>
 
 Non-human identities already outnumber humans 50:1 in the average enterprise environment[^csa-framework]. That ratio is projected to hit 80:1 within two years. The uncomfortable reality: most of those "identities" are service accounts with static credentials, shared across teams, with permissions that accumulated over years of "just add it to the existing account."
 
@@ -66,11 +66,10 @@ flowchart LR
 
     AUDIT["📋 Audit Log:<br/>Alice → Scheduling Agent → Room Agent → Calendar"]
 
-    style ALICE fill:#e3f2fd,stroke:#1976d2
-    style SCHED fill:#fff9c4,stroke:#f9a825
-    style ROOM fill:#ffecb3,stroke:#ff8f00
-    style CAL fill:#c8e6c9,stroke:#388e3c
-    style AUDIT fill:#f5f5f5,stroke:#9e9e9e
+    style ALICE fill:#1e6fa5,stroke:#155a85
+    style SCHED fill:#c77d0a,stroke:#a06508
+    style ROOM fill:#c77d0a,stroke:#a06508
+    style CAL fill:#1a8a52,stroke:#14693e
 ```
 
 *Figure: Permission delegation chain showing attenuation. Each hop reduces permissions—never increases. The audit trail traces every action back to Alice.*

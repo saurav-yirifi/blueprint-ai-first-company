@@ -31,9 +31,9 @@ flowchart TB
     MS --> COMMON
     OAI --> COMMON
 
-    style MS fill:#e1f5fe,stroke:#333
-    style OAI fill:#ccffcc,stroke:#333
-    style COMMON fill:#fff3e0,stroke:#333
+    style MS fill:#1e6fa5,stroke:#454d58
+    style OAI fill:#1a8a52,stroke:#454d58
+    style COMMON fill:#c77d0a,stroke:#454d58
 ```
 
 ## Microsoft: Principles Into Practice
@@ -73,11 +73,11 @@ flowchart LR
     S1 --> S2 --> S3 --> S4 --> S5
     S5 -.->|"Fix & Repeat"| S1
 
-    style S1 fill:#e1f5fe,stroke:#333
-    style S2 fill:#ccffcc,stroke:#333
-    style S3 fill:#fff3e0,stroke:#333
-    style S4 fill:#ffcccc,stroke:#333
-    style S5 fill:#ffcccc,stroke:#333
+    style S1 fill:#1e6fa5,stroke:#454d58
+    style S2 fill:#1a8a52,stroke:#454d58
+    style S3 fill:#c77d0a,stroke:#454d58
+    style S4 fill:#c03030,stroke:#454d58
+    style S5 fill:#c03030,stroke:#454d58
 ```
 
 Phi-4 achieved a 65.7% pass rate in security evaluations—not perfect, but measurably improved from earlier iterations and documented transparently[^ms-phi].

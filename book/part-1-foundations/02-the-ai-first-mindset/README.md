@@ -8,7 +8,7 @@ At Yirifi, we stumbled into a similar insight from a different direction: "Every
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Every API we built assumed the first consumer would be an AI agent, not a person clicking buttons."
 
@@ -16,7 +16,7 @@ At Yirifi, we stumbled into a similar insight from a different direction: "Every
 
 **Memorable close:** "Build for agents. Humans will thank you."
 
----
+</div>
 
 ## What You'll Learn
 

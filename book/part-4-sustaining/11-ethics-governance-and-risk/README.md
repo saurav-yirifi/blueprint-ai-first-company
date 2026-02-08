@@ -10,7 +10,7 @@ The solution isn't banning AI autonomy. It's governing it.
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Three permission modes: AI does everything automatically, AI only uses approved tools, AI asks for every action. Different contexts need different trust levels. The question isn't 'can AI do this?' but 'should AI do this unsupervised?'"
 
@@ -18,7 +18,7 @@ The solution isn't banning AI autonomy. It's governing it.
 
 **Memorable close:** "Document your answer. You'll be asked."
 
----
+</div>
 
 ## What You'll Learn
 

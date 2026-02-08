@@ -34,9 +34,9 @@ flowchart LR
     S2 -.->|"BREAK 1:<br/>Data in silos"| A2
     A2 -.->|"BREAK 2:<br/>Insights die<br/>in slide decks"| AP2
 
-    style S2 fill:#fff3e0,stroke:#ff9800
-    style A2 fill:#fff3e0,stroke:#ff9800
-    style AP2 fill:#ffcccc,stroke:#cc0000
+    style S2 fill:#c77d0a,stroke:#a06508
+    style A2 fill:#c77d0a,stroke:#a06508
+    style AP2 fill:#c03030,stroke:#9a2020
 ```
 
 The bottleneck is rarely collection. Most organizations have mature data collection. The break usually happens between storage and analysis, or between analysis and application.

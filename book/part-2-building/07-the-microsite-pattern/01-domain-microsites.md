@@ -13,7 +13,7 @@ flowchart TB
         F1[Separate Repositories] --> F2[Lockstep Deploys]
         F2 --> F3[Shared Databases]
         F3 --> F4["Distributed Monolith"]
-        style F4 fill:#ffcccc,stroke:#cc0000
+        style F4 fill:#c03030,stroke:#9a2020
     end
 
     subgraph SUCCESS["10% Who Succeed"]
@@ -21,7 +21,7 @@ flowchart TB
         S1[Domain Ownership] --> S2[Independent Deploys]
         S2 --> S3[Data Autonomy]
         S3 --> S4["True Microservices"]
-        style S4 fill:#ccffcc,stroke:#00cc00
+        style S4 fill:#1a8a52,stroke:#14693e
     end
 
     FAIL ~~~ SUCCESS

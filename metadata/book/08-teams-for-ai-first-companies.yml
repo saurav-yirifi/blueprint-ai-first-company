@@ -1,0 +1,103 @@
+# Chapter 8: Teams for AI-First Companies
+# Maps to: blueprint-ai-first-company/book/part-3-operating/08-teams-for-ai-first-companies/
+
+chapter:
+  number: 8
+  title: Teams for AI-First Companies
+  status: completed
+  aliases:
+  - ch08
+  - Chapter 8
+  target_words: 6500
+  summary: Structuring teams and building culture for AI-first success
+  yirifi_anchor: 'Just 2 people, 15 backoffice microsites. But those 2 people aren''t doing 2 jobs each—they''re architecting
+    while AI builds. The skill that matters: knowing what to ask AI to do, and recognizing when AI got it wrong. That''s not
+    a new role. It''s every role, upgraded.'
+  external_examples:
+  - Anthropic's team structure (researchers and engineers blurred)
+  - Scale AI's org evolution (from labeling company to AI company—same people, transformed roles)
+  key_concepts:
+  - Build vs Buy Calculus
+  - Human-AI Collaboration
+  related_chapters:
+  - 2
+  - 5
+  - 7
+  tags:
+  - chapter
+  - operating
+  - teams
+  - hiring
+  - org-structure
+  - ai-fluency
+sections:
+- file: 01-the-4-team-models.md
+  title: The 4 Team Models for AI-First Operations
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - AI-First vs AI-Enabled
+  tags:
+  - section
+  - operating
+  - teams
+  - framework
+  created: '2026-01-12'
+- file: 02-own-your-domain-share-your-foundation.md
+  title: Own Your Domain, Share Your Foundation
+  status: completed
+  target_words: 700
+  key_concepts:
+  - Automation vs Augmentation
+  tags:
+  - section
+  - operating
+  - teams
+  created: '2026-01-12'
+- file: 03-hiring-for-ai-first.md
+  title: Hiring for AI-First
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - AI-First vs AI-Enabled
+  tags:
+  - section
+  - operating
+  - hiring
+  created: '2026-01-12'
+- file: 04-the-90-day-ai-fluency-program.md
+  title: The 90-Day AI Fluency Program
+  status: completed
+  target_words: 400
+  key_concepts:
+  - Automation vs Augmentation
+  tags:
+  - section
+  - operating
+  - ai-fluency
+  - framework
+  created: '2026-01-12'
+- file: 05-how-roles-are-changing.md
+  title: How Roles Are Changing
+  status: completed
+  target_words: 1400
+  key_concepts:
+  - AI-First vs AI-Enabled
+  - Automation vs Augmentation
+  - Probabilistic AI
+  tags:
+  - section
+  - operating
+  - teams
+  created: '2026-01-12'
+- file: 06-building-ai-culture.md
+  title: Building AI Culture
+  status: completed
+  target_words: 1200
+  key_concepts:
+  - AI-First vs AI-Enabled
+  tags:
+  - section
+  - operating
+  - teams
+  created: '2026-01-12'

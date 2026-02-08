@@ -4,11 +4,11 @@ Choosing the right AI coding tool for your workflow.
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "We use three different AI coding tools, and that's intentional. Quick edits in the IDE with autocomplete. Feature work with an agentic CLI. Architecture discussions in chat. The tool should match the task, not the other way around."
 
----
+</div>
 
 Here's the common mistake with AI coding tools: picking one and forcing every workflow through it.
 
@@ -38,10 +38,10 @@ graph TB
     CH -->|"Implementation"| CLI
     IDE -->|"Autonomous tasks"| CLI
 
-    style AC fill:#e8f5e9,stroke:#4caf50
-    style CH fill:#e3f2fd,stroke:#2196f3
-    style IDE fill:#fff3e0,stroke:#ff9800
-    style CLI fill:#fce4ec,stroke:#e91e63
+    style AC fill:#1a8a52,stroke:#14693e
+    style CH fill:#1e6fa5,stroke:#155a85
+    style IDE fill:#c77d0a,stroke:#a06508
+    style CLI fill:#c03030,stroke:#9a2020
 ```
 
 *Figure: The four AI coding tool categories. Match the tool to the task—different workflows have different requirements.*

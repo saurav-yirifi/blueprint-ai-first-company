@@ -4,19 +4,13 @@ What you need, what you don't (yet).
 
 ---
 
-
-
----
-
-## Draft
-
-### Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "Our infrastructure choices are exciting to us precisely because they're battle-tested. While other startups chase the latest vector database or orchestration framework, we chose Postgres, open source, managed services—proven over impressive, every time."
 
 **The structural insight:** At Yirifi, infrastructure decisions optimize for sophistication that delivers value—not sophistication for its own sake. The minimum viable stack—authentication, database, AI provider access, and basic observability—gets you to production. Everything else is premature optimization until you have evidence you need it.
 
----
+</div>
 
 Here's the thing about infrastructure: the companies that move fastest start with boring technology.
 
@@ -69,9 +63,9 @@ flowchart TB
 
     COST["💰 Total: <$500/month<br/>⏱️ Deploy: <24 hours"]
 
-    style DAY1 fill:#c8e6c9,stroke:#388e3c
-    style NOT fill:#ffcdd2,stroke:#c62828
-    style COST fill:#e3f2fd,stroke:#1976d2
+    style DAY1 fill:#1a8a52,stroke:#14693e
+    style NOT fill:#c03030,stroke:#9a2020
+    style COST fill:#1e6fa5,stroke:#155a85
 ```
 
 *Figure: The Day 1 stack. Four non-negotiables on the left; everything else is premature optimization.*

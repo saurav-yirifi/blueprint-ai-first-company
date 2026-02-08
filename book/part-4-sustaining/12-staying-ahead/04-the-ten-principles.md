@@ -44,10 +44,10 @@ flowchart TB
 
     FORBIDDEN --> BLOCK["Block Always"]
 
-    style SAFE fill:#ccffcc,stroke:#00cc00
-    style SUPERVISED fill:#fff3e0,stroke:#ff9800
-    style FORBIDDEN fill:#ffcccc,stroke:#cc0000
-    style BLOCK fill:#ffcccc,stroke:#cc0000
+    style SAFE fill:#1a8a52,stroke:#14693e
+    style SUPERVISED fill:#c77d0a,stroke:#a06508
+    style FORBIDDEN fill:#c03030,stroke:#9a2020
+    style BLOCK fill:#c03030,stroke:#9a2020
 ```
 
 Define your forbidden zone before you need it. The companies that moved fastest with AI didn't skip governance. They built governance that enabled speed.
@@ -94,8 +94,6 @@ flowchart LR
     CHAT --> VALUE1["User Experience"]
     BACKGROUND --> VALUE2["Operational Efficiency"]
 
-    style CHAT fill:#e1f5fe,stroke:#0288d1
-    style BACKGROUND fill:#f3e5f5,stroke:#9c27b0
 ```
 
 ## Principle 6: Own Your Domain, Share Your Foundation

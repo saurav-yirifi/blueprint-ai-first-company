@@ -44,8 +44,8 @@ flowchart LR
     SEC --> CAT
     CAT --> DEV
 
-    style DEV fill:#ccffcc,stroke:#00cc00
-    style Platform fill:#e1f5fe,stroke:#0288d1
+    style DEV fill:#1a8a52,stroke:#14693e
+    style Platform fill:#1e6fa5,stroke:#155a85
 ```
 
 The developer gets a production-ready service skeleton without understanding every component. They focus on business logic. The platform handles infrastructure.
@@ -92,9 +92,9 @@ flowchart TB
     MON --> S1
     S7 --> NEW
 
-    style MON fill:#ffcccc,stroke:#cc0000
-    style NEW fill:#ccffcc,stroke:#00cc00
-    style Migration fill:#fff3e0,stroke:#ff9800
+    style MON fill:#c03030,stroke:#9a2020
+    style NEW fill:#1a8a52,stroke:#14693e
+    style Migration fill:#c77d0a,stroke:#a06508
 ```
 
 Each step is independently deployable and reversible. Tests stay green throughout.

@@ -8,7 +8,7 @@ At Yirifi, we learned this lesson early. We started with a single provider—sim
 
 ---
 
-## Yirifi Anchor
+<div class="yirifi-anchor" markdown>
 
 > "We don't commit to one provider. Our AI Tool Gateway routes requests based on task type, cost constraints, and availability. Model routing isn't a nice-to-have—it's how you avoid vendor lock-in while getting the right model for each job."
 
@@ -16,7 +16,7 @@ At Yirifi, we learned this lesson early. We started with a single provider—sim
 
 **Memorable close:** "Routing is strategy. One provider is a bet."
 
----
+</div>
 
 ## What You'll Learn
 

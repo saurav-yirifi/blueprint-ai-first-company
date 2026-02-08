@@ -21,10 +21,10 @@ flowchart LR
     C --> D[Better Experience]
     D --> A
 
-    style A fill:#e1f5fe
-    style B fill:#fff3e0
-    style C fill:#e8f5e9
-    style D fill:#fce4ec
+    style A fill:#1e6fa5
+    style B fill:#c77d0a
+    style C fill:#1a8a52
+    style D fill:#c03030
 ```
 
 ---
