@@ -8,7 +8,7 @@
 
 | File | Purpose |
 |------|---------|
-| [.github/workflows/ai-review.yml](.github/workflows/ai-review.yml) | GitHub Actions workflow triggered on PR events |
+| `.github/workflows/ai-review.yml` | GitHub Actions workflow triggered on PR events |
 | [review-config.yaml](review-config.yaml) | Review configuration (severity thresholds, ignored files, custom rules) |
 | [prompts/review-prompt.md](prompts/review-prompt.md) | The review prompt template sent to the AI model |
 
@@ -116,5 +116,5 @@ For a team producing 50 PRs per week, expect approximately $4-8 per week in API 
 
 - [Code Review Agent System Prompt](../../prompts/agent-system-prompts/code-review-agent.md) -- the full system prompt for a review agent
 - [Review Prompts](../../prompts/coding-prompts/review-prompts.md) -- manual review prompt templates
-- [Claude Code Setup](../claude-code-setup/) -- local review configuration
+- [Claude Code Setup](../claude-code-setup/README.md) -- local review configuration
 - [8 Patterns for AI Coding](../../../frameworks/09-eight-patterns-for-ai-coding.md) -- the framework this implements

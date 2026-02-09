@@ -18,4 +18,4 @@ The honest retrospective -- what produced the most value, what wasted time, and 
 
 ---
 
-[Previous: Review Process](../09-review-process/) | [Back to AI Writing Process](../README.md)
+[Previous: Review Process](../09-review-process/README.md) | [Back to AI Writing Process](../README.md)

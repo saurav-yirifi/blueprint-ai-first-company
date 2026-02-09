@@ -88,7 +88,7 @@ The structure transfers. The content doesn't.
 
 To build your own master system prompt, you need your own versions of each section: your core principle (what three words define your voice?), your non-negotiables (what makes your writing distinctly yours?), your calibration spectrums (where does your sweet spot fall?), your phrase tables (what do you actually say vs. what generic writers say?), and your audience profiles (who are you really writing for, and what are they thinking while reading?).
 
-The [Voice System](../02-author-voice/) section covers how to build these from scratch. The [Master Prompt Template](../templates/prompts/master-system-prompt-template.md) provides a fill-in-the-blank starting point.
+The [Voice System](../02-author-voice/README.md) section covers how to build these from scratch. The [Master Prompt Template](../templates/prompts/master-system-prompt-template.md) provides a fill-in-the-blank starting point.
 
 Here's the thing most people skip: the encoded learnings section. It's tempting to start with the voice DNA and phrase tables. But the learnings -- the specific mistakes you've caught in AI output and encoded as rules -- are what separate a good master prompt from a great one. They grow over time as you discover new failure modes. My prompt's 10 learnings came from 3 drafts of a 12-chapter book. Your first version might have 2-3. By your third draft, you'll have more.
 

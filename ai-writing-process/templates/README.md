@@ -21,11 +21,11 @@ Start with voice system templates. Everything else builds on your voice being en
 
 | Category | Templates | Purpose |
 |----------|-----------|---------|
-| [Voice System](voice-system/) | 4 files | Encode your writing voice so AI can replicate it |
-| [Prompts](prompts/) | 4 files | Master system prompt + writing, editing, and review prompts |
-| [Skills](skills/) | 2 files | Claude Code skill definitions for writer and reviewer agents |
-| [Obsidian](obsidian/) | 4 files | Vault structure, chapter templates, and linking conventions |
-| [Scripts](scripts/) | 2 files | Word count analytics and citation audit automation |
+| [Voice System](voice-system/gold-standard-template.md) | 4 files | Encode your writing voice so AI can replicate it |
+| [Prompts](prompts/master-system-prompt-template.md) | 4 files | Master system prompt + writing, editing, and review prompts |
+| [Skills](skills/chapter-writer-template.md) | 2 files | Claude Code skill definitions for writer and reviewer agents |
+| [Obsidian](obsidian/book-vault-structure.md) | 4 files | Vault structure, chapter templates, and linking conventions |
+| [Scripts](scripts/word-count-tracker.md) | 2 files | Word count analytics and citation audit automation |
 
 ---
 

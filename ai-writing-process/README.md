@@ -45,17 +45,17 @@ The full AI-assisted book production system, end to end:
 
 | Section | What You'll Learn |
 |---------|-------------------|
-| [01 -- Overview](01-overview/) | End-to-end pipeline, architecture decisions, and results |
-| [02 -- Author Voice](02-author-voice/) | Building a voice system, gold standard method, drift prevention |
-| [03 -- Prompt Engineering](03-prompt-engineering/) | 27 prompts, the master system prompt, writing and editing prompts |
-| [04 -- Agent System](04-agent-system/) | Multi-agent architecture, chapter writer workflow, quality skills |
-| [05 -- Research Pipeline](05-research-pipeline/) | 180+ prompts, Perplexity automation, citation management |
-| [06 -- Obsidian Vault](06-obsidian-vault/) | Vault architecture, templates, linking conventions, dashboards |
-| [07 -- Automation](07-automation/) | 17 scripts for PDF generation, analytics, and vault health |
-| [08 -- Book Intelligence App](08-book-intelligence-app/) | Flask + PostgreSQL analysis pipeline, 70+ modules |
-| [09 -- Review Process](09-review-process/) | Multi-layer review, editorial workflow, contradiction detection |
-| [10 -- Lessons Learned](10-lessons-learned/) | What worked, what failed, what I'd do differently |
-| [Templates](templates/) | Adaptable starting points for voice, prompts, skills, vault, and scripts |
+| [01 -- Overview](01-overview/README.md) | End-to-end pipeline, architecture decisions, and results |
+| [02 -- Author Voice](02-author-voice/README.md) | Building a voice system, gold standard method, drift prevention |
+| [03 -- Prompt Engineering](03-prompt-engineering/README.md) | 27 prompts, the master system prompt, writing and editing prompts |
+| [04 -- Agent System](04-agent-system/README.md) | Multi-agent architecture, chapter writer workflow, quality skills |
+| [05 -- Research Pipeline](05-research-pipeline/README.md) | 180+ prompts, Perplexity automation, citation management |
+| [06 -- Obsidian Vault](06-obsidian-vault/README.md) | Vault architecture, templates, linking conventions, dashboards |
+| [07 -- Automation](07-automation/README.md) | 17 scripts for PDF generation, analytics, and vault health |
+| [08 -- Book Intelligence App](08-book-intelligence-app/README.md) | Flask + PostgreSQL analysis pipeline, 70+ modules |
+| [09 -- Review Process](09-review-process/README.md) | Multi-layer review, editorial workflow, contradiction detection |
+| [10 -- Lessons Learned](10-lessons-learned/README.md) | What worked, what failed, what I'd do differently |
+| [Templates](templates/README.md) | Adaptable starting points for voice, prompts, skills, vault, and scripts |
 
 ---
 
@@ -70,11 +70,11 @@ The full AI-assisted book production system, end to end:
 
 ## How to Use This
 
-**Start with [01 -- Overview](01-overview/)** for the full picture -- how the pieces connect, why certain architecture decisions were made, and what the results looked like.
+**Start with [01 -- Overview](01-overview/README.md)** for the full picture -- how the pieces connect, why certain architecture decisions were made, and what the results looked like.
 
 **Jump to any section** that matches your immediate need. Each one is self-contained with enough context to be useful on its own.
 
-**Grab from [Templates](templates/)** when you're ready to build. These are fill-in-the-blank starting points adapted from the actual system -- voice profiles, prompt structures, skill definitions, vault layouts, and automation scripts.
+**Grab from [Templates](templates/README.md)** when you're ready to build. These are fill-in-the-blank starting points adapted from the actual system -- voice profiles, prompt structures, skill definitions, vault layouts, and automation scripts.
 
 ---
 

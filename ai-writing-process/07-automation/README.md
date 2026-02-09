@@ -20,4 +20,4 @@
 
 ---
 
-[Previous: Obsidian Vault](../06-obsidian-vault/) | [Next: Book Intelligence App](../08-book-intelligence-app/) | [Back to AI Writing Process](../README.md)
+[Previous: Obsidian Vault](../06-obsidian-vault/README.md) | [Next: Book Intelligence App](../08-book-intelligence-app/README.md) | [Back to AI Writing Process](../README.md)

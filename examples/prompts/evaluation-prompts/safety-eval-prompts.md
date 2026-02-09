@@ -226,4 +226,4 @@ This pipeline maps to the [AI Governance Framework](../../../frameworks/18-ai-go
 
 - [Model Comparison Prompts](model-comparison-prompts.md) -- include safety dimensions in model selection
 - [Quality Evaluation Prompts](quality-eval-prompts.md) -- quality and safety are complementary evaluations
-- [Agent System Prompts](../agent-system-prompts/) -- the system prompts whose safety you are testing
+- [Agent System Prompts](../agent-system-prompts/README.md) -- the system prompts whose safety you are testing

@@ -18,7 +18,7 @@ First-mover advantage isn't absolute. It depends on *what* you're building the m
 
 Contrast Jasper with Glean, the enterprise search company.
 
-Glean's Knowledge Graph learns how your specific organization works. That 12-18 month maturation timeline isn't a bug. It's the moat.
+Glean's Knowledge Graph learns how your specific organization works. That 12-18 month maturation timeline isn't a bug[^glean]. It's the moat.
 
 When a competitor shows up 18 months later with a faster search tool, they're not competing with Glean's technology. They're competing with 18 months of accumulated organizational understanding. By then, Glean is another 18 months ahead.
 

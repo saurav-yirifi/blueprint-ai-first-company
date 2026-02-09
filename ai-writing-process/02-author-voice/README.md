@@ -18,4 +18,4 @@ The hardest problem in AI-assisted writing isn't getting the AI to write. It's g
 
 ---
 
-[Previous: Overview](../01-overview/) | [Next: Prompt Engineering](../03-prompt-engineering/) | [Back to AI Writing Process](../README.md)
+[Previous: Overview](../01-overview/README.md) | [Next: Prompt Engineering](../03-prompt-engineering/README.md) | [Back to AI Writing Process](../README.md)

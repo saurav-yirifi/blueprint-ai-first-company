@@ -20,4 +20,4 @@
 
 ---
 
-[Previous: Agent System](../04-agent-system/) | [Next: Obsidian Vault](../06-obsidian-vault/) | [Back to AI Writing Process](../README.md)
+[Previous: Agent System](../04-agent-system/README.md) | [Next: Obsidian Vault](../06-obsidian-vault/README.md) | [Back to AI Writing Process](../README.md)

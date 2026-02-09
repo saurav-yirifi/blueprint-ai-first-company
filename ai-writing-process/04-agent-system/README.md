@@ -22,4 +22,4 @@ Three agents, 14 skills, and an orchestration layer that turns "write me a chapt
 
 ---
 
-[Previous: Prompt Engineering](../03-prompt-engineering/) | [Next: Research Pipeline](../05-research-pipeline/) | [Back to AI Writing Process](../README.md)
+[Previous: Prompt Engineering](../03-prompt-engineering/README.md) | [Next: Research Pipeline](../05-research-pipeline/README.md) | [Back to AI Writing Process](../README.md)

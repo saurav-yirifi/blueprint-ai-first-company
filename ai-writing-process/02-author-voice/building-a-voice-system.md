@@ -70,4 +70,4 @@ Here's the honest math: if you're writing a 12-chapter book and each chapter tak
 
 - [The Gold Standard Method](gold-standard-method.md) -- How to extract techniques from your best writing
 - [Voice Drift Prevention](voice-drift-prevention.md) -- Keeping voice consistent across 80,000+ words
-- [Voice System Templates](../templates/voice-system/) -- Fill-in-the-blank starting points for each file
+- [Voice System Templates](../templates/voice-system/gold-standard-template.md) -- Fill-in-the-blank starting points for each file

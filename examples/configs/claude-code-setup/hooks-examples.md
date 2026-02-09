@@ -297,5 +297,5 @@ exit 0
 ## Related Resources
 
 - [CLAUDE.md Example](CLAUDE.md) -- the project memory file hooks reference
-- [Example Skills](example-skills/) -- custom skill configurations
-- [CI AI Review](../ci-ai-review/) -- automated review in CI (complements local hooks)
+- [Example Skills](example-skills/code-review.md) -- custom skill configurations
+- [CI AI Review](../ci-ai-review/README.md) -- automated review in CI (complements local hooks)

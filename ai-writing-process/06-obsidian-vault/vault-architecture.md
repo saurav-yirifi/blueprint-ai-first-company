@@ -89,4 +89,4 @@ The vault architecture is the foundation everything else builds on. Templates en
 
 ---
 
-**Related:** [Templates and Frontmatter](templates-and-frontmatter.md) | [Linking and Navigation](linking-and-navigation.md) | [Obsidian Templates](../templates/obsidian/)
+**Related:** [Templates and Frontmatter](templates-and-frontmatter.md) | [Linking and Navigation](linking-and-navigation.md) | [Obsidian Templates](../templates/obsidian/book-vault-structure.md)

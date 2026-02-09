@@ -93,7 +93,7 @@ This book was produced using a multi-agent AI writing system built on Claude Cod
 
 What's documented: author voice encoding (6 files that teach an LLM to write like a specific human), 27 modular prompts across 5 categories, multi-agent orchestration, a research pipeline that generates citation-ready content, Obsidian vault architecture, a Flask + PostgreSQL analysis app with 70+ modules, and a 4-phase editorial review process.
 
-**[Explore the AI Writing System &rarr;](ai-writing-process/)**
+**[Explore the AI Writing System &rarr;](ai-writing-process/README.md)**
 
 ## About the Book
 
@@ -103,10 +103,10 @@ What's documented: author voice encoding (6 files that teach an LLM to write lik
 
 | If you're... | Start here |
 |:---|:---|
-| Evaluating AI strategy | **Part I** -- [Foundations](book/part-1-foundations/) |
-| Ready to build | **Part II** -- [Building](book/part-2-building/) |
-| Scaling your AI team | **Part III** -- [Operating](book/part-3-operating/) |
-| Thinking long-term | **Part IV** -- [Sustaining](book/part-4-sustaining/) |
+| Evaluating AI strategy | **Part I** -- [Foundations](book/part-1-foundations/README.md) |
+| Ready to build | **Part II** -- [Building](book/part-2-building/README.md) |
+| Scaling your AI team | **Part III** -- [Operating](book/part-3-operating/README.md) |
+| Thinking long-term | **Part IV** -- [Sustaining](book/part-4-sustaining/README.md) |
 
 <details>
 <summary><strong>Full Table of Contents (12 chapters)</strong></summary>
@@ -198,9 +198,9 @@ What's documented: author voice encoding (6 files that teach an LLM to write lik
 
 | Example | Description |
 |:--------|:------------|
-| [Chat Agent](examples/agent-patterns/chat-agent/) | Conversational AI agent pattern |
-| [Agent Hub](examples/agent-patterns/agent-hub/) | Multi-agent orchestration |
-| [AI Gateway](examples/infrastructure/ai-gateway/) | Unified API gateway for AI providers |
+| [Chat Agent](examples/agent-patterns/chat-agent/README.md) | Conversational AI agent pattern |
+| [Agent Hub](examples/agent-patterns/agent-hub/README.md) | Multi-agent orchestration |
+| [AI Gateway](examples/infrastructure/ai-gateway/README.md) | Unified API gateway for AI providers |
 
 <details>
 <summary><strong>All 14 code examples</strong></summary>

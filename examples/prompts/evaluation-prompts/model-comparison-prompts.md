@@ -213,4 +213,4 @@ For systematic model evaluation, combine these prompts into a pipeline:
 
 - [Quality Evaluation Prompts](quality-eval-prompts.md) -- for deeper quality assessment
 - [Safety Evaluation Prompts](safety-eval-prompts.md) -- for safety and alignment testing
-- [Agent System Prompts](../agent-system-prompts/) -- agents whose output you are evaluating
+- [Agent System Prompts](../agent-system-prompts/README.md) -- agents whose output you are evaluating

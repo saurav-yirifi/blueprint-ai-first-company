@@ -278,6 +278,7 @@ nav:
   - Examples:
     - examples/README.md
     - Agent Patterns:
+      - examples/agent-patterns/README.md
       - "Agent Hub": examples/agent-patterns/agent-hub/README.md
       - "Background Agent": examples/agent-patterns/background-agent/README.md
       - "Chat Agent": examples/agent-patterns/chat-agent/README.md
@@ -297,6 +298,7 @@ nav:
         - "Hooks Examples": examples/configs/claude-code-setup/hooks-examples.md
         - "Code Review Skill": examples/configs/claude-code-setup/example-skills/code-review.md
         - "Test Runner Skill": examples/configs/claude-code-setup/example-skills/test-runner.md
+    - "Shared Library": examples/shared/README.md
     - Prompts:
       - Agent System Prompts:
         - examples/prompts/agent-system-prompts/README.md
@@ -414,6 +416,7 @@ nav:
         - "Gold Standard": ai-writing-process/templates/voice-system/gold-standard-template.md
         - "Authenticity Markers": ai-writing-process/templates/voice-system/authenticity-markers-template.md
         - "Audience Empathy": ai-writing-process/templates/voice-system/audience-empathy-template.md
+  - About: about.md
   - Author:
     - author/README.md
     - "Bio": author/bio-long.md
@@ -421,3 +424,6 @@ nav:
     - "Profile": author/profile.md
     - "Resume": author/resume.md
     - "AI Transparency Statement": author/ai-transparency-statement.md
+  - Contributing: CONTRIBUTING.md
+  - Code of Conduct: CODE_OF_CONDUCT.md
+  - "Domain Strategy": custom-domain-strategy.md

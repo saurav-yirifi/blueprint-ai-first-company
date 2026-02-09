@@ -20,4 +20,4 @@ Four review layers that took the manuscript from drafted to publishable: automat
 
 ---
 
-[Previous: Book Intelligence App](../08-book-intelligence-app/) | [Next: Lessons Learned](../10-lessons-learned/) | [Back to AI Writing Process](../README.md)
+[Previous: Book Intelligence App](../08-book-intelligence-app/README.md) | [Next: Lessons Learned](../10-lessons-learned/README.md) | [Back to AI Writing Process](../README.md)

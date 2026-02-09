@@ -87,8 +87,6 @@ Next, we'll look at how to actually choose between all these options with a prac
 
 [^xenoss]: OpenRouter vs LiteLLM Comparison. [Xenoss](https://xenoss.io/blog/openrouter-vs-litellm)
 
-[^perplexity]: Technical Architecture Analysis. [LinkedIn/Kashish Vaid](https://www.linkedin.com/pulse/technical-architecture-operational-mechanics-perplexitys-kashish-vaid-bjgkc)
-
 [^getmaxim]: Top 5 LLM Gateways in 2025. [Maxim AI](https://www.getmaxim.ai/articles/top-5-llm-gateways-in-2025-the-definitive-guide-for-production-ai-applications/)
 
 [^notion]: Skywork AI. ["Notion in 2025: The Ultimate Guide to Your AI-Powered Workspace."](https://skywork.ai/skypage/en/Notion-in-2025-The-Ultimate-Guide-to-Your-AI-Powered-Workspace/1974361685151641600)

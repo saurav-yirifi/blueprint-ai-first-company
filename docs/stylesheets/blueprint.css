@@ -297,6 +297,7 @@ body[data-md-color-scheme="default"]::before {
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--bp-line);
   box-shadow: none;
+  z-index: 4;
 }
 
 .md-header[data-md-state="shadow"] {
@@ -504,7 +505,7 @@ body[data-md-color-scheme="default"]::before {
 
 .md-typeset pre > code {
   font-family: var(--bp-mono);
-  font-size: 0.82rem;
+  font-size: 0.85em;
   line-height: 1.6;
 }
 

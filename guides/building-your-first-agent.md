@@ -138,7 +138,7 @@ Review the first 100 agent interactions manually. You will find failure patterns
 
 ## Related Resources
 
-- [Agent Patterns Examples](../examples/agent-patterns/) -- Reference implementations for chat agents, background agents, and agent hubs
+- [Agent Patterns Examples](../examples/agent-patterns/README.md) -- Reference implementations for chat agents, background agents, and agent hubs
 - [Agent Design Checklist](../checklists/agent-design-checklist.md) -- Pre-deployment checklist covering all seven failure modes
 - [7 Failure Modes of Agents](../frameworks/10-seven-failure-modes-of-agents.md) -- Deep dive on each failure mode with real-world incidents
 - [Permission Model Framework](../frameworks/17-permission-model-framework.md) -- How to calibrate agent autonomy across the permission spectrum

@@ -30,7 +30,7 @@ For production evaluation pipelines, combine all three: automated metrics as a f
 
 ## Related Resources
 
-- [Coding Prompts](../coding-prompts/) -- the prompts being evaluated
-- [Agent System Prompts](../agent-system-prompts/) -- agent outputs to evaluate
+- [Coding Prompts](../coding-prompts/README.md) -- the prompts being evaluated
+- [Agent System Prompts](../agent-system-prompts/README.md) -- agent outputs to evaluate
 - [6 Questions Before Choosing a Model](../../../frameworks/07-six-questions-before-choosing-a-model.md) -- the decision framework these prompts support
 - [Permission Model Framework](../../../frameworks/17-permission-model-framework.md) -- autonomy levels that safety evals should verify

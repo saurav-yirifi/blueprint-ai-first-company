@@ -2,7 +2,7 @@
 
 Seven risks account for the majority of AI failures. Each is preventable.
 
-The risks below represent the primary threat vectors based on documented incidents, regulatory frameworks like NIST AI RMF and the EU AI Act, and measurable business impact.
+The risks below represent the primary threat vectors based on documented incidents, regulatory frameworks like NIST AI RMF and the EU AI Act, and measurable business impact[^stanford].
 
 ```mermaid
 flowchart TB

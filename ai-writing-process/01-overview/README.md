@@ -18,4 +18,4 @@ The full picture -- how the writing system works end to end, what it produced, a
 
 ---
 
-[Next: Author Voice](../02-author-voice/) | [Back to AI Writing Process](../README.md)
+[Next: Author Voice](../02-author-voice/README.md) | [Back to AI Writing Process](../README.md)

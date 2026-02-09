@@ -65,4 +65,4 @@ Every failure is a training example. After recovery:
 
 - [7 Failure Modes of Agents](../frameworks/10-seven-failure-modes-of-agents.md) -- The complete framework with real-world incidents for each mode
 - [Agent Design Checklist](../checklists/agent-design-checklist.md) -- Pre-deployment checklist to prevent these failures
-- [Agent Patterns Examples](../examples/agent-patterns/) -- Reference implementations with built-in failure handling
+- [Agent Patterns Examples](../examples/agent-patterns/README.md) -- Reference implementations with built-in failure handling

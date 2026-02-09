@@ -167,6 +167,6 @@ The OpenRouter provider tracks which models support tool calling:
 
 ## Related
 
-- [Provider Abstraction Tutorial](../infrastructure/provider-abstraction/) — Standalone walkthrough of the pattern
-- [Chat Agent](../agent-patterns/chat-agent/) — Interactive agent using this library
-- [Streaming Chat](../agent-patterns/streaming-chat/) — SSE streaming with MCP tools
+- [Provider Abstraction Tutorial](../infrastructure/provider-abstraction/README.md) — Standalone walkthrough of the pattern
+- [Chat Agent](../agent-patterns/chat-agent/README.md) — Interactive agent using this library
+- [Streaming Chat](../agent-patterns/streaming-chat/README.md) — SSE streaming with MCP tools

@@ -90,12 +90,12 @@ This example uses in-memory stores for rate limits, cost tracking, and API keys.
 
 - Replace the API key store with your identity provider (Auth0, Supabase Auth, etc.)
 - Replace the rate limiter's in-memory dict with Redis for multi-instance deployments
-- Export cost data to your observability stack (see the [observability example](../observability/))
+- Export cost data to your observability stack (see the [observability example](../observability/README.md))
 - Run behind a reverse proxy (Nginx, Envoy) for TLS termination
 
 ## Related
 
-- [Unified Auth Example](../unified-auth/) --- Authentication for humans and agents
-- [Observability Example](../observability/) --- AI metrics, dashboards, and alerts
+- [Unified Auth Example](../unified-auth/README.md) --- Authentication for humans and agents
+- [Observability Example](../observability/README.md) --- AI metrics, dashboards, and alerts
 - [Permission Model Framework](../../../frameworks/17-permission-model-framework.md)
 - [5 Infrastructure Mistakes](../../../frameworks/08-five-infrastructure-mistakes.md)

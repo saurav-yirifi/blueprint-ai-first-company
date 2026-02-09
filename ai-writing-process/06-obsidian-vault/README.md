@@ -20,4 +20,4 @@ The structural backbone of the manuscript -- a file-per-section architecture wit
 
 ---
 
-[Previous: Research Pipeline](../05-research-pipeline/) | [Next: Automation](../07-automation/) | [Back to AI Writing Process](../README.md)
+[Previous: Research Pipeline](../05-research-pipeline/README.md) | [Next: Automation](../07-automation/README.md) | [Back to AI Writing Process](../README.md)

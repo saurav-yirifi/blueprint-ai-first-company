@@ -140,7 +140,7 @@ Before routing production agent traffic through the gateway, verify each layer.
 
 ## Related Resources
 
-- [AI Gateway Example](../examples/infrastructure/ai-gateway/) -- Reference implementation of the gateway pattern
+- [AI Gateway Example](../examples/infrastructure/ai-gateway/README.md) -- Reference implementation of the gateway pattern
 - [Infrastructure Audit Checklist](../checklists/infrastructure-audit.md) -- Pre-deployment infrastructure review
 - [5 Infrastructure Mistakes](../frameworks/08-five-infrastructure-mistakes.md) -- Common infrastructure failures to avoid
-- [Unified Auth Pattern](../examples/infrastructure/unified-auth/) -- Detailed auth implementation examples
+- [Unified Auth Pattern](../examples/infrastructure/unified-auth/README.md) -- Detailed auth implementation examples

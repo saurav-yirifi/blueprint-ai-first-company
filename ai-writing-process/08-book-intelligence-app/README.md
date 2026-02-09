@@ -20,4 +20,4 @@ A Flask + PostgreSQL application with 70+ modules that provides persistent analy
 
 ---
 
-[Previous: Automation](../07-automation/) | [Next: Review Process](../09-review-process/) | [Back to AI Writing Process](../README.md)
+[Previous: Automation](../07-automation/README.md) | [Next: Review Process](../09-review-process/README.md) | [Back to AI Writing Process](../README.md)

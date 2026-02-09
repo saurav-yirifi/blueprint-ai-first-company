@@ -80,7 +80,7 @@ This example uses in-memory storage. In production:
 
 ## Related
 
-- [AI Gateway Example](../ai-gateway/) --- The gateway that generates these metrics
-- [Unified Auth Example](../unified-auth/) --- Auth events feed into observability
+- [AI Gateway Example](../ai-gateway/README.md) --- The gateway that generates these metrics
+- [Unified Auth Example](../unified-auth/README.md) --- Auth events feed into observability
 - [Infrastructure Audit Checklist](../../../checklists/infrastructure-audit.md)
 - [5 Infrastructure Mistakes](../../../frameworks/08-five-infrastructure-mistakes.md)

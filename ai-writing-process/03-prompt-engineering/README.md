@@ -22,4 +22,4 @@
 
 ---
 
-[Previous: Author Voice](../02-author-voice/) | [Next: Agent System](../04-agent-system/) | [Back to AI Writing Process](../README.md)
+[Previous: Author Voice](../02-author-voice/README.md) | [Next: Agent System](../04-agent-system/README.md) | [Back to AI Writing Process](../README.md)

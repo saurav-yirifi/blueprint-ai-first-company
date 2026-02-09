@@ -34,7 +34,7 @@ flowchart TD
 
 ### 1. The Company Didn't Exist Before Modern AI
 
-Harvey was founded in 2022. Glean launched commercially in 2020. Perplexity started in 2022. Mistral launched in 2023 and reached a $6B valuation within 18 months[^mistral]. These companies exist *because* of LLMs and transformer architectures. No legacy product to protect, no existing architecture to work around.
+Harvey was founded in 2022[^harvey-review]. Glean launched commercially in 2020. Perplexity started in 2022. Mistral launched in 2023 and reached a $6B valuation within 18 months[^mistral]. These companies exist *because* of LLMs and transformer architectures. No legacy product to protect, no existing architecture to work around.
 
 Salesforce, by contrast, has built CRM since 1999. When they announced Einstein GPT in March 2023, four months after ChatGPT launched, they called it "the world's first generative AI CRM." The framing tells you everything: generative AI *for* CRM, not CRM *built on* AI.
 

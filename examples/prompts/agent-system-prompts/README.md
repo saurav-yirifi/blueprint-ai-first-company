@@ -1,6 +1,6 @@
 # Agent System Prompts
 
-> Complete system prompts for building AI agents. Each prompt includes role definition, constraints, tool access, and escalation rules -- the elements discussed in [Chapter 6: Agent Architecture](../../../book/part-2-building/06-agent-architecture/).
+> Complete system prompts for building AI agents. Each prompt includes role definition, constraints, tool access, and escalation rules -- the elements discussed in [Chapter 6: Agent Architecture](../../../book/part-2-building/06-agent-architecture/README.md).
 
 ## Prompts in This Collection
 
@@ -52,7 +52,7 @@ The prompts are starting points. Every production agent needs customization for 
 
 ## Related Resources
 
-- [Coding Prompts](../coding-prompts/) -- prompts for development tasks
-- [Evaluation Prompts](../evaluation-prompts/) -- prompts for evaluating agent output quality
+- [Coding Prompts](../coding-prompts/README.md) -- prompts for development tasks
+- [Evaluation Prompts](../evaluation-prompts/README.md) -- prompts for evaluating agent output quality
 - [7 Failure Modes of Agents Framework](../../../frameworks/10-seven-failure-modes-of-agents.md) -- what can go wrong
 - [Permission Model Framework](../../../frameworks/17-permission-model-framework.md) -- setting autonomy levels

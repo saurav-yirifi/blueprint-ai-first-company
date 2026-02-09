@@ -4,7 +4,7 @@
 
 ## Frameworks from This Chapter
 
-- [Examples Directory](../../../examples/) -- Code examples, configuration templates, and agent patterns referenced throughout the book, including infrastructure and agent architecture examples relevant to the microsite pattern.
+- [Examples Directory](../../../examples/README.md) -- Code examples, configuration templates, and agent patterns referenced throughout the book, including infrastructure and agent architecture examples relevant to the microsite pattern.
 
 ## Tools & Platforms
 

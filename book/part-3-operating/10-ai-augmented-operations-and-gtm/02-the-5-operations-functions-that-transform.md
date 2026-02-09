@@ -52,7 +52,7 @@ flowchart TB
 
 Customer support is where most companies start. The reasons: high volume, repetitive inquiries, clear success metrics.
 
-Klarna's experience from our chapter opening tells the full story. Their AI handled millions of conversations efficiently, but customer satisfaction declined when the system couldn't handle fraud claims, payment disputes, or delivery errors—the critical 20% that determines loyalty[^klarna-reversal].
+Klarna's experience from our chapter opening tells the full story. Their AI handled millions of conversations efficiently[^klarna-initial], but customer satisfaction declined when the system couldn't handle fraud claims, payment disputes, or delivery errors—the critical 20% that determines loyalty[^klarna-reversal].
 
 The lesson: the tiered model matters. Effective implementations use AI for L0 and L1, routing complex issues to humans with context. Hospitable achieved 60% resolution rate using Intercom's Fin AI agent, handling 90% of conversations but seamlessly escalating the remainder[^hospitable].
 

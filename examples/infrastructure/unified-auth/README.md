@@ -82,7 +82,7 @@ This example uses in-memory stores. In production:
 
 ## Related
 
-- [AI Gateway Example](../ai-gateway/) --- Gateway that uses auth middleware
-- [Observability Example](../observability/) --- Monitor auth events and anomalies
+- [AI Gateway Example](../ai-gateway/README.md) --- Gateway that uses auth middleware
+- [Observability Example](../observability/README.md) --- Monitor auth events and anomalies
 - [Permission Model Framework](../../../frameworks/17-permission-model-framework.md)
 - [AI Governance Framework](../../../frameworks/18-ai-governance-framework.md)

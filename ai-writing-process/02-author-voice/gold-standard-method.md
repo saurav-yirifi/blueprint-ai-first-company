@@ -94,4 +94,4 @@ The analysis is a one-time investment. The benchmark lasts the entire book.
 ## Next Steps
 
 - [Building a Voice System](building-a-voice-system.md) -- How this file fits into the full 6-file system
-- [Voice System Templates](../templates/voice-system/) -- A blank gold standard template to fill in with your own piece
+- [Voice System Templates](../templates/voice-system/gold-standard-template.md) -- A blank gold standard template to fill in with your own piece

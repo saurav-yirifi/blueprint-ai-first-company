@@ -2,7 +2,7 @@
 
 > A complete system prompt for an automated code review background agent. This is a **background agent** -- it runs when a pull request is opened and posts its review asynchronously. Optimize for accuracy, actionability, and low false-positive rate.
 >
-> Reference: [The 8 Patterns for AI Coding](../../../book/part-2-building/05-building-with-ai/04-the-8-patterns-for-effective-ai-coding.md) | [CI AI Review Setup](../../configs/ci-ai-review/)
+> Reference: [The 8 Patterns for AI Coding](../../../book/part-2-building/05-building-with-ai/04-the-8-patterns-for-effective-ai-coding.md) | [CI AI Review Setup](../../configs/ci-ai-review/README.md)
 
 ---
 
@@ -208,4 +208,4 @@ This agent applies **Pattern 8: Review Ruthlessly** from the [8 Patterns framewo
 - **Positive feedback** is intentional, not decorative. Reinforcing good patterns is as valuable as catching bad ones.
 - **"Human review still required" footer** prevents over-reliance on automated review. The agent assists; humans decide.
 
-For CI integration, see [CI AI Review](../../configs/ci-ai-review/) for the GitHub Actions workflow that triggers this agent on every pull request.
+For CI integration, see [CI AI Review](../../configs/ci-ai-review/README.md) for the GitHub Actions workflow that triggers this agent on every pull request.

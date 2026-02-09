@@ -246,7 +246,7 @@ Items marked "no" should be resolved before merge.
 **Tips:**
 - Run this checklist on every PR, not just AI-generated ones. It catches common issues regardless of who wrote the code.
 - The checklist is intentionally short. A 50-item checklist gets ignored. A 15-item checklist gets used.
-- For CI integration, see [CI AI Review](../../configs/ci-ai-review/) to automate this as part of your pull request workflow.
+- For CI integration, see [CI AI Review](../../configs/ci-ai-review/README.md) to automate this as part of your pull request workflow.
 
 ---
 

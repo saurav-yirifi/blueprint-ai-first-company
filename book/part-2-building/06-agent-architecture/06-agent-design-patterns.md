@@ -116,7 +116,7 @@ stateDiagram-v2
     Alert --> [*]: Human review
 ```
 
-**Resource budgeting** prevents runaway execution. As Section 4 covered, cost overruns are the rule—73% of teams lack real-time cost tracking. Implement time, token, cost budgets, and iteration limits. This isn't optional—it's the difference between a manageable mistake and a resignation letter.
+**Resource budgeting** prevents runaway execution. As Section 4 covered, cost overruns are the rule—73% of teams lack real-time cost tracking[^cost-crisis]. Implement time, token, cost budgets, and iteration limits. This isn't optional—it's the difference between a manageable mistake and a resignation letter.
 
 ### The Klarna Lesson
 

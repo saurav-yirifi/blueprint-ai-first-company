@@ -45,7 +45,7 @@ Create a `.claude/skills/` directory in your project:
 mkdir -p .claude/skills
 ```
 
-Each skill is a directory with a `SKILL.md` file. See the [example-skills](example-skills/) directory for templates.
+Each skill is a directory with a `SKILL.md` file. See the [example-skills](example-skills/code-review.md) directory for templates.
 
 Skills are automatically discovered by Claude Code from your filesystem. Write a skill once, use it in every session.
 
@@ -82,7 +82,7 @@ Project-level settings are the most important. They ensure every developer (and 
 
 ## Related Resources
 
-- [Coding Prompts](../../prompts/coding-prompts/) -- prompts to use within Claude Code sessions
-- [CI AI Review](../ci-ai-review/) -- automate code review in your CI pipeline
+- [Coding Prompts](../../prompts/coding-prompts/README.md) -- prompts to use within Claude Code sessions
+- [CI AI Review](../ci-ai-review/README.md) -- automate code review in your CI pipeline
 - [8 Patterns for AI Coding](../../../frameworks/09-eight-patterns-for-ai-coding.md) -- the framework these configurations implement
 - [Skills, Commands, Agents, SDK](../../../book/part-2-building/05-building-with-ai/03-skills-commands-agents-sdk.md) -- vocabulary for working with Claude Code

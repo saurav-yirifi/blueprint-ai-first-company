@@ -24,7 +24,7 @@ This chapter is about building that kind of advantage—and the ethical architec
 
 ## What You'll Learn
 
-- **[Data Strategy Fundamentals](./01-data-strategy-fundamentals.md):** The three strategic questions that separate real data strategy from expensive storage—plus why 93% of CDOs say data strategy is crucial to GenAI, yet 57% haven't made necessary changes.
+- **[Data Strategy Fundamentals](./01-data-strategy-fundamentals.md):** The three strategic questions that separate real data strategy from expensive storage—plus why 93% of CDOs say data strategy is crucial to GenAI, yet 57% haven't made necessary changes[^cdo-gap].
 
 - **[Building Data Flywheels](./02-building-data-flywheels.md):** The 5 components of high-velocity flywheels, the cold start paradox that kills 80% of AI projects, and how Duolingo's Birdbrain drove 59% DAU growth while Klarna's flywheel plateaued.
 
@@ -32,7 +32,7 @@ This chapter is about building that kind of advantage—and the ethical architec
 
 - **[Polyglot Persistence in Practice](./04-polyglot-persistence-in-practice.md):** Start with PostgreSQL. Notion manages 200 billion blocks on sharded Postgres. Add complexity only when you have measured problems—vector databases saw 377% growth in 2024, but that doesn't mean you need one on day one.
 
-- **[Privacy by Design](./05-privacy-by-design.md):** GDPR fines hit EUR 1.2 billion in 2024, up 38%. The EU AI Act high-risk deadline is August 2, 2026. The strategic reframe: privacy as competitive advantage, not compliance burden.
+- **[Privacy by Design](./05-privacy-by-design.md):** GDPR fines hit EUR 1.2 billion in 2024, up 38%[^dla-piper]. The EU AI Act high-risk deadline is August 2, 2026. The strategic reframe: privacy as competitive advantage, not compliance burden.
 
 - **[The 6 Data Strategy Mistakes That Stall Flywheels](./06-the-6-data-strategy-mistakes.md):** Why 92% of AI startups fail within 18 months, 95% of enterprise pilots never reach production, and 43% build products nobody wanted. The six patterns that kill flywheels—all avoidable.
 
