@@ -44,7 +44,7 @@ This principle isn't about drawing org chart lines. It's about answering one que
 
 [^uber-michelangelo]: Planet Cassandra. Meet Michelangelo: Uber's Machine Learning Platform — [planetcassandra.org](https://planetcassandra.org/leaf/meet-michelangelo-uber-s-machine-learning-platform/)
 
-[^uber-scale]: Product in Data. Uber's Michelangelo: Revolutionizing ML Scalability — [productindata.com](https://productindata.com/2024/11/14/ubers-michelangelo-revolutionizing-ml-scalability/)
+[^uber-scale]: Uber Engineering Blog. Scaling Machine Learning at Uber with Michelangelo — [uber.com](https://www.uber.com/blog/scaling-michelangelo/)
 
 [^netflix-metaflow]: InfoQ. Netflix Metaflow — [infoq.com](https://www.infoq.com/news/2024/03/netflix-metaflow/)
 

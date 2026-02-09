@@ -85,7 +85,7 @@ Every month you spend evaluating, competitors accumulate the advantages that tak
 
 ## References
 
-[^jasper-wiki]: Wikipedia — [Jasper AI](https://en.wikipedia.org/wiki/Jasper_(software))
+[^jasper-wiki]: Jasper AI — [jasper.ai](https://www.jasper.ai/)
 [^glean]: Contrary Research — [Glean Company Profile](https://research.contrary.com/company/glean)
 [^claude-vs-chatgpt]: Neontri — [ChatGPT vs Claude](https://neontri.com/blog/chatgpt-vs-claude/)
 [^talent-premium]: HeroHunt.ai — [AI Compensation Strategy](https://www.herohunt.ai/blog/ai-compensation-strategy-salary-and-benefits-in-the-ai-talent-bubble)

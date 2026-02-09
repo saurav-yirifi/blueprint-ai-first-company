@@ -183,9 +183,9 @@ Both things are true. AI transforms operations and humans remain essential. The 
 
 [^complexity]: ACM Digital Library: Task Complexity and Human-AI Collaboration. [dl.acm.org](https://dl.acm.org/doi/fullHtml/10.1145/3565472.3592959)
 
-[^hybrid-performance]: HashMeta: Real Business Data Reveals Top-Performing AI Support Model. [hashmeta.ai](https://www.hashmeta.ai/blog/the-results-are-in-real-business-data-reveals-the-top-performing-ai-support-model)
+[^hybrid-performance]: HashMeta: Real Business Data Reveals Top-Performing AI Support Model. [hashmeta.ai](https://www.hashmeta.ai/blog/the-winning-cx-formula-how-humans-ai-create-unbeatable-customer-support)
 
-[^hybrid-roi]: HashMeta: Real Business Data Reveals Top-Performing AI Support Model. [hashmeta.ai](https://www.hashmeta.ai/blog/the-results-are-in-real-business-data-reveals-the-top-performing-ai-support-model)
+[^hybrid-roi]: HashMeta: Real Business Data Reveals Top-Performing AI Support Model. [hashmeta.ai](https://www.hashmeta.ai/blog/the-winning-cx-formula-how-humans-ai-create-unbeatable-customer-support)
 
 [^klarna-failure]: EGlobalis: Why 74% of Enterprise CX AI Programs Fail. [eglobalis.com](https://www.eglobalis.com/why-74-of-enterprise-cx-ai-programs-fail-and-how-to-make-them-work/)
 
