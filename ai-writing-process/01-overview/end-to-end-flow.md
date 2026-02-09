@@ -18,14 +18,14 @@ flowchart TD
     F --> G["7. Editorial Review\n(4-phase: developmental → line → copy → final)"]
     G --> H["8. Publication Prep\n(PDF generation, bibliography, final fixes)"]
 
-    style A fill:#1a1a2e,stroke:#e94560,color:#fff
-    style B fill:#1a1a2e,stroke:#e94560,color:#fff
-    style C fill:#16213e,stroke:#0f3460,color:#fff
-    style D fill:#16213e,stroke:#0f3460,color:#fff
-    style E fill:#0f3460,stroke:#533483,color:#fff
-    style F fill:#0f3460,stroke:#533483,color:#fff
-    style G fill:#533483,stroke:#e94560,color:#fff
-    style H fill:#533483,stroke:#e94560,color:#fff
+    style A fill:#5a6270,stroke:#9a2020,color:#fff
+    style B fill:#5a6270,stroke:#9a2020,color:#fff
+    style C fill:#1e6fa5,stroke:#155a85,color:#fff
+    style D fill:#1e6fa5,stroke:#155a85,color:#fff
+    style E fill:#1e6fa5,stroke:#5b3590,color:#fff
+    style F fill:#1e6fa5,stroke:#5b3590,color:#fff
+    style G fill:#7345b0,stroke:#9a2020,color:#fff
+    style H fill:#7345b0,stroke:#9a2020,color:#fff
 ```
 
 ```mermaid
@@ -75,11 +75,11 @@ graph LR
     EP --> OV
     OV --> BIA
 
-    style VF fill:#e94560,stroke:#1a1a2e,color:#fff
-    style MSP fill:#0f3460,stroke:#1a1a2e,color:#fff
-    style WA fill:#533483,stroke:#1a1a2e,color:#fff
-    style RA fill:#533483,stroke:#1a1a2e,color:#fff
-    style OV fill:#16213e,stroke:#e94560,color:#fff
+    style VF fill:#c03030,stroke:#454d58,color:#fff
+    style MSP fill:#1e6fa5,stroke:#454d58,color:#fff
+    style WA fill:#7345b0,stroke:#454d58,color:#fff
+    style RA fill:#7345b0,stroke:#454d58,color:#fff
+    style OV fill:#1e6fa5,stroke:#9a2020,color:#fff
 ```
 
 ---

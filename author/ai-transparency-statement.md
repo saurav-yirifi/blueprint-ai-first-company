@@ -1,7 +1,5 @@
 # AI Transparency Statement
 
-> Draft disclosure for inclusion in the book's foreword or acknowledgments.
-
 ## Context
 
 This book was written with extensive use of AI tools, specifically Claude (Anthropic). Publishing standards (Elsevier, Sage, Wiley) prohibit listing AI as a co-author, but encourage transparent disclosure. This follows the approach praised when author Reid Southen published an AI transparency statement -- building trust rather than undermining it.

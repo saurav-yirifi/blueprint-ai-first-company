@@ -122,7 +122,7 @@ flowchart TB
     classDef blue fill:#1e6fa5,stroke:#155a85,color:#fff
     classDef orange fill:#c77d0a,stroke:#a06508,color:#fff
     classDef purple fill:#7345b0,stroke:#5b3590,color:#fff
-    classDef dark fill:#1c1c2e,stroke:#333,color:#fff
+    classDef dark fill:#5a6270,stroke:#454d58,color:#fff
 
     class D,D1,D2,D3 green
     class P,P1,P2,P3 blue

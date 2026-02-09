@@ -34,13 +34,13 @@ flowchart TB
     classDef wgStyle fill:#1e6fa5,stroke:#155a85,color:#fff
     classDef committeeStyle fill:#7345b0,stroke:#5b3590,color:#fff
     classDef boardStyle fill:#7345b0,stroke:#5b3590,color:#fff
-    classDef subgraphStyle fill:#1c1c2e,color:#fff
+    classDef subgraphStyle fill:#5a6270,color:#fff
 
     class Team teamStyle
     class WorkGroup wgStyle
     class Committee committeeStyle
     class Board boardStyle
-    style Governance fill:#1c1c2e,color:#fff
+    style Governance fill:#5a6270,color:#fff
 ```
 
 #### First Line: Team-Level Decisions

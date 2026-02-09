@@ -33,7 +33,7 @@ flowchart TD
     FIX -.->|"Stitch Fix: 12-18 months"| M1
 
     classDef mistake fill:#c03030,stroke:#9a2020,color:#fff
-    classDef fail fill:#1c1c2e,stroke:#c03030,color:#fff
+    classDef fail fill:#5a6270,stroke:#c03030,color:#fff
     classDef fix fill:#1a8a52,stroke:#14693e,color:#fff
 
     class M1,M2,M3,M4,M5,M6 mistake

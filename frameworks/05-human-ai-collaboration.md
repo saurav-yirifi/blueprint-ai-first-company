@@ -68,8 +68,8 @@ flowchart LR
     class H1,H2,H3,H4 human
     class A1,A2,A3 ai
 
-    style Human fill:#1c1c2e,stroke:#155a85,color:#fff
-    style AI fill:#1c1c2e,stroke:#14693e,color:#fff
+    style Human fill:#5a6270,stroke:#155a85,color:#fff
+    style AI fill:#5a6270,stroke:#14693e,color:#fff
 ```
 
 Think of a film director working with a visual effects team. The director doesn't render each frame -- they set creative intent, review options, and make decisions. The VFX team executes at scale.

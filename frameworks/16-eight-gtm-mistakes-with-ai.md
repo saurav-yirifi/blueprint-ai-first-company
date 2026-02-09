@@ -40,13 +40,13 @@ flowchart LR
 
     classDef failNode fill:#c03030,stroke:#9a2020,color:#fff
     classDef successNode fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef subgraphFail fill:#1c1c2e,color:#fff
-    classDef subgraphSuccess fill:#1c1c2e,color:#fff
+    classDef subgraphFail fill:#5a6270,color:#fff
+    classDef subgraphSuccess fill:#5a6270,color:#fff
 
     class F1,F2,F3,F4,F5 failNode
     class S1,S2,S3,S4,S5 successNode
-    style Failure fill:#1c1c2e,color:#fff
-    style Success fill:#1c1c2e,color:#fff
+    style Failure fill:#5a6270,color:#fff
+    style Success fill:#5a6270,color:#fff
 ```
 
 ### Mistake 1: Over-Automating Relationships

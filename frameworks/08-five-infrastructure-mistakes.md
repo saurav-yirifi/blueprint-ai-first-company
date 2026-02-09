@@ -45,7 +45,7 @@ flowchart TD
 
     classDef red fill:#c03030,stroke:#9a2020,color:#fff
     classDef green fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef dark fill:#1c1c2e,stroke:#333,color:#fff
+    classDef dark fill:#5a6270,stroke:#454d58,color:#fff
 
     class M1,M2,M3,M4,M5 red
     class FIX green

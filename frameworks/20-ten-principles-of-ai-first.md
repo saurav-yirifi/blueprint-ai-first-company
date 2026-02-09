@@ -52,10 +52,10 @@ flowchart TB
     class P1,P2,P5,P6 archNode
     class P3,P4,P8 dataNode
 
-    style Meta fill:#1c1c2e,stroke:#5b3590,color:#fff
-    style Org fill:#1c1c2e,stroke:#a06508,color:#fff
-    style Arch fill:#1c1c2e,stroke:#155a85,color:#fff
-    style DataOps fill:#1c1c2e,stroke:#14693e,color:#fff
+    style Meta fill:#5a6270,stroke:#5b3590,color:#fff
+    style Org fill:#5a6270,stroke:#a06508,color:#fff
+    style Arch fill:#5a6270,stroke:#155a85,color:#fff
+    style DataOps fill:#5a6270,stroke:#14693e,color:#fff
 ```
 
 ### Principle 1: Build for Agents, Humans Will Thank You

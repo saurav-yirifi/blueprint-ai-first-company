@@ -827,34 +827,51 @@ body[data-md-color-scheme="default"]::before {
    ------------------------------------------------------------ */
 .yirifi-anchor {
   position: relative;
-  margin: 2rem 0;
-  padding: 1.5rem 1.5rem 1.5rem 1.75rem;
-  background: var(--bp-canvas-raised);
-  border: 1px solid var(--bp-line);
-  border-left: 4px solid var(--bp-accent-warm);
-  border-radius: 6px;
+  margin: 2.5rem 0;
+  padding: 1rem 1.25rem 1rem 1.5rem;
+  background: rgba(245, 158, 11, 0.03);
+  border: 1px solid rgba(245, 158, 11, 0.12);
+  border-left: 3px solid var(--bp-accent-warm);
+  border-radius: 0 4px 4px 0;
 }
 
 .yirifi-anchor::before {
   content: 'Yirifi Anchor — From the Trenches';
   display: block;
   font-family: var(--bp-mono);
-  font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--bp-accent-warm);
-  margin-bottom: 1rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--bp-line);
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.1);
 }
 
-.yirifi-anchor blockquote {
-  border-left-color: var(--bp-accent-warm);
-  background: transparent;
-  font-family: var(--bp-serif);
+.md-typeset .yirifi-anchor blockquote {
+  border-left: none;
+  background: none;
+  border-radius: 0;
+  margin: 0 0 0.6rem 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
   font-style: italic;
-  font-size: 1.05em;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: rgba(240, 244, 255, 0.88);
+}
+
+.md-typeset .yirifi-anchor blockquote p {
+  margin: 0;
+}
+
+.yirifi-anchor > p {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0 0 0.3rem 0;
+  color: var(--bp-white-dim);
 }
 
 .yirifi-anchor > :last-child {
@@ -864,12 +881,21 @@ body[data-md-color-scheme="default"]::before {
 /* Light mode */
 [data-md-color-scheme="default"] .yirifi-anchor {
   background: rgba(245, 158, 11, 0.04);
-  border-color: rgba(15, 21, 41, 0.1);
+  border-color: rgba(197, 125, 10, 0.15);
   border-left-color: var(--bp-accent-warm);
 }
 
 [data-md-color-scheme="default"] .yirifi-anchor::before {
-  border-bottom-color: rgba(15, 21, 41, 0.1);
+  border-bottom-color: rgba(197, 125, 10, 0.12);
+}
+
+[data-md-color-scheme="default"] .md-typeset .yirifi-anchor blockquote {
+  background: none;
+  color: rgba(15, 21, 41, 0.8);
+}
+
+[data-md-color-scheme="default"] .yirifi-anchor > p {
+  color: rgba(15, 21, 41, 0.72);
 }
 
 
@@ -1021,15 +1047,17 @@ body,
    Blockquotes (standalone, outside yirifi-anchor)
    ------------------------------------------------------------ */
 .md-typeset blockquote {
-  border-left: 3px solid var(--bp-cyan-dim);
-  background: transparent;
-  margin: 1.5rem 0;
-  padding: 0.75rem 1.25rem;
-  font-family: var(--bp-serif);
+  border-left: 3px solid var(--bp-cyan);
+  background: rgba(56, 189, 248, 0.04);
+  border-radius: 0 6px 6px 0;
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
   font-style: italic;
-  font-size: 1.02em;
-  line-height: 1.65;
-  color: var(--bp-white-dim);
+  font-size: 1.4em;
+  line-height: 1.7;
+  color: var(--bp-cyan);
 }
 
 .md-typeset blockquote p {
@@ -1043,7 +1071,8 @@ body,
 /* Light mode */
 [data-md-color-scheme="default"] .md-typeset blockquote {
   border-left-color: var(--bp-cyan);
-  color: rgba(15, 21, 41, 0.72);
+  background: rgba(29, 111, 165, 0.05);
+  color: var(--bp-cyan);
 }
 
 
@@ -1069,11 +1098,12 @@ body,
    Yirifi Anchor — Semantic labels (insight / close)
    ------------------------------------------------------------ */
 
-/* Style **Label:** bold text inside yirifi anchors as small-caps tags */
+/* Style **Label:** bold text inside yirifi anchors as inline amber tags */
 .yirifi-anchor > p > strong:first-child {
   font-family: var(--bp-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.03em;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   color: var(--bp-accent-warm);
 }
 

@@ -33,7 +33,7 @@ flowchart TD
     classDef decisionNode fill:#7345b0,stroke:#5b3590,color:#fff
     classDef firstNode fill:#c03030,stroke:#9a2020,color:#fff
     classDef enabledNode fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef exampleNode fill:#1c1c2e,stroke:#555,color:#fff
+    classDef exampleNode fill:#5a6270,stroke:#454d58,color:#fff
 
     class A startNode
     class B decisionNode

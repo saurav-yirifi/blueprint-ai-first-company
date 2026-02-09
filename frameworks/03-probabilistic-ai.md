@@ -24,7 +24,7 @@ Design around uncertainty, and you build trust. Pretend certainty you don't have
 
 ### Five Implications of Probabilistic Outputs
 
-> **Companion framework** --- extends the book's discussion of probabilistic AI with a practical checklist.
+> **Companion framework** - extends the book's discussion of probabilistic AI with a practical checklist.
 
 **1. Product Design** -- You can't promise 100% accuracy. Products must include graceful degradation, confidence indicators, and fallback paths. The best AI products make uncertainty visible rather than hiding it behind false precision.
 

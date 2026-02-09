@@ -48,12 +48,12 @@ flowchart TD
     L --> LO["Connected Content\n(linked sections)"]
     F --> FO["Targeted Fixes\n(specific improvements)"]
 
-    style MSP fill:#1a1a2e,stroke:#e94560,color:#fff
-    style W fill:#16213e,stroke:#0f3460,color:#fff
-    style E fill:#16213e,stroke:#0f3460,color:#fff
-    style R fill:#16213e,stroke:#0f3460,color:#fff
-    style L fill:#16213e,stroke:#0f3460,color:#fff
-    style F fill:#16213e,stroke:#0f3460,color:#fff
+    style MSP fill:#5a6270,stroke:#9a2020,color:#fff
+    style W fill:#1e6fa5,stroke:#155a85,color:#fff
+    style E fill:#1e6fa5,stroke:#155a85,color:#fff
+    style R fill:#1e6fa5,stroke:#155a85,color:#fff
+    style L fill:#1e6fa5,stroke:#155a85,color:#fff
+    style F fill:#1e6fa5,stroke:#155a85,color:#fff
 ```
 
 The master system prompt gets prepended as system context to every AI interaction. The orchestration skill (the chapter-writer) handles this automatically. Individual prompts assume it's already present -- they don't repeat voice rules or audience profiles.

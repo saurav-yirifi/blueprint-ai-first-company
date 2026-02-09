@@ -58,11 +58,11 @@ flowchart TB
     class O1,O2,O3,O4 opsNode
     class G1,G2,G3,G4 govNode
 
-    style Strategy fill:#1c1c2e,stroke:#155a85,color:#fff
-    style Building fill:#1c1c2e,stroke:#5b3590,color:#fff
-    style Data fill:#1c1c2e,stroke:#14693e,color:#fff
-    style Operations fill:#1c1c2e,stroke:#a06508,color:#fff
-    style Governance fill:#1c1c2e,stroke:#9a2020,color:#fff
+    style Strategy fill:#5a6270,stroke:#155a85,color:#fff
+    style Building fill:#5a6270,stroke:#5b3590,color:#fff
+    style Data fill:#5a6270,stroke:#14693e,color:#fff
+    style Operations fill:#5a6270,stroke:#a06508,color:#fff
+    style Governance fill:#5a6270,stroke:#9a2020,color:#fff
 ```
 
 ## All Frameworks

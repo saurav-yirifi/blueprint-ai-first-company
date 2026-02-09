@@ -62,10 +62,10 @@ flowchart LR
     class P6,P7 recoverNode
     class P8 verifyNode
 
-    style Prepare fill:#1c1c2e,stroke:#155a85,color:#fff
-    style Execute fill:#1c1c2e,stroke:#14693e,color:#fff
-    style Recover fill:#1c1c2e,stroke:#a06508,color:#fff
-    style Verify fill:#1c1c2e,stroke:#5b3590,color:#fff
+    style Prepare fill:#5a6270,stroke:#155a85,color:#fff
+    style Execute fill:#5a6270,stroke:#14693e,color:#fff
+    style Recover fill:#5a6270,stroke:#a06508,color:#fff
+    style Verify fill:#5a6270,stroke:#5b3590,color:#fff
 ```
 
 ### Pattern 1: Context First

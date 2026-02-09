@@ -24,7 +24,7 @@ flowchart TD
     Q5["Q5: Explainability Needs"] --> Q6
     Q6["Q6: Switching Tolerance"] --> R["2-3 Candidates to Test"]
 
-    classDef startNode fill:#1c1c2e,stroke:#555,color:#fff
+    classDef startNode fill:#5a6270,stroke:#454d58,color:#fff
     classDef questionNode fill:#1e6fa5,stroke:#155a85,color:#fff
     classDef resultNode fill:#1a8a52,stroke:#14693e,color:#fff
 

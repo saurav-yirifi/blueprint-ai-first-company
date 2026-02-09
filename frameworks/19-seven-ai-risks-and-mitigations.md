@@ -49,9 +49,9 @@ flowchart TD
     class Drift,Security medRisk
     class Compliance complianceNode
 
-    style DataLayer fill:#1c1c2e,color:#fff
-    style OutputLayer fill:#1c1c2e,color:#fff
-    style OpsLayer fill:#1c1c2e,color:#fff
+    style DataLayer fill:#5a6270,color:#fff
+    style OutputLayer fill:#5a6270,color:#fff
+    style OpsLayer fill:#5a6270,color:#fff
 ```
 
 ## The Framework

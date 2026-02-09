@@ -84,10 +84,10 @@ flowchart LR
     S1 --> S2 --> S3 --> S4 --> S5
 
     classDef stage1 fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef stage2 fill:#1a7a8a,stroke:#14606e,color:#fff
+    classDef stage2 fill:#1e6fa5,stroke:#155a85,color:#fff
     classDef stage3 fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef stage4 fill:#2a9a42,stroke:#1e7a32,color:#fff
-    classDef stage5 fill:#34aa34,stroke:#288a28,color:#fff
+    classDef stage4 fill:#1a8a52,stroke:#14693e,color:#fff
+    classDef stage5 fill:#1a8a52,stroke:#14693e,color:#fff
 
     class S1 stage1
     class S2 stage2
@@ -102,7 +102,7 @@ flowchart LR
         C3["Dynamic: pushes toward augmentation\nwhen context changes rapidly"]
     end
 
-    style Complexity fill:#1c1c2e,stroke:#333,color:#fff
+    style Complexity fill:#5a6270,stroke:#454d58,color:#fff
     style C1 fill:#c77d0a,stroke:#a06508,color:#fff
     style C2 fill:#c77d0a,stroke:#a06508,color:#fff
     style C3 fill:#c77d0a,stroke:#a06508,color:#fff
