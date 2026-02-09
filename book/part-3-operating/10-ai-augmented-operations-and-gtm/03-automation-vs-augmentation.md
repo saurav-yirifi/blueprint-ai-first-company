@@ -32,7 +32,7 @@ flowchart TB
     AUG3 --> HYBRID
 
     style AUTO fill:#1a8a52,stroke:#14693e
-    style HYBRID fill:#c77d0a,stroke:#a06508
+    style HYBRID fill:#b87a0a,stroke:#946208
     style C1 fill:#1e6fa5,stroke:#155a85
     style C2A fill:#1e6fa5,stroke:#155a85
     style C3A fill:#1e6fa5,stroke:#155a85
@@ -80,8 +80,8 @@ flowchart LR
     FULL_AI --> VERDICT2["Medium cost<br/>Medium outcomes"]
     HYBRID --> VERDICT3["Higher initial cost<br/>34% better ROI"]
 
-    style SCRIPTED fill:#c03030,stroke:#9a2020
-    style FULL_AI fill:#c77d0a,stroke:#a06508
+    style SCRIPTED fill:#b52c2c,stroke:#921e1e
+    style FULL_AI fill:#b87a0a,stroke:#946208
     style HYBRID fill:#1a8a52,stroke:#14693e
 ```
 
@@ -146,8 +146,8 @@ flowchart LR
 
     style P1 fill:#1e6fa5,stroke:#155a85
     style P2 fill:#1e6fa5,stroke:#155a85
-    style P3 fill:#c77d0a,stroke:#a06508
-    style P4 fill:#c77d0a,stroke:#a06508
+    style P3 fill:#b87a0a,stroke:#946208
+    style P4 fill:#b87a0a,stroke:#946208
     style P5 fill:#1a8a52,stroke:#14693e
 ```
 

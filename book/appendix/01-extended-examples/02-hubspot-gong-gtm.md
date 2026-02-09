@@ -32,7 +32,7 @@ flowchart TB
     GONG --> RESULTS_G["481% 3-year ROI<br/>16% higher win rates<br/>68% lower churn"]
 
     style HUBSPOT fill:#1e6fa5,stroke:#155a85
-    style GONG fill:#c77d0a,stroke:#a06508
+    style GONG fill:#b87a0a,stroke:#946208
     style RESULTS_HS fill:#1a8a52,stroke:#14693e
     style RESULTS_G fill:#1a8a52,stroke:#14693e
 ```
@@ -79,8 +79,8 @@ flowchart TB
 
     style S1 fill:#1e6fa5,stroke:#155a85
     style S2 fill:#1e6fa5,stroke:#155a85
-    style S3 fill:#c77d0a,stroke:#a06508
-    style S4 fill:#c77d0a,stroke:#a06508
+    style S3 fill:#b87a0a,stroke:#946208
+    style S4 fill:#b87a0a,stroke:#946208
     style S5 fill:#1a8a52,stroke:#14693e
     style S6 fill:#1a8a52,stroke:#14693e
     style MOAT fill:#7345b0,stroke:#5b3590
@@ -166,7 +166,7 @@ flowchart TB
 
     style PRINCIPLES fill:#1a8a52,stroke:#14693e
     style HUBSPOT_EX fill:#1e6fa5,stroke:#155a85
-    style GONG_EX fill:#c77d0a,stroke:#a06508
+    style GONG_EX fill:#b87a0a,stroke:#946208
 ```
 
 **Unified data enables AI effectiveness.** HubSpot's single customer record. Gong's conversation corpus. Both build AI on unified data, not fragmented silos.

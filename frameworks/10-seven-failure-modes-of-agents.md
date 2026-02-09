@@ -73,7 +73,7 @@ This mode is insidious because the agent behaves correctly according to its outd
 ### The Four-Layer Resilience Framework
 
 ```mermaid
-flowchart TB
+flowchart
     Agent["Agent in Production"]
 
     Agent --> D
@@ -118,17 +118,24 @@ flowchart TB
 
     L["Update from incidents"] -->|"Feedback loop"| P
 
-    classDef green fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef blue fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef orange fill:#c77d0a,stroke:#a06508,color:#fff
-    classDef purple fill:#7345b0,stroke:#5b3590,color:#fff
-    classDef dark fill:#5a6270,stroke:#454d58,color:#fff
+    style Agent fill:#5a6878,stroke:#47525f,color:#fff
+    style D fill:#1a8a52,stroke:#14693e,color:#fff
+    style D1 fill:#1a8a52,stroke:#14693e,color:#fff
+    style D2 fill:#1a8a52,stroke:#14693e,color:#fff
+    style D3 fill:#1a8a52,stroke:#14693e,color:#fff
+    style L fill:#7345b0,stroke:#5b3590,color:#fff
+    style L1 fill:#7345b0,stroke:#5b3590,color:#fff
+    style L2 fill:#7345b0,stroke:#5b3590,color:#fff
+    style L3 fill:#7345b0,stroke:#5b3590,color:#fff
+    style P fill:#1e6fa5,stroke:#155a85,color:#fff
+    style P1 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style P2 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style P3 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style R fill:#b87a0a,stroke:#946208,color:#fff
+    style R1 fill:#b87a0a,stroke:#946208,color:#fff
+    style R2 fill:#b87a0a,stroke:#946208,color:#fff
+    style R3 fill:#b87a0a,stroke:#946208,color:#fff
 
-    class D,D1,D2,D3 green
-    class P,P1,P2,P3 blue
-    class R,R1,R2,R3 orange
-    class L,L1,L2,L3 purple
-    class Agent dark
 ```
 
 Building resilience against all seven modes requires four layers:

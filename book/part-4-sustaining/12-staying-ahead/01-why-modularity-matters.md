@@ -35,7 +35,7 @@ flowchart TB
         A3 --> A4["Timeline: Hours to Days"]
     end
 
-    style M7 fill:#c03030,stroke:#9a2020
+    style M7 fill:#b52c2c,stroke:#921e1e
     style A4 fill:#1a8a52,stroke:#14693e
 ```
 

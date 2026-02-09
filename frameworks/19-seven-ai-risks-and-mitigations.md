@@ -15,23 +15,23 @@ The incidents cited below aren't hypothetical. They are documented cases that re
 ```mermaid
 flowchart TD
     subgraph DataLayer["Data-Layer Risks"]
-        Bias["Risk 2: Bias and\nDiscrimination"]
-        Privacy["Risk 3: Privacy\nLeakage"]
-        Drift["Risk 5: Model Drift\nand Degradation"]
+        Bias["Risk 2: Bias and<br/>Discrimination"]
+        Privacy["Risk 3: Privacy<br/>Leakage"]
+        Drift["Risk 5: Model Drift<br/>and Degradation"]
     end
 
     subgraph OutputLayer["Output-Layer Risks"]
-        Hallucination["Risk 1:\nHallucination"]
-        Injection["Risk 4: Prompt Injection\nand Jailbreaking"]
+        Hallucination["Risk 1:<br/>Hallucination"]
+        Injection["Risk 4: Prompt Injection<br/>and Jailbreaking"]
     end
 
     subgraph OpsLayer["Operational Risks"]
-        Security["Risk 6: Security\nVulnerabilities"]
+        Security["Risk 6: Security<br/>Vulnerabilities"]
     end
 
-    Compliance["Risk 7: Regulatory\nNon-Compliance"]
+    Compliance["Risk 7: Regulatory<br/>Non-Compliance"]
 
-    Bias -->|"Biased training data\nproduces biased outputs"| Hallucination
+    Bias -->|"Biased training data<br/>produces biased outputs"| Hallucination
     Privacy -->|"Data exposure enables"| Injection
     Drift -->|"Degraded accuracy increases"| Hallucination
     Security -->|"Compromised models amplify"| Injection
@@ -41,17 +41,18 @@ flowchart TD
     Bias -->|"Discrimination triggers"| Compliance
     Privacy -->|"Breaches trigger"| Compliance
 
-    classDef highRisk fill:#c03030,stroke:#9a2020,color:#fff
-    classDef medRisk fill:#c77d0a,stroke:#a06508,color:#fff
-    classDef complianceNode fill:#c03030,stroke:#9a2020,color:#fff
+    style Bias fill:#b52c2c,stroke:#921e1e,color:#fff
+    style Compliance fill:#b52c2c,stroke:#921e1e,color:#fff
+    style Drift fill:#b87a0a,stroke:#946208,color:#fff
+    style Hallucination fill:#b52c2c,stroke:#921e1e,color:#fff
+    style Injection fill:#b52c2c,stroke:#921e1e,color:#fff
+    style Privacy fill:#b52c2c,stroke:#921e1e,color:#fff
+    style Security fill:#b87a0a,stroke:#946208,color:#fff
 
-    class Bias,Privacy,Hallucination,Injection highRisk
-    class Drift,Security medRisk
-    class Compliance complianceNode
 
-    style DataLayer fill:#5a6270,color:#fff
-    style OutputLayer fill:#5a6270,color:#fff
-    style OpsLayer fill:#5a6270,color:#fff
+    style DataLayer fill:#5a6878,color:#fff
+    style OutputLayer fill:#5a6878,color:#fff
+    style OpsLayer fill:#5a6878,color:#fff
 ```
 
 ## The Framework

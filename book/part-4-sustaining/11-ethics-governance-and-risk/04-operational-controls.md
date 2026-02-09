@@ -42,11 +42,11 @@ flowchart TB
 
     L1 --> L2 --> L3 --> L4 --> L5
 
-    style L1 fill:#1e6fa5,stroke:#454d58
-    style L2 fill:#1a8a52,stroke:#454d58
-    style L3 fill:#c77d0a,stroke:#454d58
-    style L4 fill:#1e6fa5,stroke:#454d58
-    style L5 fill:#c03030,stroke:#454d58
+    style L1 fill:#1e6fa5,stroke:#47525f
+    style L2 fill:#1a8a52,stroke:#47525f
+    style L3 fill:#b87a0a,stroke:#47525f
+    style L4 fill:#1e6fa5,stroke:#47525f
+    style L5 fill:#b52c2c,stroke:#47525f
 ```
 
 You're logging decisions made by a system that can't explain itself deterministically—that's what makes AI logging different from traditional software logging. The standard approach from observability platforms like Langfuse, Dynatrace, and Latitude clusters logging into five distinct layers[^langfuse]:
@@ -97,9 +97,9 @@ flowchart TB
 
     TRADITIONAL -.->|"Insufficient for AI"| AI_BASED
 
-    style CRITICAL fill:#c03030,stroke:#9a2020,stroke-width:2px
-    style HIGH fill:#c77d0a,stroke:#454d58
-    style MEDIUM fill:#1a8a52,stroke:#454d58
+    style CRITICAL fill:#b52c2c,stroke:#921e1e,stroke-width:2px
+    style HIGH fill:#b87a0a,stroke:#47525f
+    style MEDIUM fill:#1a8a52,stroke:#47525f
 ```
 
 Forget P0/P1/P2 severity levels. Leading AI companies have moved to impact-based and capability-based classification systems.
@@ -142,13 +142,13 @@ flowchart LR
 
     PHASE1 --> PHASE2 --> PHASE3 --> PHASE4 --> PHASE5 --> PHASE6 --> PHASE7
 
-    style PHASE1 fill:#c03030,stroke:#454d58
-    style PHASE2 fill:#c77d0a,stroke:#454d58
-    style PHASE3 fill:#c03030,stroke:#454d58
-    style PHASE4 fill:#1e6fa5,stroke:#454d58
-    style PHASE5 fill:#1a8a52,stroke:#454d58
-    style PHASE6 fill:#1a8a52,stroke:#454d58
-    style PHASE7 fill:#1e6fa5,stroke:#454d58
+    style PHASE1 fill:#b52c2c,stroke:#47525f
+    style PHASE2 fill:#b87a0a,stroke:#47525f
+    style PHASE3 fill:#b52c2c,stroke:#47525f
+    style PHASE4 fill:#1e6fa5,stroke:#47525f
+    style PHASE5 fill:#1a8a52,stroke:#47525f
+    style PHASE6 fill:#1a8a52,stroke:#47525f
+    style PHASE7 fill:#1e6fa5,stroke:#47525f
 ```
 
 **1. Detect**: Continuous production monitoring—automated anomaly alerts, user feedback systems, evaluation score drops.

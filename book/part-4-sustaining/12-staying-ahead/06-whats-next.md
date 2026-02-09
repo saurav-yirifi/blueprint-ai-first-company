@@ -95,8 +95,8 @@ flowchart TB
     NEXT --> CAP
 
     style FIRST fill:#1a8a52,stroke:#14693e
-    style ENABLED fill:#c77d0a,stroke:#a06508
-    style GAP fill:#c03030,stroke:#9a2020
+    style ENABLED fill:#b87a0a,stroke:#946208
+    style GAP fill:#b52c2c,stroke:#921e1e
 ```
 
 ## The Yirifi Test
@@ -123,7 +123,7 @@ flowchart TB
     RIGHT --> SHIP["Ship in weeks"]
     FUTURE --> SHIP
 
-    style WRONG fill:#c03030,stroke:#9a2020
+    style WRONG fill:#b52c2c,stroke:#921e1e
     style RIGHT fill:#1a8a52,stroke:#14693e
     style FUTURE fill:#1a8a52,stroke:#14693e
     style SHIP fill:#1e6fa5,stroke:#155a85

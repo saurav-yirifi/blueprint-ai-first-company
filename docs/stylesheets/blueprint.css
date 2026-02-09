@@ -90,6 +90,28 @@
   --bp-white-muted: rgba(240, 244, 255, 0.45);
   --bp-accent: #818cf8;
   --bp-accent-warm: #f59e0b;
+
+  /* Mermaid diagram colors (dark mode) */
+  --bp-mermaid-info-fill: #1e6fa5;
+  --bp-mermaid-info-stroke: #155a85;
+  --bp-mermaid-success-fill: #1a8a52;
+  --bp-mermaid-success-stroke: #14693e;
+  --bp-mermaid-warning-fill: #b87a0a;
+  --bp-mermaid-warning-stroke: #946208;
+  --bp-mermaid-danger-fill: #b52c2c;
+  --bp-mermaid-danger-stroke: #921e1e;
+  --bp-mermaid-purple-fill: #7345b0;
+  --bp-mermaid-purple-stroke: #5b3590;
+  --bp-mermaid-neutral-fill: #5a6878;
+  --bp-mermaid-neutral-stroke: #47525f;
+  --bp-mermaid-text: #fff;
+  --bp-mermaid-subtitle-text: #fff;
+
+  /* Match Mermaid's measurement font so text fits inside node boxes.
+     Mermaid measures text width with this font during render, then
+     Material's CSS replaces the display font. If they differ, text
+     overflows. Using Mermaid's default font for both fixes this. */
+  --md-mermaid-font-family: "trebuchet ms", verdana, arial, sans-serif;
 }
 
 
@@ -146,6 +168,25 @@
   --bp-white-muted: rgba(15, 21, 41, 0.45);
   --bp-accent: #5b5fc7;
   --bp-accent-warm: #c77d0a;
+
+  /* Mermaid diagram colors (light mode) */
+  --bp-mermaid-info-fill: #d4e8f5;
+  --bp-mermaid-info-stroke: #a8c8de;
+  --bp-mermaid-success-fill: #d2eddf;
+  --bp-mermaid-success-stroke: #a4d4bb;
+  --bp-mermaid-warning-fill: #f5e6cc;
+  --bp-mermaid-warning-stroke: #e0c89a;
+  --bp-mermaid-danger-fill: #f5d4d4;
+  --bp-mermaid-danger-stroke: #dea8a8;
+  --bp-mermaid-purple-fill: #e4d8f2;
+  --bp-mermaid-purple-stroke: #c4ade0;
+  --bp-mermaid-neutral-fill: #e2e4e8;
+  --bp-mermaid-neutral-stroke: #c5c9d0;
+  --bp-mermaid-text: #1a2030;
+  --bp-mermaid-subtitle-text: #4a5260;
+
+  /* Match Mermaid's measurement font (same reason as dark mode above). */
+  --md-mermaid-font-family: "trebuchet ms", verdana, arial, sans-serif;
 }
 
 
@@ -187,6 +228,17 @@ body,
 .md-typeset h2 {
   font-size: 1.8rem;
   line-height: 1.2;
+}
+
+.md-typeset h3 {
+  font-size: 1.4rem;
+  line-height: 1.25;
+  color: var(--bp-cyan);
+}
+
+.md-typeset h4 {
+  font-size: 1.15rem;
+  line-height: 1.3;
 }
 
 /* Code - DM Mono */
@@ -933,12 +985,11 @@ body,
   overflow-x: auto;
 }
 
-/* Default node text */
-.mermaid .nodeLabel,
-.mermaid .label {
-  font-family: var(--bp-sans) !important;
-  font-size: 0.85rem !important;
-}
+/* Node text: Material 9.x renders Mermaid inside a shadow DOM.
+   External CSS cannot penetrate the shadow boundary, so text
+   color/font overrides must be done via the JS post-processor
+   in main.html (which accesses the open shadow root) or via
+   CSS custom properties that inherit into the shadow DOM. */
 
 /* Edge (arrow) paths */
 .mermaid .edgePath .path,
@@ -1051,13 +1102,13 @@ body,
   background: rgba(56, 189, 248, 0.04);
   border-radius: 0 6px 6px 0;
   margin: 2rem 0;
-  padding: 1.25rem 1.5rem;
+  padding: 0.75rem 1rem;
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 500;
   font-style: italic;
   font-size: 1.4em;
   line-height: 1.7;
-  color: var(--bp-cyan);
+  color: #5edbff;
 }
 
 .md-typeset blockquote p {
@@ -1072,7 +1123,7 @@ body,
 [data-md-color-scheme="default"] .md-typeset blockquote {
   border-left-color: var(--bp-cyan);
   background: rgba(29, 111, 165, 0.05);
-  color: var(--bp-cyan);
+  color: #124d73;
 }
 
 

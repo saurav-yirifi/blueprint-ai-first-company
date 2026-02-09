@@ -53,7 +53,7 @@ flowchart LR
     EVENT -->|"Collaboration"| AI
 
     style REST fill:#1e6fa5,stroke:#155a85
-    style GQL fill:#c77d0a,stroke:#a06508
+    style GQL fill:#b87a0a,stroke:#946208
     style EVENT fill:#7345b0,stroke:#5b3590
     style AI fill:#1a8a52,stroke:#14693e
 ```
@@ -91,8 +91,8 @@ flowchart TB
     MERGE --> CHK
 
     style DET fill:#1a8a52,stroke:#14693e
-    style LLM fill:#c77d0a,stroke:#a06508
-    style HUMAN fill:#c03030,stroke:#9a2020
+    style LLM fill:#b87a0a,stroke:#946208
+    style HUMAN fill:#b52c2c,stroke:#921e1e
 ```
 
 Deterministic logic handles the routine. LLMs provide judgment where it matters. You get speed and reliability for the predictable, flexibility for the edge cases.

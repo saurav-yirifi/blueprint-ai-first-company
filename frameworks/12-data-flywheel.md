@@ -25,12 +25,12 @@ Once spinning, a true flywheel is nearly impossible for competitors to replicate
 | **Feedback** | Connects application back to collection | You ship improvements but don't know if they worked. Does better output generate more data? |
 
 ```mermaid
-flowchart LR
-    Collect["Collect\nCapture signals from\nproduction systems"]
-    Store["Store\nOrganize for\nrapid retrieval"]
-    Analyze["Analyze\nTransform raw data\ninto insights"]
-    Apply["Apply\nShip product\nimprovements"]
-    Feedback["Feedback\nMeasure impact and\ngenerate new signals"]
+flowchart
+    Collect["Collect:<br/>Capture production signals"]
+    Store["Store:<br/>Organize for retrieval"]
+    Analyze["Analyze:<br/>Raw data to insights"]
+    Apply["Apply:<br/>Ship improvements"]
+    Feedback["Feedback:<br/>Measure impact"]
 
     Collect --> Store
     Store --> Analyze
@@ -38,19 +38,22 @@ flowchart LR
     Apply --> Feedback
     Feedback --> Collect
 
-    Break1["Common break:\nData silos between teams"]
-    Break2["Common break:\nInsights die in slide decks"]
+    Break1["Common break:<br/>Data silos between teams"]
+    Break2["Common break:<br/>Insights die in decks"]
 
     Store -.-x Break1
     Break1 -.-x Analyze
     Analyze -.-x Break2
     Break2 -.-x Apply
 
-    classDef cycleNode fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef breakNode fill:#c03030,stroke:#9a2020,color:#fff
+    style Analyze fill:#1a8a52,stroke:#14693e,color:#fff
+    style Apply fill:#1a8a52,stroke:#14693e,color:#fff
+    style Break1 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style Break2 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style Collect fill:#1a8a52,stroke:#14693e,color:#fff
+    style Feedback fill:#1a8a52,stroke:#14693e,color:#fff
+    style Store fill:#1a8a52,stroke:#14693e,color:#fff
 
-    class Collect,Store,Analyze,Apply,Feedback cycleNode
-    class Break1,Break2 breakNode
 ```
 
 **The velocity gap is stark.** Netflix deploys in under 15 minutes. Traditional enterprises take 8 to 90 days. Some Fortune 100 banks average nine months from proof-of-concept to production. Duolingo rewrote their Session Generator to reduce processing from 750 milliseconds to 14 milliseconds---the difference between real-time personalization and waiting for the next session.

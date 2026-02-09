@@ -54,7 +54,7 @@ flowchart TB
     SALES --> INFRA
     FIN --> INFRA
 
-    style PLATFORM fill:#c77d0a,stroke:#a06508
+    style PLATFORM fill:#b87a0a,stroke:#946208
     style MICROSITES fill:#1e6fa5,stroke:#155a85
 ```
 
@@ -116,8 +116,8 @@ flowchart TB
     CENTRALIZED ~~~ BOUNDARY
     BOUNDARY ~~~ DISTRIBUTED
 
-    style CENTRALIZED fill:#c77d0a,stroke:#a06508
-    style BOUNDARY fill:#c03030,stroke:#9a2020,stroke-width:3px
+    style CENTRALIZED fill:#b87a0a,stroke:#946208
+    style BOUNDARY fill:#b52c2c,stroke:#921e1e,stroke-width:3px
     style DISTRIBUTED fill:#1e6fa5,stroke:#155a85
 ```
 

@@ -29,17 +29,13 @@ flowchart TD
     C --> E["Harvey, Perplexity, Glean"]
     D --> F["Notion, Salesforce, Figma"]
 
-    classDef startNode fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef decisionNode fill:#7345b0,stroke:#5b3590,color:#fff
-    classDef firstNode fill:#c03030,stroke:#9a2020,color:#fff
-    classDef enabledNode fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef exampleNode fill:#5a6270,stroke:#454d58,color:#fff
+    style A fill:#1e6fa5,stroke:#155a85,color:#fff
+    style B fill:#7345b0,stroke:#5b3590,color:#fff
+    style C fill:#b52c2c,stroke:#921e1e,color:#fff
+    style D fill:#1a8a52,stroke:#14693e,color:#fff
+    style E fill:#5a6878,stroke:#47525f,color:#fff
+    style F fill:#5a6878,stroke:#47525f,color:#fff
 
-    class A startNode
-    class B decisionNode
-    class C firstNode
-    class D enabledNode
-    class E,F exampleNode
 ```
 
 ### 5 Signs You're Looking at AI-First

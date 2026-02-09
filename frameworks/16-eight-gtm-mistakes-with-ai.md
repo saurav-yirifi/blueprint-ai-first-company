@@ -18,35 +18,39 @@ Every mistake stems from the same error: treating AI as a solution to implement 
 flowchart LR
     subgraph Failure["Common Failure Path"]
         direction TB
-        F1["Technology first\nBuy AI tools"]
-        F2["Automate everything\nRemove human touch"]
-        F3["Ignore data quality\nTrust raw outputs"]
-        F4["Measure vanity metrics\nCount AI activity"]
-        F5["95% pilot failure\nNo business impact"]
+        F1["Technology first<br/>Buy AI tools"]
+        F2["Automate everything<br/>Remove human touch"]
+        F3["Ignore data quality<br/>Trust raw outputs"]
+        F4["Measure vanity metrics<br/>Count AI activity"]
+        F5["95% pilot failure<br/>No business impact"]
 
         F1 --> F2 --> F3 --> F4 --> F5
     end
 
     subgraph Success["Correct Path"]
         direction TB
-        S1["People and process first\nDefine workflows"]
-        S2["Augment, do not replace\nHybrid human-AI"]
-        S3["Validate data quality\nClean before deploying"]
-        S4["Measure outcomes\nTrack business value"]
-        S5["Sustainable AI GTM\nCompounding returns"]
+        S1["People and process first<br/>Define workflows"]
+        S2["Augment, do not replace<br/>Hybrid human-AI"]
+        S3["Validate data quality<br/>Clean before deploying"]
+        S4["Measure outcomes<br/>Track business value"]
+        S5["Sustainable AI GTM<br/>Compounding returns"]
 
         S1 --> S2 --> S3 --> S4 --> S5
     end
 
-    classDef failNode fill:#c03030,stroke:#9a2020,color:#fff
-    classDef successNode fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef subgraphFail fill:#5a6270,color:#fff
-    classDef subgraphSuccess fill:#5a6270,color:#fff
+    style F1 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style F2 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style F3 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style F4 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style F5 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style S1 fill:#1a8a52,stroke:#14693e,color:#fff
+    style S2 fill:#1a8a52,stroke:#14693e,color:#fff
+    style S3 fill:#1a8a52,stroke:#14693e,color:#fff
+    style S4 fill:#1a8a52,stroke:#14693e,color:#fff
+    style S5 fill:#1a8a52,stroke:#14693e,color:#fff
 
-    class F1,F2,F3,F4,F5 failNode
-    class S1,S2,S3,S4,S5 successNode
-    style Failure fill:#5a6270,color:#fff
-    style Success fill:#5a6270,color:#fff
+    style Failure fill:#5a6878,color:#fff
+    style Success fill:#5a6878,color:#fff
 ```
 
 ### Mistake 1: Over-Automating Relationships

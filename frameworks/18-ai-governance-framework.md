@@ -20,27 +20,22 @@ The organizations getting this right -- IBM with their AI Ethics Board, JPMorgan
 flowchart TB
     subgraph Governance["AI Governance Pyramid"]
         direction TB
-        Board["Board Level\nFrontier AI and Regulatory Strategy"]
-        Committee["AI Ethics Committee\nHigh-Risk Systems"]
-        WorkGroup["Working Group\nMedium-Risk Deployments"]
-        Team["Team Level\nDay-to-Day Decisions"]
+        Board["Board Level<br/>Frontier AI and Regulatory Strategy"]
+        Committee["AI Ethics Committee<br/>High-Risk Systems"]
+        WorkGroup["Working Group<br/>Medium-Risk Deployments"]
+        Team["Team Level<br/>Day-to-Day Decisions"]
 
-        Team -->|"Financial impact over $50K\nor protected class data"| WorkGroup
-        WorkGroup -->|"Financial impact over $500K\nor irreversible actions"| Committee
-        Committee -->|"Strategic decisions\nor major incidents"| Board
+        Team -->|"Financial impact over $50K<br/>or protected class data"| WorkGroup
+        WorkGroup -->|"Financial impact over $500K<br/>or irreversible actions"| Committee
+        Committee -->|"Strategic decisions<br/>or major incidents"| Board
     end
 
-    classDef teamStyle fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef wgStyle fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef committeeStyle fill:#7345b0,stroke:#5b3590,color:#fff
-    classDef boardStyle fill:#7345b0,stroke:#5b3590,color:#fff
-    classDef subgraphStyle fill:#5a6270,color:#fff
+    style Board fill:#7345b0,stroke:#5b3590,color:#fff
+    style Committee fill:#7345b0,stroke:#5b3590,color:#fff
+    style Team fill:#1e6fa5,stroke:#155a85,color:#fff
+    style WorkGroup fill:#1e6fa5,stroke:#155a85,color:#fff
 
-    class Team teamStyle
-    class WorkGroup wgStyle
-    class Committee committeeStyle
-    class Board boardStyle
-    style Governance fill:#5a6270,color:#fff
+    style Governance fill:#5a6878,color:#fff
 ```
 
 #### First Line: Team-Level Decisions

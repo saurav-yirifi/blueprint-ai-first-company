@@ -21,7 +21,7 @@ flowchart LR
     BackgroundRisks -.->|"Autonomous<br/>operation"| Auto([No<br/>Supervision])
 
     style ChatRisks fill:#1e6fa5
-    style BackgroundRisks fill:#c77d0a
+    style BackgroundRisks fill:#b87a0a
 ```
 
 ### Mode 1: Hallucinated Actions
@@ -103,8 +103,8 @@ flowchart LR
 
     style D fill:#1e6fa5
     style P fill:#1a8a52
-    style R fill:#c77d0a
-    style L fill:#c03030
+    style R fill:#b87a0a
+    style L fill:#b52c2c
 ```
 
 For governance frameworks that formalize these practices, see [Chapter 11: Ethics & Governance](../../part-4-sustaining/11-ethics-governance-and-risk/README.md).

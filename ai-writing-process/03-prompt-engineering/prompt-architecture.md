@@ -34,21 +34,21 @@ This gives you three things monolithic prompts can't:
 
 ```mermaid
 flowchart TD
-    MSP["Master System Prompt\n(voice + audience + rules + density test)\nAlways present"]
+    MSP["Master System Prompt<br/>(voice + audience + rules + density test)<br/>Always present"]
 
-    MSP --> W["+ Writing Prompt\n(opening, section, framework, etc.)"]
-    MSP --> E["+ Editing Prompt\n(voice, de-AI, balance, etc.)"]
-    MSP --> R["+ Review Prompt\n(chapter complete, authenticity, etc.)"]
-    MSP --> L["+ Linking Prompt\n(concepts, cross-references, etc.)"]
-    MSP --> F["+ Fix Prompt\n(generic language, tighten, etc.)"]
+    MSP --> W["+ Writing Prompt<br/>(opening, section, framework, etc.)"]
+    MSP --> E["+ Editing Prompt<br/>(voice, de-AI, balance, etc.)"]
+    MSP --> R["+ Review Prompt<br/>(chapter complete, authenticity, etc.)"]
+    MSP --> L["+ Linking Prompt<br/>(concepts, cross-references, etc.)"]
+    MSP --> F["+ Fix Prompt<br/>(generic language, tighten, etc.)"]
 
-    W --> WO["Content Output\n(draft sections)"]
-    E --> EO["Refined Content\n(with change notes)"]
-    R --> RO["Quality Report\n(grade + issues)"]
-    L --> LO["Connected Content\n(linked sections)"]
-    F --> FO["Targeted Fixes\n(specific improvements)"]
+    W --> WO["Content Output<br/>(draft sections)"]
+    E --> EO["Refined Content<br/>(with change notes)"]
+    R --> RO["Quality Report<br/>(grade + issues)"]
+    L --> LO["Connected Content<br/>(linked sections)"]
+    F --> FO["Targeted Fixes<br/>(specific improvements)"]
 
-    style MSP fill:#5a6270,stroke:#9a2020,color:#fff
+    style MSP fill:#5a6878,stroke:#921e1e,color:#fff
     style W fill:#1e6fa5,stroke:#155a85,color:#fff
     style E fill:#1e6fa5,stroke:#155a85,color:#fff
     style R fill:#1e6fa5,stroke:#155a85,color:#fff

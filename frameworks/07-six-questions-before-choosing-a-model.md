@@ -24,13 +24,15 @@ flowchart TD
     Q5["Q5: Explainability Needs"] --> Q6
     Q6["Q6: Switching Tolerance"] --> R["2-3 Candidates to Test"]
 
-    classDef startNode fill:#5a6270,stroke:#454d58,color:#fff
-    classDef questionNode fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef resultNode fill:#1a8a52,stroke:#14693e,color:#fff
+    style A fill:#5a6878,stroke:#47525f,color:#fff
+    style Q1 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style Q2 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style Q3 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style Q4 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style Q5 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style Q6 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style R fill:#1a8a52,stroke:#14693e,color:#fff
 
-    class A startNode
-    class Q1,Q2,Q3,Q4,Q5,Q6 questionNode
-    class R resultNode
 ```
 
 ### 1. What's Your Primary Use Case?

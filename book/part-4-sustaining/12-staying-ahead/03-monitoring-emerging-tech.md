@@ -52,8 +52,8 @@ flowchart TB
 
     style ADOPT fill:#1a8a52,stroke:#14693e
     style TRIAL fill:#1e6fa5,stroke:#155a85
-    style ASSESS fill:#c77d0a,stroke:#a06508
-    style HOLD fill:#c03030,stroke:#9a2020
+    style ASSESS fill:#b87a0a,stroke:#946208
+    style HOLD fill:#b52c2c,stroke:#921e1e
 ```
 
 ## What to Actually Watch
@@ -122,9 +122,9 @@ flowchart LR
     Q3 -->|"No"| KILL3["Kill"]
 
     style PROD fill:#1a8a52,stroke:#14693e
-    style KILL1 fill:#c03030,stroke:#9a2020
-    style KILL2 fill:#c03030,stroke:#9a2020
-    style KILL3 fill:#c03030,stroke:#9a2020
+    style KILL1 fill:#b52c2c,stroke:#921e1e
+    style KILL2 fill:#b52c2c,stroke:#921e1e
+    style KILL3 fill:#b52c2c,stroke:#921e1e
 ```
 
 ## Knowing When to Kill

@@ -43,13 +43,14 @@ flowchart TD
     FIX -->|"Break the cycle"| M4
     FIX -->|"Break the cycle"| M5
 
-    classDef red fill:#c03030,stroke:#9a2020,color:#fff
-    classDef green fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef dark fill:#5a6270,stroke:#454d58,color:#fff
+    style FAIL fill:#5a6878,stroke:#47525f,color:#fff
+    style FIX fill:#1a8a52,stroke:#14693e,color:#fff
+    style M1 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style M2 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style M3 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style M4 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style M5 fill:#b52c2c,stroke:#921e1e,color:#fff
 
-    class M1,M2,M3,M4,M5 red
-    class FIX green
-    class FAIL dark
 ```
 
 ### Mistake 1: Over-Engineering Early

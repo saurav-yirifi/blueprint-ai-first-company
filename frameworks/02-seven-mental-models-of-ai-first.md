@@ -32,8 +32,13 @@ flowchart TB
     M6 -->|"feeds"| M1
     M5 -->|"enables"| M7
 
-    classDef blue fill:#1e6fa5,stroke:#155a85,color:#fff
-    class M1,M2,M3,M4,M5,M6,M7 blue
+    style M1 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style M2 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style M3 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style M4 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style M5 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style M6 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style M7 fill:#1e6fa5,stroke:#155a85,color:#fff
 ```
 
 ### 1. Agent-First Design

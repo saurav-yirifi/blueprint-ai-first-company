@@ -62,8 +62,8 @@ flowchart TB
     DENY --> AUDIT
 
     style D fill:#1a8a52,stroke:#14693e
-    style E fill:#c03030,stroke:#9a2020
-    style G fill:#c77d0a,stroke:#a06508
+    style E fill:#b52c2c,stroke:#921e1e
+    style G fill:#b87a0a,stroke:#946208
 ```
 
 ## Identity Passthrough

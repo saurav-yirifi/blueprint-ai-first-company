@@ -64,8 +64,8 @@ flowchart TB
     L1 -->|"Don't skip"| L2
     L2 -->|"Don't skip"| L3
 
-    style L1 fill:#c03030,stroke:#9a2020
-    style L2 fill:#c77d0a,stroke:#a06508
+    style L1 fill:#b52c2c,stroke:#921e1e
+    style L2 fill:#b87a0a,stroke:#946208
     style L3 fill:#1a8a52,stroke:#14693e
 ```
 

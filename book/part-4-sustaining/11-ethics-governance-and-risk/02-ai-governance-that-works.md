@@ -10,25 +10,29 @@ Working AI governance has three characteristics: it has real authority, it makes
 
 ```mermaid
 flowchart TB
-    subgraph BOARD["<b>Board Level</b><br/>Strategic Decisions"]
+    subgraph BOARD["<b>Board Level</b>"]
+        BOARDS["<i>Strategic Decisions</i>"]:::subtitle
         B1["Risk Committee"]
         B2["Frontier AI Approvals"]
         B3["Regulatory Strategy"]
     end
 
-    subgraph THIRD["<b>Third Line</b><br/>Committee Decisions"]
+    subgraph THIRD["<b>Third Line</b>"]
+        THIRDS["<i>Committee Decisions</i>"]:::subtitle
         T1["Internal Audit"]
         T2["AI Ethics Board"]
         T3["Approve/Modify/Terminate"]
     end
 
-    subgraph SECOND["<b>Second Line</b><br/>Working Group Decisions"]
+    subgraph SECOND["<b>Second Line</b>"]
+        SECONDS["<i>Working Group Decisions</i>"]:::subtitle
         S1["Risk Management"]
         S2["Legal & Compliance"]
         S3["EU AI Act / Bias Audits"]
     end
 
-    subgraph FIRST["<b>First Line</b><br/>Team-Level Decisions"]
+    subgraph FIRST["<b>First Line</b>"]
+        FIRSTS["<i>Team-Level Decisions</i>"]:::subtitle
         F1["Research Leads"]
         F2["Product Managers"]
         F3["Direct Deployment Authority"]
@@ -38,10 +42,11 @@ flowchart TB
     SECOND -->|"High Risk"| THIRD
     THIRD -->|"Strategic"| BOARD
 
-    style FIRST fill:#1a8a52,stroke:#454d58
-    style SECOND fill:#c77d0a,stroke:#454d58
-    style THIRD fill:#c03030,stroke:#454d58
-    style BOARD fill:#1e6fa5,stroke:#454d58
+    style FIRST fill:#1a8a52,stroke:#47525f
+    style SECOND fill:#b87a0a,stroke:#47525f
+    style THIRD fill:#b52c2c,stroke:#47525f
+    style BOARD fill:#1e6fa5,stroke:#47525f
+    classDef subtitle fill:none,stroke:none,color:#fff,font-size:1.1em
 ```
 
 The model that works adapts "Three Lines of Defense" to AI:
@@ -106,10 +111,10 @@ flowchart LR
     WG -->|"Threshold exceeded"| COMMITTEE
     COMMITTEE -->|"Strategic impact"| BOARD2
 
-    style TEAM fill:#1a8a52,stroke:#454d58
-    style WG fill:#c77d0a,stroke:#454d58
-    style COMMITTEE fill:#c03030,stroke:#454d58
-    style BOARD2 fill:#1e6fa5,stroke:#454d58
+    style TEAM fill:#1a8a52,stroke:#47525f
+    style WG fill:#b87a0a,stroke:#47525f
+    style COMMITTEE fill:#b52c2c,stroke:#47525f
+    style BOARD2 fill:#1e6fa5,stroke:#47525f
 ```
 
 Clear thresholds prevent both over-governance and under-governance. In UK financial services, 62% of AI use cases qualify as low materiality (team approval), while 16% are high materiality requiring committee review[^bank-england]. EU AI Act high-risk classifications—credit decisions, healthcare diagnostics, employment screening, law enforcement—require committee-level decisions regardless of financial impact.

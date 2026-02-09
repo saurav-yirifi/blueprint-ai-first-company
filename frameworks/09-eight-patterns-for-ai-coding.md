@@ -52,20 +52,20 @@ flowchart LR
     Recover --> Verify
     Verify -->|"Next iteration"| Prepare
 
-    classDef prepareNode fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef executeNode fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef recoverNode fill:#c77d0a,stroke:#a06508,color:#fff
-    classDef verifyNode fill:#7345b0,stroke:#5b3590,color:#fff
+    style P1 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style P2 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style P3 fill:#1a8a52,stroke:#14693e,color:#fff
+    style P4 fill:#1a8a52,stroke:#14693e,color:#fff
+    style P5 fill:#1a8a52,stroke:#14693e,color:#fff
+    style P6 fill:#b87a0a,stroke:#946208,color:#fff
+    style P7 fill:#b87a0a,stroke:#946208,color:#fff
+    style P8 fill:#7345b0,stroke:#5b3590,color:#fff
 
-    class P1,P2 prepareNode
-    class P3,P4,P5 executeNode
-    class P6,P7 recoverNode
-    class P8 verifyNode
 
-    style Prepare fill:#5a6270,stroke:#155a85,color:#fff
-    style Execute fill:#5a6270,stroke:#14693e,color:#fff
-    style Recover fill:#5a6270,stroke:#a06508,color:#fff
-    style Verify fill:#5a6270,stroke:#5b3590,color:#fff
+    style Prepare fill:#5a6878,stroke:#155a85,color:#fff
+    style Execute fill:#5a6878,stroke:#14693e,color:#fff
+    style Recover fill:#5a6878,stroke:#946208,color:#fff
+    style Verify fill:#5a6878,stroke:#5b3590,color:#fff
 ```
 
 ### Pattern 1: Context First

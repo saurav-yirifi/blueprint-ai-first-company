@@ -19,6 +19,20 @@
   <meta name="twitter:creator" content="@sauravbhats" />
   <meta name="twitter:title" content="{{ page.title }} | {{ config.site_name }}" />
   <meta name="twitter:description" content="{{ config.site_description }}" />
+
+  <!-- Force Mermaid shadow roots to open so our post-processor can access SVG internals.
+       Must run before Material's bundle.js which renders Mermaid with closed shadow DOM. -->
+  <script>
+    (function() {
+      var orig = Element.prototype.attachShadow;
+      Element.prototype.attachShadow = function(init) {
+        if (this.classList && this.classList.contains('mermaid')) {
+          init = Object.assign({}, init, { mode: 'open' });
+        }
+        return orig.call(this, init);
+      };
+    })();
+  </script>
 {% endblock %}
 
 {% block content %}
@@ -67,6 +81,211 @@
   </script>
 
   {{ super() }}
+
+  <!-- Mermaid dual-mode color post-processor.
+       Markdown contains hardcoded dark-mode hex (works on GitHub too).
+       This JS swaps fills/strokes/text to soft pastels in light mode.
+       Material 9.x renders Mermaid inside shadow DOM; the extrahead
+       script forces mode:"open" so we can access SVG internals here. -->
+  <script>
+    (function() {
+      // ── Dark-mode hex → semantic group ──────────────────────────
+      var FILL_MAP = {
+        '#1e6fa5':'info',
+        '#1a8a52':'success',
+        '#c77d0a':'warning', '#b87a0a':'warning',
+        '#c03030':'danger',  '#b52c2c':'danger',
+        '#7345b0':'purple',
+        '#5a6270':'neutral', '#5a6878':'neutral'
+      };
+      var STROKE_MAP = {
+        '#155a85':'info',
+        '#14693e':'success',
+        '#a06508':'warning', '#946208':'warning',
+        '#9a2020':'danger',  '#921e1e':'danger',
+        '#5b3590':'purple',
+        '#454d58':'neutral', '#47525f':'neutral'
+      };
+
+      // ── Light palette (soft pastels + hue-matched dark text) ────
+      var LIGHT = {
+        info:    { fill:'#d4e8f5', stroke:'#a8c8de', text:'#1a5a88' },
+        success: { fill:'#d2eddf', stroke:'#a4d4bb', text:'#166e42' },
+        warning: { fill:'#f5e6cc', stroke:'#e0c89a', text:'#8a5500' },
+        danger:  { fill:'#f5d4d4', stroke:'#dea8a8', text:'#962424' },
+        purple:  { fill:'#e4d8f2', stroke:'#c4ade0', text:'#5c3890' },
+        neutral: { fill:'#e2e4e8', stroke:'#c5c9d0', text:'#3a424e' }
+      };
+      // Dark palette (restore originals — white text on saturated fills)
+      var DARK = {
+        info:    { fill:'#1e6fa5', stroke:'#155a85', text:'#fff' },
+        success: { fill:'#1a8a52', stroke:'#14693e', text:'#fff' },
+        warning: { fill:'#b87a0a', stroke:'#946208', text:'#fff' },
+        danger:  { fill:'#b52c2c', stroke:'#921e1e', text:'#fff' },
+        purple:  { fill:'#7345b0', stroke:'#5b3590', text:'#fff' },
+        neutral: { fill:'#5a6878', stroke:'#47525f', text:'#fff' }
+      };
+
+      // ── Helpers ─────────────────────────────────────────────────
+      function rgbToHex(rgb) {
+        if (!rgb || rgb === 'none' || rgb === 'transparent') return '';
+        if (rgb.charAt(0) === '#') return rgb.toLowerCase();
+        var m = rgb.match(/(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);
+        if (!m) return '';
+        return '#' + ((1<<24) + (+m[1]<<16) + (+m[2]<<8) + +m[3]).toString(16).slice(1);
+      }
+
+      function getColor(el, prop) {
+        // Prefer computed style — it reflects the FINAL applied value
+        // including classDef CSS rules that override SVG fill attributes.
+        // Without this, classDef fills are missed because getAttribute()
+        // returns Mermaid's default fill (e.g. #ececff) not the classDef one.
+        try {
+          var computed = window.getComputedStyle(el)[prop];
+          if (computed && computed !== 'none' && computed !== 'transparent') {
+            return rgbToHex(computed);
+          }
+        } catch(e) {}
+        var val = el.style[prop];
+        if (!val || val === 'none') val = el.getAttribute(prop);
+        return rgbToHex(val || '');
+      }
+
+      function isLightMode() {
+        return document.body.getAttribute('data-md-color-scheme') === 'default';
+      }
+
+      // ── Get SVGs from shadow roots inside .mermaid containers ───
+      function getMermaidSvgs() {
+        var svgs = [];
+        var containers = document.querySelectorAll('div.mermaid');
+        for (var i = 0; i < containers.length; i++) {
+          var sr = containers[i].shadowRoot;
+          if (sr) {
+            var svg = sr.querySelector('svg');
+            if (svg) svgs.push(svg);
+          }
+        }
+        return svgs;
+      }
+
+      // ── Tag one SVG: find shapes with known fills/strokes ───────
+      function tagSvg(svg) {
+        if (svg.hasAttribute('data-bp-tagged')) return;
+        var shapes = svg.querySelectorAll('.node rect, .node circle, .node polygon, .node path, .node .label-container');
+        for (var i = 0; i < shapes.length; i++) {
+          var el = shapes[i];
+          if (el.hasAttribute('data-bp-group')) continue;
+          var fill = getColor(el, 'fill');
+          if (fill && FILL_MAP[fill]) {
+            el.setAttribute('data-bp-fill', fill);
+            el.setAttribute('data-bp-group', FILL_MAP[fill]);
+          }
+          var stroke = getColor(el, 'stroke');
+          if (stroke && STROKE_MAP[stroke]) {
+            el.setAttribute('data-bp-stroke', stroke);
+            if (!el.hasAttribute('data-bp-group')) {
+              el.setAttribute('data-bp-group', STROKE_MAP[stroke]);
+            }
+          }
+        }
+        var styled = svg.querySelectorAll('[style]');
+        for (var j = 0; j < styled.length; j++) {
+          var s = styled[j];
+          if (s.hasAttribute('data-bp-group')) continue;
+          var sf = rgbToHex(s.style.fill || '');
+          if (sf && FILL_MAP[sf]) {
+            s.setAttribute('data-bp-fill', sf);
+            s.setAttribute('data-bp-group', FILL_MAP[sf]);
+          }
+          var ss = rgbToHex(s.style.stroke || '');
+          if (ss && STROKE_MAP[ss]) {
+            s.setAttribute('data-bp-stroke', ss);
+            if (!s.hasAttribute('data-bp-group')) {
+              s.setAttribute('data-bp-group', STROKE_MAP[ss]);
+            }
+          }
+        }
+        svg.setAttribute('data-bp-tagged', '1');
+      }
+
+      // ── Apply light or dark palette to one SVG ──────────────────
+      function applySvgTheme(svg) {
+        var light = isLightMode();
+        var pal = light ? LIGHT : DARK;
+        var tagged = svg.querySelectorAll('[data-bp-group]');
+        for (var i = 0; i < tagged.length; i++) {
+          var el = tagged[i];
+          var group = el.getAttribute('data-bp-group');
+          var colors = pal[group];
+          if (!colors) continue;
+          el.style.fill = colors.fill;
+          if (el.hasAttribute('data-bp-stroke')) {
+            el.style.stroke = colors.stroke;
+          }
+          var node = el.closest('.node') || el.parentElement;
+          if (node) {
+            var labels = node.querySelectorAll('.nodeLabel');
+            for (var k = 0; k < labels.length; k++) {
+              labels[k].style.setProperty('color', colors.text, 'important');
+            }
+          }
+        }
+        // Subtitle nodes
+        var subs = svg.querySelectorAll('.subtitle .nodeLabel, [class*="subtitle"] .nodeLabel');
+        for (var m = 0; m < subs.length; m++) {
+          subs[m].style.setProperty('color', light ? '#4a5260' : '#fff', 'important');
+        }
+      }
+
+      // ── Process all Mermaid SVGs (via shadow roots) ─────────────
+      function processAll() {
+        var svgs = getMermaidSvgs();
+        for (var i = 0; i < svgs.length; i++) {
+          tagSvg(svgs[i]);
+          applySvgTheme(svgs[i]);
+        }
+      }
+
+      function processAllFresh() {
+        var svgs = getMermaidSvgs();
+        for (var i = 0; i < svgs.length; i++) {
+          svgs[i].removeAttribute('data-bp-tagged');
+        }
+        processAll();
+      }
+
+      // ── Observers ───────────────────────────────────────────────
+      // Theme toggle
+      new MutationObserver(function(muts) {
+        for (var i = 0; i < muts.length; i++) {
+          if (muts[i].attributeName === 'data-md-color-scheme') {
+            processAll();
+          }
+        }
+      }).observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
+
+      // DOM changes — catch Mermaid containers appearing
+      new MutationObserver(function() {
+        processAll();
+      }).observe(document.documentElement, { childList: true, subtree: true });
+
+      // Material SPA navigation
+      if (typeof document$ !== 'undefined') {
+        document$.subscribe(function() {
+          setTimeout(processAllFresh, 200);
+          setTimeout(processAllFresh, 800);
+          setTimeout(processAllFresh, 2000);
+        });
+      }
+
+      // Initial run with retries for async Mermaid rendering
+      processAll();
+      setTimeout(processAll, 500);
+      setTimeout(processAll, 1500);
+      setTimeout(processAll, 4000);
+    })();
+  </script>
 
   {% if page and page.meta.get("comments", true) != false %}
   <!-- Share Buttons -->

@@ -44,7 +44,7 @@ flowchart TB
     DataPlane -->|Telemetry + Status| ControlPlane
 
     style ControlPlane fill:#1e6fa5
-    style DataPlane fill:#c77d0a
+    style DataPlane fill:#b87a0a
 ```
 
 ### Three Implementation Patterns

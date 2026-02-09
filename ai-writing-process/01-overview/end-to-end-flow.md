@@ -10,28 +10,28 @@ This document maps the complete pipeline. Eight phases, from encoding your voice
 
 ```mermaid
 flowchart TD
-    A["1. Voice System Setup\n(Encode author voice into 6 reference files)"] --> B["2. Vault Architecture\n(Obsidian: parts / chapters / sections)"]
-    B --> C["3. Research Pipeline\n(Perplexity prompts → automated search → synthesis)"]
-    C --> D["4. Prompt Engineering\n(Master system prompt + 26 specialized prompts)"]
-    D --> E["5. Writing\n(Multi-agent: research reader → writer → reviewer)"]
-    E --> F["6. Quality Audit\n(Voice, citations, openings, links, terms)"]
-    F --> G["7. Editorial Review\n(4-phase: developmental → line → copy → final)"]
-    G --> H["8. Publication Prep\n(PDF generation, bibliography, final fixes)"]
+    A["1. Voice System Setup<br/>(Encode author voice into 6 reference files)"] --> B["2. Vault Architecture<br/>(Obsidian: parts / chapters / sections)"]
+    B --> C["3. Research Pipeline<br/>(Perplexity prompts → automated search → synthesis)"]
+    C --> D["4. Prompt Engineering<br/>(Master system prompt + 26 specialized prompts)"]
+    D --> E["5. Writing<br/>(Multi-agent: research reader → writer → reviewer)"]
+    E --> F["6. Quality Audit<br/>(Voice, citations, openings, links, terms)"]
+    F --> G["7. Editorial Review<br/>(4-phase: developmental → line → copy → final)"]
+    G --> H["8. Publication Prep<br/>(PDF generation, bibliography, final fixes)"]
 
-    style A fill:#5a6270,stroke:#9a2020,color:#fff
-    style B fill:#5a6270,stroke:#9a2020,color:#fff
+    style A fill:#5a6878,stroke:#921e1e,color:#fff
+    style B fill:#5a6878,stroke:#921e1e,color:#fff
     style C fill:#1e6fa5,stroke:#155a85,color:#fff
     style D fill:#1e6fa5,stroke:#155a85,color:#fff
     style E fill:#1e6fa5,stroke:#5b3590,color:#fff
     style F fill:#1e6fa5,stroke:#5b3590,color:#fff
-    style G fill:#7345b0,stroke:#9a2020,color:#fff
-    style H fill:#7345b0,stroke:#9a2020,color:#fff
+    style G fill:#7345b0,stroke:#921e1e,color:#fff
+    style H fill:#7345b0,stroke:#921e1e,color:#fff
 ```
 
 ```mermaid
 graph LR
     subgraph Voice ["Voice System"]
-        VF["Author Voice Files\n(6 reference docs)"]
+        VF["Author Voice Files<br/>(6 reference docs)"]
     end
 
     subgraph Prompts ["Prompt Layer"]
@@ -51,7 +51,7 @@ graph LR
     end
 
     subgraph Quality ["Quality Pipeline"]
-        QS["Quality Skills\n(voice, citations,\nlinks, terms, openings)"]
+        QS["Quality Skills<br/>(voice, citations,<br/>links, terms, openings)"]
         RD["Review Dashboard"]
         EP["4-Phase Editorial"]
     end
@@ -75,11 +75,11 @@ graph LR
     EP --> OV
     OV --> BIA
 
-    style VF fill:#c03030,stroke:#454d58,color:#fff
-    style MSP fill:#1e6fa5,stroke:#454d58,color:#fff
-    style WA fill:#7345b0,stroke:#454d58,color:#fff
-    style RA fill:#7345b0,stroke:#454d58,color:#fff
-    style OV fill:#1e6fa5,stroke:#9a2020,color:#fff
+    style VF fill:#b52c2c,stroke:#47525f,color:#fff
+    style MSP fill:#1e6fa5,stroke:#47525f,color:#fff
+    style WA fill:#7345b0,stroke:#47525f,color:#fff
+    style RA fill:#7345b0,stroke:#47525f,color:#fff
+    style OV fill:#1e6fa5,stroke:#921e1e,color:#fff
 ```
 
 ---

@@ -50,11 +50,11 @@ flowchart TD
     Q5 -->|No| Exit5([Stabilize<br/>Process First])
     Q5 -->|Yes| Proceed([Proceed with<br/>Agent])
 
-    style Exit1 fill:#c03030
-    style Exit2 fill:#c03030
-    style Exit3 fill:#c03030
-    style Exit4 fill:#c03030
-    style Exit5 fill:#c03030
+    style Exit1 fill:#b52c2c
+    style Exit2 fill:#b52c2c
+    style Exit3 fill:#b52c2c
+    style Exit4 fill:#b52c2c
+    style Exit5 fill:#b52c2c
     style Proceed fill:#1a8a52
 ```
 

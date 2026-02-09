@@ -24,9 +24,9 @@ flowchart TD
     Q5 -->|No| STRONG["Strong Moat<br/>(Years)"]
     Q5 -->|Yes| SYSTEMS["Systems Moat<br/>(May be impossible)"]
 
-    style WEAK fill:#c03030,stroke:#9a2020
-    style FRAGILE fill:#c03030,stroke:#9a2020
-    style MEDIUM fill:#c77d0a,stroke:#a06508
+    style WEAK fill:#b52c2c,stroke:#921e1e
+    style FRAGILE fill:#b52c2c,stroke:#921e1e
+    style MEDIUM fill:#b87a0a,stroke:#946208
     style STRONG fill:#1a8a52,stroke:#14693e
     style SYSTEMS fill:#1a8a52,stroke:#14693e,stroke-width:3px
 ```

@@ -22,7 +22,8 @@ flowchart TD
     C --> E[Harvey, Glean, Perplexity]
     D --> F[Notion AI, GrammarlyGO, Einstein GPT]
 
-    style B fill:#c77d0a,color:#fff,stroke:#a06508
+    style A fill:#b87a0a,color:#fff,stroke:#946208
+    style B fill:#b87a0a,color:#fff,stroke:#946208
     style C fill:#1a8a52,color:#fff,stroke:#14693e
     style D fill:#7345b0,color:#fff,stroke:#5b3590
     style E fill:#1a8a52,color:#fff,stroke:#14693e

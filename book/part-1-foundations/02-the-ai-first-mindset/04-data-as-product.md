@@ -22,9 +22,9 @@ flowchart LR
     D --> A
 
     style A fill:#1e6fa5
-    style B fill:#c77d0a
+    style B fill:#b87a0a
     style C fill:#1a8a52
-    style D fill:#c03030
+    style D fill:#b52c2c
 ```
 
 ---

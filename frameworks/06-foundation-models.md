@@ -16,21 +16,21 @@ Understanding these distinctions isn't academic. It is the difference between a 
 
 ```mermaid
 flowchart TD
-    UC{What is your\nprimary use case?}
+    UC{What is your<br/>primary use case?}
 
     CODE[Code and Reasoning]
     CREATIVE[Creative and Multimodal]
     LONGDOC[Long Documents and Video]
     BUDGET[Budget Workloads]
 
-    CLAUDE[Claude\n97.8% security compliance\nAnalytical reasoning]
-    GPT[GPT\n85.4% MMMU\nCreative synthesis]
-    GEMINI[Gemini\n2M token context\nVideo analysis]
-    DEEPSEEK[DeepSeek\n$0.07/M tokens cached\nRequires security controls]
+    CLAUDE[Claude<br/>97.8% security compliance<br/>Analytical reasoning]
+    GPT[GPT<br/>85.4% MMMU<br/>Creative synthesis]
+    GEMINI[Gemini<br/>2M token context<br/>Video analysis]
+    DEEPSEEK[DeepSeek<br/>$0.07/M tokens cached<br/>Requires security controls]
 
-    COST{Cost above\n$50K/year?}
-    API[Use Closed APIs\nFastest to production]
-    HYBRID[Consider Hybrid\nOpen and Closed mix]
+    COST{Cost above<br/>$50K/year?}
+    API[Use Closed APIs<br/>Fastest to production]
+    HYBRID[Consider Hybrid<br/>Open and Closed mix]
 
     UC --> CODE --> CLAUDE
     UC --> CREATIVE --> GPT
@@ -44,21 +44,19 @@ flowchart TD
     COST -- Under $50K --> API
     COST -- Over $50K --> HYBRID
 
-    classDef decision fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef usecase fill:#5a6270,stroke:#454d58,color:#fff
-    classDef claude fill:#7345b0,stroke:#5b3590,color:#fff
-    classDef gpt fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef gemini fill:#c77d0a,stroke:#a06508,color:#fff
-    classDef deepseek fill:#c03030,stroke:#9a2020,color:#fff
-    classDef outcome fill:#1e6fa5,stroke:#155a85,color:#fff
+    style API fill:#1e6fa5,stroke:#155a85,color:#fff
+    style BUDGET fill:#5a6878,stroke:#47525f,color:#fff
+    style CLAUDE fill:#7345b0,stroke:#5b3590,color:#fff
+    style CODE fill:#5a6878,stroke:#47525f,color:#fff
+    style COST fill:#1e6fa5,stroke:#155a85,color:#fff
+    style CREATIVE fill:#5a6878,stroke:#47525f,color:#fff
+    style DEEPSEEK fill:#b52c2c,stroke:#921e1e,color:#fff
+    style GEMINI fill:#b87a0a,stroke:#946208,color:#fff
+    style GPT fill:#1a8a52,stroke:#14693e,color:#fff
+    style HYBRID fill:#1e6fa5,stroke:#155a85,color:#fff
+    style LONGDOC fill:#5a6878,stroke:#47525f,color:#fff
+    style UC fill:#1e6fa5,stroke:#155a85,color:#fff
 
-    class UC,COST decision
-    class CODE,CREATIVE,LONGDOC,BUDGET usecase
-    class CLAUDE claude
-    class GPT gpt
-    class GEMINI gemini
-    class DEEPSEEK deepseek
-    class API,HYBRID outcome
 ```
 
 ### Model Strengths and Weaknesses

@@ -69,7 +69,7 @@ flowchart TD
     style Chat1 fill:#1e6fa5
     style Chat2 fill:#1e6fa5
     style Chat3 fill:#1e6fa5
-    style Background fill:#c77d0a
+    style Background fill:#b87a0a
     style Hybrid fill:#7345b0
     style Either fill:#1a8a52
 ```
@@ -97,7 +97,7 @@ flowchart LR
 
     Create -->|Incident + Data| Context
 
-    style Background fill:#c77d0a
+    style Background fill:#b87a0a
     style Chat fill:#1e6fa5
 ```
 

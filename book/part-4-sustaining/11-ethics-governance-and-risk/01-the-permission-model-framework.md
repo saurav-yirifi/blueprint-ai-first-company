@@ -8,19 +8,22 @@ At Yirifi, we run three permission modes: AI does everything automatically, AI o
 
 ```mermaid
 flowchart LR
-    subgraph AUTO["<b>Auto Mode</b><br/>AI Acts Autonomously"]
+    subgraph AUTO["<b>Auto Mode</b>"]
+        AUTOS["<i>AI Acts Autonomously</i>"]:::subtitle
         A1[Document Classification]
         A2[Read-Only Analytics]
         A3[Status Checks]
     end
 
-    subgraph APPROVED["<b>Approved-Tools Mode</b><br/>Restricted Operations"]
+    subgraph APPROVED["<b>Approved-Tools Mode</b>"]
+        APPROVEDS["<i>Restricted Operations</i>"]:::subtitle
         B1[Retrieve Data]
         B2[Generate Reports]
         B3[Tool Calls Within Bounds]
     end
 
-    subgraph ASK["<b>Ask-Every-Time Mode</b><br/>Human Approval Required"]
+    subgraph ASK["<b>Ask-Every-Time Mode</b>"]
+        ASKS["<i>Human Approval Required</i>"]:::subtitle
         C1[Financial Transactions]
         C2[Medical Diagnoses]
         C3[Public Communications]
@@ -29,9 +32,10 @@ flowchart LR
     AUTO -.->|"Higher Stakes"| APPROVED
     APPROVED -.->|"Irreversible Actions"| ASK
 
-    style AUTO fill:#1a8a52,stroke:#454d58
-    style APPROVED fill:#c77d0a,stroke:#454d58
-    style ASK fill:#c03030,stroke:#454d58
+    style AUTO fill:#1a8a52,stroke:#47525f
+    style APPROVED fill:#b87a0a,stroke:#47525f
+    style ASK fill:#b52c2c,stroke:#47525f
+    classDef subtitle fill:none,stroke:none,color:#fff,font-size:1.1em
 ```
 
 ### Mode 1: Auto (AI Acts Autonomously)
@@ -100,10 +104,10 @@ flowchart TB
 
     AUTO -.->|"Incident occurs"| INCIDENT
 
-    style ASK fill:#c03030,stroke:#454d58
-    style TOOLS fill:#c77d0a,stroke:#454d58
-    style AUTO fill:#1a8a52,stroke:#454d58
-    style INCIDENT fill:#c03030,stroke:#9a2020
+    style ASK fill:#b52c2c,stroke:#47525f
+    style TOOLS fill:#b87a0a,stroke:#47525f
+    style AUTO fill:#1a8a52,stroke:#47525f
+    style INCIDENT fill:#b52c2c,stroke:#921e1e
 ```
 
 Start every new AI system in Ask-Every-Time. After 30+ days without significant errors, graduate to Approved-Tools. After consistent performance, specific operations move to Auto. Skipping levels means you haven't calibrated boundaries or discovered edge cases.

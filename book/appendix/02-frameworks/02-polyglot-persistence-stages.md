@@ -58,7 +58,7 @@ flowchart TB
 
     style PG fill:#1e6fa5,stroke:#155a85
     style MONGO fill:#1e6fa5,stroke:#155a85
-    style REDIS fill:#c77d0a,stroke:#a06508
+    style REDIS fill:#b87a0a,stroke:#946208
     style VEC fill:#1a8a52,stroke:#14693e
 ```
 

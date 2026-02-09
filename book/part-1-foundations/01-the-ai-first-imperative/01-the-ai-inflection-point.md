@@ -20,8 +20,8 @@ flowchart TB
     B -->|"10x cheaper"| C
     C["With Caching<br/>$0.028 per M tokens"]
 
-    style A fill:#c03030,color:#fff
-    style B fill:#c77d0a,color:#fff
+    style A fill:#b52c2c,color:#fff
+    style B fill:#b87a0a,color:#fff
     style C fill:#1a8a52,color:#fff
 ```
 
@@ -61,6 +61,12 @@ flowchart TB
         C3["Plain English"]
     end
 
+    style P1 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style P2 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style P3 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style C1 fill:#1a8a52,stroke:#14693e,color:#fff
+    style C2 fill:#1a8a52,stroke:#14693e,color:#fff
+    style C3 fill:#1a8a52,stroke:#14693e,color:#fff
 ```
 
 ## The Small Team Advantage

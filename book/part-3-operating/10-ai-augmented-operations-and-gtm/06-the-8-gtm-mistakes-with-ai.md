@@ -36,9 +36,9 @@ flowchart TB
 
     COMMON --> FAIL["95% of AI pilots fail<br/>88% of companies fail at AI"]
 
-    style MISTAKES fill:#c77d0a,stroke:#a06508
-    style COMMON fill:#c03030,stroke:#9a2020
-    style FAIL fill:#c03030,stroke:#9a2020
+    style MISTAKES fill:#b87a0a,stroke:#946208
+    style COMMON fill:#b52c2c,stroke:#921e1e
+    style FAIL fill:#b52c2c,stroke:#921e1e
 ```
 
 ## Mistake 1: Over-Automating Relationships
@@ -90,9 +90,9 @@ flowchart TB
 
     OUTCOMES --> PARADOX["AI meant to reduce workload<br/>ADDS to workload when<br/>not properly integrated"]
 
-    style SPRAWL fill:#c77d0a,stroke:#a06508
-    style OUTCOMES fill:#c03030,stroke:#9a2020
-    style PARADOX fill:#c03030,stroke:#9a2020
+    style SPRAWL fill:#b87a0a,stroke:#946208
+    style OUTCOMES fill:#b52c2c,stroke:#921e1e
+    style PARADOX fill:#b52c2c,stroke:#921e1e
 ```
 
 ## Mistake 4: Chasing Volume Over Quality

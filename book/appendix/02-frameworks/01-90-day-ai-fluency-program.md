@@ -10,24 +10,27 @@ This isn't theory. Microsoft's internal programs achieved 85% training completio
 
 ```mermaid
 flowchart LR
-    subgraph PHASE1["<b>Days 1-30</b><br/>Foundation"]
+    subgraph PHASE1["<b>Days 1-30</b>"]
         direction TB
+        PHASE1S["<i>Foundation</i>"]:::subtitle
         F1[Tool setup]
         F2[Low-stakes projects]
         F3[Weekly office hours]
         F4[Learn limitations]
     end
 
-    subgraph PHASE2["<b>Days 31-60</b><br/>Integration"]
+    subgraph PHASE2["<b>Days 31-60</b>"]
         direction TB
+        PHASE2S["<i>Integration</i>"]:::subtitle
         I1[Domain-specific use cases]
         I2[Build prompt libraries]
         I3[Peer learning sessions]
         I4[Show-and-tell demos]
     end
 
-    subgraph PHASE3["<b>Days 61-90</b><br/>Mastery"]
+    subgraph PHASE3["<b>Days 61-90</b>"]
         direction TB
+        PHASE3S["<i>Mastery</i>"]:::subtitle
         M1[Complex multi-step tasks]
         M2[Agent building]
         M3[Automation pipelines]
@@ -37,9 +40,10 @@ flowchart LR
     PHASE1 -->|"Build confidence"| PHASE2
     PHASE2 -->|"Build capability"| PHASE3
 
-    style PHASE1 fill:#c77d0a,stroke:#a06508
+    style PHASE1 fill:#b87a0a,stroke:#946208
     style PHASE2 fill:#1e6fa5,stroke:#155a85
     style PHASE3 fill:#1a8a52,stroke:#14693e
+    classDef subtitle fill:none,stroke:none,color:#fff,font-size:1.1em
 ```
 
 ## Days 1-30: Foundation
@@ -144,7 +148,7 @@ flowchart TB
 
     style ADOPTION fill:#1e6fa5,stroke:#155a85
     style PRODUCTIVITY fill:#1a8a52,stroke:#14693e
-    style QUALITY fill:#c77d0a,stroke:#a06508
+    style QUALITY fill:#b87a0a,stroke:#946208
     style RETENTION fill:#7345b0,stroke:#5b3590
 ```
 

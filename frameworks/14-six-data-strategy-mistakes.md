@@ -20,25 +20,26 @@ flowchart TD
     M4["4. No Observability"]
     M5["5. Economic Unfeasibility"]
     M6["6. Single-Point Dependencies"]
-    FAIL["Flywheel Stalls\n92% failure rate"]
-    FIX["Recovery Path\nDiagnose → Simplify → Validate"]
+    FAIL["Flywheel Stalls<br/>92% failure rate"]
+    FIX["Recovery Path<br/>Diagnose → Simplify → Validate"]
 
-    M1 -->|"wasted infra\non unwanted product"| M3
-    M1 -->|"no signal\nto optimize"| M2
-    M2 -->|"garbage\ncompounds"| M4
-    M3 -->|"complexity\nhides problems"| M4
-    M4 -->|"silent drift\ngoes undetected"| M5
-    M5 -->|"margins collapse,\nlock-in deepens"| M6
+    M1 -->|"wasted infra<br/>on unwanted product"| M3
+    M1 -->|"no signal<br/>to optimize"| M2
+    M2 -->|"garbage<br/>compounds"| M4
+    M3 -->|"complexity<br/>hides problems"| M4
+    M4 -->|"silent drift<br/>goes undetected"| M5
+    M5 -->|"margins collapse,<br/>lock-in deepens"| M6
     M6 --> FAIL
     FIX -.->|"Stitch Fix: 12-18 months"| M1
 
-    classDef mistake fill:#c03030,stroke:#9a2020,color:#fff
-    classDef fail fill:#5a6270,stroke:#c03030,color:#fff
-    classDef fix fill:#1a8a52,stroke:#14693e,color:#fff
-
-    class M1,M2,M3,M4,M5,M6 mistake
-    class FAIL fail
-    class FIX fix
+    style M1 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style M2 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style M3 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style M4 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style M5 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style M6 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style FAIL fill:#5a6878,stroke:#921e1e,color:#fff
+    style FIX fill:#1a8a52,stroke:#14693e,color:#fff
 ```
 
 ### Mistake 1: Building the Flywheel Before Product-Market Fit

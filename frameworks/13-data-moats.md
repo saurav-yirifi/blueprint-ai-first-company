@@ -18,17 +18,17 @@ Both things can be true: data moats are weaker than they were, and data still ma
 
 ```mermaid
 flowchart TD
-    Q1{1. Can a competitor\nbuy this data?}
-    Q2{2. Can they\nscrape it?}
-    Q3{3. Can they\npartner for it?}
-    Q4{4. Does usage\ngenerate more?}
-    Q5{5. Is it embedded\nin workflows?}
+    Q1{1. Can a competitor<br/>buy this data?}
+    Q2{2. Can they<br/>scrape it?}
+    Q3{3. Can they<br/>partner for it?}
+    Q4{4. Does usage<br/>generate more?}
+    Q5{5. Is it embedded<br/>in workflows?}
 
-    W[Weak Moat\nDays to weeks to replicate]
-    F[Fragile Moat\nWeeks to months]
-    M[Medium Moat\nMonths to replicate]
-    S[Strong Moat\nYears to replicate]
-    SY[Systems Moat\nMay be impossible to replicate]
+    W[Weak Moat<br/>Days to weeks to replicate]
+    F[Fragile Moat<br/>Weeks to months]
+    M[Medium Moat<br/>Months to replicate]
+    S[Strong Moat<br/>Years to replicate]
+    SY[Systems Moat<br/>May be impossible to replicate]
 
     Q1 -- Yes --> W
     Q1 -- No --> Q2
@@ -41,19 +41,17 @@ flowchart TD
     Q5 -- No --> S
     Q5 -- Yes --> SY
 
-    classDef question fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef weak fill:#c03030,stroke:#9a2020,color:#fff
-    classDef fragile fill:#c77d0a,stroke:#a06508,color:#fff
-    classDef medium fill:#c77d0a,stroke:#a06508,color:#fff
-    classDef strong fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef systems fill:#1a8a52,stroke:#14693e,color:#fff
+    style F fill:#b87a0a,stroke:#946208,color:#fff
+    style M fill:#b87a0a,stroke:#946208,color:#fff
+    style Q1 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style Q2 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style Q3 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style Q4 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style Q5 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style S fill:#1a8a52,stroke:#14693e,color:#fff
+    style SY fill:#1a8a52,stroke:#14693e,color:#fff
+    style W fill:#b52c2c,stroke:#921e1e,color:#fff
 
-    class Q1,Q2,Q3,Q4,Q5 question
-    class W weak
-    class F fragile
-    class M medium
-    class S strong
-    class SY systems
 ```
 
 Every data asset you think creates competitive advantage should pass this test:

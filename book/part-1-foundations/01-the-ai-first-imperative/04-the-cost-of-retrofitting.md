@@ -22,7 +22,7 @@ flowchart LR
         N2 --> N3["Iteration from day one"]
     end
 
-    style retrofit fill:#c03030,color:#fff
+    style retrofit fill:#b52c2c,color:#fff
     style native fill:#1a8a52,color:#fff
 ```
 
@@ -101,7 +101,7 @@ flowchart TB
     A --> A2["Fastest capability"]
     A --> A3["Highest capital cost"]
 
-    style R fill:#c77d0a,color:#fff
+    style R fill:#b87a0a,color:#fff
     style B fill:#1a8a52,color:#fff
     style A fill:#1e6fa5,color:#fff
 ```

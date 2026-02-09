@@ -45,7 +45,7 @@ flowchart TD
     Q3 -->|No| FAIL
 
     style WIN fill:#1a8a52,stroke:#14693e
-    style FAIL fill:#c03030,stroke:#9a2020
+    style FAIL fill:#b52c2c,stroke:#921e1e
     style M1 fill:#1e6fa5,stroke:#155a85
     style M2 fill:#1e6fa5,stroke:#155a85
     style M3 fill:#1e6fa5,stroke:#155a85

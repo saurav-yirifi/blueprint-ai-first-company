@@ -81,7 +81,7 @@ flowchart TB
     S2 --> ALL
     S3 --> ALL
 
-    style TODAY fill:#c77d0a,stroke:#a06508
+    style TODAY fill:#b87a0a,stroke:#946208
     style TOMORROW fill:#1a8a52,stroke:#14693e
     style ALL fill:#1e6fa5,stroke:#155a85,stroke-width:2px
 ```

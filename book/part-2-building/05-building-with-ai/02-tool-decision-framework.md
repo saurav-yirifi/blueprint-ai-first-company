@@ -38,8 +38,8 @@ graph TB
 
     style AC fill:#1a8a52,stroke:#14693e
     style CH fill:#1e6fa5,stroke:#155a85
-    style IDE fill:#c77d0a,stroke:#a06508
-    style CLI fill:#c03030,stroke:#9a2020
+    style IDE fill:#b87a0a,stroke:#946208
+    style CLI fill:#b52c2c,stroke:#921e1e
 ```
 
 *Figure: The four AI coding tool categories. Match the tool to the task—different workflows have different requirements.*

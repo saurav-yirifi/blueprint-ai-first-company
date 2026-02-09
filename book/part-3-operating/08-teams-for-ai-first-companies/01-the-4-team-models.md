@@ -12,7 +12,7 @@ What these look like in practice.
 flowchart TB
     subgraph EMBEDDED["<b>Embedded AI</b>"]
         direction LR
-        ES[ <i>Speed Through Context</i> ]:::subtitle
+        ES["<i>Speed Through Context</i>"]:::subtitle
         E1[AI specialists inside product teams]
         E2[Report to product leads]
         E3[Same OKRs as product]
@@ -20,7 +20,7 @@ flowchart TB
 
     subgraph PLATFORM["<b>Platform AI</b>"]
         direction LR
-        PS[ <i>Consistency Through Centralization</i> ]:::subtitle
+        PS["<i>Consistency Through Centralization</i>"]:::subtitle
         P1[Central team serves all]
         P2[Owns infrastructure]
         P3[Sets standards]
@@ -28,7 +28,7 @@ flowchart TB
 
     subgraph HYBRID["<b>Hybrid</b>"]
         direction LR
-        HS[ <i>Best of Both</i> ]:::subtitle
+        HS["<i>Best of Both</i>"]:::subtitle
         H1[Central infrastructure]
         H2[Embedded domain experts]
         H3[Coordination protocols]
@@ -36,7 +36,7 @@ flowchart TB
 
     subgraph EVERYONE["<b>Everyone-AI</b>"]
         direction LR
-        VS[ <i>AI-Native Model</i> ]:::subtitle
+        VS["<i>AI-Native Model</i>"]:::subtitle
         V1[AI is core competency]
         V2[No AI specialists]
         V3[Every role uses AI directly]
@@ -46,9 +46,9 @@ flowchart TB
     PLATFORM -.->|"Risk: Bottlenecks"| HYBRID
     HYBRID -.->|"Risk: Coordination tax"| EVERYONE
 
-    classDef subtitle fill:none,stroke:none,color:#fff,font-size:0.9em
+    classDef subtitle fill:none,stroke:none,color:#fff,font-size:1.1em
     style EMBEDDED fill:#1e6fa5,stroke:#155a85
-    style PLATFORM fill:#c77d0a,stroke:#a06508
+    style PLATFORM fill:#b87a0a,stroke:#946208
     style HYBRID fill:#7345b0,stroke:#5b3590
     style EVERYONE fill:#1a8a52,stroke:#14693e
 ```
@@ -119,7 +119,7 @@ flowchart TD
     MAT -->|Strategic| HYB2[<b>Hybrid</b><br/>Distribute with governance]
     MAT -->|Mature + AI-native| EVERY[<b>Everyone-AI</b><br/>If culture supports it]
 
-    style CENTRAL fill:#c77d0a,stroke:#a06508
+    style CENTRAL fill:#b87a0a,stroke:#946208
     style EMB fill:#1e6fa5,stroke:#155a85
     style HYB fill:#7345b0,stroke:#5b3590
     style HYB2 fill:#7345b0,stroke:#5b3590

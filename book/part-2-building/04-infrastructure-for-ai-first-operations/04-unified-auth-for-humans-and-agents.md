@@ -65,8 +65,8 @@ flowchart LR
     AUDIT["📋 Audit Log:<br/>Alice → Scheduling Agent → Room Agent → Calendar"]
 
     style ALICE fill:#1e6fa5,stroke:#155a85
-    style SCHED fill:#c77d0a,stroke:#a06508
-    style ROOM fill:#c77d0a,stroke:#a06508
+    style SCHED fill:#b87a0a,stroke:#946208
+    style ROOM fill:#b87a0a,stroke:#946208
     style CAL fill:#1a8a52,stroke:#14693e
 ```
 

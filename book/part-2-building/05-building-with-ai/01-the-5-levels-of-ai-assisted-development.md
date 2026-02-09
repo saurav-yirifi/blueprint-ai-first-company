@@ -32,8 +32,8 @@ graph TB
 
     style L1 fill:#1a8a52,stroke:#14693e
     style L2 fill:#1e6fa5,stroke:#155a85
-    style L3 fill:#c77d0a,stroke:#a06508
-    style L4 fill:#c03030,stroke:#9a2020
+    style L3 fill:#b87a0a,stroke:#946208
+    style L4 fill:#b52c2c,stroke:#921e1e
     style L5 fill:#7345b0,stroke:#5b3590
 ```
 

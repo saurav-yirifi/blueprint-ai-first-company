@@ -13,7 +13,7 @@ flowchart TB
         F1[Separate Repositories] --> F2[Lockstep Deploys]
         F2 --> F3[Shared Databases]
         F3 --> F4["Distributed Monolith"]
-        style F4 fill:#c03030,stroke:#9a2020
+        style F4 fill:#b52c2c,stroke:#921e1e
     end
 
     subgraph SUCCESS["10% Who Succeed"]

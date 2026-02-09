@@ -60,17 +60,18 @@ flowchart TD
     E -->|Low| J["Show options, no recommendation"]
     E -->|High| K["Graceful degradation"]
 
-    classDef green fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef orange fill:#c77d0a,stroke:#a06508,color:#fff
-    classDef red fill:#c03030,stroke:#9a2020,color:#fff
-    classDef blue fill:#1e6fa5,stroke:#155a85,color:#fff
+    style A fill:#1e6fa5,stroke:#155a85,color:#fff
+    style B fill:#1e6fa5,stroke:#155a85,color:#fff
+    style C fill:#1e6fa5,stroke:#155a85,color:#fff
+    style D fill:#1e6fa5,stroke:#155a85,color:#fff
+    style E fill:#1e6fa5,stroke:#155a85,color:#fff
+    style F fill:#1a8a52,stroke:#14693e,color:#fff
+    style G fill:#b87a0a,stroke:#946208,color:#fff
+    style H fill:#b87a0a,stroke:#946208,color:#fff
+    style I fill:#b52c2c,stroke:#921e1e,color:#fff
+    style J fill:#b87a0a,stroke:#946208,color:#fff
+    style K fill:#b52c2c,stroke:#921e1e,color:#fff
 
-    class F green
-    class G,H orange
-    class I,K red
-    class J orange
-    class A,B blue
-    class C,D,E blue
 ```
 
 ### The Permission Spectrum

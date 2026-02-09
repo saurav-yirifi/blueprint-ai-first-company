@@ -49,13 +49,22 @@ flowchart LR
     Phase1 -->|"Day 30"| Phase2
     Phase2 -->|"Day 60"| Phase3
 
-    classDef blue fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef orange fill:#c77d0a,stroke:#a06508,color:#fff
-    classDef green fill:#1a8a52,stroke:#14693e,color:#fff
+    style A1 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style A2 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style A3 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style A4 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style B1 fill:#b87a0a,stroke:#946208,color:#fff
+    style B2 fill:#b87a0a,stroke:#946208,color:#fff
+    style B3 fill:#b87a0a,stroke:#946208,color:#fff
+    style B4 fill:#b87a0a,stroke:#946208,color:#fff
+    style C1 fill:#1a8a52,stroke:#14693e,color:#fff
+    style C2 fill:#1a8a52,stroke:#14693e,color:#fff
+    style C3 fill:#1a8a52,stroke:#14693e,color:#fff
+    style C4 fill:#1a8a52,stroke:#14693e,color:#fff
+    style M1 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style M2 fill:#b87a0a,stroke:#946208,color:#fff
+    style M3 fill:#1a8a52,stroke:#14693e,color:#fff
 
-    class A1,A2,A3,A4,M1 blue
-    class B1,B2,B3,B4,M2 orange
-    class C1,C2,C3,C4,M3 green
 ```
 
 ### Phase 1: Days 1-30 -- Foundation

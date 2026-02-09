@@ -28,8 +28,9 @@ A 2025 Fortune/Harris Poll survey found that one in three workers (33%) have act
 
 ```mermaid
 flowchart TB
-    subgraph ANTI["<b>Anti-Patterns</b><br/>(What Kills Adoption)"]
+    subgraph ANTI["<b>Anti-Patterns</b>"]
         direction TB
+        ANTIS["<i>(What Kills Adoption)</i>"]:::subtitle
         X1[AI framed as threat]
         X2[Knowledge hoarding<br/>35% gatekeep to protect jobs]
         X3[Insufficient training<br/>Only 12% get enough]
@@ -37,8 +38,9 @@ flowchart TB
         X5[Over-trust without verification]
     end
 
-    subgraph POSITIVE["<b>Positive Patterns</b><br/>(What Enables Adoption)"]
+    subgraph POSITIVE["<b>Positive Patterns</b>"]
         direction TB
+        POSITIVES["<i>(What Enables Adoption)</i>"]:::subtitle
         P1[AI framed as tool]
         P2[Prompt libraries shared<br/>across teams]
         P3[Structured 90-day program]
@@ -52,8 +54,9 @@ flowchart TB
     X4 -.->|"Support"| P4
     X5 -.->|"Balance"| P5
 
-    style ANTI fill:#c03030,stroke:#9a2020
+    style ANTI fill:#b52c2c,stroke:#921e1e
     style POSITIVE fill:#1a8a52,stroke:#14693e
+    classDef subtitle fill:none,stroke:none,color:#fff,font-size:1.1em
 ```
 
 **The fear is real and measurable.** 62% of managers believe their employees fear AI will cost them their jobs. 48% of managers themselves worry about AI-driven wage declines. 53% of employees who use AI admitted to hiding their usage, fearing it would make them look replaceable[^fear-stats].

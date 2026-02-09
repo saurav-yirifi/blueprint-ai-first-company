@@ -42,20 +42,22 @@ flowchart TB
     Arch --> Org
     Org --> Meta
 
-    classDef metaNode fill:#7345b0,stroke:#5b3590,color:#fff
-    classDef orgNode fill:#c77d0a,stroke:#a06508,color:#fff
-    classDef archNode fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef dataNode fill:#1a8a52,stroke:#14693e,color:#fff
+    style P1 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style P10 fill:#7345b0,stroke:#5b3590,color:#fff
+    style P2 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style P3 fill:#1a8a52,stroke:#14693e,color:#fff
+    style P4 fill:#1a8a52,stroke:#14693e,color:#fff
+    style P5 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style P6 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style P7 fill:#b87a0a,stroke:#946208,color:#fff
+    style P8 fill:#1a8a52,stroke:#14693e,color:#fff
+    style P9 fill:#b87a0a,stroke:#946208,color:#fff
 
-    class P10 metaNode
-    class P7,P9 orgNode
-    class P1,P2,P5,P6 archNode
-    class P3,P4,P8 dataNode
 
-    style Meta fill:#5a6270,stroke:#5b3590,color:#fff
-    style Org fill:#5a6270,stroke:#a06508,color:#fff
-    style Arch fill:#5a6270,stroke:#155a85,color:#fff
-    style DataOps fill:#5a6270,stroke:#14693e,color:#fff
+    style Meta fill:#5a6878,stroke:#5b3590,color:#fff
+    style Org fill:#5a6878,stroke:#946208,color:#fff
+    style Arch fill:#5a6878,stroke:#155a85,color:#fff
+    style DataOps fill:#5a6878,stroke:#14693e,color:#fff
 ```
 
 ### Principle 1: Build for Agents, Humans Will Thank You

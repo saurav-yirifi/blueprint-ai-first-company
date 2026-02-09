@@ -45,9 +45,9 @@ flowchart TB
     FORBIDDEN --> BLOCK["Block Always"]
 
     style SAFE fill:#1a8a52,stroke:#14693e
-    style SUPERVISED fill:#c77d0a,stroke:#a06508
-    style FORBIDDEN fill:#c03030,stroke:#9a2020
-    style BLOCK fill:#c03030,stroke:#9a2020
+    style SUPERVISED fill:#b87a0a,stroke:#946208
+    style FORBIDDEN fill:#b52c2c,stroke:#921e1e
+    style BLOCK fill:#b52c2c,stroke:#921e1e
 ```
 
 Define your forbidden zone before you need it. The companies that moved fastest with AI didn't skip governance. They built governance that enabled speed.

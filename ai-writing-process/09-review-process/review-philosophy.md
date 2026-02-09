@@ -15,23 +15,23 @@ That's why the review system has four layers, not one.
 ```mermaid
 flowchart TB
     subgraph AUTO["Automated Quality Audits"]
-        V[Voice Check\n25% weight]
-        C[Citation Audit\n20% weight]
-        R[Research Coverage\n20% weight]
-        L[Link Audit\n15% weight]
-        O[Opening Variety\n10% weight]
-        T[Term Analysis\n10% weight]
+        V[Voice Check<br/>25% weight]
+        C[Citation Audit<br/>20% weight]
+        R[Research Coverage<br/>20% weight]
+        L[Link Audit<br/>15% weight]
+        O[Opening Variety<br/>10% weight]
+        T[Term Analysis<br/>10% weight]
     end
     subgraph THEME["Thematic Review"]
-        BT[Big Themes\n10 Dimensions]
+        BT[Big Themes<br/>10 Dimensions]
     end
     subgraph EDIT["Editorial Review"]
-        D[Developmental\nEditing] --> LN[Line\nEditing]
+        D[Developmental<br/>Editing] --> LN[Line<br/>Editing]
         LN --> CP[Copyediting]
-        CP --> FV[Final\nVerification]
+        CP --> FV[Final<br/>Verification]
     end
     subgraph CROSS["Cross-Chapter"]
-        CD[Contradiction\nDetection]
+        CD[Contradiction<br/>Detection]
     end
 
     AUTO --> THEME --> EDIT --> CROSS

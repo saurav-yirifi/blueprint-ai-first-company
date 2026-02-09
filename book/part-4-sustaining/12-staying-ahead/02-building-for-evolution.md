@@ -44,7 +44,7 @@ flowchart LR
     P4 -.->|"Continuous"| P1
 
     style P1 fill:#1e6fa5,stroke:#155a85
-    style P2 fill:#c77d0a,stroke:#a06508
+    style P2 fill:#b87a0a,stroke:#946208
     style P3 fill:#1a8a52,stroke:#14693e
     style P4 fill:#7345b0,stroke:#5b3590
 ```
@@ -87,7 +87,7 @@ flowchart TB
     CONFIG["Config Change"] -.->|"Switch Provider"| AB
 
     style ABSTRACTION fill:#1a8a52,stroke:#14693e
-    style CONFIG fill:#c77d0a,stroke:#a06508
+    style CONFIG fill:#b87a0a,stroke:#946208
 ```
 
 ## The 4 Patterns That Enable Evolution
@@ -124,10 +124,10 @@ flowchart LR
     T2 -.->|"Metrics fail"| ABORT
 
     style S fill:#1e6fa5,stroke:#155a85
-    style T1 fill:#c77d0a,stroke:#a06508
-    style T2 fill:#c77d0a,stroke:#a06508
+    style T1 fill:#b87a0a,stroke:#946208
+    style T2 fill:#b87a0a,stroke:#946208
     style T3 fill:#1a8a52,stroke:#14693e
-    style ABORT fill:#c03030,stroke:#9a2020
+    style ABORT fill:#b52c2c,stroke:#921e1e
 ```
 
 Skip this and you launch blind. First feedback comes from angry customers, not dashboards.

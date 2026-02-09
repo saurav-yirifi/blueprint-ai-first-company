@@ -47,9 +47,9 @@ graph LR
     end
 
     style D fill:#1e6fa5,stroke:#155a85
-    style DR fill:#c77d0a,stroke:#a06508
+    style DR fill:#b87a0a,stroke:#946208
     style R fill:#1e6fa5,stroke:#155a85
-    style RF fill:#c77d0a,stroke:#a06508
+    style RF fill:#b87a0a,stroke:#946208
     style F fill:#1a8a52,stroke:#14693e
 ```
 

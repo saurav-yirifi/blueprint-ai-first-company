@@ -8,13 +8,15 @@ Microsoft and OpenAI represent different contexts—enterprise AI deployment ver
 
 ```mermaid
 flowchart TB
-    subgraph MS["<b>Microsoft</b><br/>Enterprise AI Deployment"]
+    subgraph MS["<b>Microsoft</b>"]
+        MSS["<i>Enterprise AI Deployment</i>"]:::subtitle
         MS1["Responsible AI Standard<br/><i>Templates, checklists, code</i>"]
         MS2["Frontier Governance Framework<br/><i>Capability thresholds</i>"]
         MS3["AI Red Team<br/><i>67 operations in 2024</i>"]
     end
 
-    subgraph OAI["<b>OpenAI</b><br/>Foundation Model Development"]
+    subgraph OAI["<b>OpenAI</b>"]
+        OAIS["<i>Foundation Model Development</i>"]:::subtitle
         OAI1["Preparedness Framework v2<br/><i>High/Critical thresholds</i>"]
         OAI2["100+ External Red Teamers<br/><i>45 languages, 29 countries</i>"]
         OAI3["Published Defense Metrics<br/><i>67-99% success rates</i>"]
@@ -31,9 +33,10 @@ flowchart TB
     MS --> COMMON
     OAI --> COMMON
 
-    style MS fill:#1e6fa5,stroke:#454d58
-    style OAI fill:#1a8a52,stroke:#454d58
-    style COMMON fill:#c77d0a,stroke:#454d58
+    style MS fill:#1e6fa5,stroke:#47525f
+    style OAI fill:#1a8a52,stroke:#47525f
+    style COMMON fill:#b87a0a,stroke:#47525f
+    classDef subtitle fill:none,stroke:none,color:#fff,font-size:1.1em
 ```
 
 ## Microsoft: Principles Into Practice
@@ -73,11 +76,11 @@ flowchart LR
     S1 --> S2 --> S3 --> S4 --> S5
     S5 -.->|"Fix & Repeat"| S1
 
-    style S1 fill:#1e6fa5,stroke:#454d58
-    style S2 fill:#1a8a52,stroke:#454d58
-    style S3 fill:#c77d0a,stroke:#454d58
-    style S4 fill:#c03030,stroke:#454d58
-    style S5 fill:#c03030,stroke:#454d58
+    style S1 fill:#1e6fa5,stroke:#47525f
+    style S2 fill:#1a8a52,stroke:#47525f
+    style S3 fill:#b87a0a,stroke:#47525f
+    style S4 fill:#b52c2c,stroke:#47525f
+    style S5 fill:#b52c2c,stroke:#47525f
 ```
 
 Phi-4 achieved a 65.7% pass rate in security evaluations—not perfect, but measurably improved from earlier iterations and documented transparently[^ms-phi].

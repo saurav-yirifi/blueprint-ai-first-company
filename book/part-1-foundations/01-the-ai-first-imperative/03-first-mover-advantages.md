@@ -47,9 +47,9 @@ flowchart TB
     M4 --> M5["24-36 mo: Near-impossible<br/><i>Niche or pivot only</i>"]
 
     style M1 fill:#1a8a52,color:#fff
-    style M2 fill:#c77d0a,color:#fff
-    style M3 fill:#c77d0a,color:#fff
-    style M4 fill:#c03030,color:#fff
+    style M2 fill:#b87a0a,color:#fff
+    style M3 fill:#b87a0a,color:#fff
+    style M4 fill:#b52c2c,color:#fff
     style M5 fill:#7345b0,color:#fff
 ```
 

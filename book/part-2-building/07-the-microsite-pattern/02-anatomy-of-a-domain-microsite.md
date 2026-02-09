@@ -37,7 +37,7 @@ flowchart TB
     REPOSITORY --> DATA
 
     style CONTROLLER fill:#1e6fa5,stroke:#155a85
-    style SERVICE fill:#c77d0a,stroke:#a06508
+    style SERVICE fill:#b87a0a,stroke:#946208
     style REPOSITORY fill:#7345b0,stroke:#5b3590
     style DATA fill:#1a8a52,stroke:#14693e
 ```

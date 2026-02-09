@@ -60,10 +60,10 @@ flowchart TD
     style START fill:#1e6fa5,stroke:#155a85
     style A1 fill:#1a8a52,stroke:#14693e
     style A2 fill:#1a8a52,stroke:#14693e
-    style A3 fill:#c77d0a,stroke:#a06508
-    style A4 fill:#c77d0a,stroke:#a06508
-    style A5 fill:#c77d0a,stroke:#a06508
-    style A6 fill:#c77d0a,stroke:#a06508
+    style A3 fill:#b87a0a,stroke:#946208
+    style A4 fill:#b87a0a,stroke:#946208
+    style A5 fill:#b87a0a,stroke:#946208
+    style A6 fill:#b87a0a,stroke:#946208
 ```
 
 *Figure: Vector database decision tree. Stay with pgvector as long as possible—complexity costs more than most teams expect.*

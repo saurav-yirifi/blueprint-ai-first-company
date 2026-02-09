@@ -46,23 +46,33 @@ flowchart TB
     Operations --> Governance
     Building --> Governance
 
-    classDef strategyNode fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef buildingNode fill:#7345b0,stroke:#5b3590,color:#fff
-    classDef dataNode fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef opsNode fill:#c77d0a,stroke:#a06508,color:#fff
-    classDef govNode fill:#c03030,stroke:#9a2020,color:#fff
+    style B1 fill:#7345b0,stroke:#5b3590,color:#fff
+    style B2 fill:#7345b0,stroke:#5b3590,color:#fff
+    style B3 fill:#7345b0,stroke:#5b3590,color:#fff
+    style B4 fill:#7345b0,stroke:#5b3590,color:#fff
+    style B5 fill:#7345b0,stroke:#5b3590,color:#fff
+    style D1 fill:#1a8a52,stroke:#14693e,color:#fff
+    style D2 fill:#1a8a52,stroke:#14693e,color:#fff
+    style D3 fill:#1a8a52,stroke:#14693e,color:#fff
+    style G1 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style G2 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style G3 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style G4 fill:#b52c2c,stroke:#921e1e,color:#fff
+    style O1 fill:#b87a0a,stroke:#946208,color:#fff
+    style O2 fill:#b87a0a,stroke:#946208,color:#fff
+    style O3 fill:#b87a0a,stroke:#946208,color:#fff
+    style O4 fill:#b87a0a,stroke:#946208,color:#fff
+    style S1 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style S2 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style S3 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style S4 fill:#1e6fa5,stroke:#155a85,color:#fff
 
-    class S1,S2,S3,S4 strategyNode
-    class B1,B2,B3,B4,B5 buildingNode
-    class D1,D2,D3 dataNode
-    class O1,O2,O3,O4 opsNode
-    class G1,G2,G3,G4 govNode
 
-    style Strategy fill:#5a6270,stroke:#155a85,color:#fff
-    style Building fill:#5a6270,stroke:#5b3590,color:#fff
-    style Data fill:#5a6270,stroke:#14693e,color:#fff
-    style Operations fill:#5a6270,stroke:#a06508,color:#fff
-    style Governance fill:#5a6270,stroke:#9a2020,color:#fff
+    style Strategy fill:#5a6878,stroke:#155a85,color:#fff
+    style Building fill:#5a6878,stroke:#5b3590,color:#fff
+    style Data fill:#5a6878,stroke:#14693e,color:#fff
+    style Operations fill:#5a6878,stroke:#946208,color:#fff
+    style Governance fill:#5a6878,stroke:#921e1e,color:#fff
 ```
 
 ## All Frameworks

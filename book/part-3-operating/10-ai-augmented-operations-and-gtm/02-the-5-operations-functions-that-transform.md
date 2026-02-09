@@ -41,9 +41,9 @@ flowchart TB
     START{Where to Start?} -->|Startup| F1
     START -->|Enterprise| F2
 
-    style F1 fill:#c03030,stroke:#9a2020
+    style F1 fill:#b52c2c,stroke:#921e1e
     style F2 fill:#1a8a52,stroke:#14693e
-    style F3 fill:#c77d0a,stroke:#a06508
+    style F3 fill:#b87a0a,stroke:#946208
     style F4 fill:#1e6fa5,stroke:#155a85
     style F5 fill:#7345b0,stroke:#5b3590
 ```
@@ -81,7 +81,7 @@ flowchart TB
     L1 -.->|"Full Context<br/>Transferred"| L2
 
     style AI_TIER fill:#1e6fa5,stroke:#155a85
-    style HUMAN_TIER fill:#c77d0a,stroke:#a06508
+    style HUMAN_TIER fill:#b87a0a,stroke:#946208
 ```
 
 The key metric: deflection rate. But deflection without maintained satisfaction is a vanity metric that will catch up with you.

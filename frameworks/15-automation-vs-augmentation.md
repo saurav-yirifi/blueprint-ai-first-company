@@ -75,37 +75,32 @@ For the messy middle, use this five-stage progression:
 
 ```mermaid
 flowchart LR
-    S1[Stage 1\nObserve]
-    S2[Stage 2\nSuggest]
-    S3[Stage 3\nExecute with\nApproval]
-    S4[Stage 4\nExecute with\nAudit]
-    S5[Stage 5\nFull\nAutomation]
+    S1[Stage 1<br/>Observe]
+    S2[Stage 2<br/>Suggest]
+    S3[Stage 3<br/>Execute with<br/>Approval]
+    S4[Stage 4<br/>Execute with<br/>Audit]
+    S5[Stage 5<br/>Full<br/>Automation]
 
     S1 --> S2 --> S3 --> S4 --> S5
 
-    classDef stage1 fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef stage2 fill:#1e6fa5,stroke:#155a85,color:#fff
-    classDef stage3 fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef stage4 fill:#1a8a52,stroke:#14693e,color:#fff
-    classDef stage5 fill:#1a8a52,stroke:#14693e,color:#fff
+    style S1 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style S2 fill:#1e6fa5,stroke:#155a85,color:#fff
+    style S3 fill:#1a8a52,stroke:#14693e,color:#fff
+    style S4 fill:#1a8a52,stroke:#14693e,color:#fff
+    style S5 fill:#1a8a52,stroke:#14693e,color:#fff
 
-    class S1 stage1
-    class S2 stage2
-    class S3 stage3
-    class S4 stage4
-    class S5 stage5
 
     subgraph Complexity["Complexity Dimensions"]
         direction TB
-        C1["Component: pushes toward augmentation\nwhen many data points required"]
-        C2["Coordinative: pushes toward augmentation\nwhen many sequential steps"]
-        C3["Dynamic: pushes toward augmentation\nwhen context changes rapidly"]
+        C1["Component: pushes toward augmentation<br/>when many data points required"]
+        C2["Coordinative: pushes toward augmentation<br/>when many sequential steps"]
+        C3["Dynamic: pushes toward augmentation<br/>when context changes rapidly"]
     end
 
-    style Complexity fill:#5a6270,stroke:#454d58,color:#fff
-    style C1 fill:#c77d0a,stroke:#a06508,color:#fff
-    style C2 fill:#c77d0a,stroke:#a06508,color:#fff
-    style C3 fill:#c77d0a,stroke:#a06508,color:#fff
+    style Complexity fill:#5a6878,stroke:#47525f,color:#fff
+    style C1 fill:#b87a0a,stroke:#946208,color:#fff
+    style C2 fill:#b87a0a,stroke:#946208,color:#fff
+    style C3 fill:#b87a0a,stroke:#946208,color:#fff
 ```
 
 1. **Observe** -- AI watches and learns patterns

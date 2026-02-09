@@ -13,19 +13,19 @@ Four phases, each feeding the next:
 ```mermaid
 flowchart LR
     subgraph PREP["Preparation"]
-        WR[Web Research\nPre-Search] --> PP[Prompt\nDesign]
+        WR[Web Research<br/>Pre-Search] --> PP[Prompt<br/>Design]
     end
     subgraph EXEC["Execution"]
-        PP --> PA[Perplexity\nAutomation]
-        PA --> RA[Raw\nAnswers]
+        PP --> PA[Perplexity<br/>Automation]
+        PA --> RA[Raw<br/>Answers]
     end
     subgraph PROCESS["Processing"]
-        RA --> SY[Synthesis\nExtraction]
-        SY --> CI[Citation-Ready\nContent]
+        RA --> SY[Synthesis<br/>Extraction]
+        SY --> CI[Citation-Ready<br/>Content]
     end
     subgraph USE["Integration"]
-        CI --> WA[Writer\nAgent]
-        CI --> RV[Reviewer\nAgent]
+        CI --> WA[Writer<br/>Agent]
+        CI --> RV[Reviewer<br/>Agent]
     end
 ```
 

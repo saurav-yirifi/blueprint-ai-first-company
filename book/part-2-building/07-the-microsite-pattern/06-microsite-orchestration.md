@@ -92,9 +92,9 @@ flowchart TB
     MON --> S1
     S7 --> NEW
 
-    style MON fill:#c03030,stroke:#9a2020
+    style MON fill:#b52c2c,stroke:#921e1e
     style NEW fill:#1a8a52,stroke:#14693e
-    style Migration fill:#c77d0a,stroke:#a06508
+    style Migration fill:#b87a0a,stroke:#946208
 ```
 
 Each step is independently deployable and reversible. Tests stay green throughout.

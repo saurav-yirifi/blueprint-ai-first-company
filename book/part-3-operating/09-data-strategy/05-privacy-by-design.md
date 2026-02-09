@@ -52,8 +52,8 @@ flowchart TB
     style MIN fill:#1e6fa5,stroke:#155a85
     style PURPOSE fill:#1e6fa5,stroke:#155a85
     style TRANS fill:#1e6fa5,stroke:#155a85
-    style SEC fill:#c77d0a,stroke:#a06508
-    style RET fill:#c77d0a,stroke:#a06508
+    style SEC fill:#b87a0a,stroke:#946208
+    style RET fill:#b87a0a,stroke:#946208
     style FLYWHEEL fill:#1a8a52,stroke:#14693e
 ```
 

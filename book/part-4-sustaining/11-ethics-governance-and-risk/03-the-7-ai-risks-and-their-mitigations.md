@@ -29,13 +29,13 @@ flowchart TB
     DATA -.->|"Enables"| OUTPUT
     OPERATIONAL -.->|"Amplifies"| DATA
 
-    style H fill:#c03030,stroke:#454d58
-    style B fill:#c03030,stroke:#454d58
-    style P fill:#c77d0a,stroke:#454d58
-    style PI fill:#c77d0a,stroke:#454d58
-    style D fill:#1e6fa5,stroke:#454d58
-    style S fill:#1e6fa5,stroke:#454d58
-    style R fill:#c03030,stroke:#9a2020
+    style H fill:#b52c2c,stroke:#47525f
+    style B fill:#b52c2c,stroke:#47525f
+    style P fill:#b87a0a,stroke:#47525f
+    style PI fill:#b87a0a,stroke:#47525f
+    style D fill:#1e6fa5,stroke:#47525f
+    style S fill:#1e6fa5,stroke:#47525f
+    style R fill:#b52c2c,stroke:#921e1e
 ```
 
 ## 1. Hallucination

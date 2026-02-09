@@ -43,10 +43,10 @@ flowchart TB
     TRAP["Danger: Measuring<br/>only Level 1"] -->|"Leads to"| MISS["Missing quality<br/>degradation"]
 
     style L1 fill:#1e6fa5,stroke:#155a85
-    style L2 fill:#c77d0a,stroke:#a06508
+    style L2 fill:#b87a0a,stroke:#946208
     style L3 fill:#7345b0,stroke:#5b3590
     style L4 fill:#1a8a52,stroke:#14693e
-    style TRAP fill:#c03030,stroke:#9a2020
+    style TRAP fill:#b52c2c,stroke:#921e1e
 ```
 
 **Efficiency metrics** capture speed, cost, and throughput. Time to resolution. Tasks per person. Cost per transaction. Obvious starting points, but dangerous in isolation.
@@ -145,7 +145,7 @@ flowchart TB
     T3 -.->|"PROVE"| VALUE["Did investment deliver value?"]
 
     style T1 fill:#1e6fa5,stroke:#155a85
-    style T2 fill:#c77d0a,stroke:#a06508
+    style T2 fill:#b87a0a,stroke:#946208
     style T3 fill:#1a8a52,stroke:#14693e
 ```
 

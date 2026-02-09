@@ -34,11 +34,11 @@ graph TB
         end
     end
 
-    style F1 fill:#c03030,stroke:#9a2020
-    style F2 fill:#c77d0a,stroke:#a06508
-    style F3 fill:#c77d0a,stroke:#a06508
+    style F1 fill:#b52c2c,stroke:#921e1e
+    style F2 fill:#b87a0a,stroke:#946208
+    style F3 fill:#b87a0a,stroke:#946208
     style F4 fill:#1e6fa5,stroke:#155a85
-    style F5 fill:#c03030,stroke:#9a2020
+    style F5 fill:#b52c2c,stroke:#921e1e
     style F6 fill:#7345b0,stroke:#5b3590
 ```
 
@@ -91,9 +91,9 @@ flowchart TD
 
     MANUAL --> DOCUMENT["Document what didn't work<br/>for future reference"]
 
-    style START fill:#c03030,stroke:#9a2020
+    style START fill:#b52c2c,stroke:#921e1e
     style CONTINUE fill:#1a8a52,stroke:#14693e
-    style S3 fill:#c77d0a,stroke:#a06508
+    style S3 fill:#b87a0a,stroke:#946208
     style MANUAL fill:#1e6fa5,stroke:#155a85
 ```
 
