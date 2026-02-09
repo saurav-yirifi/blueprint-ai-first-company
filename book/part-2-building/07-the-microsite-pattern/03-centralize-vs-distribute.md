@@ -137,8 +137,6 @@ Spotify discovered this despite their famous squad model. They have "surprisingl
 
 The platforms that succeed are "boring, trusted, and widely adopted." Those that fail are "optional, fragmented, and under-owned"[^slavikdev].
 
----
-
 ## References
 
 [^netflix-identity]: InfoQ. [Netflix User Identity](https://www.infoq.com/presentations/netflix-user-identity/)

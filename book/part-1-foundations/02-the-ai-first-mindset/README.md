@@ -6,8 +6,6 @@ But here's what matters: Harvey didn't win by building more features faster than
 
 At Yirifi, we stumbled into a similar insight from a different direction: "Every API we built assumed the first consumer would be an AI agent, not a person clicking buttons." When you design for agents first, humans benefit automatically. When you design for humans first and try to bolt on agent access later, you're retrofitting. This chapter teaches the mental models that make AI-first thinking instinctive.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Every API we built assumed the first consumer would be an AI agent, not a person clicking buttons."
@@ -45,8 +43,6 @@ For established organizations, the path requires deliberate practice. Your next 
 Understanding these concepts intellectually is table stakes. The question is whether they shape how you make decisions.
 
 Let's find out.
-
----
 
 ## References
 

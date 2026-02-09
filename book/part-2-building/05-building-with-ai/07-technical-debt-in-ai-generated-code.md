@@ -50,8 +50,6 @@ What does effective prevention look like?
 
 Same debt. Faster accumulation. Same solutions. More rigor.
 
----
-
 ## References
 
 [^gitclear]: GitClear. [2024 Coding Agent Research Report](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality)

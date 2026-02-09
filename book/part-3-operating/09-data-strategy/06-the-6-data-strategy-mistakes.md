@@ -48,8 +48,6 @@ Stitch Fix experienced client declines but recovered by diagnosing that pure AI 
 
 The flywheel works when the foundations are solid. Most people skip the foundations.
 
----
-
 ## References
 
 [^failure-rates]: AI Wrapper Market Analysis. [MKT Clarity](https://mktclarity.com/blogs/news/ai-wrapper-market)

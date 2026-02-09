@@ -76,8 +76,6 @@ If the math is marginal, start manual. Build agents when you hit scale that manu
 
 "Agent" sounds impressive. The question that matters is whether this specific deployment delivers more value than it costs. Sometimes the answer is no. That's not AI skepticism. That's engineering discipline.
 
----
-
 ## References
 
 [^spglobal]: AI Experiences Rapid Adoption, But with Mixed Outcomes. [S&P Global Market Intelligence](https://www.spglobal.com/market-intelligence/en/news-insights/research/ai-experiences-rapid-adoption-but-with-mixed-outcomes-highlights-from-vote-ai-machine-learning)

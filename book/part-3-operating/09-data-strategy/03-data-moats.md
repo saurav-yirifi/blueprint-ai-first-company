@@ -106,8 +106,6 @@ Both things can be true: data moats are weaker than they were, and data still ma
 
 The next sections address how to build the technical infrastructure that makes these moats possible, and how to do so without compromising user privacy.
 
----
-
 ## References
 
 [^moat-dead]: Data moats in the age of foundation models. [Liat Benzur](https://liatbenzur.com/2025/07/20/data-moats-dead-new-competitive-advantages-ai/)

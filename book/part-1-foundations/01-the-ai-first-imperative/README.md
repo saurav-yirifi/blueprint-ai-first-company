@@ -1,5 +1,4 @@
 # Chapter 1: The AI-First Imperative
-
 In March 2025, a solo developer built a browser-based flight simulator and crossed $1 million ARR in 17 days. AI wrote most of the code.
 
 Three months earlier, at my company Yirifi, just 2 people built 15 backoffice microsites in 3 months. Not because we're superhuman. Because AI changed the math.
@@ -7,8 +6,6 @@ Three months earlier, at my company Yirifi, just 2 people built 15 backoffice mi
 These stories aren't about productivity hacks. They're about something bigger—a 107x cost collapse in AI processing over two years. When intelligence becomes cheap, everything built on the assumption that intelligence is expensive breaks.
 
 This chapter is about what that shift means for how you build a company.
-
----
 
 <div class="yirifi-anchor" markdown>
 

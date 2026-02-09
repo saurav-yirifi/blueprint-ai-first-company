@@ -34,8 +34,6 @@ The companies that win invest continuously, not in bursts. 90 days gets you to f
 
 Everything else is just a workshop.
 
----
-
 ## References
 
 [^microsoft]: SuperAGI. Case Studies: How Major Corporations Are Using AI to Transform Training Programs — [superagi.com](https://superagi.com/case-studies-how-major-corporations-are-using-ai-to-transform-their-training-programs-in-2025/)

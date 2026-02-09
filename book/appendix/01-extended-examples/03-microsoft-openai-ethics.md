@@ -147,8 +147,6 @@ Despite different contexts, Microsoft and OpenAI share operational patterns you 
 
 **Iterative improvement.** The "break-fix" cycle, continuous monitoring, post-incident reviews. Safety isn't achieved once and forgotten.
 
----
-
 ## References
 
 [^ms-standard]: Microsoft. [Responsible AI Standard General Requirements](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Responsible-AI-Standard-General-Requirements.pdf)

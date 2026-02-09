@@ -74,8 +74,6 @@ The question this book will answer isn't whether AI will transform how companies
 
 The economics favor the bold. The moats favor the early. What does it actually take to build an AI-first company? That's what the next eleven chapters are about.
 
----
-
 ## References
 
 [^menlo-shift]: Menlo Ventures, "2025 State of Generative AI in the Enterprise" — [menlovc.com](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/)

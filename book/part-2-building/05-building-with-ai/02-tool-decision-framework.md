@@ -2,8 +2,6 @@
 
 Choosing the right AI coding tool for your workflow.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "We use three different AI coding tools, and that's intentional. Quick edits in the IDE with autocomplete. Feature work with an agentic CLI. Architecture discussions in chat. The tool should match the task, not the other way around."
@@ -81,8 +79,6 @@ GitHub Copilot runs $10/month for Pro, $39/user for Enterprise. Cursor charges $
 The harder question: productivity for whom? Research shows 26-55% gains, but developer sentiment has dropped from 70%+ positive to closer to 60%[^sentiment-drop]. "LLM-generated code ends up pushing review burden onto others"[^review-burden]. Senior developers benefit more—up to 4.4 hours saved per week—because they catch architectural mistakes juniors miss[^senior-gains]. The ROI equation isn't uniform.
 
 Match the tool to the task, not the other way around. That's the framework that lasts even as specific tools evolve. The productivity gap between Level 1 and Level 4 is too large to leave on the table—but CLI agents require trust and review practices that take 3-6 months to develop. Start where your team can succeed, then climb deliberately.
-
----
 
 ## References
 

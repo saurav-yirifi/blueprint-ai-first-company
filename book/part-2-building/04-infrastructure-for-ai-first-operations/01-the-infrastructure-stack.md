@@ -2,8 +2,6 @@
 
 What you need, what you don't (yet).
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Our infrastructure choices are exciting to us precisely because they're battle-tested. While other startups chase the latest vector database or orchestration framework, we chose Postgres, open source, managed services—proven over impressive, every time."
@@ -132,8 +130,6 @@ Resist your instinct to build for scale on day one. Your infrastructure should b
 The most important technology decision isn't which stack to choose. It's when to make significant investments in infrastructure.
 
 Build for the stage you're in. Not the stage you hope to reach.
-
----
 
 ## References
 

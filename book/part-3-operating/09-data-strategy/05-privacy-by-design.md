@@ -122,8 +122,6 @@ The companies that treat privacy as competitive advantage rather than compliance
 
 For deeper exploration of governance frameworks and ethical AI principles, see [Chapter 11: Ethics, Governance, and Risk](../../part-4-sustaining/11-ethics-governance-and-risk/README.md).
 
----
-
 ## References
 
 [^gdpr-fines]: Fines for GDPR Violations in AI Systems. [Data Privacy Office EU](https://data-privacy-office.eu/fines-for-gdpr-violations-in-ai-systems-and-how-to-avoid-them/)

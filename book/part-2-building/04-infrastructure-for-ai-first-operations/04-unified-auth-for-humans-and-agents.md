@@ -2,8 +2,6 @@
 
 Same permission model, different contexts.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "An agent should never have more permissions than the human who triggered it. But it also shouldn't have fewer—or it can't do its job."
@@ -111,8 +109,6 @@ When a task completes, its tokens expire. No persistent agent identity accumulat
 For established organizations, extend existing IAM systems rather than building parallel ones. Microsoft Entra, Okta (through Auth0 for AI Agents), and others now support agent-specific flows[^auth0-agents]. For startups, design for unified auth from day one—the temptation to hardcode agent permissions creates technical debt that becomes a security liability.
 
 The honest truth: proper agent auth adds meaningful time upfront. Getting it wrong adds months of remediation when something breaks—and given Gartner's 25% prediction, "something breaking" is a matter of when, not if.
-
----
 
 ## References
 

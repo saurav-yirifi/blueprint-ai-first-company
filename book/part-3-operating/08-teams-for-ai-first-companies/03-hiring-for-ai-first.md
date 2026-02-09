@@ -104,8 +104,6 @@ Microsoft's Work Trend Index found that 71% of business leaders would give prefe
 
 The market is telling you something. Listen.
 
----
-
 ## References
 
 [^systems-thinking]: Interview Prep. Systems Thinking Interview Questions — [interviewprep.org](https://interviewprep.org/systems-thinking-interview-questions/)

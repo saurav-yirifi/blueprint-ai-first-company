@@ -2,8 +2,6 @@
 
 From autocomplete to orchestration—understanding the spectrum.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "We didn't jump straight to agents. We spent six months at Level 2-3, building trust. Now most work happens at Level 4, but the team earned that by learning when to trust AI and when to override it."
@@ -66,8 +64,6 @@ Teams that make this transition successfully share three characteristics: strong
 You've progressed too fast if you're spending more time fixing AI output than writing it yourself, code reviews reveal systemic architectural problems, or team members can't explain the AI's choices. The fix: retreat, build the missing skills, progress deliberately.
 
 The pattern I see consistently: teams that progress one level every 2-4 weeks build durable capability. Teams that jump two levels in a week regress within a month.
-
----
 
 ## References
 

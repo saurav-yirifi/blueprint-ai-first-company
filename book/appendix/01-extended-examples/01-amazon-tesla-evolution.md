@@ -132,8 +132,6 @@ Andrej Karpathy: "Progressing from prototypes that work 90% of the time to 99.99
 
 The question isn't whether you have their resources. It's whether you're making the same architectural choices they made before they had those advantages.
 
----
-
 ## References
 
 [^sagemaker]: AWS. [Introducing Amazon SageMaker](https://aws.amazon.com/about-aws/whats-new/2017/11/introducing-amazon-sagemaker/)

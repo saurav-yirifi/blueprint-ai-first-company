@@ -2,8 +2,6 @@
 
 Chat agents vs background agents—when to use each.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "We tried to build one agent framework for everything. It failed. Chat agents need to be fast and helpful. Background agents need to be thorough and reliable. Different requirements, different architectures."

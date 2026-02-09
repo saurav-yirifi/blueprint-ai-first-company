@@ -14,8 +14,6 @@ Both share common principles: unified data enables AI effectiveness, AI assists 
 
 For detailed architecture breakdowns, flywheel mechanics, and additional case studies from LinkedIn, Canva, and Shopify, see Appendix: HubSpot and Gong Case Study.
 
----
-
 ## References
 
 [^gong-roi]: Gong Press: New Study Reveals 481% ROI. [gong.io](https://www.gong.io/press/new-study-reveals-481-roi-in-gongs-revenue-intelligence-platform)

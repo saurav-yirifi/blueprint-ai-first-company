@@ -155,8 +155,6 @@ Three questions: Is this capability core to your moat? Does the data require iso
 
 This decision isn't permanent. Many companies start with buy, graduate to boost as they accumulate proprietary data, and occasionally build capabilities that become truly differentiating. Start where you can move fastest. Evolve as your data assets grow.
 
----
-
 ## References
 
 [^mit-costs]: MIT Sloan Management Review, Build, Buy, or Boost — [sloanreview.mit.edu](https://sloanreview.mit.edu/article/successful-ai-implementation-build-buy-or-boost/)

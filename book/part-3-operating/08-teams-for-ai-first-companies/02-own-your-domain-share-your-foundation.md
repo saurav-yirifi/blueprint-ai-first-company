@@ -38,8 +38,6 @@ GitLab learned this the hard way. Justin Farris, VP of Monetization, described y
 
 This principle isn't about drawing org chart lines. It's about answering one question clearly for every AI capability—who can change this, and what can they change without asking permission? Get that answer right, and domain teams move fast while platform teams maintain sanity.
 
----
-
 ## References
 
 [^uber-michelangelo]: Planet Cassandra. Meet Michelangelo: Uber's Machine Learning Platform — [planetcassandra.org](https://planetcassandra.org/leaf/meet-michelangelo-uber-s-machine-learning-platform/)

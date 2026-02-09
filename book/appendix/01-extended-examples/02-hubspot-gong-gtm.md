@@ -187,8 +187,6 @@ For Sarah leading enterprise transformation, you likely have existing systems th
 
 The pattern that runs DevOps also runs growth. Whether you pursue HubSpot's platform integration or Gong's specialized flywheel, consistency compounds.
 
----
-
 ## References
 
 [^gong-roi]: Gong Press: New Study Reveals 481% ROI. [gong.io](https://www.gong.io/press/new-study-reveals-481-roi-in-gongs-revenue-intelligence-platform)

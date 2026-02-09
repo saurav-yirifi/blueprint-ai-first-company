@@ -161,8 +161,6 @@ With the four layers mapped, we'll spend the rest of this chapter going deeper:
 
 The stack keeps evolving. The framework for thinking about it doesn't have to.
 
----
-
 ## References
 
 [^kashish]: LinkedIn. [- Kashish Vaid, Technical Architecture of Perplexity](https://www.linkedin.com/pulse/technical-architecture-operational-mechanics-perplexitys-kashish-vaid-bjgkc)

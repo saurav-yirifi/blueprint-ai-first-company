@@ -118,8 +118,6 @@ flowchart LR
 
 ```
 
----
-
 ## References
 
 [^anthropic-mcp]: Anthropic. [Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)

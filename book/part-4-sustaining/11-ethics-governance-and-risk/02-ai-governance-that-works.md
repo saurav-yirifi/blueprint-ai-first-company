@@ -124,8 +124,6 @@ The governance that works helps teams find the "yes" that manages risk. If it on
 
 AI capabilities evolve faster than annual review cycles. [Chapter 12: Staying Ahead](../12-staying-ahead/README.md) addresses governance that absorbs change—modular architectures where you can update permission models without renegotiating your entire framework.
 
----
-
 ## References
 
 [^benchmark]: Aligne AI. ["The AI Governance Crisis Every Executive Must Address in 2025."](https://www.aligne.ai/blog-posts/the-ai-governance-crisis-every-executive-must-address-in-2025)

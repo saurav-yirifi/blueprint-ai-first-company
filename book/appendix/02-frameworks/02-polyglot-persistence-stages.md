@@ -155,8 +155,6 @@ If you're building an AI-first company today, here's the sequence that works:
 
 The goal isn't elegance. The goal is a data architecture that accelerates your flywheel without creating operational overhead that slows everything else down.
 
----
-
 ## References
 
 [^openai-postgres]: Microsoft Tech Community. [Scaling PostgreSQL at OpenAI](https://techcommunity.microsoft.com/blog/adforpostgresql/scaling-postgresql-at-openai-lessons-in-reliability-efficiency-and-innovation/4281228)

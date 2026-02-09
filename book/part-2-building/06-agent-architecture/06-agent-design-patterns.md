@@ -2,8 +2,6 @@
 
 Two agent types, two design philosophies.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Chat agents fail when they act before clarifying. Background agents fail when they can't explain what they did at 3 AM. Both need trust patterns—chat agents earn trust through confirmation, background agents through observability. We learned this the hard way with a DevOps agent that guessed which database to roll back."

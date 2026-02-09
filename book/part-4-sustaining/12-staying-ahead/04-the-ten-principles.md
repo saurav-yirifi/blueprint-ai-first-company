@@ -154,8 +154,6 @@ Companies that chased specific model features faced repeated refactoring cycles.
 
 The tools will change. The principles won't. Build accordingly.
 
----
-
 ## References
 
 [^stripe]: Stripe API Docs. [Versioning](https://docs.stripe.com/api/versioning)

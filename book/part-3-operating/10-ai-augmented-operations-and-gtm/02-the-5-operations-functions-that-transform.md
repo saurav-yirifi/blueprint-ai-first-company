@@ -134,8 +134,6 @@ For startups: Customer Support often gets AI first because it impacts customer e
 
 The common thread across all five functions: AI transforms operations by handling the routine 80% while focusing human attention on the judgment-intensive 20%. The functions that transform first are the ones where that 80/20 split is clearest and the data to train AI already exists.
 
----
-
 ## References
 
 [^klarna-initial]: Klarna AI Assistant Press Release. [klarna.com](https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/)

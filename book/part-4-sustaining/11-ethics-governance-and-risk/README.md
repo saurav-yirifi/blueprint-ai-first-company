@@ -8,8 +8,6 @@ When AI capability is cheap and abundant, the companies that scale fastest will 
 
 The solution isn't banning AI autonomy. It's governing it.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Three permission modes: AI does everything automatically, AI only uses approved tools, AI asks for every action. Different contexts need different trust levels. The question isn't 'can AI do this?' but 'should AI do this unsupervised?'"

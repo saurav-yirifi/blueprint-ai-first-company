@@ -82,8 +82,6 @@ This model gets [its own section](./06-human-ai-collaboration.md).
 
 These models compound. Agent-first design assumes probabilistic thinking. Data-as-product depends on compound iteration. Permission spectrum enables human-AI collaboration. Get one right, and you have an advantage. Get all seven right, and you have a different way of building that competitors can't replicate.
 
----
-
 ## References
 
 [^openai-shift]: OpenAI on agent-native APIs — referenced in Postman State of API Report 2025

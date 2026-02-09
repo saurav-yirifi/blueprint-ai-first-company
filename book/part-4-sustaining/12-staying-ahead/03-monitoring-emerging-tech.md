@@ -170,8 +170,6 @@ Every evaluation should answer four questions:
 
 High scores on 1 and 2 with low on 3 deserve immediate action. Everything else can wait.
 
----
-
 ## References
 
 [^torvalds]: ISACA. [Is AI Hype an Enterprise Risk? How to Manage Shiny Object Syndrome](https://www.isaca.org/resources/news-and-trends/newsletters/atisaca/2024/volume-24/is-ai-hype-an-enterprise-risk-how-to-manage-shiny-object-syndrome)

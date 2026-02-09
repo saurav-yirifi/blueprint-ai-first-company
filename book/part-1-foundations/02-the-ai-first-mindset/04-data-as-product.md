@@ -71,8 +71,6 @@ The question you need to answer: What data does our product generate, and how do
 
 If you can't articulate the loop clearly—usage generates X signal, which improves Y capability, which drives Z outcome—you don't have a flywheel. You have data accumulation without compound learning. [Chapter 9](../../part-3-operating/09-data-strategy/README.md) dives deep into the architecture patterns that make flywheels sustainable.
 
----
-
 ## References
 
 [^jensen-quote]: Jensen Huang at Snowflake Summit, June 2024 — [snowflake.com](https://www.snowflake.com/en/data-cloud/data-cloud-summit/)

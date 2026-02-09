@@ -8,8 +8,6 @@ What happened? They built one type of agent and deployed it everywhere. Routine 
 
 At Yirifi, we made the same mistake earlier. Our first "universal agent" was too slow for chat (users abandoned) and too unsupervised for background work (errors accumulated for hours unnoticed). The breakthrough came when we stopped trying to build one agent for everything.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Two agent types by design: chat agents that talk to people, background agents that run while everyone sleeps. The DevOps dashboard doesn't just serve humans—agents query it for system health, deployment status, incident context. Same API, both consumers."

@@ -175,8 +175,6 @@ BCG estimates multi-agent AI systems could generate $53 billion in business reve
 
 Both things are true. AI transforms operations and humans remain essential. The companies that thrive will get the balance right.
 
----
-
 ## References
 
 [^paradox]: Raisch & Krakowski: The Automation-Augmentation Paradox. Academy of Management Review. [journals.aom.org](https://journals.aom.org/doi/10.5465/amr.2018.0072)

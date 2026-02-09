@@ -144,8 +144,6 @@ Every mistake stems from the same error: treating AI as a solution to implement 
 
 Every mistake stems from the same error: treating AI as a solution to implement rather than a capability to integrate. Avoid these eight, and you're in the 5% that succeed.
 
----
-
 ## References
 
 [^zillow-failure]: InsideAI News: The $500M Debacle at Zillow Offers. [insideainews.com](https://insideainews.com/2021/12/13/the-500mm-debacle-at-zillow-offers-what-went-wrong-with-the-ai-models/)

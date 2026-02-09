@@ -108,8 +108,6 @@ Plan for multi-model from day one. 37% of enterprises already support hybrid app
 
 The model landscape will keep shifting. What won't change: the companies that treat model selection as an ongoing optimization rather than a one-time decision will consistently outperform those locked into rigid architectures.
 
----
-
 ## References
 
 [^lmsys]: LMSYS. [Chatbot Arena Leaderboard Analysis](https://www.reddit.com/r/LocalLlama/comments/1cousnm/newest_lmsys_chatbot_arena_leaderboard_shows/)

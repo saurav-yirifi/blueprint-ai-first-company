@@ -119,8 +119,6 @@ The test: can a domain team ship a new microsite without waiting for platform te
 
 The principle is the same: platform teams build the foundation once. Domain teams inherit the pattern forever.
 
----
-
 ## References
 
 [^idp-research]: State. [of Developer Experience Report 2024](https://www.atlassian.com/developer-experience/internal-developer-platform)

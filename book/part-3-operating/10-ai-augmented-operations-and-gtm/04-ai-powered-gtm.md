@@ -77,8 +77,6 @@ flowchart TB
 
 "Most of the time, failures at the initial stages come from poor data foundations rather than AI tool limitations"[^hg-framework]. Clean, accessible data determines AI effectiveness.
 
----
-
 ## References
 
 [^personalization-roi]: Amra and Elma: AI-Powered Personalization ROI Statistics. [amraandelma.com](https://www.amraandelma.com/ai-powered-personalization-roi-statistics/)

@@ -102,8 +102,6 @@ Harvey didn't wait for perfect conditions. They deliberately targeted the hardes
 
 The question isn't whether AI will transform your industry. It's whether you'll be the one transforming it or the one being transformed.
 
----
-
 ## References
 
 [^levels-fly]: LinkedIn, "How Pieter Levels Built a $1M ARR Business in 17 Days" — [linkedin.com](https://www.linkedin.com/pulse/future-ai-empire-building-how-pieter-levels-solo-builder-cormier-r5lxc)

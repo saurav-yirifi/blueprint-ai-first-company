@@ -139,8 +139,6 @@ The perfect moment doesn't exist. The second-best time is today.
 
 Build to add. Let the future be addition.
 
----
-
 ## References
 
 [^gartner]: GEC Newswire. [Gartner: 40% of Enterprise Apps to Use AI Agents by 2026](https://gecnewswire.com/gartner-40-of-enterprise-apps-to-use-ai-agents-by-2026/)

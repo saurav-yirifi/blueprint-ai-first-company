@@ -122,8 +122,6 @@ Document your permission model before deployment. Answer these questions in writ
 
 You'll be asked—by auditors, by regulators, by lawyers after an incident. "We thought it seemed fine" is not a defensible answer. "Here's our documented risk assessment and the evidence that supported our decision" is.
 
----
-
 ## References
 
 [^bcg]: BCG/MIT Sloan Management Review. ["What Happens When AI Stops Asking Permission." 2025](https://www.bcg.com/publications/2025/what-happens-ai-stops-asking-permission)

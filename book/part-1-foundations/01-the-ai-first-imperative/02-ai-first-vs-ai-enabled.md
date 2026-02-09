@@ -90,8 +90,6 @@ Starting AI-first lets you move fast. Retrofitting forces you to move carefully 
 
 Both games can be won. But you can't play both at once. Build your company *on* AI or *with* AI—choose deliberately. Get that answer wrong, and you'll spend the next three years learning it the expensive way.
 
----
-
 ## References
 
 [^harvey-review]: Harvey Year in Review 2024 — [harvey.ai](https://www.harvey.ai/downloadable/year-in-review/2024/Harvey-2024-year-in-review.pdf)

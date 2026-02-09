@@ -72,8 +72,6 @@ Look at where the failures cluster: 26% from unexpected costs, 21% from data pri
 
 Every mistake on this list has a detection signal and a recovery path. The question is whether you'll see the problem early enough to fix it.
 
----
-
 ## References
 
 [^mit-failures]: MIT Study on GenAI Pilot Failures — [Fortune](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/)

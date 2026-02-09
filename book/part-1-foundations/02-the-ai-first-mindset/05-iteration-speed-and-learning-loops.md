@@ -76,8 +76,6 @@ Stripe demonstrates the payoff. Their fraud detection models improved from 59% t
 
 What's your iteration speed? Not how fast you can ship—how fast you can learn. If the answer is "weeks" at any step, you've identified your constraint.
 
----
-
 ## References
 
 [^ooda-quote]: OODA Loop Applied to Machine Learning — [medium.com](https://medium.com/@kozyrkov/the-most-useful-advice-for-machine-learning-36d3b95e9e37)

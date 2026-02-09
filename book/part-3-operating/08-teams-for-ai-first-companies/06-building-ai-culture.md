@@ -94,8 +94,6 @@ Internal AI Playbooks document use cases by function, prompt templates, and less
 
 Structure shapes culture. When JPMorgan mandated GenAI training for every new hire, they made fluency an organizational expectation rather than individual choice—and adoption followed.
 
----
-
 ## References
 
 [^layoff-case]: CEO. [Layoff Case Study 2025](https://fortune.com/article/ceo-laid-off-80-percent-workforce-sabotage-what-are-ai-skills/)

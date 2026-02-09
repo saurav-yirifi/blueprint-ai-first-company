@@ -177,8 +177,6 @@ flowchart LR
 
 The critical decision: who has authority to pause an AI system? Define who can pause an AI system before you need it. When something is actively causing harm at 2 AM, you don't have time to escalate for approval. As we covered in [Section 2](./02-ai-governance-that-works.md), accountability must be explicit and assigned to individuals, not committees.
 
----
-
 ## References
 
 [^deloitte]: Pirani Risk. ["The Deloitte AI Failure: A Wake-Up Call for Operational Risk." 2024](https://www.piranirisk.com/blog/the-deloitte-ai-failure-a-wake-up-call-for-operational-risk)

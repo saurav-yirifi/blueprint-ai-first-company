@@ -123,8 +123,6 @@ Here's the key insight: the investment in operations-as-APIs pays dividends beyo
 
 The architecture that enables AI agents to check deployment status today enables them to manage marketing campaigns tomorrow.
 
----
-
 ## References
 
 [^api-adoption]: Arcade API Tool User Growth Trends. [blog.arcade.dev](https://blog.arcade.dev/api-tool-user-growth-trends)

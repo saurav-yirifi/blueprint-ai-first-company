@@ -10,8 +10,6 @@ At Yirifi, we discovered something different. Check deployment status? An AI age
 
 This chapter is about getting the implementation right. Not the technology—the architecture, the decisions, the patterns that separate the 5% that succeed from the 95% that don't.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Social, Marketing, Sales, CRM—each gets their own AI-augmented dashboard, same architecture as internal tools. The pattern that runs DevOps also runs growth. Consistency compounds."
@@ -51,8 +49,6 @@ For established organizations, start with read-only APIs that expose data withou
 Both audiences face the same question: are you building AI operations that compound, or point solutions that fragment?
 
 The pattern that runs DevOps also runs growth. Consistency compounds.
-
----
 
 ## References
 

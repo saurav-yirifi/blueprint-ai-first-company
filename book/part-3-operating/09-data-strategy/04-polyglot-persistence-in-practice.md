@@ -38,8 +38,6 @@ The database decision matrix isn't mysterious. It's straightforward once you und
 
 The goal isn't elegance. The goal is a data architecture that accelerates your flywheel without creating operational overhead that slows everything else down.
 
----
-
 ## References
 
 [^notion-sharding]: Sharding Postgres at Notion. [Notion Blog](https://www.notion.com/blog/sharding-postgres-at-notion)

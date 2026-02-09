@@ -66,8 +66,6 @@ Before committing engineering time to fine-tuning, answer honestly:
 
 If you can't confidently answer all five, fine-tuning is probably premature. That's not failure—it's recognizing where you actually are in the optimization journey.
 
----
-
 ## References
 
 [^udit-goenka]: Udit. [Goenka - The $47K Fine-Tuning Revolution](https://uditgoenka.co/p/small-language-model)

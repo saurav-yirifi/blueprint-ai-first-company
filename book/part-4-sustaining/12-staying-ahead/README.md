@@ -10,8 +10,6 @@ At Yirifi, we learned this lesson early. The principle that guides our architect
 
 This chapter is about what that requirement actually looks like in practice.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Each service is its own module. When AI capabilities evolve—and they will, faster than any of us expect—we add a new module. No rewiring required."

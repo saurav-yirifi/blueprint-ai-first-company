@@ -2,8 +2,6 @@
 
 Centralized orchestration, distributed execution.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Every agent at Yirifi goes through the hub. Not because we love centralization, but because we need one place to manage permissions, one place to see what's running, one place to shut things down when they go wrong."

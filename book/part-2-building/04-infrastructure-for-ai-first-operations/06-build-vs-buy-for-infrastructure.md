@@ -2,8 +2,6 @@
 
 When managed services win, when they don't.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Build what differentiates you. Buy everything else. The hard part is knowing which is which."
@@ -71,8 +69,6 @@ The smartest companies follow a progression: buy to validate, hybrid to extend, 
 Pre-product-market fit? Buy everything. Speed matters more than cost optimization. As we saw in Section 1, timeline failures killed 42% of AI initiatives in 2025. Most of those teams built what they should have bought.
 
 At scale, make case-by-case decisions based on actual data. Run small experiments—spin up self-hosted infrastructure for one component, measure the true cost including engineering time, then decide based on reality rather than spreadsheet projections.
-
----
 
 ## References
 

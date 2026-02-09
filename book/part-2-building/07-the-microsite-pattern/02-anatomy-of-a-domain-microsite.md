@@ -189,8 +189,6 @@ Template adoption metrics worth tracking:
 
 The test is simple: can a new engineer deploy a production-ready service on their first day? If yes, your templates work. If not, you haven't finished the pattern.
 
----
-
 ## References
 
 [^baeldung]: Baeldung. [Repository vs Service](https://www.baeldung.com/cs/repository-vs-service)

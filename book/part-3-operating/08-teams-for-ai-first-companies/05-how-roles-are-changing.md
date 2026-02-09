@@ -96,8 +96,6 @@ Scale AI improved labeling accuracy by 35% over competitors through technology i
 
 What matters isn't whether to hire these specialists—it's how long before these skills distribute across your entire organization, and what you do to accelerate that convergence rather than delay it.
 
----
-
 ## References
 
 [^scale-workforce]: Scale. [AI Contributor Demographics](https://scale.com/rlhf)

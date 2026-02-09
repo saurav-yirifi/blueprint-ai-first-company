@@ -99,8 +99,6 @@ Companies that start compliance preparation eighteen months before a deadline st
 
 The regulatory landscape will keep shifting. What won't change: the organizations that invested early in documentation, governance, and transparent practices will adapt faster and cheaper than those scrambling to retrofit compliance onto systems built without it.
 
----
-
 ## References
 
 [^state-laws]: Future of Privacy Forum. ["The State of State AI Legislative Approaches to AI in 2025."](https://fpf.org/blog/the-state-of-state-ai-legislative-approaches-to-ai-in-2025/)

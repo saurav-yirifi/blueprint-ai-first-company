@@ -28,8 +28,6 @@ The question isn't whether you have their resources. It's whether you're making 
 
 > For detailed timelines, architecture diagrams, and extended analysis of both companies, see Appendix: Amazon and Tesla Case Study.
 
----
-
 ## References
 
 [^sagemaker]: AWS. [Introducing Amazon SageMaker](https://aws.amazon.com/about-aws/whats-new/2017/11/introducing-amazon-sagemaker/)

@@ -2,8 +2,6 @@
 
 Understanding the capabilities of modern AI coding tools.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Once you understand skills vs commands vs agents, you stop fighting the tool and start designing workflows. The vocabulary isn't just semantics—it's the difference between productive collaboration and frustrating misuse."
@@ -75,8 +73,6 @@ The obra/superpowers framework bundles 20+ battle-tested skills—TDD enforcemen
 Use existing tools for common workflows, build custom tools for proprietary or high-volume needs. The SDK investment pays off when you run the same workflow hundreds of times.
 
 The vocabulary isn't just semantics. It's the mental model that determines whether you collaborate effectively with AI tools or fight against their nature.
-
----
 
 ## References
 

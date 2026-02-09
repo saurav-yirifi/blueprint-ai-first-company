@@ -2,8 +2,6 @@
 
 Right storage for right data—relational, document, cache, vector.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "One database until you can't. Two databases when you must. Three databases means you better know exactly why."
@@ -145,8 +143,6 @@ For established organizations: You likely have more databases than you need, acc
 The vector database market reached $2.2 billion in 2024 and is growing fast[^vector-market]. Vendors will tell you their purpose-built solution is essential. The reality is that most AI applications need sophisticated data management, but not necessarily sophisticated data infrastructure. Start simple. Measure everything. Add complexity only when the metrics demand it.
 
 The technology that gets you to market isn't always the technology that gets you to scale. But the technology you understand deeply will outperform the technology you adopted because it seemed cutting-edge.
-
----
 
 ## References
 

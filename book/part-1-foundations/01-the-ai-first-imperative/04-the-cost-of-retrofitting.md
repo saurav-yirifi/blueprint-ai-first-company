@@ -110,8 +110,6 @@ None of these paths is cheap. But pretending retrofitting is simple is more expe
 
 Every pre-AI decision becomes technical debt. Debt always comes due.
 
----
-
 ## References
 
 [^mit-failures]: MIT Sloan, "The GenAI Divide: State of AI in Business 2025" — [fortune.com](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/)

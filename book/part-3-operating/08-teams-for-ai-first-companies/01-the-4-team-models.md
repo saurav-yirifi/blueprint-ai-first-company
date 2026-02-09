@@ -10,29 +10,33 @@ What these look like in practice.
 
 ```mermaid
 flowchart TB
-    subgraph EMBEDDED["<b>Embedded AI</b><br/>Speed Through Context"]
+    subgraph EMBEDDED["<b>Embedded AI</b>"]
         direction LR
+        ES[ <i>Speed Through Context</i> ]:::subtitle
         E1[AI specialists inside product teams]
         E2[Report to product leads]
         E3[Same OKRs as product]
     end
 
-    subgraph PLATFORM["<b>Platform AI</b><br/>Consistency Through Centralization"]
+    subgraph PLATFORM["<b>Platform AI</b>"]
         direction LR
+        PS[ <i>Consistency Through Centralization</i> ]:::subtitle
         P1[Central team serves all]
         P2[Owns infrastructure]
         P3[Sets standards]
     end
 
-    subgraph HYBRID["<b>Hybrid</b><br/>Best of Both"]
+    subgraph HYBRID["<b>Hybrid</b>"]
         direction LR
+        HS[ <i>Best of Both</i> ]:::subtitle
         H1[Central infrastructure]
         H2[Embedded domain experts]
         H3[Coordination protocols]
     end
 
-    subgraph EVERYONE["<b>Everyone-AI</b><br/>AI-Native Model"]
+    subgraph EVERYONE["<b>Everyone-AI</b>"]
         direction LR
+        VS[ <i>AI-Native Model</i> ]:::subtitle
         V1[AI is core competency]
         V2[No AI specialists]
         V3[Every role uses AI directly]
@@ -42,6 +46,7 @@ flowchart TB
     PLATFORM -.->|"Risk: Bottlenecks"| HYBRID
     HYBRID -.->|"Risk: Coordination tax"| EVERYONE
 
+    classDef subtitle fill:none,stroke:none,color:#fff,font-size:0.9em
     style EMBEDDED fill:#1e6fa5,stroke:#155a85
     style PLATFORM fill:#c77d0a,stroke:#a06508
     style HYBRID fill:#7345b0,stroke:#5b3590
@@ -132,8 +137,6 @@ The real question isn't "which model is best?" It's "which model matches our cur
 The uncomfortable truth: 95% of generative AI pilots at companies fail to influence profit and loss[^mit-failure]. The core issue isn't model quality—it's the "learning gap" for both tools and organizations. Generic tools excel for individuals because of flexibility, but they stall in enterprise use because they don't learn from or adapt to workflows[^mit-failure].
 
 Your team structure either accelerates that learning or blocks it. Choose accordingly.
-
----
 
 ## References
 

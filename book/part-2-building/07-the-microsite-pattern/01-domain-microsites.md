@@ -132,8 +132,6 @@ For established organizations, domain teams already have expertise. Give them au
 
 The pattern works because it aligns three things that must be aligned: architecture, organization, and deployment. When these three move independently, you get the benefit of distributed systems without the coordination overhead of distributed teams.
 
----
-
 ## References
 
 [^vfunction]: vFunction. [How to Avoid Microservices Anti-Patterns](https://vfunction.com/blog/how-to-avoid-microservices-anti-patterns/)

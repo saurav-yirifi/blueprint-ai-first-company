@@ -2,8 +2,6 @@
 
 Recognition, recovery, and course correction.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "AI coding fails predictably. Once you recognize the failure patterns, you can either prevent them or recover fast. The goal isn't perfect AI—it's knowing when to take the wheel back."
@@ -118,8 +116,6 @@ Trust in AI code is actually declining. In 2024, 40% of developers expressed con
 But here's the flip side: that verification is the point. The developers who thrive with AI tools aren't the ones who trust blindly or distrust completely. They're the ones who recognize failure patterns, recover quickly, and know when to take over. Failures aren't evidence that AI doesn't work. They're calibration data for making it work better.
 
 The goal isn't perfect AI. It's knowing when to take the wheel back.
-
----
 
 ## References
 

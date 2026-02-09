@@ -12,8 +12,6 @@ What replaces volume-based moats? Systems that generate unique data through usag
 
 This chapter is about building that kind of advantage—and the ethical architecture that lets you sustain it.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Three database types, each matched to its data: transactions in relational, content in documents, speed-critical in cache. But the real flywheel is usage analytics—every agent interaction becomes training data for better agent interactions."
@@ -51,8 +49,6 @@ For established organizations, the path is different but not closed. You likely 
 Both audiences face the same truth: the proprietary data flywheel—not the model—determines who compounds. And flywheels that spin without ethical guardrails eventually spin backward—through regulatory action, user distrust, or the compounding degradation of data quality.
 
 The companies winning at data strategy aren't the ones with the most data. They're the ones whose data generates the most advantage.
-
----
 
 ## References
 

@@ -84,8 +84,6 @@ Governance works when it's invisible. When doing the right thing is easier than 
 
 The microsite pattern enables this. Consistent structure means consistent enforcement. Templates encode organizational knowledge. Pipelines verify standards. The platform does the governance work so domain teams can focus on domain problems.
 
----
-
 ## References
 
 [^api-report]: State. [of the API Report 2024](https://www.postman.com/state-of-api/)

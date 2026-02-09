@@ -6,8 +6,6 @@ At Yirifi, we built 15 microsites on the most boring stack imaginable: Flask, HT
 
 This chapter is about the infrastructure patterns that separate the 5% who ship from the 95% who pilot forever.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Three tiers of AI access: reading system status is free, production deploys require approval, and deleting user data is always human-only. The tiers aren't about limiting AI—they're about matching autonomy to reversibility."

@@ -2,8 +2,6 @@
 
 Best practices distilled from thousands of hours of AI-assisted development.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "These patterns aren't theoretical—they're what we teach new developers on day one. The difference between a productive AI coding session and a frustrating one is almost always whether you followed these patterns."
@@ -110,8 +108,6 @@ For startups: learn these patterns as you adopt AI coding. Don't skip them becau
 The productivity loss from ignoring these patterns exceeds the time spent learning them. Make them habitual from day one. The patterns aren't overhead. They're the difference between AI as accelerant and AI as liability.
 
 These patterns work best when embedded in a deliberate collaboration loop—which is what we'll cover next.
-
----
 
 ## References
 

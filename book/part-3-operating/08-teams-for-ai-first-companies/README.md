@@ -6,8 +6,6 @@ At Yirifi, just 2 people built 15 backoffice microsites. But those two people ar
 
 The temptation is to ask "how do we add AI people?" The better question: "how do we make everyone AI people?" The answer isn't a reorg. It's a transformation that touches hiring, training, culture, and the fundamental definition of what each role does.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Just 2 people, 15 backoffice microsites. But those 2 people aren't doing 2 jobs each—they're architecting while AI builds. The skill that matters: knowing what to ask AI to do, and recognizing when AI got it wrong."
@@ -41,8 +39,6 @@ The pattern holds across every section: transformation, not replacement.
 For startups, this is an opportunity to hire differently from day one. Test for learning velocity instead of framework expertise. Build prompt libraries instead of knowledge silos. Design for everyone-AI before you have the headcount to justify specialists.
 
 For established organizations, the path is harder but the destination is the same. Start with the 90-day fluency program. Pick receptive cultural pockets rather than mandating organization-wide change. Measure productivity gains and share them widely. The transformation takes 18-24 months, but the alternative is watching competitors transform while you debate.
-
----
 
 ## References
 

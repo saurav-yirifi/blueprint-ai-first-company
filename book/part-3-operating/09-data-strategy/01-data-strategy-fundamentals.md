@@ -113,8 +113,6 @@ The companies winning in 2025 optimize data collection strategy over algorithm o
 
 Next: the mechanics of flywheels that actually spin.
 
----
-
 ## References
 
 [^harvey-moat]: Harvey's defensible compliance moat analysis. [Legal Technology](https://legaltechnology.com/2025/06/19/comment-harveys-defensible-compliance-moat-strategic-advantage-or-market-dependency/)

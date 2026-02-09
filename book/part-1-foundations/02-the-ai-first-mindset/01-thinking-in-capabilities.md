@@ -60,8 +60,6 @@ Stripe's evolution illustrates the long game. They didn't start with their Payme
 
 Get this right, and you're building a platform. Get it wrong, and you're building a feature factory that competitors can replicate one tool at a time.
 
----
-
 ## References
 
 [^harvey-arr]: Harvey Year in Review 2024 — [harvey.ai](https://www.harvey.ai/year-in-review/2024)

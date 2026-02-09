@@ -2,8 +2,6 @@
 
 Tiered access as architecture—safe, supervised, forbidden.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 This section implements the chapter's core principle—matching autonomy to reversibility. At Yirifi, our AI Tool Gateway emerged from a practical question: AI writes to production constantly, deploying code, updating content, modifying records. What matters isn't "can AI touch production?" but "what happens if this goes wrong?"
@@ -70,8 +68,6 @@ The fan-out pattern handles migrations at scale: loop through thousands of files
 We'll explore how these gateway patterns integrate with agent architecture in [Chapter 6](../06-agent-architecture/README.md).
 
 This isn't optional infrastructure. It's the difference between AI agents that work safely at scale and AI agents that become your largest attack surface.
-
----
 
 ## References
 

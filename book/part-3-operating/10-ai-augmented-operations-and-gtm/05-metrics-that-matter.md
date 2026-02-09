@@ -163,8 +163,6 @@ For startups: start measuring from day one. Focus on unit economics like cost pe
 
 What gets measured gets managed.
 
----
-
 ## References
 
 [^copilot-roi]: DX: AI Measurement Hub. [getdx.com](https://getdx.com/blog/ai-measurement-hub/)

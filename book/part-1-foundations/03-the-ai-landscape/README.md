@@ -6,8 +6,6 @@ Understanding the AI landscape isn't about keeping up with news—it's about rec
 
 At Yirifi, we learned this lesson early. We started with a single provider—simple, clean, fast to integrate. Then came the latency issues for real-time features. Then the rate limit surprises during a demo. Then the 40% price increase. Now we route requests through what we call our AI Tool Gateway: different models for different tasks, automatic failover when providers hiccup, cost optimization that happens without anyone thinking about it.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "We don't commit to one provider. Our AI Tool Gateway routes requests based on task type, cost constraints, and availability. Model routing isn't a nice-to-have—it's how you avoid vendor lock-in while getting the right model for each job."
@@ -47,8 +45,6 @@ For established organizations, start with a provider but architect for routing f
 The model landscape will keep shifting. What won't change: the companies that treat model selection as ongoing optimization rather than one-time decision will consistently outperform those locked into rigid architectures.
 
 Let's find out.
-
----
 
 ## References
 

@@ -8,8 +8,6 @@ The problem isn't microservices. The problem is treating architecture as a techn
 
 This chapter introduces the microsite pattern: autonomous domain applications with shared infrastructure. The architecture that enables just two people to manage fifteen domains. The same architecture that scales to a thousand engineers without coordination overhead.
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "Each domain—DevOps, QA, Data, Marketing, Sales, Finance—owns their own microsite end-to-end. Same architecture, different domain logic. When AI capabilities evolve, we add a new module. No rewiring required."

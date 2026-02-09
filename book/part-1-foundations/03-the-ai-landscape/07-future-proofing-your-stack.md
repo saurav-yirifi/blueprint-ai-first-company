@@ -91,8 +91,6 @@ What you can control is how much your architecture depends on any single choice.
 
 In Part II, we move from understanding the landscape to building on it. The foundations are set. Time to build.
 
----
-
 ## References
 
 [^langchain-hn]: Hacker. [News Discussion on LangChain Abstractions](https://news.ycombinator.com/item?id=40739982)

@@ -81,8 +81,6 @@ Cursor supports Claude, GPT, and Gemini because no single model excels at all co
 
 The pattern is clear: single-provider commitments are giving way to intelligent routing. The companies building durable AI products aren't asking "which provider?" They're asking "how do we build an abstraction layer for the right model per task?" You still need a primary provider for procurement and billing—but design your system so swapping providers doesn't require a rewrite.
 
----
-
 ## References
 
 [^stanford-ai-index]: Stanford. [HAI AI Index Report 2025](https://hai.stanford.edu/ai-index/2025-ai-index-report)

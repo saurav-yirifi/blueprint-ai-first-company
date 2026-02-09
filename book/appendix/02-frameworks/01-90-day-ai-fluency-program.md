@@ -193,8 +193,6 @@ The companies that win treat upskilling as a marathon, not a sprint. 90 days get
 
 Everything else is just a workshop.
 
----
-
 ## References
 
 [^microsoft-internal]: SuperAGI. Case Studies: How Major Corporations Are Using AI to Transform Training Programs — [superagi.com](https://superagi.com/case-studies-how-major-corporations-are-using-ai-to-transform-their-training-programs-in-2025/)

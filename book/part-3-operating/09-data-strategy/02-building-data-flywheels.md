@@ -88,8 +88,6 @@ Not all loops are virtuous.
 
 Before you write a line of code, map the loop on paper. If you can't complete it on paper, you won't complete it in production.
 
----
-
 ## References
 
 [^cold-start]: AI cold start problem analysis. [LinkedIn](https://www.linkedin.com/posts/alexandra-skidan_your-ai-model-is-stupid-and-users-wont-activity-7359210515979456512-kVKC)

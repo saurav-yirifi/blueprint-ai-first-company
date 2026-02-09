@@ -44,8 +44,6 @@ If you're going to build an AI-first company, you need to actually use AI first.
 
 Let's begin.
 
----
-
 ## References
 
 [^ai-code-stats]: AI-Generated Code Statistics 2026. [Elite Brains](https://www.elitebrains.com/blog/aI-generated-code-statistics-2025)

@@ -100,8 +100,6 @@ Modular architecture bets that you don't know exactly what AI capabilities you'l
 
 The companies pulling ahead aren't the ones with the best current AI implementation. They're the ones whose architecture welcomes the next breakthrough instead of resisting it.
 
----
-
 ## References
 
 [^netflix]: Netflix Engineering. [LinkedIn Analysis of Netflix DevOps](https://www.linkedin.com/posts/muhammad-mudassir-3661b5207_devops-engineeringexcellence-automation-activity-7369487748413558785-3mTN)

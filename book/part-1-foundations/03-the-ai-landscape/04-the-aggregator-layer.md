@@ -77,8 +77,6 @@ The aggregator layer is plumbing. Good plumbing is invisible until it breaks. Bu
 
 Next, we'll look at how to actually choose between all these options with a practical decision framework.
 
----
-
 ## References
 
 [^routellm]: RouteLLM Research. [OpenReview](https://openreview.net/forum?id=DWf4vroKWJ)

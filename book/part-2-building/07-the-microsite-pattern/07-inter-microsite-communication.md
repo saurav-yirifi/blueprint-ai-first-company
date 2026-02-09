@@ -61,8 +61,6 @@ This extends to AI agents. When an agent requests cross-domain data, the permiss
 
 **For established organizations:** You likely have a mix already. The work is making it intentional. Map your current communication patterns. Identify where synchronous chains create brittleness. Identify where eventual consistency causes business problems. Match patterns to requirements, service by service.
 
----
-
 ## References
 
 [^netflix-kafka]: LinkedIn. [How Apache Kafka Powers Real World Systems at Netflix and Uber](https://www.linkedin.com/pulse/how-apache-kafka-powers-real-world-inside-netflix-uber-abel-mendon%C3%A7a-nttre)

@@ -107,8 +107,6 @@ Replacement thinking asks "will AI replace us?" Augmentation thinking asks: "How
 
 Get that design right, and you build something neither could build alone.
 
----
-
 ## References
 
 [^mit-review]: MIT Center for Collective Intelligence, Human-AI Collaboration Review — Published in *Nature Human Behaviour*, 2024 — [nature.com](https://www.nature.com/articles/s41562-024-02024-1)

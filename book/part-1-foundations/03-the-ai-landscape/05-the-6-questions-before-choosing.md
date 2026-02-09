@@ -66,8 +66,6 @@ The teams that struggle treat model selection as a technology decision. The team
 
 One more thing: these answers change. The model that was right six months ago might not be right today. Build in regular re-evaluation---quarterly at minimum---and don't let inertia keep you locked into a suboptimal choice. The landscape is moving fast. Your selection process needs to move with it.
 
----
-
 ## References
 
 [^harvey-models]: Harvey Blog. [- Expanding Harvey's Model Offerings](https://www.harvey.ai/blog/expanding-harveys-model-offerings)

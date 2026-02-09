@@ -2,8 +2,6 @@
 
 The collaboration structure behind "think while AI types."
 
----
-
 <div class="yirifi-anchor" markdown>
 
 > "We don't 'use AI to code.' We collaborate with AI to build. The loop is the collaboration pattern: human decides, AI drafts, human reviews, AI refines. Each party does what they're best at."
@@ -102,8 +100,6 @@ For established organizations, the loop is teachable. Make it explicit in develo
 For startups, build the loop into your culture from day one. Everyone should know the pattern: decide, draft, review, refine, finalize. This creates consistency across the team even as you grow. The loop is how small teams punch above their weight.
 
 The gap between perceived and actual productivity closes when the loop becomes automatic. You stop thinking about whether to follow the pattern and start thinking about the code itself. That's when the 5x productivity actually arrives.
-
----
 
 ## References
 

@@ -138,8 +138,6 @@ Skip this and you launch blind. First feedback comes from angry customers, not d
 
 Every component should answer one question: what happens when the underlying AI improves? Configuration change and rollout monitoring? That's evolution-ready. Major rewrite required? That's a design flaw you'll pay for repeatedly.
 
----
-
 ## References
 
 [^stripe-compat]: Stripe API Docs. [Versioning](https://docs.stripe.com/api/versioning)

@@ -96,8 +96,6 @@ Failure to meet emerging AI governance requirements around explainability, docum
 
 **Mitigation:** Implement NIST AI RMF's four functions—Govern, Map, Measure, Manage. Deploy model cards documenting training data, performance metrics, and limitations. Conduct regular third-party audits against ISO 42001.
 
----
-
 ## References
 
 [^stanford]: Stanford HAI. ["AI Index Report 2025: Responsible AI."](https://hai.stanford.edu/ai-index/2025-ai-index-report/responsible-ai)

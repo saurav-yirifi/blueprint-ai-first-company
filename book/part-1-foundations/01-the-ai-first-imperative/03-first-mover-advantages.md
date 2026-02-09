@@ -81,8 +81,6 @@ Only 5% of companies globally achieve AI value at scale (per BCG's most stringen
 
 Every month you spend evaluating, competitors accumulate the advantages that take 12-18 months to build. The window closes whether you're ready or not.
 
----
-
 ## References
 
 [^jasper-wiki]: Jasper AI — [jasper.ai](https://www.jasper.ai/)
