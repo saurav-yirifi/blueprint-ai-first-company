@@ -30,6 +30,7 @@ jobs:
         run: |
           cp -r book frameworks guides checklists examples workflows resources author ai-writing-process docs/
           cp README.md docs/about.md
+          cp LICENSE CONTRIBUTING.md CODE_OF_CONDUCT.md docs/
 
       - run: mkdocs build
 

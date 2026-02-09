@@ -6,6 +6,7 @@ cd "$(dirname "$0")"
 # Same copy step as .github/workflows/deploy-pages.yml L31-32
 cp -r book frameworks guides checklists examples workflows resources author ai-writing-process docs/
 cp README.md docs/about.md
+cp LICENSE CONTRIBUTING.md CODE_OF_CONDUCT.md docs/
 
 # Kill any existing server on port 8000
 lsof -ti :8000 | xargs kill -9 2>/dev/null || true

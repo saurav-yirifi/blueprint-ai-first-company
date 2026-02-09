@@ -22,6 +22,8 @@ jobs:
             --verbose
             --no-progress
             --accept 200,204,301,302,403,429
+            --retry-wait-time 5
+            --max-retries 3
             --exclude-path './examples/**/*.py'
             --exclude-path './examples/**/*.yaml'
             --exclude-path './examples/**/*.json'
