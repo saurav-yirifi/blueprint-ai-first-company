@@ -7,18 +7,9 @@
 {% endblock %}
 
 {% block extrahead %}
-  <!-- Open Graph -->
-  <meta property="og:title" content="{{ page.title }} | {{ config.site_name }}" />
-  <meta property="og:description" content="{{ config.site_description }}" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="{{ page.canonical_url }}" />
-  <meta property="og:site_name" content="{{ config.site_name }}" />
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
+  <!-- Twitter author attribution (OG/Twitter Card tags handled by social plugin) -->
   <meta name="twitter:site" content="@sauravbhats" />
   <meta name="twitter:creator" content="@sauravbhats" />
-  <meta name="twitter:title" content="{{ page.title }} | {{ config.site_name }}" />
-  <meta name="twitter:description" content="{{ config.site_description }}" />
 
   <!-- Force Mermaid shadow roots to open so our post-processor can access SVG internals.
        Must run before Material's bundle.js which renders Mermaid with closed shadow DOM. -->
