@@ -1,0 +1,50 @@
+{% extends "main.html" %}
+
+{% block content %}
+<style>
+  .bp-404 {
+    text-align: center;
+    padding: 4rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .bp-404 h1 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .bp-404 p {
+    font-size: 1.1rem;
+    opacity: 0.7;
+    margin-bottom: 2rem;
+  }
+  .bp-404-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+  .bp-404-links a {
+    padding: 0.5rem 1.25rem;
+    border: 1px solid var(--md-default-fg-color--lighter);
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: border-color 0.2s;
+  }
+  .bp-404-links a:hover {
+    border-color: var(--md-accent-fg-color);
+  }
+</style>
+
+<div class="bp-404">
+  <h1>Page not found</h1>
+  <p>The page you're looking for doesn't exist or has moved.</p>
+  <div class="bp-404-links">
+    <a href="{{ config.site_url }}">Home</a>
+    <a href="{{ config.site_url }}book/">Read the Book</a>
+    <a href="{{ config.site_url }}frameworks/">Frameworks</a>
+    <a href="https://github.com/saurav-yirifi/blueprint-ai-first-company">GitHub</a>
+  </div>
+</div>
+{% endblock %}
