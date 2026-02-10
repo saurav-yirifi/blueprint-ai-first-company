@@ -76,6 +76,7 @@ markdown_extensions:
 
 plugins:
   - search
+  - social
 
 extra:
   social:
@@ -87,7 +88,27 @@ extra:
       link: https://x.com/sauravbhats
   analytics:
     provider: google
-    property: G-XXXXXXXXXX
+    property: G-X4BRZ9EVS2
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: Thanks for your feedback! Help us improve by opening an issue.
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to measure site traffic and understand which pages
+      are most useful. Your consent helps us improve this resource.
+    actions:
+      - accept
+      - reject
+      - manage
   generator: false
 
 nav:

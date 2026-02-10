@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - run: pip install mkdocs-material mkdocs-exclude
+      - run: pip install mkdocs-material pillow cairosvg
 
       - name: Copy content into docs/
         run: |
