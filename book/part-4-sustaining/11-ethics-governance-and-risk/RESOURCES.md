@@ -43,7 +43,7 @@
 - **Claude AI Jailbreak (March 2025)** — Chinese government-sponsored attackers jailbroke Claude by presenting malicious tasks as routine cybersecurity work
 - **Model Drift Statistics** — 91% of ML models experience performance degradation without intervention
 - **UnitedHealth AI Error Rate** — Class action alleging 90% error rate evaluating Medicare claims; federal judge allowed case to proceed
-- **EU AI Act Penalties** — Up to EUR 35M or 7% of global turnover for prohibited practices; 3% for high-risk violations; 1.5% for providing incorrect information
+- **EU AI Act Penalties** — Up to EUR 35M or 7% of global turnover for prohibited practices; up to EUR 15M or 3% for high-risk violations; up to EUR 7.5M or 1% for providing incorrect information
 - **Financial Services Board Oversight** — 84% increase in board oversight disclosure around AI in 2024
 - **Gartner AI Agents Survey** — Only 15% of IT leaders are deploying fully autonomous agents
 - **Over 50 Legal Hallucination Cases** — By July 2025, over 50 legal cases involved fabricated citations from AI tools, resulting in sanctions and disbarment referrals
