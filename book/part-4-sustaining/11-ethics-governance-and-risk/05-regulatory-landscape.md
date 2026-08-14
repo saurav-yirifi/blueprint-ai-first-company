@@ -51,7 +51,7 @@ Companies need 32-56 weeks for full compliance implementation—documentation, g
 - August 2, 2026: High-risk system compliance required (upcoming)
 - August 2, 2030: Public sector compliance deadline
 
-Penalties are tiered: 7% of global turnover for prohibited practices, 3% for high-risk system violations, and 1.5% for providing incorrect information to regulators[^eu-penalties]. For a $1 billion company with high-risk AI, that's a $30 million maximum fine—or $70 million for prohibited practices.
+Penalties are tiered: 7% of global turnover for prohibited practices, 3% for high-risk system violations, and 1% for providing incorrect information to regulators[^eu-penalties]. For a $1 billion company with high-risk AI, that's a $30 million maximum fine—or $70 million for prohibited practices.
 
 ## The US Patchwork
 

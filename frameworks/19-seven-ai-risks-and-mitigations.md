@@ -143,7 +143,7 @@ AI systems face data poisoning, model inversion, adversarial examples, and suppl
 Failure to meet emerging AI governance requirements around explainability, documentation, and human oversight.
 
 **What went wrong:**
-- The EU AI Act penalty regime is tiered: fines up to EUR 35 million or 7% of global turnover for prohibited AI practices, 3% for high-risk system violations, and 1.5% for providing incorrect information.
+- The EU AI Act penalty regime is tiered: fines up to EUR 35 million or 7% of global turnover for prohibited AI practices, up to EUR 15 million or 3% for high-risk system violations, and up to EUR 7.5 million or 1% for providing incorrect information.
 - UnitedHealth faced a class action alleging their AI had a 90% error rate evaluating Medicare claims---a federal judge allowed the case to proceed.
 
 **Mitigation:**
